@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T04:31:06Z",
+"updated": "2026-11-17T07:25:03Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -14,7 +14,7 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 18
+"count": 17
 },
 {
 "name": "Lafayette Travel",
@@ -46,30 +46,6 @@
 "ok": null,
 "count": 0,
 "note": "add a free TICKETMASTER_API_KEY to turn this on"
-},
-{
-"name": "Cajundome",
-"ok": false,
-"count": 0,
-"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-},
-{
-"name": "Rock'n'Bowl de Lafayette",
-"ok": false,
-"count": 0,
-"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-},
-{
-"name": "Parish Brewing",
-"ok": false,
-"count": 0,
-"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-},
-{
-"name": "Lafayette Public Library",
-"ok": false,
-"count": 0,
-"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
 },
 {
 "name": "Blue Moon Saloon",
@@ -167,7 +143,7 @@
 },
 {
 "title": "Artists’ Alliance",
-"start": "2026-11-16T09:00",
+"start": "2026-11-17T09:00",
 "end": "2027-01-09T17:00",
 "allDay": false,
 "ongoing": true,
@@ -179,86 +155,10 @@
 "arts"
 ],
 "desc": "",
-"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-16",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-17",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
 "source": "Acadiana Center for the Arts",
-"id": "22bbe8a735"
-},
-{
-"title": "Philip Gould: A Selection of Works",
-"start": "2026-11-16T09:00",
-"end": "2026-11-28T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-16",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"id": "3491e71770"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-11-16T09:00",
-"end": "2026-12-23T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-16",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
-"id": "6fde576542"
-},
-{
-"title": "Valcour Records | 20 Years",
-"start": "2026-11-16T09:00",
-"end": "2027-02-27T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-16",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"id": "eebcd90c9e"
-},
-{
-"title": "Sound Bath",
-"start": "2026-11-16T18:00",
-"end": "2026-11-16T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Step into deep relaxation with an immersive Sound Bath at the Kergan Meditation Garden. This restorative session uses soothing sound frequencies, gentle vibrations, and mindful stillness to help quiet the mind, release stress, and restore balance to the body. Crystal singing bowls and other healing instruments guide you into a meditative state built for relaxation and clarity. Whether you're new to sound healing or have an established practice, it's a peaceful way to reconnect with yourself outdoors. Dates: November 16 Time: 6:00–7:00 PM Location: Kergan Meditation Garden What to Bring: A yoga mat for comfort Free and open to the community. No registration required.",
-"url": "https://moncuspark.org/calendar-events/sound-bath/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/08/Sound-Bath-with-Lissee-Spiller.png",
-"source": "Moncus Park",
-"id": "551a531948"
+"id": "c785946aae"
 },
 {
 "title": "Kate Gordon: Tender Terrain",
@@ -278,6 +178,63 @@
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
 "source": "Acadiana Center for the Arts",
 "id": "8dc71c57ee"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-17T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-17",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "5b889820fe"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-17T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-17",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"id": "b9cb37dd2e"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-17T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-17",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "d41c255e9c"
 },
 {
 "title": "Bird Walk and Survey at Moncus Park",
