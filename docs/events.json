@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T07:25:03Z",
+"updated": "2026-11-17T09:08:34Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -14,7 +14,7 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 17
+"count": 16
 },
 {
 "name": "Lafayette Travel",
@@ -120,26 +120,6 @@
 "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNzU2MWIwNDAtY2VhOC0xMWYxLTlhZTktYmIzNzk0ZmUzYmNkLXJpbWctdzU1MC1oNTUwLWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5MjczNjM2OQ.avif",
 "source": "Happening Next (Lafayette live music)",
 "id": "d517071615"
-},
-{
-"title": "Moncus Mondays-Free Parking",
-"start": "2026-11-16T05:00",
-"end": "2026-11-16T22:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness",
-"family"
-],
-"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
-"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
-"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
-"source": "Moncus Park",
-"id": "a4f7d4f713"
 },
 {
 "title": "Artists’ Alliance",
