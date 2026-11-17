@@ -683,8 +683,15 @@ def ai_extract(src, text, start, end):
                 time.sleep(30 * (attempt + 1))
                 continue
             raise
-    content = json.loads(raw)["choices"][0]["message"]["content"]
-    items = json.loads(content).get("events", [])
+    try:
+        content = json.loads(raw)["choices"][0]["message"]["content"] or ""
+    except (ValueError, KeyError, IndexError):
+        raise RuntimeError(f"unexpected AI response: {raw[:200]!r}")
+    content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip())  # tolerate ```json fences
+    try:
+        items = json.loads(content).get("events", [])
+    except ValueError:
+        raise RuntimeError(f"AI reply wasn't JSON: {content[:200]!r}")
     return [make_event(src, title=i.get("title"), start=i.get("start"), end=i.get("end"),
                        venue=i.get("venue") or "", price=i.get("price") or "",
                        url=i.get("url") or "", desc=i.get("description") or "")

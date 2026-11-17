@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 */2 * * *"   # every 2 hours (GitHub may run it a few minutes late)
   workflow_dispatch:          # adds a "Run workflow" button on the Actions tab
+    inputs:
+      only:
+        description: "Test one source by name (leave empty to check everything)"
+        required: false
+        default: ""
   issues:
     types: [labeled]          # re-run right away when you approve a submitted event
 
@@ -30,7 +35,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
-        run: python collector/collect.py
+        run: python collector/collect.py "${{ inputs.only }}"
       - name: Save if anything changed
         run: |
           git config user.name "bon-temps-bot"
