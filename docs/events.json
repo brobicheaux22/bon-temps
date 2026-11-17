@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T13:13:51Z",
+"updated": "2026-11-17T14:59:02Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -50,7 +50,7 @@
 {
 "name": "Blue Moon Saloon",
 "ok": true,
-"count": 37
+"count": 38
 },
 {
 "name": "Bon Temps",
@@ -1454,6 +1454,25 @@
 "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy80OWZjNWFjNjU5NDEyMTM2MzQ0OWRjNGVjMDc0Y2ZhOWFlZmJmNTgyNzZiNmI5MzU2ZmQzMDI2MTk1MGEzOTIxLXJpbWctdzEyMDAtaDExODgtZGNiOGI4NjgtZ21pcj92PTE3OTA0MzU3MTI.avif",
 "source": "Happening Next (Lafayette live music)",
 "id": "a5093addd8"
+},
+{
+"title": "SOSAWRLD 2",
+"start": "2026-11-29T16:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "SUNDAY FUNDAY, BUT MAKE IT AN EXPERIENCE.\n\nNOVEMBER 29TH, WE’RE CELEBRATING BIG! It’s SOSA's 25TH GLODAY SO WE GOING UP ! 25 ARTIST FROM ALL AROUND\n\nPART I: R&B\n\nPART II: RAGE & RAP\n\nTWO HEADLINERS . Two parts. Two different energies. ONE STAGE .\n\nBlue Moon Saloon\n\nSunday, November 29th\n\n4 PM – 12 AM\n\n$10 ENTRY — TICKETS AVAILABLE FOR PURCHASE AT THE DOOR!\n\nWhether you come for the R&B, stay for the rage, or experience the entire lineup, there’s something for EVERYBODY. Come futuristic. Come streetwear. Come punk. Come glam. Come vintage. Come avant-garde. Come overdressed. Come completely unexpected.\n\nThis is a A GRLSOSA EVENT.\n\nTHEME IS BLACK BUT ( COSMIC / INTERGALACTIC ) Let’s make my gloday one for the GALAXY",
+"url": "https://events.timely.fun/kw4jncf1/event/78518406/20261129160000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/sosawrld_ApcI.jpg",
+"source": "Blue Moon Saloon",
+"id": "b5935728ab"
 },
 {
 "title": "Louisiana Christmas Day",
