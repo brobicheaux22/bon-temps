@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T14:59:02Z",
+"updated": "2026-11-17T17:10:10Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -426,7 +426,7 @@
 ],
 "desc": "",
 "url": "https://happeningnext.com/event/hodge-podge-4-eid27punbbwjhn",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9hNGMyYTgwMC1lMjFmLTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTA4MC1oMTM1MC1kY2M4YzhiOC1nbWlyLnBuZz92PTE3OTQ4NzYwOTY.avif",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy82Y2JjMTVmMC1lMjliLTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTA4MC1oMTM1MC1kY2M4YzhiOC1nbWlyLnBuZz92PTE3OTQ5MjkyNTk.avif",
 "source": "Happening Next (Lafayette live music)",
 "id": "a4062f8c92"
 },
@@ -1287,9 +1287,9 @@
 {
 "title": "🔥 LEIF MECHE LIVE AT LA ESPUELA! 🔥",
 "start": "2026-11-28T00:00",
-"end": "2026-12-18T00:00",
+"end": null,
 "allDay": true,
-"ongoing": true,
+"ongoing": false,
 "venue": "La Espuela Cantina & Grill Carencro, La",
 "address": "3235 NW Evangeline Thwy, Lafayette, LA 70507-3537, United States, Lafayette",
 "price": "",
@@ -1837,7 +1837,7 @@
 ],
 "desc": "",
 "url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-hosted-by-scarface-from-baddies-andamp-mrcut-water-eid27punbglkmk",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy9mNTMzYmU2MC1lMWU3LTExZjEtYWI2OS1hNzYxNDVmMDVhMWMtcmltZy13MTIwMC1oMTIzMC1kYzA4MDgwOC1nbWlyLnBuZz92PTE3OTQ4NTIxNzk.avif",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9mM2VhNDNhMC1lMjg1LTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTIwMC1oMTIzMC1kYzA4MDgwOC1nbWlyLnBuZz92PTE3OTQ5MjAwMzc.avif",
 "source": "Happening Next (Lafayette live music)",
 "id": "9b75815698"
 },
@@ -2381,7 +2381,7 @@
 "id": "0b7914fcdd"
 },
 {
-"title": "Michael Scott Bourdeaux's 4th annual Holiday Honky Tonk",
+"title": "Michael Scott Bourdeaux's 5th annual Holiday Honky Tonk",
 "start": "2026-12-19T20:00",
 "end": null,
 "allDay": false,
@@ -2393,11 +2393,11 @@
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "🎄🤠 THE 5TH ANNUAL HOLIDAY HONKY TONK! 🤠🎄\n\nIt's becoming a Blue Moon holiday tradition! Join us Saturday, December 19th for Michael Scott Boudreaux's 5th Annual Holiday Honky Tonk Special featuring the Michael Scott Boudreaux Band (MSB) and a whole crew of special guests!\n\nWe're bringing the honky-tonk spirit, holiday cheer, and some serious musical talent together for one unforgettable night!\n\n🌟 FEATURING SPECIAL GUESTS:\n🎸 Joe Bryson\n🎸 Konner James\n🎸 Jared Crenshaw\n🎸 Gage Myers\n🎸 Gray Walker\n🎸 Jacky Lynx\n\n📅 Saturday, December 19th\n🎶 SHOWTIME: 8 PM\n🎟️ COVER: $15\n\nFive years strong and still making it a holiday tradition! Round up your friends, put on your dancing boots, and come celebrate the season the honky-tonk way!\n\nMerry Christmas, y'all! We'll see you under the moon! 🌙🎅",
 "url": "https://events.timely.fun/kw4jncf1/event/78485769/20261219200000",
 "image": "",
 "source": "Blue Moon Saloon",
-"id": "1b34e3fee5"
+"id": "e6f299b9f3"
 },
 {
 "title": "Bal du Dimanche -- Ray Thibodeaux & Allons Danser",
