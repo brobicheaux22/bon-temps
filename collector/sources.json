@@ -12,10 +12,10 @@
     { "name": "Happening Next (Lafayette live music)", "type": "jsonld", "url": "https://www.happeningnext.com/lafayette/live-music", "cats": ["music"], "_note": "Third-party listings site; covers Feed N Seed, Warehouse 535, Rock'n'Bowl and other clubs." },
     { "name": "Ticketmaster (Cajundome & touring shows)", "type": "ticketmaster" },
 
-    { "name": "Cajundome", "type": "page", "url": "https://www.cajundome.com/events", "venue": "Cajundome" },
-    { "name": "Rock'n'Bowl de Lafayette", "type": "page", "url": "https://www.rocknbowl.com/lafayette", "venue": "Rock'n'Bowl de Lafayette", "cats": ["music"] },
-    { "name": "Parish Brewing", "type": "page", "url": "https://parishbeer.com/events/", "venue": "Parish Brewing Co., Broussard" },
-    { "name": "Lafayette Public Library", "type": "page", "url": "https://lafayettepubliclibrary.org/" },
+    { "name": "Cajundome", "type": "page", "url": "https://www.cajundome.com/events", "venue": "Cajundome", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
+    { "name": "Rock'n'Bowl de Lafayette", "type": "page", "url": "https://www.rocknbowl.com/lafayette", "venue": "Rock'n'Bowl de Lafayette", "cats": ["music"], "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
+    { "name": "Parish Brewing", "type": "page", "url": "https://parishbeer.com/events/", "venue": "Parish Brewing Co., Broussard", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
+    { "name": "Lafayette Public Library", "type": "page", "url": "https://lafayettepubliclibrary.org/", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
 
     { "name": "Blue Moon Saloon", "type": "ical", "url": "https://events.timely.fun/api/calendars/54756026/export?format=ics", "link": "https://bluemoonpresents.com/live-music", "venue": "Blue Moon Saloon", "cats": ["music"], "_note": "The public 'Subscribe' iCal feed from the venue's Timely calendar." },
     { "name": "Artmosphere", "type": "page", "url": "https://www.artmosphere.net/", "enabled": false, "_note": "Wix site; events load with JavaScript." },

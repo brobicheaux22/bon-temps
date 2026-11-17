@@ -21,13 +21,16 @@ and every 10 minutes while it's open. It shows "Updated X min ago" so people kno
 | Lafayette Travel (this weekend) | Event data built into the page |
 | Heymann Performing Arts Center | The venue's own calendar service |
 | Downtown Lafayette | Each event page |
-| Cajundome, Rock'n'Bowl, Parish Brewing, Lafayette Public Library | **AI reads the page** (free GitHub Models; runs only on GitHub) |
+| Blue Moon Saloon | The venue's public "Subscribe" calendar feed |
+| Hideaway on Lee | The venue's own event page |
+| Happening Next (Lafayette live music) | Event data built into the page (third-party listings site) |
+| Cajundome, Rock'n'Bowl, Parish Brewing, Lafayette Public Library | **Off for now.** These need an AI service to read the page, and GitHub Models was retired in July 2026 |
 | Ticketmaster (Cajundome & touring shows) | Free API key (optional, see below) |
 | Your own additions | `collector/manual.json` |
 | Submitted by the public | "Submit an event" form, after you approve it |
 
-Not connected: **Blue Moon Saloon** and **Artmosphere** load their calendars with JavaScript
-widgets the collector can't read, and **Instagram/Facebook** don't allow outside apps to read posts.
+Not connected: **Artmosphere** loads its calendar with JavaScript the collector can't read, and
+**Instagram/Facebook** don't allow outside apps to read posts.
 Cover these with `manual.json` (weekly nights are easy, see below) and with submissions.
 
 To add or turn off a source, edit `collector/sources.json`.
@@ -96,6 +99,6 @@ you set `GITHUB_TOKEN` to a GitHub token that has the *Models* permission.
 ## Free-tier limits
 
 - GitHub Actions and Pages are free for public repositories.
-- GitHub Models (the AI) has a daily request limit. The collector only asks the AI about a page
-  when the page has changed, so normal use stays well under it. If a source fails, the site
-  keeps showing that source's last good events.
+- If a source fails, the site keeps showing that source's last good events.
+- To test one source on GitHub: *Actions → Collect events → Run workflow*, and type part of its
+  name in the box (for example `blue moon`). Test runs don't change the site.
