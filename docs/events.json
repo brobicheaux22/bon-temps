@@ -1,0 +1,2778 @@
+{
+"updated": "2026-11-17T04:27:18Z",
+"sources": [
+{
+"name": "Hilliard Art Museum",
+"ok": true,
+"count": 5
+},
+{
+"name": "Acadiana Center for the Arts",
+"ok": true,
+"count": 13
+},
+{
+"name": "Moncus Park",
+"ok": true,
+"count": 18
+},
+{
+"name": "Lafayette Travel",
+"ok": true,
+"count": 4
+},
+{
+"name": "Heymann Performing Arts Center",
+"ok": true,
+"count": 9
+},
+{
+"name": "Downtown Lafayette",
+"ok": true,
+"count": 11
+},
+{
+"name": "Hideaway on Lee",
+"ok": true,
+"count": 8
+},
+{
+"name": "Happening Next (Lafayette live music)",
+"ok": true,
+"count": 40
+},
+{
+"name": "Ticketmaster (Cajundome & touring shows)",
+"ok": null,
+"count": 0,
+"note": "add a free TICKETMASTER_API_KEY to turn this on"
+},
+{
+"name": "Cajundome",
+"ok": null,
+"count": 0,
+"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+},
+{
+"name": "Rock'n'Bowl de Lafayette",
+"ok": null,
+"count": 0,
+"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+},
+{
+"name": "Parish Brewing",
+"ok": null,
+"count": 0,
+"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+},
+{
+"name": "Lafayette Public Library",
+"ok": null,
+"count": 0,
+"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+},
+{
+"name": "Blue Moon Saloon",
+"ok": true,
+"count": 37
+},
+{
+"name": "Bon Temps",
+"ok": true,
+"count": 0
+},
+{
+"name": "Submitted",
+"ok": null,
+"count": 0,
+"note": "runs on GitHub only"
+}
+],
+"events": [
+{
+"title": "Artists’ Alliance",
+"start": "2026-09-12T00:00",
+"end": "2027-01-09T00:00",
+"allDay": true,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
+"url": "https://www.lafayettetravel.com/event/artists%e2%80%99-alliance/49484/",
+"image": "",
+"source": "Lafayette Travel",
+"id": "4521fb7108"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-10-10T00:00",
+"end": "2026-12-23T00:00",
+"allDay": true,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
+"url": "https://www.lafayettetravel.com/event/sebastian-lodrige%3a-burden-%7c-artificial-%26-natural/49485/",
+"image": "",
+"source": "Lafayette Travel",
+"id": "c499ed9b96"
+},
+{
+"title": "Candlelight: 90s Hip-Hop on Strings",
+"start": "2026-11-06T00:00",
+"end": "2027-01-08T00:00",
+"allDay": true,
+"ongoing": true,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candlelight-90s-hip-hop-on-strings-eid1afw9hhch6e",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNzU2MWIwNDAtY2VhOC0xMWYxLTlhZTktYmIzNzk0ZmUzYmNkLXJpbWctdzU1MC1oNTUwLWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5MjczNjM2OQ.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "d517071615"
+},
+{
+"title": "Moncus Mondays-Free Parking",
+"start": "2026-11-16T05:00",
+"end": "2026-11-16T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness",
+"family"
+],
+"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
+"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
+"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
+"source": "Moncus Park",
+"id": "a4f7d4f713"
+},
+{
+"title": "Artists’ Alliance",
+"start": "2026-11-16T09:00",
+"end": "2027-01-09T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts - Main Gallery",
+"address": "101 W Vermilion St, Lafayette, LA 70501",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-16",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
+"source": "Acadiana Center for the Arts",
+"id": "22bbe8a735"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-16T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-16",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "3491e71770"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-16T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-16",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"id": "6fde576542"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-16T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-16",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "eebcd90c9e"
+},
+{
+"title": "Sound Bath",
+"start": "2026-11-16T18:00",
+"end": "2026-11-16T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Step into deep relaxation with an immersive Sound Bath at the Kergan Meditation Garden. This restorative session uses soothing sound frequencies, gentle vibrations, and mindful stillness to help quiet the mind, release stress, and restore balance to the body. Crystal singing bowls and other healing instruments guide you into a meditative state built for relaxation and clarity. Whether you're new to sound healing or have an established practice, it's a peaceful way to reconnect with yourself outdoors. Dates: November 16 Time: 6:00–7:00 PM Location: Kergan Meditation Garden What to Bring: A yoga mat for comfort Free and open to the community. No registration required.",
+"url": "https://moncuspark.org/calendar-events/sound-bath/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/08/Sound-Bath-with-Lissee-Spiller.png",
+"source": "Moncus Park",
+"id": "551a531948"
+},
+{
+"title": "Kate Gordon: Tender Terrain",
+"start": "2026-11-17T09:00",
+"end": "2026-11-17T17:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-17",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "8dc71c57ee"
+},
+{
+"title": "Bird Walk and Survey at Moncus Park",
+"start": "2026-11-17T17:30",
+"end": "2026-11-17T18:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Bird Walk & Survey Join Acadiana Master Naturalists for a guided evening walk through Moncus Park as we observe and survey local bird species in their natural habitat. Birders of all experience levels are welcome, from curious beginners to seasoned enthusiasts, families included. Dates: September 15, October 20, November 17 Time: 5:30–6:30 PM What to Bring: Binoculars and curiosity About: This program is part of Moncus Park's environmental programming, made possible by the MJ Sindler Family Fund for Culture & Media.",
+"url": "https://moncuspark.org/calendar-events/bird-walk-and-survey-at-moncus-park-2/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/07/Bird-Walk-and-Survey-at-Moncus-Park-Fall-2026.jpg",
+"source": "Moncus Park",
+"id": "3689f27dbd"
+},
+{
+"title": "Acadiana Talent Presents Storyteller's Open Mic Night hosted by Jason Harrington",
+"start": "2026-11-17T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🎤 STORYTELLER’S OPEN MIC NIGHT 🎶\n\nJoin us Tuesday, November 17th at Blue Moon Saloon for a night of original songs, great stories, and good vibes!\n\nPresented by Acadiana Talent , hosted by Jason Harrington , featuring special guest Dustin Dale Gaspard! 🔥\n\nWhether you're ready to share your songs with the crowd or just want to kick back and enjoy some live music, there's a place for you here!\n\n🎸 SIGN-UP: 6:00 PM\n🎶 MUSIC STARTS: 6:30 PM\n🍻 BAR OPENS EARLY: 5:00 PM\n🥃 HAPPY HOUR: 5–8 PM\n🎟️ COVER: Just $5!\n\nBring your guitar, bring your friends, share your stories, and come be part of the music. Or grab a drink, find a seat, and vibe with us!",
+"url": "https://events.timely.fun/kw4jncf1/event/78486816/20261117180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/AT%2011-17_yM1N.png",
+"source": "Blue Moon Saloon",
+"id": "668b8b14cc"
+},
+{
+"title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
+"start": "2026-11-18T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "200 Beaullieu Dr Ste 6, Lafayette, LA, United States, Louisiana 70508",
+"address": "200 Beaullieu Dr, Lafayette, LA 70508-7230, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/gather-andamp-glow-an-exclusive-fall-social-eid3a0e8e3uaq",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czgvYmFubmVycy9mZTA0Y2RlODE2MmI4NmM0MGZkOTg5MWY5NDgwMmUwNmFlY2I4MTU0YWY4YWE2YTM2NzAzNmEyNGY5ZDllOWUxLXJpbWctdzExNTItaDQ3NC1kY2Y4ZThkOC1nbWlyP3Y9MTc5MzEzNDk1MA.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "3b541dbc1a"
+},
+{
+"title": "Cajun Jam Hosted by Jean Bertrand",
+"start": "2026-11-18T08:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam Hosted by Jean Bertrand\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437884/20261118080000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20jean%20bertrand%20%2011-18_DgVI.png",
+"source": "Blue Moon Saloon",
+"id": "885f45db41"
+},
+{
+"title": "Mom Walks",
+"start": "2026-11-18T09:30",
+"end": "2026-11-18T10:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Join us for Mom Walks, a weekly gathering that brings moms together to enjoy movement, conversation, and fresh air in the heart of Moncus Park, presented by Lafayette Pediatric Dentistry. This growing community of local moms meets regularly to connect, walk at a comfortable pace, and spend time outdoors together. These walks offer a chance to build relationships, share experiences, and feel supported alongside others in similar seasons of motherhood. Mom Walks are designed to be simple, welcoming, and restorative. Come as you are, walk or linger as you like, and enjoy time in a space that feels calm and grounding. When: Every Wednesday at 9:30 AMWhere: Meet at the Veterans Memorial at Moncus Park Whether you are new to motherhood or have been on this journey for a while, you are invited to join us for connection, community, and time outside in the beautiful setting of Moncus Park. Completely free to attend and all mothers and maternal figures are welcome to join!",
+"url": "https://moncuspark.org/calendar-events/momwalks2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/01/MommyMe-_-Fall-2026-_-Moncus-Park-Fit-For-All-3.jpg",
+"source": "Moncus Park",
+"id": "8ea50eee35"
+},
+{
+"title": "Cross Currents: Improvised Truths — Curtis Patterson and the Jazz of Form",
+"start": "2026-11-18T17:00",
+"end": "2026-11-18T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hilliard Art Museum",
+"address": "710 E St Mary Blvd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"arts",
+"community"
+],
+"desc": "Join us for Improvised Truths: Curtis Patterson and the Jazz of Form , the latest iteration of Cross Currents, a series using visual art as a catalyst for interdisciplinary dialogue, as we explore how Patterson’s bronze and steel sculptures channel the improvisational language of jazz and African diasporic symbolism into visual metaphors of movement, continuity, and cross-cultural memory.\n\n5:00 p.m. Doors Open\n\n5:30 p.m. Panel Discussion\n\n6:30 p.m. Jazz Performance\n\nRSVP HERE\n\nPanelists\n\nDr. Sharlene Sinegal-DeCuir , Professor of History and Chair of African American and African Diaspora Studies, Xavier University of Louisiana\n\nDonald Harrison Jr. , saxophonist, composer, and Big Chief of the Congo Square Nation Afro-New Orleans Cultural Group\n\nDr. Allison Young , Associate Professor of Contemporary Art History, LSU\n\nModerated by Dr. Joel Rhone , Assistant Professor of Literature, University of Louisiana Lafayette\n\nFree for museum members, UL students, faculty and staff. General public entry with museum admission.\n\nPresented by Louisiana Endowment for the Humanities\n\nFunding for the 2026 Rebirth Grant has been provided by the State of Louisiana and administered by the Louisiana Endowment for the Humanities.\n\nThe views, findings, conclusions, or recommendations expressed by this organization do not necessarily represent those of either the Louisiana Endowment for the Humanities or the State of Louisiana.",
+"url": "https://hilliardartmuseum.org/event/cross-currents-improvised-truths-curtis-patterson-and-the-jazz-of-form/",
+"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/UL-Digital-Billboards-16_9-1920-x-1080.webp",
+"source": "Hilliard Art Museum",
+"alsoOn": [
+"Happening Next (Lafayette live music)"
+],
+"id": "a5d8d5958a"
+},
+{
+"title": "Artist Round Up: Collaging, Flyer Making, and the Community Zine",
+"start": "2026-11-18T18:00",
+"end": "2026-11-18T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "AcA's Artist Roundups gather together artists and creatives for a casual night of making connections while also making art. By bringing artists of various backgrounds together, Artist Roundups hope to encourage dialogue and collaboration across artistic disciplines and create a shared sense of community and belonging. This month, join former Artist Alliance member Jesse Poimboeuf for a night of collaging and mixed media artmaking as we put together the 7th issue of the Creative Acadiana Community Art Zine. Inspired by the grassroots flyers handmade by the Artist Alliance in the 90s you'll collage flyers of your own: for real events, fake events, concepts, or anything else you can imagine! Collaging materials will be provided but you're also encouraged to bring your own. Old photos, stickers, interestingly patterned paper. Everything 2 dimensional is fair game. Scissors will be provided but if you may also bring other cutting utensils if you wish. Creatives of all levels welcome!",
+"url": "https://acadianacenterforthearts.org/events/community-zine/?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Round-Up-Zine-Website.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "6fde104d8f"
+},
+{
+"title": "Yoga in the Park",
+"start": "2026-11-18T18:00",
+"end": "2026-11-18T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Location Name",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Join us for Yoga in the Park, part of the \"Fit For All\" series presented by Louisiana Orthopaedic Specialists & Orthopedic Urgent Care. Every Wednesday at 6:00 PM, unroll your mat and unwind with a free community yoga session at Moncus Park. Whether you're a seasoned yogi or trying it for the first time, it's an easy way to reset midweek and move alongside your neighbors. Location: First Horizon Amphitheater, unless otherwise noted What to know: Every Wednesday at 6:00 PM All ages and experience levels welcome Bring your own mat and water Wear comfortable clothing No registration required Completely free Class may be canceled or moved due to rain or excessive heat, check our social media stories each Wednesday for updates and location Instructer Schedule: 9/16- Neil Gresham 9/23 -Zoe Wingate 9/30 -Zoe Wingate 10/7- Jeanne Marie Lousao 10/14- Tammy Marlin *waiting for documents* 10/21- Neil Gresham 10/28- Zoe Wingate 11/4- Jeanne Marie Lousao 11/11- Zoe Wingate 11/18- Kayla Duhon 11/25- Allie Edge See you on the mat!",
+"url": "https://moncuspark.org/calendar-events/yoga2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
+"source": "Moncus Park",
+"id": "7dd96a27ae"
+},
+{
+"title": "Horror Book Club!",
+"start": "2026-11-18T18:15",
+"end": "2026-11-18T19:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "While the lawyer drives back to his office, a storm breaks out, forcing the entire family—Xiomara’s aunts and uncles and cousins—to remain in the house. And the words of Papi’s will hang over their heads even heavier than the rain clouds. Over the course of the night, scandal after scandal is revealed to the public about the family. Suddenly a tense few hours of surviving her family turns into a vicious night of recrimination, violence, accusations…and murder.",
+"url": "https://www.downtownlafayette.org/event/horror-book-club-dbd23",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "c5005913a1"
+},
+{
+"title": "Trivia Night with Jay Steiner",
+"start": "2026-11-18T19:00",
+"end": "2026-11-18T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1610159750942-LGVZ4UC44SZR3RB2VVO8/136058381_2722098468050625_7279102965653302622_o.jpg",
+"source": "Hideaway on Lee",
+"id": "572a10eed8"
+},
+{
+"title": "HODGE PODGE 4",
+"start": "2026-11-19T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Blue Moon Saloon & Guest House",
+"address": "215 E Convent St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/hodge-podge-4-eid27punbbwjhn",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9hNGMyYTgwMC1lMjFmLTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTA4MC1oMTM1MC1kY2M4YzhiOC1nbWlyLnBuZz92PTE3OTQ4NzYwOTY.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a4062f8c92"
+},
+{
+"title": "Southern Screen Festival | 16th Annual",
+"start": "2026-11-19T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day celebration every November is sure to entertain, educate, and inspire. Let Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers! Every year, the Southern Screen Festival is honored to host some of the most interesting and innovative creators from across Louisiana and the globe. Spanning film, television, music, podcasts and emerging media, Southern Screen welcomes professionals who can share knowledge and inspire our Southern Louisiana communities Southern Screen is a multidisciplinary 501(c)(3) nonprofit arts organization dedicated to supporting and celebrating storytellers across film, music, and the broader creative arts. Through year-round events, workshops, and community programming, we provide emerging and established artists opportunities to develop their craft, share their work, and connect with audiences. By expanding access to diverse forms of storytelling, Southern Screen strengthens the creative community and culminates this work each year with theSouthern Screen Festival in November.",
+"url": "https://www.southernscreen.org/attend?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "c5dbffb21f"
+},
+{
+"title": "Women's Basketball: Ragin Cajuns v Tarleton State",
+"start": "2026-11-19T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "CAJUNDOME",
+"address": "Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "Free Admission Clear Bag Policy in Effect",
+"url": "https://www.lafayettetravel.com/event/womens-basketball%3a-ragin-cajuns-v-tarleton-state/45194/",
+"image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/lafayette/ul-womans-basketball-slideshow-8a3e7c9c7f_E3F7380F-EFE8-95F6-8234973DAA13AEC4_e3fc8d2f-e1d9-7182-5481c3555fa78fb0.jpg",
+"source": "Lafayette Travel",
+"id": "f0d44aee98"
+},
+{
+"title": "Artist Tour with Curtis Patterson + Melissa Messina",
+"start": "2026-11-19T12:00",
+"end": "2026-11-19T13:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hilliard Art Museum",
+"address": "710 E St Mary Blvd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Artist Curtis Patterson and Curator of Exhibition Melissa Messina will lead a tour of the exhibition.\n\nExperience Persistent Vision through the perspectives of artist Curtis Patterson and curator Melissa Messina. Together, they’ll guide visitors through the exhibition, offering insights into Patterson’s artistic practice, the ideas and inspirations behind the work, and the stories that connect the pieces. Hear directly from the artist and curator as they explore the exhibition’s themes, creative processes, and the ways art invites us to look back, look forward, and see familiar ideas in new ways.\n\nAn engaging opportunity to experience Persistent Vision through the voices of the people who know it best.\n\nRSVP HERE",
+"url": "https://hilliardartmuseum.org/event/artist-tour-with-curtis-patterson-melissa-messina/",
+"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/Event-Thumbnail-Website.webp",
+"source": "Hilliard Art Museum",
+"id": "8c5f685e58"
+},
+{
+"title": "Southern Screen Festival",
+"start": "2026-11-19T17:00",
+"end": "2026-11-22T22:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day from November 19-22 is sure to entertain, educate, and inspire.",
+"url": "https://www.downtownlafayette.org/event/southern-screen-festival",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "0e0582e6cd"
+},
+{
+"title": "Language Café",
+"start": "2026-11-19T18:00",
+"end": "2026-11-19T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Step into something global right here in Lafayette! Language Café is a dynamic monthly gathering where language, culture, and community come together in an energetic, welcoming atmosphere. Practice conversational phrases, discover new traditions, and connect with neighbors from diverse backgrounds, all in the heart of Moncus Park. Each month highlights a different culture, with international students and local cultural organizations helping host the experience. Expect authentic conversations, cultural insights, and opportunities to learn directly from those who live and share these traditions every day. Location: Treehouse Deck Fall 2026 Dates: September 17 - Hispanic Heritage Month: Spanish language and traditions October 15 - Filipino American Heritage Month: Filipino Fiesta November 19 - Native American Heritage Month: Native languages Whether you are brushing up on a second language, curious about the world, or simply looking to meet new people, Language Café is a relaxed and engaging space to expand your perspective and build meaningful connections. Come learn. Come explore. Come connect. 🌍✨",
+"url": "https://moncuspark.org/calendar-events/language-cafe/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/08/Language-Cafe-at-Moncus-Park-_-Fall-2026.jpg",
+"source": "Moncus Park",
+"id": "65cd960794"
+},
+{
+"title": "HodgePodge 4: featuring Brester Durbin, Mitch Reed, Meredith Guy and Dairy Free",
+"start": "2026-11-19T18:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Hodge Podge is a concert event ran solely by UL Music Business & Recording Arts students. These students spend an entire semester arranging a night of local music talents, food, raffle opportunities, and a fun atmosphere. The Hodge Podge crew gets the oppurtunity to have hands on experience with marketing, sponsorship, merchandising, collaborating with local artists, and more.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485753/20261119183000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/hodgepodge_0YFB.png",
+"source": "Blue Moon Saloon",
+"id": "2bfb713d9d"
+},
+{
+"title": "Gary Newman & His Rhythm Boys",
+"start": "2026-11-19T19:00",
+"end": "2026-11-19T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Live music at The Hideaway Please call or email for reservations (contact@hideawayonlee.com) Please note we can only seat complete parties and...",
+"url": "https://www.hideawayonlee.com/events/gary-newman-his-rhythm-boys",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1792881760146-SI6BDUBCOGLIKESBNULU/843970511_1721768793281659_1783794214476183709_n+%281%29.jpg",
+"source": "Hideaway on Lee",
+"alsoOn": [
+"Lafayette Travel"
+],
+"id": "3bd75956ae"
+},
+{
+"title": "Trivia Night at The Flats",
+"start": "2026-11-19T19:00",
+"end": "2026-11-19T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "The Flats",
+"address": "427 Jefferson St.",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "Join us on the back patio for four rounds of general knowledge trivia. Teams can have 1-6 players. Prizes for teams with the top three scores for the night. Trivia starts at 7pm sharp.",
+"url": "https://www.downtownlafayette.org/event/trivia-night-at-the-flats",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "3ec7fcf8a9"
+},
+{
+"title": "Twenty Years of Valcour Records",
+"start": "2026-11-19T19:30",
+"end": "2026-11-19T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts - James Devin Moncus Theater",
+"address": "101 W. Vermilion Street",
+"price": "$40",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "This show has sold out, but you can still watch the concert online! Join our waitlist to be notified if any seats open up prior to the concert. For two decades, Valcour Records has stood at the heart of Louisiana’s roots renaissance — preserving the traditions of Cajun, Creole, zydeco, and folk while amplifying the voices shaping its future. Founded in Eunice, Louisiana, by partners Joel Savoy and Phillip LaFargue, Valcour has become a touchstone for the state’s cultural identity, producing award-winning albums and nurturing artists whose music carries the sound and soul of Acadiana to audiences around the world. This special Louisiana Crossroads concert brings together the label’s musicians and collaborators for an evening that honors Valcour’s 20-year journey. Through live collaborations and stories, this evening traces the label’s evolution from a group of friends recording in Savoy’s living room, to a nationally respected imprint.   C.J. Chenier T’Monde Pine Leaf Boys The Band Courtbouillon featuring Wayne Toups Caleb Klauder and Reeb Willms Sammy Lind and Nadine Landry Joel Savoy Kyle Huval K. C. Jones Jesse Lege Johnny Nicholas Katie Shore Ann Savoy Jane Vidrine The Mamou Playboys Jourdan Thibodeaux Blake Miller Bonsoir Catin Josh Caffery Roger Kash Sabra Guzman Boma Bango Tif Lamson",
+"url": "https://acadianacenterforthearts.org/events/twenty-years-of-valcour-records/?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2025/12/cover_tabloid_17x11_landscape-1-1-scaled.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "7dffdb5051"
+},
+{
+"title": "Making Spirits Bright",
+"start": "2026-11-20T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "200 Greenleaf Dr , Lafayette, LA, United States, Louisiana 70506",
+"address": "200 Greenleaf Dr, Lafayette, LA 70506-7400, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/making-spirits-bright-eid3a0e4b6fkw",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czkvYmFubmVycy9mNTc2ZmQxOTRlNzE3ZmY5OGQ1Yjg4ZmM5NDQwZmMwNDU5MjRhOTVjN2I1MDZkZWI4MTZiODM0MGM2YTQ4YjAxLXJpbWctdzEyMDAtaDE1NTMtZGNmOGY4ZTgtZ21pcj92PTE3OTA0MzE5MDY.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a5dc515e6b"
+},
+{
+"title": "Southern Screen Festival | 16th Annual",
+"start": "2026-11-20T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day celebration every November is sure to entertain, educate, and inspire. Let Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers! Every year, the Southern Screen Festival is honored to host some of the most interesting and innovative creators from across Louisiana and the globe. Spanning film, television, music, podcasts and emerging media, Southern Screen welcomes professionals who can share knowledge and inspire our Southern Louisiana communities Southern Screen is a multidisciplinary 501(c)(3) nonprofit arts organization dedicated to supporting and celebrating storytellers across film, music, and the broader creative arts. Through year-round events, workshops, and community programming, we provide emerging and established artists opportunities to develop their craft, share their work, and connect with audiences. By expanding access to diverse forms of storytelling, Southern Screen strengthens the creative community and culminates this work each year with theSouthern Screen Festival in November.",
+"url": "https://www.southernscreen.org/attend?occurrence=2026-11-20",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "2b0b9dfdcc"
+},
+{
+"title": "Food Truck Friday : Fall Edition",
+"start": "2026-11-20T11:00",
+"end": "2026-11-20T14:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"food"
+],
+"desc": "Food Truck Friday: Fall Edition Food Truck Friday is back at Moncus Park for a limited run this October and November! Every Friday, grab lunch from your favorite local food trucks, then stay awhile. Settle in under the oaks, enjoy tables inside or out, and make an afternoon of it with shade, fans, yard games, and plenty of room for the kids to play. Trucks are announced each Friday morning on our Facebook page, so keep an eye on our page to see who's cooking that day! When: Friday, October 2 Friday, October 9 Friday, October 16 Friday, October 23 Friday, November 6 Friday, November 13 Friday, November 20 Time: 11am to 2pm Where: Moncus Park, 2913 Johnston St, Lafayette Kick off your Friday the right way. The fall weather's perfect for it, so come on out, enjoy the park, and support some local trucks while you're at it!",
+"url": "https://moncuspark.org/calendar-events/food-truck-friday-fall-edition/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/08/Food-Truck-Friday-Fall-Edition.jpg",
+"source": "Moncus Park",
+"id": "c671c87136"
+},
+{
+"title": "Foghorn String Band",
+"start": "2026-11-20T20:00",
+"end": "2026-11-20T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/foghorn-string-band",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1789927620789-8JET311QZD2DQM1OMYNM/813430956_2115865972343142_6663890111324887400_n.jpg",
+"source": "Hideaway on Lee",
+"id": "fc5ab39db6"
+},
+{
+"title": "Southern Screen Film Festival with live Music by Sabine Mcalla",
+"start": "2026-11-20T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"arts",
+"community"
+],
+"desc": "It’s night two of the Southern Screen Festival, and we’re celebrating with live music by Sabine McCalla ! A New Orleans favorite, McCalla brings soulful songwriting and a vibrant blend of American roots music, from Southern blues and soul to Brazilian samba. Her debut album, Don’t Call Me Baby , captures the sound that has delighted dancers and revelers for years. Join filmmakers, artists, friends, and fellow music lovers for good company and soulful sounds. sabine-mccalla.com\n\n \n\nAbout the Artist\n\nSabine McCalla is a New Orleans singer-songwriter whose music brings together Southern soul, blues, Brazilian samba, and a broad range of roots influences. Her debut full-length album, Don’t Call Me Baby , released in November 2025 and co-produced by Ajaï Combelic and Sam Doores of the Deslondes, has earned more than 1.75 million streams and praise from publications including No Depression, Songlines, and Uncut. She has shared stages with Nick Shoulders, Rainbow Girls, John Craigie, and the Deslondes, and performed at the UK’s End of the Road Festival. Her work also extends to film, with an appearance alongside her sister Leyla McCalla in Ryan Coogler’s Sinners and performance and music contributions to Taylor McFadden’s Lovers . sabine-mccalla.com",
+"url": "https://events.timely.fun/kw4jncf1/event/78509490/20261120200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/sabine%20mcalla%20pic_2p6J.jpg",
+"source": "Blue Moon Saloon",
+"id": "87383d00a9"
+},
+{
+"title": "MainStreet Holiday Shop & Stroll",
+"start": "2026-11-21T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "MainStreet River Ranch",
+"address": "201 Settlers Trace Blvd, Lafayette, LA 70508-6781, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/mainstreet-holiday-shop-andamp-stroll-eid3a0e8epoc8",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9iMDhjZDA2NmJkMTZjZmMyYTgzOGE1ZGZlYWU2NmZkMTA4ZjRmNWRjMzA5Mzc2MGNhYjBmOWU0ZTA3ODFkZGVhLXJpbWctdzEyMDAtaDYyOC1kYzE4MTgxOC1nbWlyP3Y9MTc5MzE0MjY5Mg.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "2e6137fe2d"
+},
+{
+"title": "Southern Screen Festival | 16th Annual",
+"start": "2026-11-21T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day celebration every November is sure to entertain, educate, and inspire. Let Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers! Every year, the Southern Screen Festival is honored to host some of the most interesting and innovative creators from across Louisiana and the globe. Spanning film, television, music, podcasts and emerging media, Southern Screen welcomes professionals who can share knowledge and inspire our Southern Louisiana communities Southern Screen is a multidisciplinary 501(c)(3) nonprofit arts organization dedicated to supporting and celebrating storytellers across film, music, and the broader creative arts. Through year-round events, workshops, and community programming, we provide emerging and established artists opportunities to develop their craft, share their work, and connect with audiences. By expanding access to diverse forms of storytelling, Southern Screen strengthens the creative community and culminates this work each year with theSouthern Screen Festival in November.",
+"url": "https://www.southernscreen.org/attend?occurrence=2026-11-21",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "2f9d6bb701"
+},
+{
+"title": "Valcour Records Presents: Garden Party w/ Boma Bango + Evening Concert at the Sidecar!",
+"start": "2026-11-21T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "The Sidecar",
+"address": "422 Refinery St, Lafayette, LA 70501-8656, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/valcour-records-presents-garden-party-w-boma-bango-evening-concert-at-the-sidecar-eid3a0e7u6huj",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy83NzVlZTAwNzA0MDc1NzgwZTJlOTVhYTVjNjJlYjQ3YWU1Zjk1MTMwZjE5OGUxZDg5YzMwZGUzNjg2MzI5NTMyLXJpbWctdzEyMDAtaDY3NS1kYzk4YzhlOC1nbWlyP3Y9MTc5Mjg0ODYzOQ.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "f02a10f69f"
+},
+{
+"title": "White Boy Wasted : Project X Edition",
+"start": "2026-11-21T00:00",
+"end": "2026-11-22T00:00",
+"allDay": true,
+"ongoing": false,
+"venue": "113 W Grant St",
+"address": "113 West Grant Street, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/white-boy-wasted-project-x-edition-eid1ef0l9brnoxr",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy8zY2ExOTA5NTU2OTVjNzgyZTUzMTJlMTlmZDg5MmJkYTI4Y2RiZDM2ZDAyODBlYTY1ZjgxNzYyZGNiMDY1ZDMxLXJpbWctdzExMzQtaDEzODctZGMwODA4MDgtZ21pci5qcGc_dj0xNzk0MDk3ODY0.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "feb721947e"
+},
+{
+"title": "Lafayette Farmers & Artisans Market",
+"start": "2026-11-21T08:00",
+"end": "2026-11-21T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Lafayette Farmers & Artisans Market Every Saturday | 8:00 AM to 12:00 PM | Moncus Park | Rain or Shine There is no better way to start a Saturday in Acadiana. Every week, the Lafayette Farmers and Artisans Market transforms the heart of Moncus Park into a lively gathering place, where local farmers, artisans, and craftspeople come together to share the best of our region. Wander the rows and you will find tables overflowing with just-picked produce, local honey, fresh flowers, baked goods, handmade crafts, and one-of-a-kind finds from the makers who pour their hearts into them. Whether you come for the produce, the people, or simply the joy of a morning outdoors, the market is where Lafayette starts its weekend. Come hungry, shop local, and make a morning of it! Parking & Getting There We guide thousands of visitors in and out every Saturday morning, so parking may take a few extra minutes during peak times, but our team keeps things moving all morning! Our parking lot is $2 per hour, or free for Moncus Park members. All proceeds support Moncus Park, a nonprofit park conservancy. Please only park at Moncus Park, towing is strictly enforced by a third party in neighboring lots. Prefer to skip the parking altogether? Walking or biking in is always a breeze! Weekly Vendor Lineup Curious who's setting up shop this Saturday? Check the Lafayette Farmers & Artisans Market Facebook page the Friday before market day for the full vendor list. Become a Vendor Interested in joining us…",
+"url": "https://moncuspark.org/calendar-events/farmersmarket/",
+"image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
+"source": "Moncus Park",
+"id": "fb9b35e82f"
+},
+{
+"title": "An Afternoon with Carrie Simon!",
+"start": "2026-11-21T15:00",
+"end": "2026-11-21T17:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Carrie will discuss her latest book, The Girl Who Ate Flowers, in a moderated Q&A led by Rachel Comeaux Lanclos. The Girl Who Ate Flowers is a story of the quiet town of Harvey, Louisiana, when it was shattered by the disappearance and murder of twelve-year-old Susanne Lee. Years later, the case remains unsolved when an unrelenting investigative journalist from The Manhattan Times, arrives determined to uncover the truth. But in Harvey, asking questions can be dangerous-and those who dig too deep don't always make it out. Haunting, atmospheric, and impossible to put down, *The Girl Who Ate Flowers* is a psychological thriller that grips readers to the final page-and just as the truth begins to surface, a shocking revelation suggests that Susanne's death is only the beginning.",
+"url": "https://www.downtownlafayette.org/event/an-afternoon-with-carrie-simon",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "dc7ca8aa8d"
+},
+{
+"title": "Miracle on Jefferson St",
+"start": "2026-11-21T16:30",
+"end": "2026-12-31T23:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Pamplona Tapas Bar & Restaurant",
+"address": "631 Jefferson Street, Lafayette, LA 7050",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food"
+],
+"desc": "The Pamplona you know and love, jazzed up for the holidays with a Christmas-themed pop-up featuring kitschy, glowing holiday decorations, specialty glassware, and seasonal drinks.",
+"url": "https://www.downtownlafayette.org/event/miracle-on-jefferson-st",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "3a997fceb4"
+},
+{
+"title": "Ragin' Fighting Championship 7",
+"start": "2026-11-21T17:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"community"
+],
+"desc": "ALL AGES NEED A TICKET\nExperience an action-packed night of live combat sports featuring youth MMA, rising amateur talent and professional fighters from across Louisiana and beyond.",
+"url": "https://www.heymanncenter.com/events/2026/ragin-fighting-championship-7",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=MMA7_250x250.png&cb=47c2523a",
+"source": "Heymann Performing Arts Center",
+"id": "6e4ba555de"
+},
+{
+"title": "Horace Trahan",
+"start": "2026-11-21T20:00",
+"end": "2026-11-21T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Horace Trahan, the maker of the hit single, “That Butt Thing,” in 1999, is a world renowned Cajun and Zydeco artist, respected for his ability to pull the hell out of an accordion and belt out vocals that will give you chills. Having over-stepped boundaries and bypassed the stereotypes of naysayers, this native of Ossun, Louisiana, has made a huge and highly anticipated comeback on the music scene!\nAt the age of fifteen, Horace wanted to learn to play the accordion. His father brought him to Felix Richard, a strong accordionist and first cousin who lived in Cankton, LA. Horace was a natural and booked his first gig within six months of learning to play.\nHorace was very comfortable in a musical setting, as he had purchased his first guitar at the age of twelve and had also begun playing the saxophone in the fifth grade. It was when he combined his angelic-pitched voice with the skills he honed on a Crown single row accordion, which the musical magic began. Horace was sixteen years old when he began singing Cajun music in French and in English. Not long after making his mark on bass drum in the marching band at Carencro High School and graduating, Horace hit the road and began touring with D.L. Menard. The road schedules would take the talented eighteen year-old musician to New York, Boston, Chicago, Canada, France, California, and the summer Olympics in Atlanta.\nTwo years later, in 1996, Horace and D.L. Menard recorded a CD on Swallow Records. During this time, at the age of…",
+"url": "https://www.hideawayonlee.com/events/horace-trahan-4-xg3ds-y2xrl-n5scz-lh2r7-b9gp8-dkdxz-wm2kd-m373j-89ffj-8h3j4-bplxx-hfl6e-8k8gf-8klhw-gd9l5-5bhcx-be7l2-f626d",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1661657988610-7W0WMG5PVUGO9JN5FIJ7/299559843_3130398437220624_1203581314919374758_n.jpg",
+"source": "Hideaway on Lee",
+"id": "7f9f732cc2"
+},
+{
+"title": "Michael Juan Nunez and the Blue Orchestra",
+"start": "2026-11-21T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Michael Juan Nunez is a Louisiana-born blues guitarist and vocalist whose music is deeply rooted in the rich musical traditions of his home state. Growing up in Lafayette, Nunez was surrounded by the sounds of Cajun, Zydeco, rock, and country music, which he absorbed from his parents and the vibrant local scene. As a child, he spent countless nights listening to the rhythmic pulse of Cajun and Creole music, experiences that would later shape his distinctive style.\n\nNunez’s career developed as he immersed himself in the blues, blending southern rock and roots influences with the soulful storytelling characteristic of Louisiana music. His performances are marked by heartfelt vocals and powerful guitar work, resonating with audiences through a fusion of deep southern blues, rock, and roots music. Over the years, he has become known for his energetic live shows and his ability to weave together traditional and contemporary sounds, earning recognition as a powerhouse in the Louisiana blues scene.\n\nNunez’s legacy lies in his commitment to preserving and evolving the musical heritage of Louisiana. By drawing from the region’s diverse genres and infusing his own creative spirit, he has contributed to the ongoing evolution of blues and southern rock, inspiring both audiences and fellow musicians with his authentic approach and passionate performances.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485754/20261121200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/mjn%20blue%20pic_ERwq.jpg",
+"source": "Blue Moon Saloon",
+"id": "bec4d0f2df"
+},
+{
+"title": "Bal du Dimanche -- Balfa Toujours",
+"start": "2026-11-22T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/bal-du-dimanche-balfa-toujours-eid3a0e5hk2s4",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81OTIwMWM1N2MyZDBlMmRmYzE1YTQ5M2M5MGUwMDBkZDAxNzFiMjEzYTkyMTBmZTg3NWU5MDQxMzBiYzU0MDAwLXJpbWctdzgwMC1oNTM4LWRjNzg1ODU4LWdtaXI_dj0xNzkxMzUzMTU2.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "ae8e268805"
+},
+{
+"title": "Southern Screen Festival | 16th Annual",
+"start": "2026-11-22T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day celebration every November is sure to entertain, educate, and inspire. Let Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers! Every year, the Southern Screen Festival is honored to host some of the most interesting and innovative creators from across Louisiana and the globe. Spanning film, television, music, podcasts and emerging media, Southern Screen welcomes professionals who can share knowledge and inspire our Southern Louisiana communities Southern Screen is a multidisciplinary 501(c)(3) nonprofit arts organization dedicated to supporting and celebrating storytellers across film, music, and the broader creative arts. Through year-round events, workshops, and community programming, we provide emerging and established artists opportunities to develop their craft, share their work, and connect with audiences. By expanding access to diverse forms of storytelling, Southern Screen strengthens the creative community and culminates this work each year with theSouthern Screen Festival in November.",
+"url": "https://www.southernscreen.org/attend?occurrence=2026-11-22",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "fccd3113d1"
+},
+{
+"title": "UL Symphony Presents Prokofiev’s Peter and the Wolf",
+"start": "2026-11-22T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "601 E St. Mary Blvd , Lafayette, La 70504, Lafayette, LA, United States, Louisiana 70504",
+"address": "601 E St Mary Blvd, Lafayette, LA 70503-2329, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/ul-symphony-presents-prokofiev’s-peter-and-the-wolf-eid3a0ea1rc5x",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9kMDIxZGRjYWE1Yzk1YTc1MWQ0MjJiN2I5M2Y1OTA3NDNjMjZkNGZiZDIwMDZmNTcyMzJjNzMyNzYwM2ZmZmE3LXJpbWctdzEyMDAtaDkwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDE0OTA3NA.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "68187dac38"
+},
+{
+"title": "Valcour Presents: Joel Savoy’s Honky Tonk Merry Go Round Brunch",
+"start": "2026-11-22T11:00",
+"end": "2026-11-22T14:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/valcour-presents-joel-savoys-honky-tonk-merry-go-round-brunch",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1794765431868-HZ14R09M0A1GMCCV0ZFV/image0.jpeg",
+"source": "Hideaway on Lee",
+"id": "4496f58a5a"
+},
+{
+"title": "The Revelers",
+"start": "2026-11-22T19:00",
+"end": "2026-11-22T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/the-revelers-1-bmggc-ffdxe-rp9sn-h7735-37b7r-jycg6",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1776019116543-07AH8KCU0XE59ERA7XQ9/657525260_1537516115040262_9125378360694364511_n.jpg",
+"source": "Hideaway on Lee",
+"id": "bec59a1da9"
+},
+{
+"title": "Southern Screen Film Festival with Live Music by Diamond J and the Ruby Red Raindrops",
+"start": "2026-11-22T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"arts",
+"community"
+],
+"desc": "We're going back to the Moon for Southern Screen's official Wrap Party! Close out the festival in true Southern Screen style and join filmmakers, musicians, and festival guests for a night celebrating the stories shared, the connections made, and the creativity that brought us together. Diamond J and the Ruby Red Raindrops bring their soulful R&B sound and slow boogie grooves for one last dance with the incredible community that makes Southern Screen shine.\n\n \n\nDiamond J & The Ruby Red Raindrops is a regional music group from the Acadiana / Lafayette area in Louisiana known for a swamp-pop, slow-boogie, and swamp-and-roll style.",
+"url": "https://events.timely.fun/kw4jncf1/event/78509494/20261122210000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/diamond%20j%20profile_8Llb.jpg",
+"source": "Blue Moon Saloon",
+"id": "b193240001"
+},
+{
+"title": "\"This Place\" UL Lafayette Choirs Fall Concert",
+"start": "2026-11-23T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Ducrest/Gilfry Auditorium at Angelle Hall",
+"address": "Lafayette, LA, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/andquotthis-placeandquot-ul-lafayette-choirs-fall-concert-eid3a0e0kld99",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy85NGZkMTk3YmY1MzAwYTczZDhhM2YyODdmYThkOTdmOGZlNGU5ZDk4YjAwODc5NTlmZDkxMGQ0YjgxOTAxZDQzLXJpbWctdzExMzgtaDExMDYtZGMxODE4MDgtZ21pcj92PTE3ODg3MTY0MzY.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a4cefae2c0"
+},
+{
+"title": "Moncus Mondays-Free Parking",
+"start": "2026-11-23T05:00",
+"end": "2026-11-23T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness",
+"family"
+],
+"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
+"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
+"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
+"source": "Moncus Park",
+"id": "7f60657974"
+},
+{
+"title": "Night Hike",
+"start": "2026-11-24T17:30",
+"end": "2026-11-24T18:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Night Hike is a guided evening walk through Moncus Park after dark, led by our Conservation Team. As the Park transforms after sunset, guides point out the nocturnal wildlife and sounds that come alive once the sun goes down. Grab a flashlight and get ready to see (and hear!) the Park in a whole new light. Date: November 24th Time: 5:30–6:30 PM Location: Meet at the Veterans Memorial, Moncus Park Led by: Chris Adams, Moncus Park Conservation Team Sponsored by: MJ Sindler Family Fund for Culture & Media",
+"url": "https://moncuspark.org/calendar-events/night-hike-fall-2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/08/Night-Hike-at-Moncus-Park-_-Fall-2026.png",
+"source": "Moncus Park",
+"id": "a039b51573"
+},
+{
+"title": "November Book du Mois!",
+"start": "2026-11-24T18:15",
+"end": "2026-11-24T19:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Louise Erdrich's latest novel, The Sentence, asks what we owe to the living, the dead, to the reader and to the book. A small independent bookstore in Minneapolis is haunted from November 2019 to November 2020 by the store's most annoying customer. Flora dies on All Souls' Day, but she simply won't leave the store. Tookie, who has landed a job selling books after years of incarceration that she survived by reading \"with murderous attention,\" must solve the mystery of this haunting while at the same time trying to understand all that occurs in Minneapolis during a year of grief, astonishment, isolation, and furious reckoning.",
+"url": "https://www.downtownlafayette.org/event/november-book-du-mois",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "5116154913"
+},
+{
+"title": "Yoga in the Park",
+"start": "2026-11-25T18:00",
+"end": "2026-11-25T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Location Name",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness"
+],
+"desc": "Join us for Yoga in the Park, part of the \"Fit For All\" series presented by Louisiana Orthopaedic Specialists & Orthopedic Urgent Care. Every Wednesday at 6:00 PM, unroll your mat and unwind with a free community yoga session at Moncus Park. Whether you're a seasoned yogi or trying it for the first time, it's an easy way to reset midweek and move alongside your neighbors. Location: First Horizon Amphitheater, unless otherwise noted What to know: Every Wednesday at 6:00 PM All ages and experience levels welcome Bring your own mat and water Wear comfortable clothing No registration required Completely free Class may be canceled or moved due to rain or excessive heat, check our social media stories each Wednesday for updates and location Instructer Schedule: 9/16- Neil Gresham 9/23 -Zoe Wingate 9/30 -Zoe Wingate 10/7- Jeanne Marie Lousao 10/14- Tammy Marlin *waiting for documents* 10/21- Neil Gresham 10/28- Zoe Wingate 11/4- Jeanne Marie Lousao 11/11- Zoe Wingate 11/18- Kayla Duhon 11/25- Allie Edge See you on the mat!",
+"url": "https://moncuspark.org/calendar-events/yoga2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
+"source": "Moncus Park",
+"id": "6dfc61dd24"
+},
+{
+"title": "Overstuffed Trivia Night at Legends Annex",
+"start": "2026-11-25T19:00",
+"end": "2026-11-25T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Legends Annex",
+"address": "110 Polk St.",
+"price": "",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "Join us at the Legends Annex patio (or indoors if the weather is not agreeable) for FIVE rounds of general knowledge trivia. Great way to spend the evening with visiting family or friends. Teams can have up to 8 players. Trivia starts at 7pm sharp.",
+"url": "https://www.downtownlafayette.org/event/overstuffed-trivia-night-at-legends-annex",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "ac0372ad1a"
+},
+{
+"title": "Cajun Jam Hosted by Blake Miller",
+"start": "2026-11-25T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam Hosted by Blake Miller\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437885/20261125200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20blake%20Miller%20%2011-25_bBrR.png",
+"source": "Blue Moon Saloon",
+"id": "d8ea2e0cf8"
+},
+{
+"title": "JPJ Memorial Turkey Trot",
+"start": "2026-11-26T09:00",
+"end": "2026-11-26T11:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"food",
+"family"
+],
+"desc": "*This is an externally hosted event produced by JPJ Memorial.* Join us for the 5th Annual JPJ Memorial 1-mile Turkey Trot! The event will be held at 9am on Thanksgiving morning at Moncus Park in memory of Jean Paul Judice. Jean Paul believed that his message of loving our world began with family and friends; but, he hoped that by spreading a message of unconditional love among his closest relationships, change would be rippled across the universe. He knew that every person mattered and he loved them unconditionally. This year we are raising funds for St. Joseph Diner. The diner has served meals to those experiencing hunger and food insecurity since 1983. This race is the perfect setting to come together to show gratitude with your community. Learn more and register here: JPJ MEMORIAL TURKEY TROT",
+"url": "https://moncuspark.org/calendar-events/jpj-memorial-turkey-trot-2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2023/09/JPJMemorialTrot.jpg",
+"source": "Moncus Park",
+"id": "77fea69738"
+},
+{
+"title": "Troy Richard",
+"start": "2026-11-27T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Hailing from Lafayette, Louisiana, and rooted deep in Cajun culture, Troy Richard serves up his own unique blend of musical gumbo. Bringing together a rich mix of sounds, influences, and Louisiana flavor, Troy delivers a solo performance that is as authentic and soulful as the roots he comes from.\n\nBest known as a member of The Richard Revue, Troy steps out on his own to showcase his musical versatility and personality in a more intimate setting. With a sound steeped in South Louisiana tradition and a style all his own, he brings a little something for everyone.\n\nFrom the heart of Acadiana to the stage, Troy Richard brings the flavor, the soul, and the spirit of Louisiana to every performance. Come hungry for some good music and get ready for a musical gumbo like no other!",
+"url": "https://events.timely.fun/kw4jncf1/event/78504055/20261127190000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/troy%20richard%20%20timely_xx4k.png",
+"source": "Blue Moon Saloon",
+"id": "a9b08f46d4"
+},
+{
+"title": "Roddie Romero and The Hub City Allstars",
+"start": "2026-11-27T20:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Straight out of the heart of Acadiana, Roddie Romero & The Hub City Allstars bring the unmistakable sound and spirit of South Louisiana to the stage. Blending traditional Cajun and Creole music with zydeco, swamp pop, blues, funk, soul, and rock 'n' roll, this powerhouse Louisiana band delivers a sound that is as deeply rooted as it is refreshingly original.\n\nLed by singer, songwriter, accordionist, and slide guitarist Roddie Romero, the band celebrates the rich musical heritage of Louisiana while pushing its boundaries into exciting new territory. With soulful vocals, fiery accordion, masterful guitar work, and infectious rhythms, their music captures everything that makes South Louisiana special.\n\nA three-time Grammy-nominated group, the Hub City Allstars have spent more than two decades performing at prestigious festivals and venues, earning recognition for their musicianship, original songwriting, and electrifying live performances. Their critically acclaimed albums, including The La Louisianne Sessions and Gulfstream , showcase a band equally comfortable honoring Louisiana's musical traditions and creating something entirely their own.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485755/20261127203000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/roddie%20timely_Lapl.png",
+"source": "Blue Moon Saloon",
+"id": "a8d9afd9d6"
+},
+{
+"title": "$ideQue$t",
+"start": "2026-11-27T23:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "SideQuest LA\n\nTwo powerhouse Louisiana musicians, one shared love of great music. SideQuest LA brings together vocalist, songwriter, and drummer Gino V. and guitarist, vocalist, and songwriter Zach Edwards for a musical collaboration that refuses to stay in one lane.\n\nRooted in the sounds of South Louisiana but reaching well beyond its musical borders, SideQuest blends soul, blues, R&B, funk, hip-hop, and good old-fashioned rock and roll. The duo combines original songwriting with unexpected takes on some of their favorite songs, creating a show that is as versatile as it is entertaining.\n\nGino V., born and raised in Delcambre, Louisiana, is a seasoned musician known for his commanding vocals, deep grooves, and dynamic musicianship. He has performed with some of Acadiana's respected artists and notably played drums for Louisiana music legend Wayne Toups.\n\nZach Edwards adds his own distinctive guitar work, vocals, and songwriting to the mix, bringing together the blues, rock, and roots influences that make the SideQuest sound uniquely their own.\n\nWhether delivering soulful originals, stretching out on a blues-rock groove, or putting their own spin on familiar favorites, SideQuest LA brings plenty of musical firepower and personality to the stage.\n\nExpect big grooves, soulful vocals, killer guitar work, and a little bit of everything. SideQuest is anything but an ordinary night of live music.",
+"url": "https://events.timely.fun/kw4jncf1/event/78504058/20261127230000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/sidequest%20timely_4p95.png",
+"source": "Blue Moon Saloon",
+"id": "eb1d0866c4"
+},
+{
+"title": "CRANIAL SLEDGE, MISLED, TRAINWRECK METHOD",
+"start": "2026-11-28T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 McKinley Street, Lafayette, LA",
+"address": "300 McKinley St, Lafayette, LA 70501-8426, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/cranial-sledge-misled-trainwreck-method-eid3a0eae2jtx",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy85Y2U4NjUyNDhkN2U0NDA1YWM1MzcwZDM4MjUwMjU3ZDM3MjFmOTRkZWQwNzgyY2ZjMjFhZmRlMGMyOWVhNjAyLXJpbWctdzg5Ni1oMTE5NS1kYzA4MDgwOC1nbWlyP3Y9MTc5NDMwOTYxMQ.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "b19ac60904"
+},
+{
+"title": "Christmas at Couret Holiday Market",
+"start": "2026-11-28T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 Flores Ct, Lafayette, LA 70507-5338, United States",
+"address": "300 Flores Ct, Lafayette, LA 70507-5338, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"community"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/christmas-at-couret-holiday-market-eid3a0e4b6fnv",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy83M2ZmNjFlZTE5NDM2NTA0YzViZDA0YmVjNmE4YWRhMGJlMGFlZDRhZTBkYTNhODY4ODI1YjYwNTlhN2ExYTA2LXJpbWctdzk2MC1oNzIwLWRjMDgwODA4LWdtaXI_dj0xNzkwNDMxOTA4.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "1e4ed9a36e"
+},
+{
+"title": "Rock n Bowl de Lafayette - Lafayette, LA.",
+"start": "2026-11-28T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Rock 'n' Bowl de Lafayette",
+"address": "905 Jefferson St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/rock-n-bowl-de-lafayette-lafayette-la-eid3a0eb4shmi",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8yMWIyMGQ5YmIyNWZiZjhjZGFiMGRhYTE3YmQxMDAwNmExOTAzNmExM2U4ZmE1ZjI5ZmVjYmZhMDgxOGJlMGE0LXJpbWctdzEyMDAtaDQ0NC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDcyMTA5NA.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "b053613b38"
+},
+{
+"title": "🔥 LEIF MECHE LIVE AT LA ESPUELA! 🔥",
+"start": "2026-11-28T00:00",
+"end": "2026-12-18T00:00",
+"allDay": true,
+"ongoing": true,
+"venue": "La Espuela Cantina & Grill Carencro, La",
+"address": "3235 NW Evangeline Thwy, Lafayette, LA 70507-3537, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/leif-meche-live-at-la-espuela-eid3a0e7884go",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8zNTkzOWExMmE3MTA3Y2E1MjY5ZTA4MDQyMGQwMmExMjc1MTFhMDc1MTRiNmMzZTc2OWE5N2QxYTk2MmQ5Mzg0LXJpbWctdzEyMDAtaDQ0NC1kYzI4MjgyOC1nbWlyP3Y9MTc5MjYyMjY5Ng.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "af0000424b"
+},
+{
+"title": "Lafayette Farmers & Artisans Market",
+"start": "2026-11-28T08:00",
+"end": "2026-11-28T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Lafayette Farmers & Artisans Market Every Saturday | 8:00 AM to 12:00 PM | Moncus Park | Rain or Shine There is no better way to start a Saturday in Acadiana. Every week, the Lafayette Farmers and Artisans Market transforms the heart of Moncus Park into a lively gathering place, where local farmers, artisans, and craftspeople come together to share the best of our region. Wander the rows and you will find tables overflowing with just-picked produce, local honey, fresh flowers, baked goods, handmade crafts, and one-of-a-kind finds from the makers who pour their hearts into them. Whether you come for the produce, the people, or simply the joy of a morning outdoors, the market is where Lafayette starts its weekend. Come hungry, shop local, and make a morning of it! Parking & Getting There We guide thousands of visitors in and out every Saturday morning, so parking may take a few extra minutes during peak times, but our team keeps things moving all morning! Our parking lot is $2 per hour, or free for Moncus Park members. All proceeds support Moncus Park, a nonprofit park conservancy. Please only park at Moncus Park, towing is strictly enforced by a third party in neighboring lots. Prefer to skip the parking altogether? Walking or biking in is always a breeze! Weekly Vendor Lineup Curious who's setting up shop this Saturday? Check the Lafayette Farmers & Artisans Market Facebook page the Friday before market day for the full vendor list. Become a Vendor Interested in joining us…",
+"url": "https://moncuspark.org/calendar-events/farmersmarket/",
+"image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
+"source": "Moncus Park",
+"id": "ab18e77306"
+},
+{
+"title": "Elise Riley Band",
+"start": "2026-11-28T15:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Elise Riley\n\nCarrying on a proud Louisiana musical legacy while bringing her own energy and personality to the stage, Elise Riley is part of a new generation keeping Cajun music alive and moving forward.\n\nBorn and raised in Lafayette, Louisiana, Elise grew up surrounded by the sounds and traditions of Cajun music. With legendary Louisiana musician Steve Riley as her father and musician Chris Stafford as her brother, music has always been a central part of her life.\n\nA talented drummer, vocalist, and multi-instrumentalist, Elise has developed her own voice in the South Louisiana music scene. She co-leads Chère Élise, a Lafayette-based Cajun band that brings together traditional Cajun sounds and fresh musical influences. She also performs with Prends Courage, continuing to explore and celebrate the region's rich musical heritage.\n\nWhether behind the drums or stepping forward as a vocalist, Elise brings infectious energy, musicianship, and a genuine appreciation for the music that shaped her.\n\nRooted in tradition but never afraid to make it her own, Elise Riley represents the next generation of Louisiana musicians carrying Cajun music into the future.",
+"url": "https://events.timely.fun/kw4jncf1/event/78504582/20261128150000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/elise%20timely_SuNq.png",
+"source": "Blue Moon Saloon",
+"id": "1ea0ddf1ff"
+},
+{
+"title": "The Slackers",
+"start": "2026-11-28T17:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "THE SLACKERS \n\nA laid-back band known for playing your favorite covers from Cajun classics to Alt Rock Hits! Watch these young musicians bring the heat!",
+"url": "https://events.timely.fun/kw4jncf1/event/78485756/20261128170000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/slackers%20timely_sAQn.png",
+"source": "Blue Moon Saloon",
+"id": "b6d8e0a5b9"
+},
+{
+"title": "Grand Nathainiel",
+"start": "2026-11-28T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Grand Nathaniel\n\nHailing from Lafayette, Louisiana, Grand Nathaniel is the musical project of longtime Acadiana musician J. Burton, a fixture in the local music scene for more than three decades.\n\nBlending dreamy lo-fi pop, synth-driven melodies, alternative rock, and nostalgic electronic textures, Grand Nathaniel creates music that feels both familiar and otherworldly. Drawing inspiration from decades of pop, rock, and experimental music, Burton crafts richly layered songs filled with atmosphere, imagination, and a little mystery.\n\nA veteran of the Lafayette music scene, Burton has explored a wide range of sounds through projects including Dire Wood, FIGHTs, Talker, and Grand Nathaniel & the Ghosts. His solo work brings those musical experiences together in a distinctive style he describes as fantasy-pop.\n\nWith releases including At the Lagoon and Lonely Wanderer , Grand Nathaniel continues to build an imaginative musical world where nostalgic sounds meet fresh perspectives.\n\nFor fans of thoughtful songwriting, atmospheric pop, and adventurous indie music, Grand Nathaniel offers something a little different from the ordinary.\n\nCome experience the sound and imagination of one of Lafayette's longtime independent musical voices.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485757/20261128190000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/grand%20nathaniel%20timely_7UC0.png",
+"source": "Blue Moon Saloon",
+"id": "fac73220ab"
+},
+{
+"title": "Marley's Ghost",
+"start": "2026-11-28T20:00",
+"end": "2026-11-28T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/marleys-ghost",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1792881240518-IT3F63OV4AKMGSX3MDZ6/843410879_1723264873132051_7613911637078162322_n.jpg",
+"source": "Hideaway on Lee",
+"id": "ae5f339b49"
+},
+{
+"title": "Brass Bed",
+"start": "2026-11-28T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Brass Bed\n\nEmerging from Lafayette, Louisiana, Brass Bed has spent years carving out a distinctive place in the independent music scene with a sound that blends psychedelic rock, power pop, indie rock, and adventurous songwriting.\n\nFormed in 2004, the band built a reputation for crafting catchy melodies wrapped in swirling guitars, analog synthesizers, fuzz, and expansive psychedelic textures. Drawing inspiration from artists like The Beatles, The Beach Boys, Big Star, and classic alternative rock, Brass Bed balances infectious pop sensibilities with an unpredictable, experimental edge.\n\nThe band earned critical acclaim with albums including Melt White (2010), The Secret Will Keep You (2013), and In the Yellow Leaf (2016). Their music has taken them beyond Louisiana, including a memorable appearance on NPR's Tiny Desk Concert series.\n\nFeaturing longtime members Jonny Campos, Peter DeHart, and Christiaan Mader, Brass Bed returned with new music in 2025, bringing fresh energy and sharper songwriting to their signature sound.\n\nWith deep roots in Acadiana and a sound that reaches far beyond regional boundaries, Brass Bed delivers a live experience full of shimmering melodies, gritty guitars, psychedelic exploration, and good old-fashioned rock and roll.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485759/20261128210000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/brass%20bed%20timely_UFcQ.png",
+"source": "Blue Moon Saloon",
+"id": "60c4ca7711"
+},
+{
+"title": "Knives in the Champion",
+"start": "2026-11-28T23:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "South Louisiana marsh-psych misfits, Knives in the Champion formed in 2024 to melt their collectively favored genres into one roux. After 2 years of honing their creative efforts in the shadows, the 4-piece introduced themselves with the release of their debut, self-titled album (KITC) in August of 2026.  KITC’s sound reflects their inspiration from heavy-psych, desert rock and math rock, as well as traditional rock n’ roll from earlier decades.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485760/20261128230000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/KITC%20timely_30hy.png",
+"source": "Blue Moon Saloon",
+"id": "ce270e28d8"
+},
+{
+"title": "Bal du Dimanche -- Kristi Guillory & Friends",
+"start": "2026-11-29T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/bal-du-dimanche-kristi-guillory-andamp-friends-eid3a0e4bhnt1",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy80OWZjNWFjNjU5NDEyMTM2MzQ0OWRjNGVjMDc0Y2ZhOWFlZmJmNTgyNzZiNmI5MzU2ZmQzMDI2MTk1MGEzOTIxLXJpbWctdzEyMDAtaDExODgtZGNiOGI4NjgtZ21pcj92PTE3OTA0MzU3MTI.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a5093addd8"
+},
+{
+"title": "Louisiana Christmas Day",
+"start": "2026-11-29T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "ALL AGES NEED A TICKET\n\nBayou Teche Music Productions presents LOUISIANA CHRISTMAS DAY: 5th Anniversary Gala",
+"url": "https://www.heymanncenter.com/events/2026/louisiana-christmas-day2",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LCD_2026_Website_Thumbnail.jpg&cb=a7726d21",
+"source": "Heymann Performing Arts Center",
+"id": "29279b3f22"
+},
+{
+"title": "Moncus Mondays-Free Parking",
+"start": "2026-11-30T05:00",
+"end": "2026-11-30T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"wellness",
+"family"
+],
+"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
+"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
+"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
+"source": "Moncus Park",
+"id": "e78789a8a5"
+},
+{
+"title": "Ragin' Roots Traditional Music Ensemble Showcase",
+"start": "2026-12-01T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Warehouse 535",
+"address": "535 Garfield St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"community"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/ragin-roots-traditional-music-ensemble-showcase-eid3a0eae2i3l",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9kOGYzYTRlODQ3MDE1ZDY1MzQzN2Y5NWQ5OGI3Zjg2YzNiMzI5ZDJjMzhiMjFlMWFmOWQyOTIwMTYwOWNkMmY0LXJpbWctdzEyMDAtaDE1MDAtZGNmOGY4ZjgtZ21pcj92PTE3OTQzMDk1OTk.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "5200ed3a37"
+},
+{
+"title": "Acadiana Talent presnts Storytellers Open Mic Night hosted by Jason Harrington",
+"start": "2026-12-01T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🎤 STORYTELLER’S OPEN MIC NIGHT 🎶\n\nJoin us Tuesday, December 1st at Blue Moon Saloon for a night of original songs, great stories, and good vibes!\n\nPresented by Acadiana Talent , hosted by Jason Harrington , featuring special guest Heather Re! 🔥\n\nWhether you're ready to share your songs with the crowd or just want to kick back and enjoy some live music, there's a place for you here!\n\n🎸 SIGN-UP: 6:00 PM\n🎶 MUSIC STARTS: 6:30 PM\n🍻 BAR OPENS EARLY: 5:00 PM\n🥃 HAPPY HOUR: 5–8 PM\n🎟️ COVER: Just $5!\n\nBring your guitar, bring your friends, share your stories, and come be part of the music. Or grab a drink, find a seat, and vibe with us!",
+"url": "https://events.timely.fun/kw4jncf1/event/78486934/20261201180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/AT%2012-1%20Instagram%20Post%2045_xzut.png",
+"source": "Blue Moon Saloon",
+"id": "1139f5bade"
+},
+{
+"title": "Candle Night Holiday Concert",
+"start": "2026-12-02T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "University of Louisiana at Lafayette; School of Music; 601 East St Mary, Lafayette, LA, United States, Louisiana 70501",
+"address": "601 E St Mary Blvd, Lafayette, LA 70503-2329, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candle-night-holiday-concert-eid3a0eae2jwv",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81OTkzYmM2MjE0M2NhM2ZhNDI4OWU4YzY1MmFjMzkwZTNkZWYzMjZjNWFkNjg3NjNiNzhiY2RlMGJlNGUzZTcyLXJpbWctdzEyMDAtaDE2NzktZGNjODE4MTgtZ21pcj92PTE3OTQzMDk2MTE.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "1e8a1ca490"
+},
+{
+"title": "Trivia Night with Jay Steiner",
+"start": "2026-12-02T19:00",
+"end": "2026-12-02T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4-y83kt",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1610159750942-LGVZ4UC44SZR3RB2VVO8/136058381_2722098468050625_7279102965653302622_o.jpg",
+"source": "Hideaway on Lee",
+"id": "d5460cede3"
+},
+{
+"title": "Cajun Jam Hosted by Drew Simon",
+"start": "2026-12-02T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam Hosted by Drew Simon\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437888/20261202200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20drew%20simon%20%2012-2_Tqey.png",
+"source": "Blue Moon Saloon",
+"id": "bc3ee80ca6"
+},
+{
+"title": "Christmas Market",
+"start": "2026-12-03T16:00",
+"end": "2026-12-03T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"music",
+"community"
+],
+"desc": "Christmas Market 🎄 Thursday, Dec. 3 | 4 to 8 PM | Moncus Park Deck the halls (and your shopping bags)! The Lafayette Farmers & Artisans Market’s annual Christmas Market is back, and it’s the merriest night of the market year. Wander beneath the Market Oaks and through the new Paul A. Doerle Sr. Farmers Market Pavilion while The Magnolia Sisters fill the night with live music. 🎶✨Dozens of local Market vendors will be on hand with handmade, homegrown, made-in-Acadiana gifts for everyone on your list (and maybe a little something for yourself too 😉). Then strike your best holiday pose for a pic with Santa and Mrs. Claus! 🎅 Grab your crew, bring your list, and come get your jingle on! Learn more and see the vendor list at www.moncuspark.org/christmasmarket.",
+"url": "https://moncuspark.org/calendar-events/christmas-market-2026/",
+"image": "https://moncuspark.org/wp-content/uploads/2026/10/Farmers-Market-Weekly-Template.png",
+"source": "Moncus Park",
+"alsoOn": [
+"Happening Next (Lafayette live music)"
+],
+"id": "09ee279fba"
+},
+{
+"title": "A Cajun Night Before Christmas",
+"start": "2026-12-03T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "AGES 2 AND UP NEED A TICKET\nExperience the magic of Louisiana's most beloved Christmas tale",
+"url": "https://www.heymanncenter.com/events/2025/a-cajun-night-before-christmas",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=ASO_42_CajunNightsmall.png&cb=d3e47810",
+"source": "Heymann Performing Arts Center",
+"id": "7dcde58ea8"
+},
+{
+"title": "The Collaboratory Open Jam Night",
+"start": "2026-12-03T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "THE COLLABORATORY OPEN JAM — THIS THURSDAY!\n\nJoin us Thursday, December 3 at the Blue Moon Saloon for a night of live music, good vibes, and community!\n\n \n\nHappy Hour: 5–8 PM\nSign-Ups: 8 PM\nJam Starts: 8:30 PM\nNO COVER — FREE ENTRY!\n\n \n\nBring your instrument, your voice, or just your good vibes! Whether you're ready to jump on stage or just hang out and enjoy the music, everyone's welcome.\n\n \n\nNeed somewhere to sleep? We've got you covered! Book a room with us and enjoy FREE entry + a FREE drink! Get the full Blue Moon Saloon experience all in one place.\n\n \n\nVisit www.BlueMoonSaloon.com to learn more and book your stay!",
+"url": "https://events.timely.fun/kw4jncf1/event/78517106/20261203200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/collaboratory%2012-3_xsWq.png",
+"source": "Blue Moon Saloon",
+"id": "5daccc2ba0"
+},
+{
+"title": "Twinkle Light Night",
+"start": "2026-12-04T18:00",
+"end": "2026-12-04T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "Bring the whole family for an evening filled with festive fun and Christmas magic! Meet Santa, say hello to the Grinch, and enjoy appearances from Olaf and Elsa. Kids will also experience snow in our courtyard, decorate cookies, and create their very own holiday keepsakes!",
+"url": "https://www.downtownlafayette.org/event/twinkle-light-night",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "ac89a3a911"
+},
+{
+"title": "Christmas by Candlelight: Glorious Season | Grantee Event",
+"start": "2026-12-04T19:00",
+"end": "2026-12-04T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "Chorale Acadienne presents Christmas by Candlelight: Glorious Season, a joyous holiday celebration featuring an original holiday composition by director Rusty Roden as well as selections from Handel’s Messiah. Come and sing along with beloved carols, and bring the whole family!",
+"url": "https://choraleacadienne.com/season?occurrence=2026-12-04",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/c7623809-b5ae-428e-9055-02416883c82f.webp",
+"source": "Acadiana Center for the Arts",
+"id": "93736beee3"
+},
+{
+"title": "Dom Francis",
+"start": "2026-12-04T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Some bands chase nostalgia. Dom Francis chases the feeling that made rock & roll matter in the first place.\n\nBased in Austin, Texas, the band writes guitar-driven songs that blur the lines between rock, country, blues, soul, and Americana without ever sounding like a throwback act. Their music carries the grit of late-night bars, open highways, and dance halls—equal parts swagger and sincerity.\n\nOnstage, Dom Francis favors momentum over spectacle. Their shows are loud, loose, and built to keep people moving, whether they're playing a neighborhood honky-tonk or a packed club. It's a live band in the truest sense: no gimmicks, no backing tracks, just musicians feeding off the room and each other.\n\nAs their audience continues to grow across Texas, Dom Francis is proving there's still a place for honest rock & roll—music that feels lived-in, timeless, and impossible to fake. After releasing his debut album “The Wanderer” in 2025, Francis presents us with his sophomore rock-leaning “The State of Things”",
+"url": "https://events.timely.fun/kw4jncf1/event/78507327/20261204200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/dom%20francis%20pic_UW1F.jpg",
+"source": "Blue Moon Saloon",
+"id": "5851a331a4"
+},
+{
+"title": "Lost Bayou Ramblers",
+"start": "2026-12-04T22:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "The Grammy award winning Lost Bayou Ramblers’ evolution as a perversely progressive band rooted in Cajun traditions continues to excite, challenge, and redefine both genre expectations as well as cultural preconceptions. Founded in 1999 by brothers Andre and Louis Michot, the last 5 years have brought LBR a feature on Jack White’s American Epic, score contributions to the Oscar nominated film Beasts of the Southern Wild, a Grammy award for their latest album 'Kalenda' and tours with both Arcade Fire and the Violent Femmes. Lost Bayou Ramblers stands at the crosscurrents of Louisiana culture by inhabiting the gray area between Cajun and Creole, convention and innovation, mystery and a revelation, experimenting and growing the show to what it's become today: an eclectic mix of modern sounds and rhythms with ancient Cajun melodies and lyrics.  World Café says “The Grammy-winning group plays a revved-up version of Cajun music, shot through with punk energy and psychedelic fuzz.”",
+"url": "https://events.timely.fun/kw4jncf1/event/78485762/20261204220000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/lost%20bayou%20ramblers_SqNX.jpg",
+"source": "Blue Moon Saloon",
+"id": "9442c5320d"
+},
+{
+"title": "Divers Destination Who-Ville Underwater",
+"start": "2026-12-05T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Diver's Destination of Louisiana",
+"address": "201 Guilbeau Rd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/divers-destination-who-ville-underwater-eid3a0e9utwia",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy82ZTkyZGQwMmI3OTRiNjk3Zjg1NmFjZGFhNDkxNWFmMjU4ZTM5OGNhMGU2NTZiMzMxYTQ2OTE5NjJlZjU2OGIzLXJpbWctdzExMjItaDE0MDItZGNmOGY4ZTgtZ21pcj92PTE3OTQwNzU0ODI.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "7cf1eda817"
+},
+{
+"title": "Shotgun Lillie | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-05T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/shotgun-lillie-rocknbowl-de-lafayette-eid3a0eb54luq",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy82MWNmYjc3YjkyMDUwMjdjY2JmMzA2Y2U5MTJlZmM3NzhlYzAzMTA5MGY2Yzg4ZmJjODMzMDVhZTVjYTI0YjZjLXJpbWctdzEyMDAtaDgwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDczMDczNw.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "6bf10893d8"
+},
+{
+"title": "The reunion show",
+"start": "2026-12-05T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Feed N Seed Lafayette",
+"address": "106 N Grant St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/the-reunion-show-eid3a0dxatrq5",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy80OWUyZDE4MDBhZWM2M2E4MzRiZDMzMzljZTFlNjhkNWIzMTRkMDU5OThiNjg2NWE4ZTg2NDBhOGNmNTgyYWE1LXJpbWctdzk2MC1oOTYwLWRjZjhmOGY4LWdtaXI_dj0xNzg4MjI0OTcx.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "700a2a6183"
+},
+{
+"title": "WHOP BEZZY LIVE IN CONCERT!!!",
+"start": "2026-12-05T00:00",
+"end": "2026-12-06T00:00",
+"allDay": true,
+"ongoing": false,
+"venue": "GRANT ST DANCE HALL",
+"address": "113 W GRANT ST, LAFAYETTE",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-eid1ef0l8j8e33r",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9mY2NkYmM4ZGNiNzRkMjc5MWIxYmM2YTkwZDcyYWY5MTE0ZGQ4MDlmZTBhYjdkNDQyMDYxYTAyNDFiNzNjNTZjLXJpbWctdzEyMDAtaDY1Mi1kYzA4MDgwOC1nbWlyLmpwZz92PTE3OTE5MjUyNzk.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "d6ae0152e2"
+},
+{
+"title": "Whop Bezzy live in Concert Hosted by Scarface from Baddies & Mr.Cut water",
+"start": "2026-12-05T00:00",
+"end": "2026-12-06T00:00",
+"allDay": true,
+"ongoing": false,
+"venue": "113 W Grant St",
+"address": "113 W Grant St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-hosted-by-scarface-from-baddies-andamp-mrcut-water-eid27punbglkmk",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy9mNTMzYmU2MC1lMWU3LTExZjEtYWI2OS1hNzYxNDVmMDVhMWMtcmltZy13MTIwMC1oMTIzMC1kYzA4MDgwOC1nbWlyLnBuZz92PTE3OTQ4NTIxNzk.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "9b75815698"
+},
+{
+"title": "Lafayette Farmers & Artisans Market",
+"start": "2026-12-05T08:00",
+"end": "2026-12-05T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Lafayette Farmers & Artisans Market Every Saturday | 8:00 AM to 12:00 PM | Moncus Park | Rain or Shine There is no better way to start a Saturday in Acadiana. Every week, the Lafayette Farmers and Artisans Market transforms the heart of Moncus Park into a lively gathering place, where local farmers, artisans, and craftspeople come together to share the best of our region. Wander the rows and you will find tables overflowing with just-picked produce, local honey, fresh flowers, baked goods, handmade crafts, and one-of-a-kind finds from the makers who pour their hearts into them. Whether you come for the produce, the people, or simply the joy of a morning outdoors, the market is where Lafayette starts its weekend. Come hungry, shop local, and make a morning of it! Parking & Getting There We guide thousands of visitors in and out every Saturday morning, so parking may take a few extra minutes during peak times, but our team keeps things moving all morning! Our parking lot is $2 per hour, or free for Moncus Park members. All proceeds support Moncus Park, a nonprofit park conservancy. Please only park at Moncus Park, towing is strictly enforced by a third party in neighboring lots. Prefer to skip the parking altogether? Walking or biking in is always a breeze! Weekly Vendor Lineup Curious who's setting up shop this Saturday? Check the Lafayette Farmers & Artisans Market Facebook page the Friday before market day for the full vendor list. Become a Vendor Interested in joining us…",
+"url": "https://moncuspark.org/calendar-events/farmersmarket/",
+"image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
+"source": "Moncus Park",
+"id": "4714a9988e"
+},
+{
+"title": "Artist Talk: Kate Gordon",
+"start": "2026-12-05T13:00",
+"end": "2026-12-05T15:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Join AcA Visual Arts Director Jaik Faulk in conversation with exhibiting artist Kate Gordon. Kate Gordon’s studio practice focuses on painting in the expanded field, sourcing inspiration from pop-up books, dioramas, and collage. The dream imagery that Gordon mines aims to capture the strangeness of the waking world, which is often not as logical as it might at first appear. Gordon has shown her paintings, collages, and video works nationally; exhibitions include a site-specific installation “Alligator Naps” at the Hilliard Art Museum, curation into the Weatherspoon Art Museum’s “Art on Paper” exhibition, and an invitation to create a public video installation at Block 2, a visual platform for new media artists in Raleigh, NC. Most recent professional accomplishments include participation in Kolaj Institute’s Artist Residency in Scotland, curation into “Is This Too Much?”, a maximalist exhibition at Le Mieux Galleries, and inclusion in the “Louisiana Contemporary” exhibition at the Ogden Museum of Southern Art. Gordon currently holds the position of Associate Professor of Figure Drawing & Foundations at the University of Louisiana at Lafayette. She earned an M.F.A. from the University of North Carolina at Greensboro and a B.F.A. from Pratt Institute.",
+"url": "https://acadianacenterforthearts.org/events/community-zine-2/?occurrence=2026-12-05",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Talk-Kate-Gordon-Website.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "e187bd1c8a"
+},
+{
+"title": "Home for the Holidays with the Dopsie Family: Christmas Tree Concert",
+"start": "2026-12-05T18:00",
+"end": "2026-12-05T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "207 Polk St, Lafayette, LA 70501-6925, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"family"
+],
+"desc": "Downtown’s Merry & Bright Holiday Experience is presented by Lafayette Coca-Cola Bottling Company, with support from Lafayette Travel, The Acadiana Advocate, and Chase Tower.",
+"url": "https://www.downtownlafayette.org/event/rockin-around-the-christmas-tree-concert",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81ZmY3YmYwYmEyZGY3YmRkMjk0ZmEyODI5OTk0Njk1YTU2NTBjNjFiY2UzOGRhMDBkYzk0NmRiZGQ5MmNiNmQ5LXJpbWctdzEyMDAtaDYwMy1kYzA4MDgwOC1nbWlyP3Y9MTc5NDM5MDU0OQ.avif",
+"source": "Downtown Lafayette",
+"alsoOn": [
+"Happening Next (Lafayette live music)"
+],
+"id": "74041e49a6"
+},
+{
+"title": "The Debtors",
+"start": "2026-12-05T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://events.timely.fun/kw4jncf1/event/78486830/20261205210000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/the%20debtors_JoJi.jpg",
+"source": "Blue Moon Saloon",
+"id": "47ccf823b1"
+},
+{
+"title": "Blonde Roses",
+"start": "2026-12-05T22:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://events.timely.fun/kw4jncf1/event/78485763/20261205220000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/896373499_1667410154753409_4785516380160416170_n_M8ut.jpg",
+"source": "Blue Moon Saloon",
+"id": "45a8289299"
+},
+{
+"title": "The Links",
+"start": "2026-12-05T23:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "The Links\n\nStraight out of Lafayette, Louisiana, The Links bring a fresh and distinctive sound to the South Louisiana music scene, blending psychedelic rock, surf-inspired guitars, and the infectious melodies of Brit-pop.\n\nWith a sound that feels equal parts nostalgic and modern, The Links create an atmosphere filled with shimmering guitar tones, catchy hooks, hazy psychedelic textures, and alternative rock energy. Drawing from the spirit of British pop and the sun-soaked sounds of surf rock, the band delivers a musical experience that stands apart from the ordinary.\n\nRooted in Acadiana but reaching beyond regional boundaries, The Links bring an adventurous approach to independent rock, combining melodic songwriting with a sound that's both laid-back and electrifying.\n\nWhether you're a fan of psychedelic rock, indie pop, surf music, or just great live guitar-driven music, The Links offer something worth discovering.",
+"url": "https://events.timely.fun/kw4jncf1/event/78512332/20261205230000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/the%20links%20red_TRH8.jpg",
+"source": "Blue Moon Saloon",
+"id": "bee7490a72"
+},
+{
+"title": "Bal du Dimanche -- Prends Courage",
+"start": "2026-12-06T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/bal-du-dimanche-prends-courage-eid3a0e7lfk72",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9kNWRmNGQzODIyMGE5NjM1ZDNhZjJjNzlhNWE4ZGQ2YTNhMmYzNDE3OGI4MDFkNzE4ZWRmZmYyMjM5ZDZjZjE1LXJpbWctdzQ2OC1oMzMwLWRjMDgwODA4LWdtaXI_dj0xNzkyNzg5NDAw.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "1656ef4028"
+},
+{
+"title": "Teddy Bear Tea",
+"start": "2026-12-06T14:00",
+"end": "2026-12-06T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette, LA 70503",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Teddy Bear Tea, presented by Roots Pediatric Dentistry, invites families to share a magical holiday experience filled with warmth, wonder, and whimsy. Enjoy sweet treats, festive activities, and seasonal surprises. Each child receives a special keepsake to remember the day. Reserved complimentary parking will be available for ticket purchasers. TICKETS COMING SOON! Learn more at www.moncuspark.org/teddybeartea",
+"url": "https://moncuspark.org/calendar-events/teddy-bear-tea-2/",
+"image": "https://moncuspark.org/wp-content/uploads/2025/10/Teddy-Bear-Tea-2025-19.png",
+"source": "Moncus Park",
+"alsoOn": [],
+"id": "099ad75325"
+},
+{
+"title": "Cajun Jam Hosted by Luke Huval",
+"start": "2026-12-09T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam Hosted by Luke Huval\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437890/20261209200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
+"source": "Blue Moon Saloon",
+"id": "bd33f6cf07"
+},
+{
+"title": "Hilliard Society Holiday Party",
+"start": "2026-12-10T00:00",
+"end": "2026-12-10T23:59",
+"allDay": true,
+"ongoing": false,
+"venue": "Hilliard Art Museum",
+"address": "710 E St Mary Blvd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Become a Hilliard Society Member and receive an invitation to this exclusive annual holiday experience. Visit the Membership page to join and explore all membership benefits.",
+"url": "https://hilliardartmuseum.org/event/hilliard-society-holiday-party-2/",
+"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/08/Hilliard_MemberHolidayParty_December2025_089-e1786999973206.webp",
+"source": "Hilliard Art Museum",
+"id": "5793a9b13e"
+},
+{
+"title": "Candlelight: Tribute to Fleetwood Mac",
+"start": "2026-12-11T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candlelight-tribute-to-fleetwood-mac-eid1afw9x4sxwm",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy82OTY1NmNhMC1kZTg0LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMwODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDc5.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "aa3d26ce8e"
+},
+{
+"title": "Candlelight: Tribute to Michael Jackson",
+"start": "2026-12-11T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candlelight-tribute-to-michael-jackson-eid1afw9wub5h1",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy84Y2Y3ZTkzMC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMxODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDg3.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a80c31712f"
+},
+{
+"title": "Louisiana Surf Department",
+"start": "2026-12-11T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "The Louisiana Surf Department is a swampadelic-country-rock band founded January 1, 2024 in Austin, Texas. On lead vocals and electric guitar, John Core of Crowley, Louisiana is truly the core of this music. He has carried most all of these songs for a long time on his journey to now – and has courageously brought this band together to help bring his songs to the world. Brian Bounds, hailing from north Texas, sits behind the drum kit and supports with backup vocals. Brian met John in Sedona, AZ in 2020.  After a chance reunion in Louisiana months later, their friendship was concretized in their first jam session. New-found little brother Markus “Shudawgy” Williams, originally from Tennessee, would not yet join the band, but first, invite a perfect stranger he saw on instagram into the fold. Enter James T. Carter, also from North Texas, on the bass guitar and backing vocals. James showed up to the house to jam, and the rest is history. James’ addition would solidify the trio, and January 1st, 2024 would mark their first organized rehearsal. After a year of digging into the project, Markus would reappear on the scene, this time with the intention of moving to Austin. “Young Man” as he is sometimes called, showed up, and kept showing up, and became a clear fourth member of the team. Not just for his world class guitar and musicality, but also for his world renowned hang. \n\nMark your calendars! Louisiana Surf Department is rolling back into the Blue Moon Saloon on Friday…",
+"url": "https://events.timely.fun/kw4jncf1/event/78496111/20261211200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/lsd%20pic_628t.jpg",
+"source": "Blue Moon Saloon",
+"id": "385ed7fe1a"
+},
+{
+"title": "Create & Play Café",
+"start": "2026-12-12T10:00",
+"end": "2026-12-12T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hilliard Art Museum",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"family"
+],
+"desc": "A monthly drop-in program that transforms art education into engaging family experiences. Designed for ages 4 and up, each session features hands-on creative activities that connect directly to current exhibitions and make art concepts accessible and inspiring for young minds. Beginning September 13th, families can enjoy art-making together while local food vendors provide snacks, creating a welcoming community space where creativity flourishes and new connections are made. Children 10 and under participate free, ensuring art education remains accessible to all families in our community.\n\nAges 4 and up \n\nNo pre-registration required",
+"url": "https://hilliardartmuseum.org/event/create-play-cafe-2-7/2026-12-12/",
+"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/08/HilliardMuseum_SpringFete_April2026_298-e1786995625565.webp",
+"source": "Hilliard Art Museum",
+"id": "1049ae4a9a"
+},
+{
+"title": "December ArtWalk",
+"start": "2026-12-12T17:00",
+"end": "2026-12-12T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "ArtWalk takes place every second Saturday of the month—rain or shine. There is no one organization responsible for planning the activities. Instead, each museum, gallery, or studio hosts their own unique event, featuring local artists and performers. Follow the official ArtWalk Lafayette Facebook Page to stay informed on monthly events.",
+"url": "https://www.downtownlafayette.org/event/artwalk-76663",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "e9e5d17fb7"
+},
+{
+"title": "Christmas Holiday Hoot Night",
+"start": "2026-12-12T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🎄🌙 IT’S THE MOST WONDERFUL NIGHT OF THE YEAR! 🌙🎄\n\nANNUAL CHRISTMAS HOOT NIGHT AT THE BLUE MOON SALOON!\n\nGrab your Christmas spirit and join us for our annual Christmas Hoot Night! ❤️🎶\n\n🎅 Depart from the Moon at 6 PM and hit the streets for some Christmas caroling during Art Walk!\n\n🎤 Then, come back to the Blue Moon, pick your favorite Christmas carol, and take the stage with our very own Blue Moon Christmas Band featuring:\n\n✨ Dave Trainer\n✨ Lee Tedrow\n✨ Danny Devillier\n\n☕ Hot toddies, candy canes, Christmas cheer, and plenty of holiday singing!\n\nWhether you're ready to belt out your favorite carol or just soak up the holiday magic, there's a place for you at the Moon.",
+"url": "https://events.timely.fun/kw4jncf1/event/78485771/20261212180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Hoot%20night%202026_f1mp.png",
+"source": "Blue Moon Saloon",
+"id": "07dfc1b5cd"
+},
+{
+"title": "The Nutcracker - Evening",
+"start": "2026-12-12T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "ALL AGES NEED A TICKET\n\nAcadiana's Favorite Family Holiday Tradition",
+"url": "https://www.heymanncenter.com/events/2026/the-nutcracker---evening2",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=24-138-005__HeymannGraphics_250x250.png&cb=007A1AD5",
+"source": "Heymann Performing Arts Center",
+"id": "de20c45a30"
+},
+{
+"title": "The Nutcracker - Matinee",
+"start": "2026-12-13T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "ALL AGES NEED A TICKET\nAcadiana's Favorite Family Holiday Tradition",
+"url": "https://www.heymanncenter.com/events/2026/the-nutcracker---matinee2",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=24-138-005__HeymannGraphics_250x250.png&cb=007A1AD5",
+"source": "Heymann Performing Arts Center",
+"id": "66cd54bf92"
+},
+{
+"title": "Work Of Fiction | 309 Versus Earth",
+"start": "2026-12-13T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://events.timely.fun/kw4jncf1/event/78488760/20261213190000",
+"image": "",
+"source": "Blue Moon Saloon",
+"id": "fb0d5cf3d8"
+},
+{
+"title": "Acadiana Talent presents Storyteller's Open Mic Night hosted by Jason Harrington",
+"start": "2026-12-15T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://events.timely.fun/kw4jncf1/event/78486935/20261215180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/AT%20open%20mic%20final%20postable_UUGU.png",
+"source": "Blue Moon Saloon",
+"id": "6309d38c40"
+},
+{
+"title": "Holiday Concert",
+"start": "2026-12-16T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "400 Polly Ln, Lafayette, LA, United States, Louisiana 70508",
+"address": "400 Polly Ln, Lafayette, LA 70508-4966, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/holiday-concert-eid3a0eae2j9a",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czgvYmFubmVycy80ODYzZmE4ZTIwNmEzM2I5MmY0NTc1NGE3YWYyZWFiZjY5MzMzNjg1ZjI0MmYzNjgyZTk0OGI5NDU5MTAxNmJmLXJpbWctdzEyMDAtaDYyOC1kY2Y4ZjhmOC1nbWlyP3Y9MTc5NDMwOTYwOA.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "4302497616"
+},
+{
+"title": "Cajun Jam",
+"start": "2026-12-16T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437893/20261216200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
+"source": "Blue Moon Saloon",
+"id": "64ca9f440c"
+},
+{
+"title": "Nether Hour",
+"start": "2026-12-17T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Down in the heart of Austin, TX, where the music runs thicker than the heat, there's a band that's been making some serious noise. They call themselves Nether Hour , and they've been turning every dive bar and backroad juke joint into a full-blown musical revival. The band is a trio of unapologetic rebels, each one a powerhouse of sonic defiance. Bobby Flaco delivers gritty vocals and razor-sharp guitar riffs, while Bishop unleashes searing lead guitar and mandolin work, with Bercy laying down bass lines that slam right into your gut. Nether Hour is a relentless sonic melting pot, fusing the swampy grooves of Louisiana with Texas-sized doses of funk, blues, soul, and rock 'n' roll.",
+"url": "https://events.timely.fun/kw4jncf1/event/78505125/20261217200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/nether%20hour%20pic_K5gg.png",
+"source": "Blue Moon Saloon",
+"id": "7fb3b67b7b"
+},
+{
+"title": "Candlelight: Christmas Carols on Strings",
+"start": "2026-12-18T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candlelight-christmas-carols-on-strings-eid1afw9k3neaa",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy85OWQwZjE2MC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMwODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDgx.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "aaad90ae48"
+},
+{
+"title": "Christmas in the Park",
+"start": "2026-12-18T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "2913 Johnston St, Lafayette, LA, United States, Louisiana 70503",
+"address": "2913 Johnston St, Lafayette, LA 70503-3245, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/christmas-in-the-park-eid3a0e6dcc9w",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8xOThhY2U1MWI0MzFiZDk5NmYxNmU1ZDkxNjdmNzYxYWQ2MTdiMDc4NWVjN2ViM2NjNDEyYTM2MzY5YWE2ZTQ1LXJpbWctdzEyMDAtaDY3NS1kYzE4NDg4OC1nbWlyP3Y9MTc5MTk5NjIyNg.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "9ff6b3ed61"
+},
+{
+"title": "Papa Noel's VIP Party 2026",
+"start": "2026-12-18T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/papa-noels-vip-party-2026-eid1ef0l8b68lba",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNmZhNTA0NTdkZjQxMzkxM2VkMDRhZDZkNjA2MzhlYjhjZmEzNGQ3NjhjMWVkOGNkMzQ2N2E2NGRhNTFjYTI3Ni1yaW1nLXcxMjAwLWg2NzUtZGNmOGY4ZjgtZ21pci5qcGc_dj0xNzk0NTQ5NjY3.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a9cba6446a"
+},
+{
+"title": "Mas Donkey",
+"start": "2026-12-18T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Mas Donkey\n\nStraight out of Lafayette, Louisiana, Mas Donkey brings a fresh dose of funk with a sound built for good times, deep grooves, and moving the dance floor. Blending funk, soul, rock, R&B, and a healthy dose of musical unpredictability, Mas Donkey delivers a style that is equal parts funky, playful, and undeniably original.\n\nWith a growing catalog of original music, Mas Donkey has developed a sound that moves effortlessly between infectious rhythms, soulful melodies, catchy hooks, and offbeat musical creativity. Tracks like 'Fresh Bowl of Funk,' 'GURL,' and 'Baby, Put Yo Phone Down' showcase an artist who isn't afraid to have fun, experiment with sounds, and keep listeners guessing.\n\nRooted in the musical spirit of Acadiana but drawing from a much wider world of funk and groove, Mas Donkey brings personality and originality to every performance.\n\nIf you like your music funky, your grooves deep, and your live shows full of surprises, Mas Donkey is ready to funkify your night!",
+"url": "https://events.timely.fun/kw4jncf1/event/78517091/20261218200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/mas-donkey-live_usxM.JPG",
+"source": "Blue Moon Saloon",
+"id": "1d010083b5"
+},
+{
+"title": "The Creole Nutcracker",
+"start": "2026-12-19T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "AGES 2 AND UP NEED A TICKET\nThe Creole Nutcracker puts a Louisiana twist on the 19th Century fairytale and immerses the audience in the captivating world that is unique to Louisiana.",
+"url": "https://www.heymanncenter.com/events/2026/the-creole-nutcracker2",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=Creole_Nutcracker_2024_250x250p.png&cb=E99C9820",
+"source": "Heymann Performing Arts Center",
+"id": "0b7914fcdd"
+},
+{
+"title": "Michael Scott Bourdeaux's 4th annual Holiday Honky Tonk",
+"start": "2026-12-19T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://events.timely.fun/kw4jncf1/event/78485769/20261219200000",
+"image": "",
+"source": "Blue Moon Saloon",
+"id": "1b34e3fee5"
+},
+{
+"title": "Bal du Dimanche -- Ray Thibodeaux & Allons Danser",
+"start": "2026-12-20T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/bal-du-dimanche-ray-thibodeaux-andamp-allons-danser-eid3a0ea1rcwg",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy82MGZkZjRhZmNhYWU0YTcxY2RhMDJhNTI2YzZjNzZiNDE2ZTdlOTM0ZjQyMzZjMmRkN2FmOGQ0MGYyMWU0MmJhLXJpbWctdzg4MS1oNTY0LWRjMjgyODI4LWdtaXI_dj0xNzk0MTQ5MDc2.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "52eae78b15"
+},
+{
+"title": "Geno Delafose & French Rockin' Boogie | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-20T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/geno-delafose-andamp-french-rockin-boogie-rocknbowl-de-lafayette-eid3a0eb1gtsj",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy80ZTcwMGQ1NGI4MmEyMzE4YjAxNDg1Yjg2NTkyZjEwNmRmMjQ2ZjZmMTU2OGQwZjAxNjViMjVlODEzZTVjZmNjLXJpbWctdzEyMDAtaDYyOC1kYzc4MDgxOC1nbWlyP3Y9MTc5NDY2MzUxMw.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "796ae41d15"
+},
+{
+"title": "Amis Du Teche",
+"start": "2026-12-20T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Amis du Teche\n\nRooted in the rich musical traditions of South Louisiana, Amis du Teche celebrates the sounds, culture, and heritage of Acadiana through the timeless spirit of Cajun music. Drawing inspiration from the communities along the Teche, the band embraces the melodies, rhythms, and storytelling that have made Louisiana music such a treasured part of the region's identity.\n\nWith a love for traditional sounds and the lively spirit of a good Louisiana dancehall, Amis du Teche brings music made for two-stepping, waltzing, and gathering with friends. Their music honors the generations of musicians who came before them while keeping the Cajun tradition alive for new audiences.\n\nWhether you're a lifelong Cajun music fan or simply looking for an authentic taste of South Louisiana, Amis du Teche brings the kind of music that makes you want to stay for one more dance.\n\nCome celebrate the music, culture, and spirit of Acadiana with Amis du Teche!",
+"url": "https://events.timely.fun/kw4jncf1/event/78517097/20261220180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Amis%20Du%20Teche%205-29_6K0w.png",
+"source": "Blue Moon Saloon",
+"id": "8d3b342bc3"
+},
+{
+"title": "The Collaboratory Open Jam Night",
+"start": "2026-12-22T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "THE COLLABORATORY OPEN JAM\n\nJoin us Tuesday, December 22 at the Blue Moon Saloon for a night of live music, good vibes, and community!\n\n \n\nHappy Hour: 5–8 PM\nSign-Ups: 8 PM\nJam Starts: 8:30 PM\nNO COVER — FREE ENTRY!\n\n \n\nBring your instrument, your voice, or just your good vibes! Whether you're ready to jump on stage or just hang out and enjoy the music, everyone's welcome.\n\n \n\nNeed somewhere to sleep? We've got you covered! Book a room with us and enjoy FREE entry + a FREE drink! Get the full Blue Moon Saloon experience all in one place.\n\nVisit www.BlueMoonSaloon.com to learn more and book your stay!",
+"url": "https://events.timely.fun/kw4jncf1/event/78517111/20261222200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/collaboratory%2012-22_2qC5.png",
+"source": "Blue Moon Saloon",
+"id": "af3b17e52a"
+},
+{
+"title": "Ageless Healthcare 18th Annual Christmas Bash",
+"start": "2026-12-23T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Martin Luther King Multipurpose Center",
+"address": "309 Cora St,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"wellness"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/ageless-healthcare-18th-annual-christmas-bash-eid3a0e6xf07q",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy84MDc4MDY0Y2RhNGJiYTgzM2QwODkxY2U1YWE5MTQ4Y2Q4ZjFkZmRiMzJlNGI4MTUyMDZiM2FjMGM1M2MxMzE2LXJpbWctdzEyMDAtaDE3OTktZGMwODA4MDgtZ21pcj92PTE3OTI0OTc4NzI.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "bc9822c977"
+},
+{
+"title": "Mannheim Steamroller Christmas",
+"start": "2026-12-23T19:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "AGES 1 AND UP NEED A TICKET\nMANNHEIM STEAMROLLER CHRISTMAS by Chip Davis has been America’s favorite holiday tradition for over 40 years!",
+"url": "https://www.heymanncenter.com/events/2025/mannheim-steamroller",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LAF26_VENUE_250x250_MSC(1).jpg&cb=f269150b",
+"source": "Heymann Performing Arts Center",
+"id": "eab89df4f6"
+},
+{
+"title": "Cajun Jam",
+"start": "2026-12-23T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437896/20261223200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
+"source": "Blue Moon Saloon",
+"id": "cc37ff3044"
+},
+{
+"title": "Clay Cormier & the Highway Boys plus Mike Broussard | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-26T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/clay-cormier-andamp-the-highway-boys-plus-mike-broussard-rocknbowl-de-lafayette-eid3a0ebbh09p",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Clay+Cormier+%26+the+Highway+Boys+plus+Mike+Broussard+%7C+Rock%27n%27Bowl+de+Lafayette&date=Sat%2C+26+Dec+at+09%3A00+pm&bg=1",
+"source": "Happening Next (Lafayette live music)",
+"id": "c68863470c"
+},
+{
+"title": "BAG O' BANDS 3000",
+"start": "2026-12-27T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🔥 BAG O’ BANDS 3000 🔥\nA MID-90s SCENE REVIVAL IS COMING!\n\nThe bands are back, the memories are real, and Lafayette Rock City is ready to turn it up! 🤘\n\nOn December 27th, 2026 , October Groundfly returns to Lafayette Rock City for a reunion show GALORE at Blue Moon Saloon!\n\nWe're bringing together a killer lineup of familiar faces, old-school sounds, and local music history:\n\n🎸 OCTOBER GROUNDFLY\n🍒 HEK-ATOMIC CHERRIES\n🎶 RARE AVIS\n🔥 SLOBOT\n⚡ SURVIVING COPIES (formerly Dirt Franklin)\n🤘 GRAND NATHANIEL\n\nThis is more than a show. It's a reunion, a celebration of the mid-90s Lafayette music scene, and a chance to see some familiar names share the stage again!\n\n📅 Sunday, December 27, 2026\n📍 Blue Moon Saloon\n🎟️ Come be part of the reunion!\n\nCall up your old bandmates, round up your crew, and get ready to relive a little Lafayette rock history.\n\nBAG O’ BANDS 3000 — ONLY AT BLUE MOON SALOON! 🌙🤘",
+"url": "https://events.timely.fun/kw4jncf1/event/78517105/20261227180000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/BAG%20O%20BANDS%203000_7rCG.jpg",
+"source": "Blue Moon Saloon",
+"id": "8b9e9099ce"
+},
+{
+"title": "Cajun Jam",
+"start": "2026-12-30T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Blue Moon Saloon and Guest House",
+"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Cajun Jam\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
+"url": "https://events.timely.fun/kw4jncf1/event/78437899/20261230200000",
+"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
+"source": "Blue Moon Saloon",
+"id": "f70e8583a3"
+},
+{
+"title": "Wayne Toups | Rock'n'Bowl® de Lafayette",
+"start": "2027-01-02T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/wayne-toups-rocknbowl-de-lafayette-eid3a0eb8s9bi",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy8yZmZjNDgzOTM2ODMzMjI2OGUxYTg1ZWM2M2MyNGQxMjYxYjJjZGViYzlkNzAzODBhZDFhZjNlNmJlZGQ2ZjAzLXJpbWctdzEyMDAtaDYyOC1kYzE4MDgxOC1nbWlyP3Y9MTc5NDgyNjA1Ng.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "a713981777"
+},
+{
+"title": "Candlelight: Coldplay vs. Imagine Dragons",
+"start": "2027-01-08T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/candlelight-coldplay-vs-imagine-dragons-eid1afw9nbs0gg",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy8yZGI1MDI1MC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGNiOGE4ODgtZ21pci5qcGc_dj0xNzk0NDgwMDky.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "556b7c96a1"
+},
+{
+"title": "Create & Play Café",
+"start": "2027-01-09T10:00",
+"end": "2027-01-09T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hilliard Art Museum",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"family"
+],
+"desc": "A monthly drop-in program that transforms art education into engaging family experiences. Designed for ages 4 and up, each session features hands-on creative activities that connect directly to current exhibitions and make art concepts accessible and inspiring for young minds. Beginning September 13th, families can enjoy art-making together while local food vendors provide snacks, creating a welcoming community space where creativity flourishes and new connections are made. Children 10 and under participate free, ensuring art education remains accessible to all families in our community.\n\nAges 4 and up \n\nNo pre-registration required",
+"url": "https://hilliardartmuseum.org/event/create-play-cafe-2-7/2027-01-09/",
+"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/08/HilliardMuseum_SpringFete_April2026_298-e1786995625565.webp",
+"source": "Hilliard Art Museum",
+"id": "589bfe0dce"
+},
+{
+"title": "January ArtWalk",
+"start": "2027-01-09T17:00",
+"end": "2027-01-09T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Downtown Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "ArtWalk takes place every second Saturday of the month—rain or shine. There is no one organization responsible for planning the activities. Instead, each museum, gallery, or studio hosts their own unique event, featuring local artists and performers. Follow the official ArtWalk Lafayette Facebook Page to stay informed on monthly events.",
+"url": "https://www.downtownlafayette.org/event/january-artwalk",
+"image": "",
+"source": "Downtown Lafayette",
+"id": "3d65e22fb5"
+},
+{
+"title": "The Wiz",
+"start": "2027-01-11T19:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "AGES 1 AND UP NEED A TICKET\nThe Tony® Award-winning Best Musical that took the world by storm is back.",
+"url": "https://www.heymanncenter.com/events/2025/the-wiz",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LAF26_VENUE_250x250_WIZ.jpg&cb=4192c330",
+"source": "Heymann Performing Arts Center",
+"id": "23f2205ce6"
+},
+{
+"title": "Dog Man: The Musical",
+"start": "2027-01-12T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "1373 S College Rd, Lafayette, LA 70503-2909, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"arts"
+],
+"desc": "ALL AGES NEED A TICKET\n\nA Hilarious, Heartfelt Family Adventure! Based on the worldwide bestselling hit series by Dav Pilkey, Dog Man: The Musical is a hilarious and heartwarming production. Recommended for ages 6+.",
+"url": "https://www.heymanncenter.com/events/2025/dog-man-the-musical",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=Dog_Man_250_X_250.jpg&cb=1316f374",
+"source": "Heymann Performing Arts Center",
+"alsoOn": [
+"Happening Next (Lafayette live music)"
+],
+"id": "664e331244"
+},
+{
+"title": "We Will Rock You",
+"start": "2027-01-14T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA 70501-6915, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"arts"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/we-will-rock-you-eid3a0e9kc225",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy84MmRlNDEyMDcwYzc3Y2I2MTUwNmY0ODVmODM3ZWQ4OWExNmMxOTE4MDlmZDRiNzkzMDJkZTlkODlkMjFlZjM3LXJpbWctdzEyMDAtaDgwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5MzkzNjk4NA.avif",
+"source": "Happening Next (Lafayette live music)",
+"id": "69eb2afaea"
+}
+]
+}

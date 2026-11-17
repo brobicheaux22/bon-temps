@@ -1,0 +1,71 @@
+name: Submit an event
+description: Add a show, special, class or community event in the Lafayette area to Bon Temps.
+title: "Event: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to Bon Temps! Submissions are reviewed before they show up on the site, usually within a day.
+  - type: input
+    id: name
+    attributes:
+      label: Event name
+      placeholder: "Zydeco night with the Pine Leaf Boys"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date (YYYY-MM-DD)
+      placeholder: "2026-12-05"
+    validations:
+      required: true
+  - type: input
+    id: start
+    attributes:
+      label: Start time
+      placeholder: "8:00 PM"
+  - type: input
+    id: end
+    attributes:
+      label: End time
+      placeholder: "11:00 PM"
+  - type: input
+    id: venue
+    attributes:
+      label: Venue
+      placeholder: "Blue Moon Saloon"
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address
+      placeholder: "215 E Convent St, Lafayette"
+  - type: input
+    id: price
+    attributes:
+      label: Price
+      placeholder: "Free, $10, $15–$25"
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Music
+        - Food
+        - Arts
+        - Wellness
+        - Family
+        - Community
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Tickets, Instagram post, Facebook event or website
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A sentence or two about the event.

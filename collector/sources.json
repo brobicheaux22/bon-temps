@@ -1,0 +1,24 @@
+{
+  "_help": "Each source is one place Bon Temps checks for events. type: tribe (WordPress 'The Events Calendar' sites), jsonld (pages with built-in event data), ical (calendar feeds), saffire (Saffire venue sites), downtown (Downtown Lafayette event pages), page (AI reads the page; runs on GitHub only), ticketmaster (needs TICKETMASTER_API_KEY). Set enabled to false to turn one off. venue is used when an event doesn't say where it is. cats adds categories to every event from that source.",
+  "sources": [
+    { "name": "The Lafayette Mom", "type": "tribe", "url": "https://thelafayettemom.com", "enabled": false, "_note": "Turned off: mostly kids' and library events." },
+    { "name": "Hilliard Art Museum", "type": "tribe", "url": "https://hilliardartmuseum.org", "venue": "Hilliard Art Museum", "cats": ["arts"] },
+    { "name": "Acadiana Center for the Arts", "type": "jsonld", "url": "https://acadianacenterforthearts.org/events/", "venue": "Acadiana Center for the Arts", "fixTimezone": true },
+    { "name": "Moncus Park", "type": "jsonld", "url": "https://moncuspark.org/events/", "venue": "Moncus Park" },
+    { "name": "Lafayette Travel", "type": "jsonld", "url": "https://www.lafayettetravel.com/events/this-weekend/" },
+    { "name": "Heymann Performing Arts Center", "type": "saffire", "url": "https://www.heymanncenter.com", "venue": "Heymann Performing Arts Center" },
+    { "name": "Downtown Lafayette", "type": "downtown", "url": "https://www.downtownlafayette.org/events", "venue": "Downtown Lafayette" },
+    { "name": "Hideaway on Lee", "type": "squarespace", "url": "https://www.hideawayonlee.com/events", "venue": "Hideaway on Lee", "cats": ["music"] },
+    { "name": "Happening Next (Lafayette live music)", "type": "jsonld", "url": "https://www.happeningnext.com/lafayette/live-music", "cats": ["music"], "_note": "Third-party listings site; covers Feed N Seed, Warehouse 535, Rock'n'Bowl and other clubs." },
+    { "name": "Ticketmaster (Cajundome & touring shows)", "type": "ticketmaster" },
+
+    { "name": "Cajundome", "type": "page", "url": "https://www.cajundome.com/events", "venue": "Cajundome" },
+    { "name": "Rock'n'Bowl de Lafayette", "type": "page", "url": "https://www.rocknbowl.com/lafayette", "venue": "Rock'n'Bowl de Lafayette", "cats": ["music"] },
+    { "name": "Parish Brewing", "type": "page", "url": "https://parishbeer.com/events/", "venue": "Parish Brewing Co., Broussard" },
+    { "name": "Lafayette Public Library", "type": "page", "url": "https://lafayettepubliclibrary.org/" },
+
+    { "name": "Blue Moon Saloon", "type": "ical", "url": "https://events.timely.fun/api/calendars/54756026/export?format=ics", "link": "https://bluemoonpresents.com/live-music", "venue": "Blue Moon Saloon", "cats": ["music"], "_note": "The public 'Subscribe' iCal feed from the venue's Timely calendar." },
+    { "name": "Artmosphere", "type": "page", "url": "https://www.artmosphere.net/", "enabled": false, "_note": "Wix site; events load with JavaScript." },
+    { "name": "Cajun Road Runners", "type": "page", "url": "https://cajunroadrunners.com/calendar/", "enabled": false, "_note": "Calendar page is currently empty." }
+  ]
+}

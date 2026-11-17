@@ -1,0 +1,4 @@
+{
+  "_help": "Events you add by hand, for places that only post on Instagram or Facebook. One-time event: {\"title\": \"...\", \"start\": \"2026-12-05T20:00\", \"end\": \"2026-12-05T23:00\", \"venue\": \"...\", \"price\": \"$10\", \"url\": \"https://instagram.com/...\", \"desc\": \"...\", \"cats\": [\"music\"]}. Weekly event: {\"title\": \"...\", \"weekly\": \"Wed\", \"time\": \"19:00\", \"endTime\": \"22:00\", \"venue\": \"...\"}. Categories: music, food, arts, wellness, family, community.",
+  "events": []
+}
