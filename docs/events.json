@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T04:27:18Z",
+"updated": "2026-11-17T04:31:06Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -49,27 +49,27 @@
 },
 {
 "name": "Cajundome",
-"ok": null,
+"ok": false,
 "count": 0,
-"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
 },
 {
 "name": "Rock'n'Bowl de Lafayette",
-"ok": null,
+"ok": false,
 "count": 0,
-"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
 },
 {
 "name": "Parish Brewing",
-"ok": null,
+"ok": false,
 "count": 0,
-"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
 },
 {
 "name": "Lafayette Public Library",
-"ok": null,
+"ok": false,
 "count": 0,
-"note": "this page needs AI reading, which runs on GitHub (no GITHUB_TOKEN here)"
+"note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
 },
 {
 "name": "Blue Moon Saloon",
@@ -83,9 +83,8 @@
 },
 {
 "name": "Submitted",
-"ok": null,
-"count": 0,
-"note": "runs on GitHub only"
+"ok": true,
+"count": 0
 }
 ],
 "events": [
