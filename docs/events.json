@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T06:00:06Z",
+"updated": "2026-11-18T07:24:47Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -24,7 +24,7 @@
 {
 "name": "Lafayette Travel",
 "ok": true,
-"count": 4
+"count": 5
 },
 {
 "name": "Heymann Performing Arts Center",
@@ -109,7 +109,7 @@
 {
 "name": "Cité des Arts",
 "ok": true,
-"count": 19
+"count": 18
 },
 {
 "name": "Ticketmaster (Cajundome & touring shows)",
@@ -120,7 +120,7 @@
 {
 "name": "Submitted",
 "ok": true,
-"count": 0
+"count": 1
 },
 {
 "name": "Blue Moon Saloon",
@@ -159,115 +159,6 @@
 "id": "2bc6311c38"
 },
 {
-"title": "Artists’ Alliance",
-"start": "2026-11-17T09:00",
-"end": "2027-01-09T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts - Main Gallery",
-"address": "101 W Vermilion St, Lafayette, LA 70501",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
-"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-17",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Lafayette Travel"
-],
-"id": "d5773c2e0f"
-},
-{
-"title": "Philip Gould: A Selection of Works",
-"start": "2026-11-17T09:00",
-"end": "2026-11-28T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-17",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "c7f5af1cb0"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-11-17T09:00",
-"end": "2026-12-23T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
-"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-17",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Lafayette Travel"
-],
-"id": "87f8b83e87"
-},
-{
-"title": "Valcour Records | 20 Years",
-"start": "2026-11-17T09:00",
-"end": "2027-02-27T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-17",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "e607e2d6a3"
-},
-{
-"title": "Les Éditions Tintamarre Fall Book Launch",
-"start": "2026-11-17T18:00",
-"end": "2026-11-17T20:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Cité des Arts",
-"address": "109 Vine St, Lafayette, LA 70501, USA",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "In the Robert D. Sidman Theater",
-"url": "https://www.citedesarts.org/events/les-editions-tintamarre-fall-book-launch",
-"image": "https://static.wixstatic.com/media/62d2c2_dd1eac9012d64954ad241cb45db1ea8d~mv2.jpeg/v1/fill/w_4500,h_5625,al_c,q_90/62d2c2_dd1eac9012d64954ad241cb45db1ea8d~mv2.jpeg",
-"source": "Cité des Arts",
-"id": "cb363adc77"
-},
-{
 "title": "Cajun Jam Hosted by Jean Bertrand",
 "start": "2026-11-18T08:00",
 "end": null,
@@ -285,6 +176,29 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20jean%20bertrand%20%2011-18_DgVI.png",
 "source": "Blue Moon Saloon",
 "id": "885f45db41"
+},
+{
+"title": "Artists’ Alliance",
+"start": "2026-11-18T09:00",
+"end": "2027-01-09T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts - Main Gallery",
+"address": "101 W Vermilion St, Lafayette, LA 70501",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
+],
+"id": "d5773c2e0f"
 },
 {
 "title": "Kate Gordon: Tender Terrain",
@@ -307,6 +221,73 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "81654b0ae6"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-18T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "c7f5af1cb0"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-18T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
+],
+"id": "87f8b83e87"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-18T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "e607e2d6a3"
 },
 {
 "title": "Mom Walks",
@@ -784,7 +765,8 @@
 "Acadiana Center for the Arts (all events)",
 "Happening Next (art)",
 "Happening Next (concerts)",
-"Happening Next (music)"
+"Happening Next (music)",
+"Lafayette Travel"
 ],
 "id": "7dffdb5051"
 },
@@ -1758,6 +1740,25 @@
 "image": "https://cdn.happeningnext.com/events10/banners/b0c9ccbb4e435a9a1329cadc26a20337a9730102ccb0584e8dab5362295cca59-rimg-w1200-h675-dc481898-gmir?v=1794938406",
 "source": "Happening Next (music)",
 "id": "6352ec1298"
+},
+{
+"title": "Camellia Crossing: Acadiana’s Gleaux Run",
+"start": "2026-11-25T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Town Square River Ranch",
+"address": "",
+"price": "$40-$45",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Acadiana’s favorite fall tradition is BACK this Thanksgiving Eve!\nAt 6:05pm, Camellia Boulevard will come alive as thousands of runners and walkers of all ages gleaux together under the night sky. Whether you’re racing the 5K or taking on the 1-Mile Fun Run, you’ll be part of a glowing wave of neighbors united in celebration of community, health, and hope for Acadiana’s cancer survivors.",
+"url": "https://runsignup.com/Race/LA/Lafayette/CamelliaCrossing",
+"image": "",
+"source": "Submitted",
+"id": "dbaecac13d"
 },
 {
 "title": "Yoga in the Park",
