@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T21:00:44Z",
+"updated": "2026-11-18T22:59:07Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -54,7 +54,7 @@
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 50
+"count": 49
 },
 {
 "name": "Happening Next (comedy)",
@@ -74,7 +74,7 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 60
+"count": 59
 },
 {
 "name": "Happening Next (art)",
@@ -89,7 +89,7 @@
 {
 "name": "Happening Next (food & drinks)",
 "ok": true,
-"count": 29
+"count": 30
 },
 {
 "name": "Happening Next (health wellness)",
@@ -285,28 +285,6 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "e607e2d6a3"
-},
-{
-"title": "Cajun and Creole Music on Campus",
-"start": "2026-11-18T12:30",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "University of Louisiana Lafayette Burke - Hawthorne Hall",
-"address": "231 Hebrard Blvd, Lafayette, LA 70503-2068, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "Our pop-up concert series continues! Join us on November 18th at 12:30 in front of the KRVS radio station in Burke-Hawthorne Hall on West Saint Mary Blvd for traditional Louisiana music. Everyone is welcome to dance, play along, or enjoy the music from the shade. Cajun and Creole Music on Campus is",
-"url": "https://happeningnext.com/event/cajun-and-creole-music-on-campus-eid3a0eali07r",
-"image": "https://cdn.happeningnext.com/events4/banners/2b8e67603c3dfda6c5eddcf5240a64ab2fe428ea362e875ca3d241fbf142f442-rimg-w1080-h1350-dc281818-gmir?v=1794451809",
-"source": "Happening Next (performances)",
-"alsoOn": [
-"Happening Next (music)"
-],
-"id": "327757b339"
 },
 {
 "title": "Cross Currents: Improvised Truths — Curtis Patterson and the Jazz of Form",
@@ -5149,6 +5127,25 @@
 "image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
 "source": "Cité des Arts",
 "id": "cc02ce3637"
+},
+{
+"title": "A Knight to Toast the Saints",
+"start": "2027-01-17T12:30",
+"end": "2027-01-17T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cathedral of St. John the Evangelist",
+"address": "914 St John St, Lafayette, LA 70501-6710, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Come enjoy an afternoon of Catholic fellowship while you learn about a select group of Saints. Each chosen Saint will be paired with a light specialty cocktail made to honor their holiness and specific events of their life. As we \"toast\" each saint we will also educate ourselves a little about thei",
+"url": "https://happeningnext.com/event/a-knight-to-toast-the-saints-eid3a0e7lfqld",
+"image": "https://cdn.happeningnext.com/events8/banners/475d0afc3b95d24a0aa42b8d3d285db5bf1b825fe47e82e01b989adc28f3bb62-rimg-w1200-h961-dc080808-gmir?v=1792789422",
+"source": "Happening Next (food & drinks)",
+"id": "0eb97fa61a"
 }
 ]
 }
