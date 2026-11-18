@@ -10,6 +10,11 @@ community events, collected automatically from venue calendars and local listing
 The page reloads its event list when you tap the refresh button, when you come back to the tab,
 and every 10 minutes while it's open. It shows "Updated X min ago" so people know how fresh it is.
 
+**When you change the page itself (`docs/index.html`), bump `APP_VERSION`** near the top of its
+script (for example `"2026-11-18.1"` → `"2026-11-18.2"`). Open copies of the site, including
+Home Screen apps, notice the new version and reload themselves; otherwise phones can keep the old
+page for a while because GitHub Pages lets browsers cache it.
+
 ## Where events come from
 
 | Source | How it's read |

@@ -235,6 +235,9 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
+// Bump this whenever the page changes, so open apps notice and reload themselves.
+const APP_VERSION = "2026-11-18.1";
+
 // "Submit an event" sends answers to this Google Form; they land in a Google Sheet for approval.
 // The numbers are the form's question IDs, in the form's question order.
 const SUBMIT_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfapK0EVXXUSMnXeXZ7tVsfPyvdC3B3DPv44BCvGLJpqKdv5g/formResponse";
@@ -807,8 +810,30 @@ document.addEventListener("keydown", ev => {
 $("scrim").addEventListener("click", closeSheet);
 let qt; $("q").addEventListener("input", ev => { clearTimeout(qt); qt = setTimeout(() => { state.q = ev.target.value.trim().toLowerCase(); state.shown = PAGE; render(); }, 120); });
 
+// Phones (especially Home Screen apps) keep an old copy of this page for a while. Ask the
+// server for the newest one, skipping every cache, and reload if its version is newer.
+let lastUpdateCheck = 0;
+async function checkForUpdate() {
+  if (Date.now() - lastUpdateCheck < 60e3) return;
+  lastUpdateCheck = Date.now();
+  try {
+    const res = await fetch(`${location.pathname}?update-check=${Date.now()}`, { cache: "no-store" });
+    const latest = (await res.text()).match(/const APP_VERSION = "([^"]+)"/)?.[1];
+    if (!latest || latest === APP_VERSION) return;
+    let tried = null; try { tried = sessionStorage.getItem("bt-updated-to"); } catch (_) {}
+    if (tried === latest) return;  // already reloaded for this version once; don't loop
+    try { sessionStorage.setItem("bt-updated-to", latest); } catch (_) {}
+    location.replace(`${location.pathname}?v=${encodeURIComponent(latest)}${location.hash}`);
+  } catch (_) {}
+}
+checkForUpdate();
+
 // Keep it fresh: check again when the page comes back into view, and every 10 minutes while open.
-document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - state.lastFetch > 5 * 60e3) load(); });
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) return;
+  checkForUpdate();
+  if (Date.now() - state.lastFetch > 5 * 60e3) load();
+});
 setInterval(() => { if (!document.hidden) load(); }, 10 * 60e3);
 setInterval(updatedLabel, 60e3);
 
