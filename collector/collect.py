@@ -894,6 +894,7 @@ def src_sheet(src, start, end):
     out = []
     for raw in rows:
         r = {(k or "").strip().lower(): (v or "").strip() for k, v in raw.items()}
+        r = {k: "" if v in ("-", "—", "–") else v for k, v in r.items()}  # the site sends "-" for blanks
         if r.get("approved", "").lower() not in APPROVED:
             continue
         date = _sheet_date(r.get("date", ""))
