@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T19:02:12Z",
+"updated": "2026-11-18T21:00:44Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -19,7 +19,7 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 15
+"count": 14
 },
 {
 "name": "Lafayette Travel",
@@ -39,7 +39,7 @@
 {
 "name": "Hideaway on Lee",
 "ok": true,
-"count": 8
+"count": 10
 },
 {
 "name": "Happening Next (Lafayette live music)",
@@ -285,25 +285,6 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "e607e2d6a3"
-},
-{
-"title": "Mom Walks",
-"start": "2026-11-18T09:30",
-"end": "2026-11-18T10:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston Street, Lafayette, LA 70503",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Join us for Mom Walks, a weekly gathering that brings moms together to enjoy movement, conversation, and fresh air in the heart of Moncus Park, presented by Lafayette Pediatric Dentistry. This growing community of local moms meets regularly to connect, walk at a comfortable pace, and spend time outdoors together. These walks offer a chance to build relationships, share experiences, and feel supported alongside others in similar seasons of motherhood. Mom Walks are designed to be simple, welcoming, and restorative. Come as you are, walk or linger as you like, and enjoy time in a space that feels calm and grounding. When: Every Wednesday at 9:30 AMWhere: Meet at the Veterans Memorial at Moncus Park Whether you are new to motherhood or have been on this journey for a while, you are invited to join us for connection, community, and time outside in the beautiful setting of Moncus Park. Completely free to attend and all mothers and maternal figures are welcome to join!",
-"url": "https://moncuspark.org/calendar-events/momwalks2026/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/01/MommyMe-_-Fall-2026-_-Moncus-Park-Fit-For-All-3.jpg",
-"source": "Moncus Park",
-"id": "8ea50eee35"
 },
 {
 "title": "Cajun and Creole Music on Campus",
@@ -1808,6 +1789,25 @@
 "id": "6dfc61dd24"
 },
 {
+"title": "Bonsoir Catin TURKEY GIVEAWAY Special Show",
+"start": "2026-11-25T19:00",
+"end": "2026-11-25T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette, LA",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/bonsoir-catin-turkey-giveaway-special-show",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1794768867550-RO1SL72ZXCCUZJPIX76G/884789974_1744985494293322_6294533251426956489_n.jpg",
+"source": "Hideaway on Lee",
+"id": "64106f5fcb"
+},
+{
 "title": "Overstuffed Trivia Night at Legends Annex",
 "start": "2026-11-25T19:00",
 "end": "2026-11-25T20:30",
@@ -2002,6 +2002,26 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/troy%20richard%20%20timely_xx4k.png",
 "source": "Blue Moon Saloon",
 "id": "a9b08f46d4"
+},
+{
+"title": "Savoy Family Cajun Band",
+"start": "2026-11-27T20:00",
+"end": "2026-11-27T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette, LA",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"family"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/savoy-family-cajun-band-2",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1795030014409-52EMVCBX4IX71RZLQGKO/867085518_1744984810960057_7152275771124314139_n.jpg",
+"source": "Hideaway on Lee",
+"id": "82d4e009f7"
 },
 {
 "title": "Roddie Romero and The Hub City Allstars",
