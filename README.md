@@ -44,8 +44,8 @@ To add or turn off a source, edit `collector/sources.json`.
 
 ## Where it lives
 
-- Website: https://brobicheaux22.github.io/bon-temps/
-- Project: https://github.com/brobicheaux22/bon-temps (GitHub Pages serves the `docs/` folder of `main`)
+- Website: https://brody-robicheaux.github.io/bon-temps/
+- Project: https://github.com/brody-robicheaux/bon-temps (GitHub Pages serves the `docs/` folder of `main`)
 - The *Collect events* workflow on the *Actions* tab runs every 2 hours. *Run workflow* runs it now.
 
 ### Optional: Ticketmaster (adds Cajundome concerts and touring shows)
@@ -57,7 +57,7 @@ secret*, name it `TICKETMASTER_API_KEY`, paste the key, save.
 ## Approving submitted events
 
 The "Submit an event" button opens a form right on the site, with no account needed. Link
-straight to it with `https://brobicheaux22.github.io/bon-temps/#submit` (handy for sending to
+straight to it with `https://brody-robicheaux.github.io/bon-temps/#submit` (handy for sending to
 venues and bands).
 
 Behind the scenes the form sends answers to a Google Form, and every submission lands as a row
