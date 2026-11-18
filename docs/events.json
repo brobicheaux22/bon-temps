@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T15:03:42Z",
+"updated": "2026-11-18T17:15:36Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -18,13 +18,15 @@
 },
 {
 "name": "Moncus Park",
-"ok": true,
-"count": 15
+"ok": false,
+"count": 12,
+"note": "TimeoutError: The read operation timed out (showing last good results)"
 },
 {
 "name": "Lafayette Travel",
-"ok": true,
-"count": 5
+"ok": false,
+"count": 5,
+"note": "HTTPError: HTTP Error 403: Forbidden (showing last good results)"
 },
 {
 "name": "Heymann Performing Arts Center",
@@ -34,7 +36,7 @@
 {
 "name": "Downtown Lafayette",
 "ok": true,
-"count": 11
+"count": 12
 },
 {
 "name": "Hideaway on Lee",
@@ -94,7 +96,7 @@
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 20
+"count": 21
 },
 {
 "name": "Happening Next (fitness)",
@@ -159,6 +161,25 @@
 "id": "2bc6311c38"
 },
 {
+"title": "Yin Yoga with Sound Bath - Cami",
+"start": "2026-11-16T16:00",
+"end": "2026-11-19T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "107 Montrose Ave., Ste. B, Lafayette, LA, United States, Louisiana 70503",
+"address": "107 Montrose Ave, Lafayette, LA 70503-3852, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Slow down, settle into the moment, and discover the power of stillness.\n\nYin Yoga is a slow, meditative practice that invites you to hold gentle poses for several minutes, allowing you to gradually work into the body's deeper connective tissues. Rather than flowing from pose to pose, you'll be encou",
+"url": "https://happeningnext.com/event/yin-yoga-with-sound-bath-cami-eid3a0eb21wft",
+"image": "https://cdn.happeningnext.com/events2/banners/1775687dc9a3566f2d5d0a54a760fd92460e1a80154c4c22319d7d5b85e42a3c-rimg-w1200-h675-dc383838-gmir?v=1794669167",
+"source": "Happening Next (health wellness)",
+"id": "baf2f10196"
+},
+{
 "title": "Cajun Jam Hosted by Jean Bertrand",
 "start": "2026-11-18T08:00",
 "end": null,
@@ -193,10 +214,10 @@
 "desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
 "url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Acadiana Center for the Arts",
+"source": "Lafayette Travel",
 "alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Lafayette Travel"
+"Acadiana Center for the Arts",
+"Acadiana Center for the Arts (all events)"
 ],
 "id": "d5773c2e0f"
 },
@@ -257,10 +278,10 @@
 "desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
 "url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
+"source": "Lafayette Travel",
 "alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Lafayette Travel"
+"Acadiana Center for the Arts",
+"Acadiana Center for the Arts (all events)"
 ],
 "id": "87f8b83e87"
 },
@@ -303,7 +324,8 @@
 "url": "https://moncuspark.org/calendar-events/momwalks2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/MommyMe-_-Fall-2026-_-Moncus-Park-Fit-For-All-3.jpg",
 "source": "Moncus Park",
-"id": "8ea50eee35"
+"id": "8ea50eee35",
+"alsoOn": []
 },
 {
 "title": "Cajun and Creole Music on Campus",
@@ -558,7 +580,8 @@
 "url": "https://www.lafayettetravel.com/event/womens-basketball%3a-ragin-cajuns-v-tarleton-state/45194/",
 "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/lafayette/ul-womans-basketball-slideshow-8a3e7c9c7f_E3F7380F-EFE8-95F6-8234973DAA13AEC4_e3fc8d2f-e1d9-7182-5481c3555fa78fb0.jpg",
 "source": "Lafayette Travel",
-"id": "f0d44aee98"
+"id": "f0d44aee98",
+"alsoOn": []
 },
 {
 "title": "Kate Gordon: Tender Terrain",
@@ -658,7 +681,8 @@
 "url": "https://moncuspark.org/calendar-events/language-cafe/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/08/Language-Cafe-at-Moncus-Park-_-Fall-2026.jpg",
 "source": "Moncus Park",
-"id": "65cd960794"
+"id": "65cd960794",
+"alsoOn": []
 },
 {
 "title": "HODGE PODGE 4",
@@ -703,9 +727,9 @@
 "desc": "Live music at The Hideaway Please call or email for reservations (contact@hideawayonlee.com) Please note we can only seat complete parties and...",
 "url": "https://www.hideawayonlee.com/events/gary-newman-his-rhythm-boys",
 "image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1792881760146-SI6BDUBCOGLIKESBNULU/843970511_1721768793281659_1783794214476183709_n+%281%29.jpg",
-"source": "Hideaway on Lee",
+"source": "Lafayette Travel",
 "alsoOn": [
-"Lafayette Travel"
+"Hideaway on Lee"
 ],
 "id": "3bd75956ae"
 },
@@ -1128,7 +1152,8 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "fb9b35e82f"
+"id": "fb9b35e82f",
+"alsoOn": []
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -1710,7 +1735,8 @@
 "url": "https://moncuspark.org/calendar-events/night-hike-fall-2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/08/Night-Hike-at-Moncus-Park-_-Fall-2026.png",
 "source": "Moncus Park",
-"id": "a039b51573"
+"id": "a039b51573",
+"alsoOn": []
 },
 {
 "title": "November Book du Mois!",
@@ -1786,7 +1812,8 @@
 "url": "https://moncuspark.org/calendar-events/yoga2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
 "source": "Moncus Park",
-"id": "6dfc61dd24"
+"id": "6dfc61dd24",
+"alsoOn": []
 },
 {
 "title": "Overstuffed Trivia Night at Legends Annex",
@@ -1883,7 +1910,8 @@
 "url": "https://moncuspark.org/calendar-events/jpj-memorial-turkey-trot-2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2023/09/JPJMemorialTrot.jpg",
 "source": "Moncus Park",
-"id": "77fea69738"
+"id": "77fea69738",
+"alsoOn": []
 },
 {
 "title": "Thanksgiving Brunch",
@@ -2058,7 +2086,8 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "ab18e77306"
+"id": "ab18e77306",
+"alsoOn": []
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -2780,7 +2809,8 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "4714a9988e"
+"id": "4714a9988e",
+"alsoOn": []
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -2895,13 +2925,14 @@
 "price": "",
 "free": false,
 "cats": [
-"arts"
+"community"
 ],
 "desc": "Join us on Saturday, December 5, for a festive neighborhood celebration bringing together local creativity, community, and holiday cheer!\n\nExplore the historic Fightingville neighborhood filled with holiday lights, live performances, creative activities, and plenty of opportunities to connect with y",
 "url": "https://happeningnext.com/event/fightingville-holiday-stroll-eid3a0ebau84t",
 "image": "https://cdn.happeningnext.com/events4/banners/cf9e03d802617e663d36ac6fead66dc4243d8ae8aa06164a9aa5f7f2e511a22b-rimg-w1200-h675-dc080808-gmir?v=1794860673",
 "source": "Happening Next (performances)",
 "alsoOn": [
+"Downtown Lafayette",
 "Happening Next (art)"
 ],
 "id": "714c48f9cf"
