@@ -249,7 +249,8 @@ const CATS = {
   wellness: "Wellness", family: "Family", community: "Community",
 };
 // The strip: three ranges, then one tile per day for the next two weeks ("d:2026-11-21")
-const WHEN = { upcoming: "Upcoming", tonight: "Tonight", weekend: "Weekend" };
+const WHEN = { picks: "Top picks", tonight: "Tonight", weekend: "Weekend" };
+const PICKS = 10;  // how many events "Top picks" shows (from the next 7 days)
 const STRIP_DAYS = 14;
 // (runs while the page is starting up, so it only uses function declarations)
 function validWhen(w) { return !!WHEN[w] || (/^d:\d{4}-\d{2}-\d{2}$/.test(w || "") && w.slice(2) >= iso10(lafNow())); }
@@ -273,13 +274,13 @@ const state = {
 const savedEvents = store.get("savedEvents", {});
 const saved = new Set([...store.get("saved", []), ...Object.keys(savedEvents)]);
 
-// Opens on "Tonight" in the evening and "Upcoming" during the day. A choice made during this
+// Opens on "Tonight" in the evening and on today's tile during the day. A choice made during this
 // visit sticks until the tab is closed.
 function pickWhen() {
   let chosen = null;
   try { chosen = sessionStorage.getItem("bt-when"); } catch (_) {}
   if (validWhen(chosen)) return chosen;
-  return lafNow().getHours() >= 16 ? "tonight" : "upcoming";
+  return lafNow().getHours() >= 16 ? "tonight" : "d:" + iso10(lafNow());
 }
 function rememberWhen(w) { try { sessionStorage.setItem("bt-when", w); } catch (_) {} }
 function persistSaved() { store.set("saved", [...saved]); store.set("savedEvents", savedEvents); }
@@ -323,7 +324,7 @@ function range(key) {
       const s = new Date(fri); s.setHours(17);
       return [new Date(Math.max(now, s)), addDays(fri, 3)];
     }
-    case "upcoming": return [now, addDays(t0, 31)];
+    case "picks": return [now, addDays(t0, 8)];
     case "all": return [now, addDays(t0, 400)];
     default: {
       if (key && key.startsWith("d:")) {  // one day; today starts now so finished events drop off
@@ -438,7 +439,44 @@ function filtered() {
   if (state.venue) return venueEvents(state.venue.key);
   const [a, b] = state.saved ? range("all") : range(state.when);
   const pool = state.saved ? Object.values(savedEvents).sort((x, y) => x.start.localeCompare(y.start)) : state.data.events;
-  return pool.filter(e => passes(e) && inWindow(e, a, b));
+  const list = pool.filter(e => passes(e) && inWindow(e, a, b));
+  if (state.when !== "picks" || state.saved) return list;
+  // Top picks: the best-scoring events of the week, shown in date order
+  // A weekly regular repeats over 2+ weeks (Cajun Jam); a play's 3-night run doesn't count
+  const dates = {};
+  for (const e of state.data.events) (dates[titleRoot(e)] ||= []).push(parse(e.start));
+  const repeats = {};
+  for (const [t, ds] of Object.entries(dates)) repeats[t] = ds.length >= 3 && (Math.max(...ds) - Math.min(...ds)) >= 13 * 864e5 ? ds.length : 0;
+  const ranked = list.filter(e => !e.ongoing).map(e => [e, pickScore(e, repeats)]).sort((x, y) => y[1] - x[1]);
+  const picks = [], perDay = {}, seen = new Set();
+  for (const [e] of ranked) {  // at most 2 a day, one per show, so the list covers the week
+    const day = e.start.slice(0, 10), root = titleRoot(e);
+    if ((perDay[day] || 0) >= 2 || seen.has(root)) continue;
+    perDay[day] = (perDay[day] || 0) + 1; seen.add(root); picks.push(e);
+    if (picks.length === PICKS) break;
+  }
+  return picks.sort((x, y) => x.start.localeCompare(y.start));
+}
+
+// There's no public "how many people are going" data, so picks are ranked on signals that
+// track it well enough: how many separate sites list the event, whether it's ticketed, a
+// photo and a real write-up. Weekly regulars (every Wednesday's Cajun Jam) are pushed down.
+const BIG_VENUES = /heymann|cajundome|acadiana center|blue moon|moncus|vermilionville|cit[eé] des arts|rock.?n.?bowl|wonderland|feed n seed|club 337|hideaway/i;
+const titleRoot = e => e.title.toLowerCase().split(/ [-–—|:(] /)[0].replace(/[^a-z]/g, "").slice(0, 12);
+function pickScore(e, repeats) {
+  const families = new Set([e.source, ...(e.alsoOn || [])].map(x => x.replace(/\s*\(.*\)$/, "")));
+  let score = families.size * 2 + Math.min((e.alsoOn || []).length, 5) * 0.6;   // listed widely
+  if (e.price && !e.free) score += 3;                 // ticketed shows
+  if (BIG_VENUES.test(e.venue)) score += 2;
+  if (e.cats.includes("theater")) score += 2;
+  if (e.cats.includes("music")) score += 1.5;
+  if (/festival|fest\b|gala|parade|premiere|anniversary|annual|championship|live in concert/i.test(e.title)) score += 3;
+  if ((e.desc || "").length > 200) score += 1;
+  if (e.image) score += 0.5;
+  if (/\b(?:talk|lecture|class|workshop|round ?up|yoga|tai chi|book club|trivia|meet ?up|tour with)\b/i.test(e.title)) score -= 3;
+  if ((repeats[titleRoot(e)] || 0) >= 3) score -= 4;   // weekly regulars
+  if (e.allDay) score -= 1;
+  return score;
 }
 function passes(e) {
   if (state.cats.size && !e.cats.some(c => state.cats.has(c))) return false;
@@ -498,7 +536,7 @@ function render() {
   if (state.venue) h = `<div class="venuebar"><div><b>${esc(state.venue.name)}</b><small>${list.length} upcoming event${list.length === 1 ? "" : "s"}</small></div><button type="button" data-allvenues>Back to all</button></div>`;
   else if (!state.saved) h += tipHtml();
   if (!list.length) {
-    h += `<div class="empty">${state.venue ? "Nothing coming up here right now." : state.saved ? "Nothing saved yet. Tap ♥ on an event to keep it here." : state.q ? `No events match “${esc(state.q)}”.` : state.when.startsWith("d:") ? (holidayOn(parse(state.when.slice(2))) ? `Happy ${holidayOn(parse(state.when.slice(2))).name}! Nothing's listed for this day yet. Try another day or Upcoming.` : "Nothing listed for this day yet. Try another day or Upcoming.") : "No events in this window. Try Upcoming."}</div>`;
+    h += `<div class="empty">${state.venue ? "Nothing coming up here right now." : state.saved ? "Nothing saved yet. Tap ♥ on an event to keep it here." : state.q ? `No events match “${esc(state.q)}”.` : state.when.startsWith("d:") ? (holidayOn(parse(state.when.slice(2))) ? `Happy ${holidayOn(parse(state.when.slice(2))).name}! Nothing's listed for this day yet. Try another day or Top picks.` : "Nothing listed for this day yet. Try another day or Top picks.") : "No events in this window. Try Top picks."}</div>`;
   } else {
     const now = lafNow(), today = dayStart(now);
     // Events that began before the window (a festival that opened Thursday, seen on Saturday)
@@ -777,7 +815,7 @@ setInterval(updatedLabel, 60e3);
 // bontemps/#submit opens the form directly, handy for sending to venues and bands
 if (location.hash === "#submit") openSubmit();
 load().then(() => {
-  if (state.data && state.when === "tonight" && !filtered().length) { state.when = "upcoming"; render(); }
+  if (state.data && !state.saved && !filtered().length) { state.when = "picks"; render(); }  // nothing left today/tonight
   const id = location.hash.slice(1); if (id && id !== "submit" && state.data) openSheet(id);
 });
 </script>
