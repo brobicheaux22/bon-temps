@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T09:11:58Z",
+"updated": "2026-11-18T11:12:11Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 38
+"count": 37
 },
 {
 "name": "Happening Next (theatre)",
@@ -54,7 +54,7 @@
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 51
+"count": 50
 },
 {
 "name": "Happening Next (comedy)",
@@ -74,17 +74,17 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 61
+"count": 60
 },
 {
 "name": "Happening Next (art)",
 "ok": true,
-"count": 44
+"count": 43
 },
 {
 "name": "Happening Next (exhibitions)",
 "ok": true,
-"count": 8
+"count": 7
 },
 {
 "name": "Happening Next (food & drinks)",
@@ -349,13 +349,6 @@
 "url": "https://hilliardartmuseum.org/event/cross-currents-improvised-truths-curtis-patterson-and-the-jazz-of-form/",
 "image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/UL-Digital-Billboards-16_9-1920-x-1080.webp",
 "source": "Hilliard Art Museum",
-"alsoOn": [
-"Happening Next (Lafayette live music)",
-"Happening Next (art)",
-"Happening Next (exhibitions)",
-"Happening Next (music)",
-"Happening Next (performances)"
-],
 "id": "a5d8d5958a"
 },
 {
