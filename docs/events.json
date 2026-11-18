@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T02:57:09Z",
+"updated": "2026-11-18T04:25:07Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -14,7 +14,7 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 16
+"count": 15
 },
 {
 "name": "Lafayette Travel",
@@ -48,17 +48,17 @@
 "note": "add a free TICKETMASTER_API_KEY to turn this on"
 },
 {
-"name": "Blue Moon Saloon",
-"ok": true,
-"count": 38
-},
-{
-"name": "Bon Temps",
+"name": "Submitted",
 "ok": true,
 "count": 0
 },
 {
-"name": "Submitted",
+"name": "Blue Moon Saloon",
+"ok": true,
+"count": 37
+},
+{
+"name": "Bon Temps",
 "ok": true,
 "count": 0
 }
@@ -196,44 +196,6 @@
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
 "source": "Acadiana Center for the Arts",
 "id": "d41c255e9c"
-},
-{
-"title": "Bird Walk and Survey at Moncus Park",
-"start": "2026-11-17T17:30",
-"end": "2026-11-17T18:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Bird Walk & Survey Join Acadiana Master Naturalists for a guided evening walk through Moncus Park as we observe and survey local bird species in their natural habitat. Birders of all experience levels are welcome, from curious beginners to seasoned enthusiasts, families included. Dates: September 15, October 20, November 17 Time: 5:30–6:30 PM What to Bring: Binoculars and curiosity About: This program is part of Moncus Park's environmental programming, made possible by the MJ Sindler Family Fund for Culture & Media.",
-"url": "https://moncuspark.org/calendar-events/bird-walk-and-survey-at-moncus-park-2/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/07/Bird-Walk-and-Survey-at-Moncus-Park-Fall-2026.jpg",
-"source": "Moncus Park",
-"id": "3689f27dbd"
-},
-{
-"title": "Acadiana Talent Presents Storyteller's Open Mic Night hosted by Jason Harrington",
-"start": "2026-11-17T18:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Blue Moon Saloon and Guest House",
-"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "🎤 STORYTELLER’S OPEN MIC NIGHT 🎶\n\nJoin us Tuesday, November 17th at Blue Moon Saloon for a night of original songs, great stories, and good vibes!\n\nPresented by Acadiana Talent , hosted by Jason Harrington , featuring special guest Dustin Dale Gaspard! 🔥\n\nWhether you're ready to share your songs with the crowd or just want to kick back and enjoy some live music, there's a place for you here!\n\n🎸 SIGN-UP: 6:00 PM\n🎶 MUSIC STARTS: 6:30 PM\n🍻 BAR OPENS EARLY: 5:00 PM\n🥃 HAPPY HOUR: 5–8 PM\n🎟️ COVER: Just $5!\n\nBring your guitar, bring your friends, share your stories, and come be part of the music. Or grab a drink, find a seat, and vibe with us!",
-"url": "https://events.timely.fun/kw4jncf1/event/78486816/20261117180000",
-"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/AT%2011-17_yM1N.png",
-"source": "Blue Moon Saloon",
-"id": "668b8b14cc"
 },
 {
 "title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
