@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T13:21:42Z",
+"updated": "2026-11-18T15:03:42Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -217,9 +217,6 @@
 "url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
 "source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
 "id": "81654b0ae6"
 },
 {
@@ -562,6 +559,25 @@
 "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/lafayette/ul-womans-basketball-slideshow-8a3e7c9c7f_E3F7380F-EFE8-95F6-8234973DAA13AEC4_e3fc8d2f-e1d9-7182-5481c3555fa78fb0.jpg",
 "source": "Lafayette Travel",
 "id": "f0d44aee98"
+},
+{
+"title": "Kate Gordon: Tender Terrain",
+"start": "2026-11-19T09:00",
+"end": "2026-11-19T17:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
+"source": "Acadiana Center for the Arts (all events)",
+"id": "486bcf11e8"
 },
 {
 "title": "Artist Tour with Curtis Patterson + Melissa Messina",
