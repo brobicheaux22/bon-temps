@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T17:15:36Z",
+"updated": "2026-11-18T19:02:12Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -18,15 +18,13 @@
 },
 {
 "name": "Moncus Park",
-"ok": false,
-"count": 12,
-"note": "TimeoutError: The read operation timed out (showing last good results)"
+"ok": true,
+"count": 15
 },
 {
 "name": "Lafayette Travel",
-"ok": false,
-"count": 5,
-"note": "HTTPError: HTTP Error 403: Forbidden (showing last good results)"
+"ok": true,
+"count": 5
 },
 {
 "name": "Heymann Performing Arts Center",
@@ -46,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 37
+"count": 38
 },
 {
 "name": "Happening Next (theatre)",
@@ -122,12 +120,12 @@
 {
 "name": "Submitted",
 "ok": true,
-"count": 1
+"count": 2
 },
 {
 "name": "Blue Moon Saloon",
 "ok": true,
-"count": 37
+"count": 36
 },
 {
 "name": "Wonderland Performing Arts",
@@ -180,25 +178,6 @@
 "id": "baf2f10196"
 },
 {
-"title": "Cajun Jam Hosted by Jean Bertrand",
-"start": "2026-11-18T08:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Blue Moon Saloon and Guest House",
-"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "Cajun Jam Hosted by Jean Bertrand\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
-"url": "https://events.timely.fun/kw4jncf1/event/78437884/20261118080000",
-"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20jean%20bertrand%20%2011-18_DgVI.png",
-"source": "Blue Moon Saloon",
-"id": "885f45db41"
-},
-{
 "title": "Artists’ Alliance",
 "start": "2026-11-18T09:00",
 "end": "2027-01-09T17:00",
@@ -214,10 +193,10 @@
 "desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
 "url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Lafayette Travel",
+"source": "Acadiana Center for the Arts",
 "alsoOn": [
-"Acadiana Center for the Arts",
-"Acadiana Center for the Arts (all events)"
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
 ],
 "id": "d5773c2e0f"
 },
@@ -278,10 +257,10 @@
 "desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
 "url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Lafayette Travel",
+"source": "Acadiana Center for the Arts",
 "alsoOn": [
-"Acadiana Center for the Arts",
-"Acadiana Center for the Arts (all events)"
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
 ],
 "id": "87f8b83e87"
 },
@@ -324,8 +303,7 @@
 "url": "https://moncuspark.org/calendar-events/momwalks2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/MommyMe-_-Fall-2026-_-Moncus-Park-Fit-For-All-3.jpg",
 "source": "Moncus Park",
-"id": "8ea50eee35",
-"alsoOn": []
+"id": "8ea50eee35"
 },
 {
 "title": "Cajun and Creole Music on Campus",
@@ -392,6 +370,25 @@
 "Happening Next (music)"
 ],
 "id": "3b541dbc1a"
+},
+{
+"title": "Speak Out Against SpaceX",
+"start": "2026-11-18T17:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Abbeville Courthouse",
+"address": "100 N. State Street, 2nd floor",
+"price": "Free",
+"free": true,
+"cats": [
+"community"
+],
+"desc": "Here is a link to the meeting agenda:\n\nhttps://www.vppj.org/PDFforms/Agendas/Agendas%202026/11.Nov2026/01.Special%20Budget.PJ%20Agenda%2011-18-26%20-%20Corrected.02.pdf",
+"url": "https://www.instagram.com/p/Df0zoJlO5nf/?avpt=eXJteDd5ZHgzMnhu",
+"image": "",
+"source": "Submitted",
+"id": "e2f00c4159"
 },
 {
 "title": "Artist Round Up: Collaging, Flyer Making, and the Community Zine",
@@ -580,8 +577,7 @@
 "url": "https://www.lafayettetravel.com/event/womens-basketball%3a-ragin-cajuns-v-tarleton-state/45194/",
 "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/lafayette/ul-womans-basketball-slideshow-8a3e7c9c7f_E3F7380F-EFE8-95F6-8234973DAA13AEC4_e3fc8d2f-e1d9-7182-5481c3555fa78fb0.jpg",
 "source": "Lafayette Travel",
-"id": "f0d44aee98",
-"alsoOn": []
+"id": "f0d44aee98"
 },
 {
 "title": "Kate Gordon: Tender Terrain",
@@ -681,8 +677,7 @@
 "url": "https://moncuspark.org/calendar-events/language-cafe/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/08/Language-Cafe-at-Moncus-Park-_-Fall-2026.jpg",
 "source": "Moncus Park",
-"id": "65cd960794",
-"alsoOn": []
+"id": "65cd960794"
 },
 {
 "title": "HODGE PODGE 4",
@@ -727,9 +722,9 @@
 "desc": "Live music at The Hideaway Please call or email for reservations (contact@hideawayonlee.com) Please note we can only seat complete parties and...",
 "url": "https://www.hideawayonlee.com/events/gary-newman-his-rhythm-boys",
 "image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1792881760146-SI6BDUBCOGLIKESBNULU/843970511_1721768793281659_1783794214476183709_n+%281%29.jpg",
-"source": "Lafayette Travel",
+"source": "Hideaway on Lee",
 "alsoOn": [
-"Hideaway on Lee"
+"Lafayette Travel"
 ],
 "id": "3bd75956ae"
 },
@@ -1152,8 +1147,7 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "fb9b35e82f",
-"alsoOn": []
+"id": "fb9b35e82f"
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -1735,8 +1729,7 @@
 "url": "https://moncuspark.org/calendar-events/night-hike-fall-2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/08/Night-Hike-at-Moncus-Park-_-Fall-2026.png",
 "source": "Moncus Park",
-"id": "a039b51573",
-"alsoOn": []
+"id": "a039b51573"
 },
 {
 "title": "November Book du Mois!",
@@ -1812,8 +1805,7 @@
 "url": "https://moncuspark.org/calendar-events/yoga2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
 "source": "Moncus Park",
-"id": "6dfc61dd24",
-"alsoOn": []
+"id": "6dfc61dd24"
 },
 {
 "title": "Overstuffed Trivia Night at Legends Annex",
@@ -1910,8 +1902,7 @@
 "url": "https://moncuspark.org/calendar-events/jpj-memorial-turkey-trot-2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2023/09/JPJMemorialTrot.jpg",
 "source": "Moncus Park",
-"id": "77fea69738",
-"alsoOn": []
+"id": "77fea69738"
 },
 {
 "title": "Thanksgiving Brunch",
@@ -2086,8 +2077,7 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "ab18e77306",
-"alsoOn": []
+"id": "ab18e77306"
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -2809,8 +2799,7 @@
 "url": "https://moncuspark.org/calendar-events/farmersmarket/",
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
-"id": "4714a9988e",
-"alsoOn": []
+"id": "4714a9988e"
 },
 {
 "title": "The Essentials of Tai Chi",
@@ -4683,6 +4672,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
 "source": "Blue Moon Saloon",
 "id": "f70e8583a3"
+},
+{
+"title": "Bag of Donuts | Rock'n'Bowl® de Lafayette",
+"start": "2027-01-01T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Start 2027 with a party! Bag of Donuts, the party band, takes over Rock'n'Bowl® de Lafayette on New Year's Day, Friday, January 1 at 9:00 PM. Come dance into the new year with us!",
+"url": "https://happeningnext.com/event/bag-of-donuts-rocknbowl-de-lafayette-eid3a0ebmmmqj",
+"image": "https://cdn.happeningnext.com/events9/banners/8ff7f46ab682639708aa626afcd1b5820c698a64133c233d4a73f76162dad2cf-rimg-w1200-h628-dc482858-gmir?v=1795016754",
+"source": "Happening Next (Lafayette live music)",
+"id": "d3a988c432"
 },
 {
 "title": "The Essentials of Tai Chi",
