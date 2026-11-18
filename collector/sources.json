@@ -1,25 +1,406 @@
 {
-  "_help": "Each source is one place Bon Temps checks for events. type: tribe (WordPress 'The Events Calendar' sites), jsonld (pages with built-in event data), ical (calendar feeds), saffire (Saffire venue sites), downtown (Downtown Lafayette event pages), page (AI reads the page; runs on GitHub only), ticketmaster (needs TICKETMASTER_API_KEY). Set enabled to false to turn one off. venue is used when an event doesn't say where it is. cats adds categories to every event from that source.",
+  "_help": "Each source is one place Bon Temps checks for events. type: tribe (WordPress 'The Events Calendar' sites), jsonld (pages with built-in event data), ical (calendar feeds), saffire (Saffire venue sites), eventlinks (a page linking to one page per event; links is a pattern for those links), wixsitemap (Wix sites: reads upcoming event pages from the sitemap), mecrest (WordPress Modern Events Calendar sites), sheet (published Google Sheet of submissions), squarespace (Squarespace event pages), downtown (Downtown Lafayette event pages), page (AI reads the page; currently unavailable), ticketmaster (needs TICKETMASTER_API_KEY). Set enabled to false to turn one off. venue is used when an event doesn't say where it is. cats adds categories to every event from that source; fallback is used only when an event matches no category. maxDays drops listings that run longer than that many days (open-ended 'weekly' listings).",
   "sources": [
-    { "name": "The Lafayette Mom", "type": "tribe", "url": "https://thelafayettemom.com", "enabled": false, "_note": "Turned off: mostly kids' and library events." },
-    { "name": "Hilliard Art Museum", "type": "tribe", "url": "https://hilliardartmuseum.org", "venue": "Hilliard Art Museum", "cats": ["arts"] },
-    { "name": "Acadiana Center for the Arts", "type": "jsonld", "url": "https://acadianacenterforthearts.org/events/", "venue": "Acadiana Center for the Arts", "fixTimezone": true },
-    { "name": "Moncus Park", "type": "jsonld", "url": "https://moncuspark.org/events/", "venue": "Moncus Park" },
-    { "name": "Lafayette Travel", "type": "jsonld", "url": "https://www.lafayettetravel.com/events/this-weekend/" },
-    { "name": "Heymann Performing Arts Center", "type": "saffire", "url": "https://www.heymanncenter.com", "venue": "Heymann Performing Arts Center" },
-    { "name": "Downtown Lafayette", "type": "downtown", "url": "https://www.downtownlafayette.org/events", "venue": "Downtown Lafayette" },
-    { "name": "Hideaway on Lee", "type": "squarespace", "url": "https://www.hideawayonlee.com/events", "venue": "Hideaway on Lee", "cats": ["music"] },
-    { "name": "Happening Next (Lafayette live music)", "type": "jsonld", "url": "https://www.happeningnext.com/lafayette/live-music", "cats": ["music"], "_note": "Third-party listings site; covers Feed N Seed, Warehouse 535, Rock'n'Bowl and other clubs." },
-    { "name": "Ticketmaster (Cajundome & touring shows)", "type": "ticketmaster" },
-    { "name": "Submitted", "type": "sheet", "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQX-hqPBIkbxYWygODHDWTSeWFB4qlFwxoCtMG4CIO22AGcopHBxHkk7O1yK7HKY5SmXbDzk5cR6mXO/pub?gid=699497852&single=true&output=csv", "_note": "Rows from the site's Submit an event form. Only rows with Approved = yes are published." },
-
-    { "name": "Cajundome", "type": "page", "url": "https://www.cajundome.com/events", "venue": "Cajundome", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
-    { "name": "Rock'n'Bowl de Lafayette", "type": "page", "url": "https://www.rocknbowl.com/lafayette", "venue": "Rock'n'Bowl de Lafayette", "cats": ["music"], "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
-    { "name": "Parish Brewing", "type": "page", "url": "https://parishbeer.com/events/", "venue": "Parish Brewing Co., Broussard", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
-    { "name": "Lafayette Public Library", "type": "page", "url": "https://lafayettepubliclibrary.org/", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
-
-    { "name": "Blue Moon Saloon", "type": "ical", "url": "https://events.timely.fun/api/calendars/54756026/export?format=ics", "link": "https://bluemoonpresents.com/live-music", "venue": "Blue Moon Saloon", "cats": ["music"], "_note": "The public 'Subscribe' iCal feed from the venue's Timely calendar." },
-    { "name": "Artmosphere", "type": "page", "url": "https://www.artmosphere.net/", "enabled": false, "_note": "Wix site; events load with JavaScript." },
-    { "name": "Cajun Road Runners", "type": "page", "url": "https://cajunroadrunners.com/calendar/", "enabled": false, "_note": "Calendar page is currently empty." }
-  ]
+    {
+      "name": "The Lafayette Mom",
+      "type": "tribe",
+      "url": "https://thelafayettemom.com",
+      "enabled": false,
+      "_note": "Turned off: mostly kids' and library events."
+    },
+    {
+      "name": "Hilliard Art Museum",
+      "type": "tribe",
+      "url": "https://hilliardartmuseum.org",
+      "venue": "Hilliard Art Museum",
+      "cats": [
+        "arts"
+      ]
+    },
+    {
+      "name": "Acadiana Center for the Arts",
+      "type": "jsonld",
+      "url": "https://acadianacenterforthearts.org/events/",
+      "venue": "Acadiana Center for the Arts",
+      "fixTimezone": true,
+      "fallback": [
+        "arts"
+      ]
+    },
+    {
+      "name": "Acadiana Center for the Arts (all events)",
+      "type": "mecrest",
+      "url": "https://acadianacenterforthearts.org",
+      "venue": "Acadiana Center for the Arts",
+      "fixTimezone": true,
+      "fallback": [
+        "arts"
+      ],
+      "_note": "Every event page the site lists, so shows further out are included."
+    },
+    {
+      "name": "Moncus Park",
+      "type": "jsonld",
+      "url": "https://moncuspark.org/events/",
+      "venue": "Moncus Park"
+    },
+    {
+      "name": "Lafayette Travel",
+      "type": "jsonld",
+      "url": "https://www.lafayettetravel.com/events/this-weekend/"
+    },
+    {
+      "name": "Heymann Performing Arts Center",
+      "type": "saffire",
+      "url": "https://www.heymanncenter.com",
+      "venue": "Heymann Performing Arts Center"
+    },
+    {
+      "name": "Downtown Lafayette",
+      "type": "downtown",
+      "url": "https://www.downtownlafayette.org/events",
+      "venue": "Downtown Lafayette"
+    },
+    {
+      "name": "Hideaway on Lee",
+      "type": "squarespace",
+      "url": "https://www.hideawayonlee.com/events",
+      "venue": "Hideaway on Lee",
+      "cats": [
+        "music"
+      ]
+    },
+    {
+      "name": "Happening Next (Lafayette live music)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/live-music",
+      "cats": [
+        "music"
+      ],
+      "_note": "Third-party listings site; covers Feed N Seed, Warehouse 535, Rock'n'Bowl and other clubs.",
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (theatre)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/theatre",
+      "fallback": [
+        "theater"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (performances)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/performances",
+      "fallback": [
+        "arts"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (comedy)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/comedy",
+      "fallback": [
+        "theater"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (dance)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/dance",
+      "fallback": [
+        "arts"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (concerts)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/concerts",
+      "fallback": [
+        "music"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (music)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/music",
+      "fallback": [
+        "music"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (art)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/art",
+      "fallback": [
+        "arts"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (exhibitions)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/exhibitions",
+      "fallback": [
+        "arts"
+      ],
+      "details": true
+    },
+    {
+      "name": "Happening Next (food & drinks)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/food-drinks",
+      "fallback": [
+        "food"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (health wellness)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/health-wellness",
+      "fallback": [
+        "wellness"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (fitness)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/fitness",
+      "fallback": [
+        "wellness"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Happening Next (festivals)",
+      "type": "jsonld",
+      "url": "https://www.happeningnext.com/lafayette/festivals",
+      "fallback": [
+        "community"
+      ],
+      "maxDays": 7,
+      "details": true
+    },
+    {
+      "name": "Cité des Arts",
+      "type": "wixsitemap",
+      "url": "https://www.citedesarts.org/event-pages-sitemap.xml",
+      "venue": "Cité des Arts",
+      "fallback": [
+        "theater"
+      ],
+      "_note": "Theater, comedy and classes. Reads upcoming event pages listed in the site's sitemap."
+    },
+    {
+      "name": "Ticketmaster (Cajundome & touring shows)",
+      "type": "ticketmaster"
+    },
+    {
+      "name": "Submitted",
+      "type": "sheet",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQX-hqPBIkbxYWygODHDWTSeWFB4qlFwxoCtMG4CIO22AGcopHBxHkk7O1yK7HKY5SmXbDzk5cR6mXO/pub?gid=699497852&single=true&output=csv",
+      "_note": "Rows from the site's Submit an event form. Only rows with Approved = yes are published."
+    },
+    {
+      "name": "Cajundome",
+      "type": "page",
+      "url": "https://www.cajundome.com/events",
+      "venue": "Cajundome",
+      "enabled": false,
+      "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026."
+    },
+    {
+      "name": "Rock'n'Bowl de Lafayette",
+      "type": "page",
+      "url": "https://www.rocknbowl.com/lafayette",
+      "venue": "Rock'n'Bowl de Lafayette",
+      "cats": [
+        "music"
+      ],
+      "enabled": false,
+      "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026."
+    },
+    {
+      "name": "Parish Brewing",
+      "type": "page",
+      "url": "https://parishbeer.com/events/",
+      "venue": "Parish Brewing Co., Broussard",
+      "enabled": false,
+      "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026."
+    },
+    {
+      "name": "Lafayette Public Library",
+      "type": "page",
+      "url": "https://lafayettepubliclibrary.org/",
+      "enabled": false,
+      "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026."
+    },
+    {
+      "name": "Blue Moon Saloon",
+      "type": "ical",
+      "url": "https://events.timely.fun/api/calendars/54756026/export?format=ics",
+      "link": "https://bluemoonpresents.com/live-music",
+      "venue": "Blue Moon Saloon",
+      "cats": [
+        "music"
+      ],
+      "_note": "The public 'Subscribe' iCal feed from the venue's Timely calendar."
+    },
+    {
+      "name": "Artmosphere",
+      "type": "page",
+      "url": "https://www.artmosphere.net/",
+      "enabled": false,
+      "_note": "Wix site; events load with JavaScript."
+    },
+    {
+      "name": "Cajun Road Runners",
+      "type": "page",
+      "url": "https://cajunroadrunners.com/calendar/",
+      "enabled": false,
+      "_note": "Calendar page is currently empty."
+    },
+    {
+      "name": "Wonderland Performing Arts",
+      "type": "wixsitemap",
+      "url": "https://www.wonderlandperformingarts.com/event-pages-sitemap.xml",
+      "enabled": true,
+      "_note": "Reads upcoming event pages from the site's sitemap. Happening Next also lists some Wonderland shows.",
+      "venue": "Wonderland Performing Arts",
+      "fallback": [
+        "theater"
+      ]
+    },
+    {
+      "name": "UL Lafayette Dance & Theatre",
+      "type": "page",
+      "url": "https://louisiana.edu/dancetheatre/stage/performing-arts-season-productions",
+      "enabled": false,
+      "_note": "UL's calendar loads with JavaScript and its data feeds are off. UL performances (Angelle Hall, Burke Theatre) come in through Happening Next's performances and theatre pages."
+    }
+  ],
+  "hide": {
+    "_help": "Events whose title matches any of these patterns (case doesn't matter) are left out. Add a word or phrase to hide more.",
+    "patterns": [
+      "free parking",
+      "closed for",
+      "^closed\\b",
+      "office hours",
+      "registration (?:deadline|opens|closes)",
+      "^(?:rock ?'?n'? ?bowl|blue moon saloon|hideaway on lee|feed (?:n|and|&) seed)[^a-z]*(?:de lafayette)?[^a-z]*(?:lafayette,? la\\.?)?$",
+      "\\bonline\\b",
+      "\\bvirtual\\b",
+      "\\bzoom\\b",
+      "medicare",
+      "\\binsurance\\b",
+      "benefits? (?:meeting|seminar|enrollment)",
+      "client appreciation",
+      "\\brealty\\b",
+      "\\bmeeting\\b",
+      "networking",
+      "seminar",
+      "webinar",
+      "info(?:rmation)? session",
+      "black friday",
+      "cyber monday",
+      "open house",
+      "job fair",
+      "career fair",
+      "\\bthe little gym\\b",
+      "\\bsteam camp\\b",
+      "ribbon cutting",
+      "luncheon",
+      "savings",
+      "\\bsale\\b",
+      "\\bclearance\\b",
+      "grand opening",
+      "weekend pass"
+    ]
+  },
+  "venueNames": {
+    "2807 Johnston St": "Wonderland Performing Arts",
+    "2913 Johnston St": "Moncus Park",
+    "300 Fisher Rd": "Vermilionville",
+    "215 E Convent St": "Blue Moon Saloon",
+    "905 Jefferson St": "Rock'n'Bowl de Lafayette",
+    "109 Vine St": "Cité des Arts",
+    "1373 S College Rd": "Heymann Performing Arts Center",
+    "201 McKinley St": "The Loose Caboose",
+    "407 Lee Ave": "Hideaway on Lee",
+    "1100 Camellia Blvd": "City Club at River Ranch"
+  },
+  "_venueNamesHelp": "venueNames: street address -> venue name, for listings that only give an address. The collector also learns these from listings that include both.",
+  "quality": {
+    "_help": "Events listed ONLY by these aggregator sites are kept when they're music, theater, food or arts, have a public-event word in the title (keepWords), or are at a known venue (any venue another source covers, plus knownVenues below). Everything else (seminars, office parties, kids' camps) is left out. The Actions log lists what was left out each run.",
+    "aggregators": [
+      "Happening Next"
+    ],
+    "keepCats": [
+      "music",
+      "theater",
+      "food",
+      "arts"
+    ],
+    "keepWords": "\\b(?:5k|10k|run|race|walk|yoga|festival|fest|market|parade|fair|rodeo|gala|crawfish|boil|cook-?off|second line|mardi gras|parade|tour|concert|show|dance|trivia|bingo)\\b",
+    "knownVenues": [
+      "Club 337",
+      "The Ruins",
+      "Grant St Dance Hall",
+      "Warehouse 535",
+      "Feed N Seed",
+      "The Freetown Boom Boom Room",
+      "The Loose Caboose",
+      "Artmosphere",
+      "Pamplona",
+      "Legends",
+      "Rock'n'Bowl",
+      "El Sido's",
+      "Cowboys",
+      "La Espuela",
+      "Petroleum Club",
+      "Picard Park",
+      "Girard Park",
+      "Parc Sans Souci",
+      "Vermilionville",
+      "Acadian Village",
+      "Moncus Park",
+      "Cajundome",
+      "Blackham Coliseum",
+      "Angelle Hall",
+      "Burke-Hawthorne",
+      "Ducrest-Gilfry",
+      "Hideaway on Lee",
+      "Blue Moon Saloon",
+      "Wonderland",
+      "Cité des Arts",
+      "Heymann",
+      "Parish Brewing",
+      "Adopted Dog Brewing",
+      "Wurst Biergarten",
+      "Dat Dog",
+      "The Grouse Room",
+      "NiteTown",
+      "4509 Lounge",
+      "City Club"
+    ]
+  }
 }

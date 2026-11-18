@@ -51,14 +51,16 @@ AREA = {
 }
 
 CATEGORIES = {
-    "music": r"music|concert|\bband\b|jazz|blues|zydeco|cajun jam|\bdj\b|symphony|orchestra|choir|singer|songwriter|fais do-do|dance ?hall|two-step|karaoke|open mic|bluegrass|country night|hip hop|\brap\b|rock\b|\bjam\b|acoustic|live on",
+    "music": r"music(?!al)|concert|\bband\b|jazz|blues|zydeco|cajun jam|\bdj\b|symphony|orchestra|choir|singer|songwriter|fais do-do|dance ?hall|two-step|karaoke|open mic|bluegrass|country night|hip hop|\brap\b|rock\b|\bjam\b|acoustic|live on|, tba\b|\bw/ |\bft\b.|\bfeat\b.|album release",
     "food": r"\bfood|dinner|brunch|lunch|breakfast|crawfish|boudin|gumbo|tasting|\bwine|\bbeer|brew|cocktail|\bchef|cooking|farmers market|\bfeast|supper|bbq|barbecue|pop-up|happy hour|cook-off|cookoff",
-    "arts": r"\bart\b|\barts\b|museum|gallery|exhibit|theat(?:er|re)|comedy|comedian|\bfilm|movie|ballet|poetry|\bbook|author|artwalk|art walk|\bcraft|painting|broadway|musical|opera|improv",
+    "arts": r"\bart\b|\barts\b|museum|gallery|exhibit|\bfilm|movie|poetry|\bbook|author|artwalk|art walk|\bcraft|painting|\bscreen(?:ing)?s?\b|film festival|selection of works|artist talk",
+    "theater": r"theat(?:er|re)|musical|broadway|\ba play\b|stage play|new play|\bplays\b|shakespeare|playwright|ballet|nutcracker|opera\b|\bimprov\b|comedy|comedian|stand-up|drag show|cabaret|readers.? theat|on stage|\bthe wiz\b|saturday night live|\bsnl\b|late night with|netflix special|comedy central",
     "wellness": r"yoga|\brun\b|\b5k\b|\b10k\b|marathon|half marathon|\bwalk\b|fitness|workout|meditation|sound bath|wellness|\bhealth|pilates|\bbike|cycling|\bhike|tai chi|blood drive|zumba|mental health|run club",
     "family": r"\bkids?\b|children|family|storytime|story time|toddler|\bteens?\b|sensory|playtime|\bcamp\b|santa|easter egg|trick or treat|\bbaby|preschool",
     "community": r"volunteer|clean ?up|fundraiser|benefit|charity|council|workshop|lecture|\btalk\b|seminar|networking|parade|\bfair\b|basketball|football|baseball|softball|volleyball|soccer|ragin|market|festival|\bclass\b",
 }
 CATEGORY_ORDER = list(CATEGORIES)
+THEATER_HINT = r"best musical|musical theat|broadway|theat(?:er|re) company|stage play|\bplaywright|\ba play\b|\bplay by\b|by william shakespeare|ballet company|touring production"
 
 
 class Skip(Exception):
@@ -157,7 +159,7 @@ def looks_like_code(s: str) -> bool:
 
 
 def clean(text, limit: int = 420, breaks: bool = False) -> str:
-    s = strip_code(str(text or ""))
+    s = strip_code(str(text or "")).replace("%26", "&")
     if breaks:  # keep paragraph breaks for event descriptions
         s = re.sub(r"(?i)<br\s*/?>|</p>|</li>|</h\d>|</div>", "\n", s)
     s = html.unescape(re.sub(r"<[^>]+>", " ", s))
@@ -179,9 +181,16 @@ def in_area(city: str) -> bool:
     return not c or c in AREA
 
 
-def categorize(main_text: str, extra_text: str = "", forced: list[str] | None = None) -> list[str]:
+# Words in venue names that say nothing about the event ("Acadiana Center for the Arts", "Moncus Theater")
+VENUE_WORDS = r"(?i)theat(?:er|re)|performing|" + chr(92) + "barts?" + chr(92) + "b"
+
+
+def categorize(main_text: str, extra_text: str = "", forced: list[str] | None = None,
+               fallback: list[str] | None = None) -> tuple[list[str], bool]:
     """Categories come from the title, venue and the source's own tags. The description is only
-    used when those say nothing (so a storytime that mentions "songs" doesn't become music)."""
+    used when those say nothing (so a storytime that mentions "songs" doesn't become music).
+    Returns (categories, guessed): guessed is True when nothing matched and the source's
+    fallback (or "community") was used, so a better-informed duplicate can override it."""
     cats = [c for c in (forced or []) if c in CATEGORIES]
     for text in (main_text, extra_text):
         t = text.lower()
@@ -190,9 +199,19 @@ def categorize(main_text: str, extra_text: str = "", forced: list[str] | None = 
                 cats.append(name)
         if cats:
             break
-    if not cats:
-        cats = ["community"]
-    return sorted(cats, key=CATEGORY_ORDER.index)[:3]
+    # A show's description often says what it is even when the title doesn't ("The Wiz" -> "Best Musical")
+    # (skipped for music-only sources like Blue Moon, whose band bios talk about "the musical heritage")
+    if "theater" not in cats and "music" not in (forced or []) and re.search(THEATER_HINT, extra_text.lower()):
+        cats.append("theater")
+    # "Nutcracker Painting Class" or "The Nutcracker Tea" are themed outings, not stage shows
+    main = main_text.lower()
+    if ("theater" in cats and re.search(r"\b(?:class|classes|painting|paint|workshop|camp|tea|cake|cookies?)\b", main)
+            and not re.search(r"theat(?:er|re)|musical|\bplay\b|comedy|improv|ballet\b(?! cake)", main)):
+        cats.remove("theater")
+    guessed = not cats
+    if guessed:
+        cats = list(fallback or ["community"])
+    return sorted(cats, key=CATEGORY_ORDER.index)[:3], guessed
 
 
 def price_info(raw) -> tuple[str, bool]:
@@ -215,7 +234,12 @@ def make_event(src: dict, *, title, start, end=None, all_day=False, venue="", ad
     desc = clean(desc, 1500, breaks=True)
     if looks_like_code(desc):  # couldn't clean it: show the "find more details" link instead
         desc = ""
-    venue = clean(venue, 120) or src.get("venue", "")
+    venue = clean(venue, 120)
+    if re.fullmatch(r"(?i)(?:location|venue|place|event)(?: name)?|tb[adc]|to be (?:announced|determined)|n/?a|none|-+", venue):
+        venue = ""  # calendar placeholders like Moncus Park's "Location Name"
+    venue = venue or src.get("venue", "")
+    cats, guessed = categorize(f"{title} {hint} {re.sub(VENUE_WORDS, '', venue)}", desc,
+                               src.get("cats"), src.get("fallback"))
     return {
         "title": title,
         "start": iso(s),
@@ -226,7 +250,8 @@ def make_event(src: dict, *, title, start, end=None, all_day=False, venue="", ad
         "address": clean(address, 160),
         "price": price_text,
         "free": free,
-        "cats": categorize(f"{title} {hint} {venue}", desc, src.get("cats")),
+        "cats": cats,
+        "_guess": guessed,
         "desc": desc,
         "url": url or src.get("url", ""),
         "image": image if isinstance(image, str) and image.startswith("http") else "",
@@ -339,10 +364,40 @@ def from_jsonld(src, x):
 
 def src_jsonld(src, start, end):
     page = fetch(src["url"])
-    events = [from_jsonld(src, x) for x in jsonld_events(page)]
+    items = jsonld_events(page)
+    if src.get("details"):  # list pages only give dates: open each event's page for times and details
+        items = [_with_details(x) for x in items]
+    events = [from_jsonld(src, x) for x in items]
     if not any(events):
         raise Skip("no event data found on the page")
     return events
+
+
+# Event pages already read are remembered between runs (collector/detail-cache.json), so each
+# update only opens pages for events it hasn't seen before.
+DETAIL_FILE = ROOT / "collector" / "detail-cache.json"
+DETAILS: dict = {}
+DETAILS_USED: set = set()
+
+
+def _with_details(x):
+    url = x.get("url")
+    if not url:
+        return x
+    DETAILS_USED.add(url)
+    if url not in DETAILS:
+        try:
+            found = jsonld_events(fetch(url))
+            DETAILS[url] = found[0] if found else {}
+        except (urllib.error.URLError, TimeoutError, ValueError):
+            return x  # try again next run
+        time.sleep(0.3)
+    d = DETAILS[url]
+    if not d:
+        return x
+    merged = {**x, **{k: v for k, v in d.items() if v not in (None, "", [], {})}}
+    merged["url"] = url
+    return merged
 
 
 # ---------- source: iCal calendar feed ----------
@@ -530,6 +585,62 @@ def src_squarespace(src, start, end):
             url=origin + e["fullUrl"] if e.get("fullUrl", "").startswith("/") else src["url"],
             desc=e.get("excerpt") or e.get("body") or "", image=e.get("assetUrl") or ""))
     return out
+
+
+# ---------- source: a listing page that links to one page per event (Wix Events: Cité des Arts) ----------
+
+def _read_event_pages(src, urls, limit=45):
+    """Open each event page and read the event data built into it."""
+    out = []
+    for u in urls[:limit]:
+        try:
+            page = fetch(u)
+        except urllib.error.URLError:
+            continue
+        for x in jsonld_events(page):
+            x.setdefault("url", u)
+            out.append(from_jsonld(src, x))
+        time.sleep(0.4)
+    return out
+
+
+def src_eventlinks(src, start, end):
+    """Collect event links from the listing page(s), then read each event page."""
+    pattern = re.compile(src["links"])
+    urls = []
+    for listing in [src["url"], *src.get("more", [])]:
+        for u in pattern.findall(fetch(listing)):
+            if u not in urls:
+                urls.append(u)
+    return _read_event_pages(src, urls)
+
+
+def src_wixsitemap(src, start, end):
+    """Wix sites list every event page in a sitemap, even when the calendar itself loads with
+    JavaScript (Wonderland, Cité des Arts). Event addresses usually end with their date
+    ("...-2026-11-20-19-30"), so only upcoming ones are opened."""
+    xml = fetch(src["url"])
+    entries = re.findall(r"<url>\s*<loc>([^<]+)</loc>(?:\s*<lastmod>([^<]+)</lastmod>)?", xml)
+    dated, undated = [], []
+    recent = (start - timedelta(days=120)).strftime("%Y-%m-%d")
+    for loc, lastmod in entries:
+        m = re.search(r"-(\d{4})-(\d{2})-(\d{2})-\d{2}-\d{2}(?:-\d+)?/?$", loc)
+        if m:
+            day = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+            if start.strftime("%Y-%m-%d") <= day <= end.strftime("%Y-%m-%d"):
+                dated.append((day, loc))
+        elif (lastmod or "")[:10] >= recent:
+            undated.append(loc)  # one-off pages without a date in the address: check recent ones
+    urls = [u for _, u in sorted(dated)] + undated[:15]
+    return _read_event_pages(src, urls, limit=src.get("limit", 45))
+
+
+def src_mecrest(src, start, end):
+    """WordPress 'Modern Events Calendar' sites (Acadiana Center for the Arts) list every event
+    page through WordPress's public API; each page has the event's details built in."""
+    api = src["url"].rstrip("/") + "/wp-json/wp/v2/mec-events?per_page=50&orderby=modified&_fields=link"
+    urls = [x["link"] for x in json.loads(fetch(api)) if x.get("link")]
+    return _read_event_pages(src, urls, limit=src.get("limit", 45))
 
 
 # ---------- source: Saffire venue sites (Heymann Center) ----------
@@ -805,6 +916,8 @@ def src_sheet(src, start, end):
 
 def _key(e):
     t = re.sub(r"[^a-z0-9]", "", e["title"].lower())
+    if e.get("ongoing") and e.get("end"):  # exhibits: sources disagree on the start, not the closing date
+        return f"{t[:32]}|until {e['end'][:10]}"
     return f"{t[:32]}|{e['start'][:10]}"
 
 
@@ -814,8 +927,12 @@ def _richness(e):
 
 
 def _same_event(a, b):
-    """Same start time and one title contains the other ("Sound Bath" / "Sound Bath with Ann Kergan")."""
-    if a["start"] != b["start"] or a["allDay"]:
+    """Same day, one title contains the other ("Sound Bath" / "Sound Bath with Ann Kergan",
+    "Supercollider" / "Supercollider! an improv comedy showcase"), and the same start time
+    unless one listing only gives the date."""
+    if a["start"][:10] != b["start"][:10]:
+        return False
+    if not (a["allDay"] or b["allDay"]) and a["start"] != b["start"]:
         return False
     ta, tb = (re.sub(r"[^a-z0-9]", "", x["title"].lower()) for x in (a, b))
     short, long_ = sorted((ta, tb), key=len)
@@ -823,25 +940,39 @@ def _same_event(a, b):
 
 
 def merge(events):
-    best = {}
-    by_start = {}
+    best = {}     # slot key -> the best copy so far
+    by_day = {}   # day -> slot keys, for matching near-identical titles
     for e in events:
         k = _key(e)
+        day = e["start"][:10]
         if k not in best:
-            twin = next((x for x in by_start.get(e["start"], []) if _same_event(x, e)), None)
+            twin = next((s for s in by_day.get(day, []) if _same_event(best[s], e)), None)
             if twin is None:
                 best[k] = e
-                by_start.setdefault(e["start"], []).append(e)
+                by_day.setdefault(day, []).append(k)
                 continue
-            k = _key(twin)
+            k = twin  # same event under a slightly different title: merge into its slot
         a = best[k]
         keep, other = (e, a) if _richness(e) > _richness(a) else (a, e)
-        if keep is not a:
-            by_start[a["start"]] = [keep if x is a else x for x in by_start[a["start"]]]
         for field in ("end", "venue", "address", "price", "desc", "image", "url"):
+            if field == "address" and keep.get("venue") and venue_key(keep["venue"]) != venue_key(other.get("venue", "")):
+                continue  # don't pin another listing's address on a different venue
             if not keep.get(field) and other.get(field):
                 keep[field] = other[field]
-        keep["cats"] = sorted(set(keep["cats"]) | set(other["cats"]), key=CATEGORY_ORDER.index)[:3]
+        # A guessed category (from a source's fallback) gives way to one that actually matched
+        kg, og = keep.get("_guess", False), other.get("_guess", False)
+        if kg and not og:
+            cats = set(other["cats"])
+        elif og and not kg:
+            cats = set(keep["cats"])
+        elif kg and og:  # both guesses: trust the more specific source (listed earlier in sources.json)
+            first = min((keep, other), key=lambda x: x.get("_order", 999))
+            cats = set(first["cats"])
+        else:
+            cats = set(keep["cats"]) | set(other["cats"])
+        keep["cats"] = sorted(cats, key=CATEGORY_ORDER.index)[:3]
+        keep["_guess"] = kg and og
+        keep["_order"] = min(keep.get("_order", 999), other.get("_order", 999))
         also = set(keep.get("alsoOn", [])) | {other["source"]} | set(other.get("alsoOn", []))
         also.discard(keep["source"])
         keep["alsoOn"] = sorted(also)
@@ -849,8 +980,74 @@ def merge(events):
     return list(best.values())
 
 
+# ---------- venue names for listings that only give an address ----------
+
+ADDRESS_LIKE = re.compile(r"^\s*\d+[A-Za-z]?\s+\S")
+_DIRECTIONS = {"e", "w", "n", "s", "east", "west", "north", "south", "e.", "w.", "n.", "s."}
+
+
+def street_key(text: str) -> str:
+    """'215 E Convent St, Lafayette' -> '215 convent'"""
+    words = re.sub(r"[^a-z0-9 ]", " ", (text or "").lower()).split()
+    if len(words) < 2 or not words[0].isdigit():
+        return ""
+    rest = [w for w in words[1:] if w not in _DIRECTIONS and not w.isdigit()]  # "2801-2851 Johnston"
+    return f"{words[0]} {rest[0]}" if rest else ""
+
+
+def resolve_venues(events, known: dict):
+    """Swap 'venue = street address' for the venue's name, using (1) your list in sources.json,
+    (2) what other listings say lives at that address, (3) a '📍 Name' line in the description."""
+    names = {street_key(k): v for k, v in known.items() if street_key(k)}
+    for e in events:  # learn from listings that give both a name and an address
+        if e["venue"] and not ADDRESS_LIKE.match(e["venue"]):
+            k = street_key(e.get("address", ""))
+            if k and k not in names:
+                names[k] = e["venue"]
+    fixed = 0
+    for e in events:
+        if not ADDRESS_LIKE.match(e["venue"] or ""):
+            continue
+        k = street_key(e["venue"]) or street_key(e.get("address", ""))
+        name = names.get(k)
+        if not name:
+            pin = re.search(r"📍\s*([^\n|]{3,60})", e.get("desc", ""))
+            if pin and not ADDRESS_LIKE.match(pin.group(1)):
+                name = pin.group(1).strip(" -–,.")
+        if name:
+            if not e.get("address"):
+                e["address"] = e["venue"]
+            e["venue"] = name
+            fixed += 1
+    return fixed
+
+
+# ---------- quality check for events only an aggregator lists ----------
+
+def keep_listing(e, cfg, known_venues: set) -> bool:
+    """Events that only an aggregator (Happening Next) lists must be at a known venue, be in a
+    'going out' category, or be a recognizable public event. Medicare seminars and realty
+    parties at an office address don't make it."""
+    agg = cfg.get("aggregators", [])
+    sources = [e["source"], *e.get("alsoOn", [])]
+    if not all(any(s.startswith(a) for a in agg) for s in sources):
+        return True  # a venue's own calendar lists it
+    if set(e["cats"]) & set(cfg.get("keepCats", [])):
+        return True
+    if re.search(cfg.get("keepWords", "$^"), e["title"], re.I):
+        return True
+    return venue_key(e["venue"]) in known_venues
+
+
+def venue_key(v: str) -> str:
+    v = re.split(r" - | \| |,| @ |\[", (v or "").lower())[0]
+    v = re.sub(r"\b(?:the|and|guest|house|de|la|lafayette|center|centre|for|arts|performing|of|at)\b", " ", v)
+    return re.sub(r"[^a-z0-9]", "", v)
+
+
 RUNNERS = {"tribe": src_tribe, "jsonld": src_jsonld, "ical": src_ical, "saffire": src_saffire,
-           "squarespace": src_squarespace, "downtown": src_downtown, "sheet": src_sheet,
+           "squarespace": src_squarespace, "downtown": src_downtown, "sheet": src_sheet, "eventlinks": src_eventlinks,
+           "wixsitemap": src_wixsitemap, "mecrest": src_mecrest,
            "ticketmaster": src_ticketmaster, "page": src_page}
 
 
@@ -872,18 +1069,29 @@ def main(argv):
         except ValueError:
             pass
 
-    sources = [s for s in json.loads(SOURCES_FILE.read_text(encoding="utf-8"))["sources"]
-               if s.get("enabled", True) and only in s["name"].lower()]
+    if DETAIL_FILE.exists():
+        try:
+            DETAILS.update(json.loads(DETAIL_FILE.read_text(encoding="utf-8")))
+        except ValueError:
+            pass
+
+    config = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
+    sources = [s for s in config["sources"] if s.get("enabled", True) and only in s["name"].lower()]
     if not only:
         sources += [{"name": "Bon Temps", "type": "_manual"}]
 
     all_events, report = [], []
-    for src in sources:
+    for order, src in enumerate(sources):
         t0 = time.time()
         runner = {"_manual": lambda s, a, b: manual_events(a, b)}.get(src["type"]) or RUNNERS[src["type"]]
         try:
             found = [e for e in runner(src, start, end) if e]
+            for e in found:
+                e["_order"] = order
             found = [e for e in found if (e["end"] or e["start"]) >= cutoff and e["start"] <= iso(end)]
+            if src.get("maxDays"):  # open-ended "weekly trivia since 2022" style listings
+                limit = timedelta(days=src["maxDays"])
+                found = [e for e in found if not e["end"] or parse_when(e["end"])[0] - parse_when(e["start"])[0] <= limit]
             status = {"name": src["name"], "ok": True, "count": len(found)}
         except Skip as why:
             found, status = [], {"name": src["name"], "ok": None, "count": 0, "note": str(why)}
@@ -899,14 +1107,51 @@ def main(argv):
         mark = {True: "ok  ", None: "skip", False: "FAIL"}[status["ok"]]
         print(f"{mark} {src['name']:<42} {status['count']:>4} events  {time.time() - t0:5.1f}s  {status.get('note', '')}")
 
+    # Remember event pages read this run; a full run also forgets pages no longer listed
+    keep = DETAILS if only else {u: v for u, v in DETAILS.items() if u in DETAILS_USED}
+    DETAIL_FILE.write_text(json.dumps(keep, ensure_ascii=False), encoding="utf-8")
+
     if only:  # partial runs don't overwrite the site's data
         print(f"\n(test run for '{only}': docs/events.json not changed)")
         return
 
+    fixed = resolve_venues(all_events, config.get("venueNames", {}))
+    print(f"named {fixed} venues that were only an address")
+
+    # Leave out clutter ("Moncus Mondays-Free Parking", listings that are just a venue's name)
+    hide = config.get("hide", {}).get("patterns", [])
+    if hide:
+        hidden = re.compile("|".join(f"(?:{p})" for p in hide), re.I)
+        before = len(all_events)
+        all_events = [e for e in all_events if not hidden.search(e["title"].strip())]
+        print(f"hid {before - len(all_events)} clutter listings")
+
     events = merge(all_events)
+
+    # Venues on your address list always show that address (listing sites sometimes get it wrong)
+    canon = {venue_key(name): f"{street}, Lafayette, LA" for street, name in config.get("venueNames", {}).items()}
+    for e in events:
+        right = canon.get(venue_key(e["venue"]))
+        if right and street_key(e.get("address", "")) != street_key(right):
+            e["address"] = right
+
+    quality = config.get("quality")
+    if quality:
+        agg = tuple(quality.get("aggregators", []))
+        known = {venue_key(e["venue"]) for e in events if not e["source"].startswith(agg)}
+        known |= {venue_key(v) for v in config.get("venueNames", {}).values()}
+        known |= {venue_key(v) for v in quality.get("knownVenues", [])}
+        known.discard("")
+        dropped = [e for e in events if not keep_listing(e, quality, known)]
+        events = [e for e in events if keep_listing(e, quality, known)]
+        print(f"left out {len(dropped)} low-quality aggregator listings")
+        for e in dropped:  # shown in the Actions log, to spot anything worth adding back
+            print(f"   - {e['start'][:10]} {e['title'][:60]} @ {e['venue'][:40]}")
     events.sort(key=lambda e: (e["start"], e["title"]))
     for e in events:
         e["id"] = hashlib.sha1(_key(e).encode()).hexdigest()[:10]
+        e.pop("_guess", None)
+        e.pop("_order", None)
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps({
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

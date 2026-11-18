@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T05:06:59Z",
+"updated": "2026-11-18T05:55:35Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -10,6 +10,11 @@
 "name": "Acadiana Center for the Arts",
 "ok": true,
 "count": 13
+},
+{
+"name": "Acadiana Center for the Arts (all events)",
+"ok": true,
+"count": 12
 },
 {
 "name": "Moncus Park",
@@ -39,7 +44,72 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 40
+"count": 38
+},
+{
+"name": "Happening Next (theatre)",
+"ok": true,
+"count": 13
+},
+{
+"name": "Happening Next (performances)",
+"ok": true,
+"count": 51
+},
+{
+"name": "Happening Next (comedy)",
+"ok": true,
+"count": 10
+},
+{
+"name": "Happening Next (dance)",
+"ok": true,
+"count": 20
+},
+{
+"name": "Happening Next (concerts)",
+"ok": true,
+"count": 31
+},
+{
+"name": "Happening Next (music)",
+"ok": true,
+"count": 61
+},
+{
+"name": "Happening Next (art)",
+"ok": true,
+"count": 44
+},
+{
+"name": "Happening Next (exhibitions)",
+"ok": true,
+"count": 8
+},
+{
+"name": "Happening Next (food & drinks)",
+"ok": true,
+"count": 29
+},
+{
+"name": "Happening Next (health wellness)",
+"ok": true,
+"count": 20
+},
+{
+"name": "Happening Next (fitness)",
+"ok": true,
+"count": 6
+},
+{
+"name": "Happening Next (festivals)",
+"ok": true,
+"count": 11
+},
+{
+"name": "Cité des Arts",
+"ok": true,
+"count": 19
 },
 {
 "name": "Ticketmaster (Cajundome & touring shows)",
@@ -58,6 +128,11 @@
 "count": 37
 },
 {
+"name": "Wonderland Performing Arts",
+"ok": true,
+"count": 0
+},
+{
 "name": "Bon Temps",
 "ok": true,
 "count": 0
@@ -65,61 +140,23 @@
 ],
 "events": [
 {
-"title": "Artists’ Alliance",
-"start": "2026-09-12T00:00",
-"end": "2027-01-09T00:00",
-"allDay": true,
+"title": "Crit Nite",
+"start": "2026-11-12T18:00",
+"end": "2026-12-10T18:30",
+"allDay": false,
 "ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "Lafayette",
+"venue": "126 S. Buchanan St. , Lafayette, LA, United States, Louisiana 70501",
+"address": "124 S Buchanan St, Lafayette, LA 70501-5944, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "arts"
 ],
-"desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
-"url": "https://www.lafayettetravel.com/event/artists%e2%80%99-alliance/49484/",
-"image": "",
-"source": "Lafayette Travel",
-"id": "4521fb7108"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-10-10T00:00",
-"end": "2026-12-23T00:00",
-"allDay": true,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
-"url": "https://www.lafayettetravel.com/event/sebastian-lodrige%3a-burden-%7c-artificial-%26-natural/49485/",
-"image": "",
-"source": "Lafayette Travel",
-"id": "c499ed9b96"
-},
-{
-"title": "Candlelight: 90s Hip-Hop on Strings",
-"start": "2026-11-06T00:00",
-"end": "2027-01-08T00:00",
-"allDay": true,
-"ongoing": true,
-"venue": "Petroleum Club of Lafayette",
-"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/candlelight-90s-hip-hop-on-strings-eid1afw9hhch6e",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNzU2MWIwNDAtY2VhOC0xMWYxLTlhZTktYmIzNzk0ZmUzYmNkLXJpbWctdzU1MC1oNTUwLWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5MjczNjM2OQ.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "d517071615"
+"desc": "Join us for Crit Nite at Basin Arts, held monthly on the Thursday before ArtWalk! 💡\n\nCrit Nite invites local artists of all disciplines to share works in progress with a small group of community members and fellow artists. It’s a welcoming space to receive thoughtful feedback, exchange ideas, refine",
+"url": "https://happeningnext.com/event/crit-nite-eid3a0e832j4j",
+"image": "https://cdn.happeningnext.com/events4/banners/905f676dfafbb33eb7d34879636ced3b553bc80def1f6b643411172b4310d4fe-rimg-w1200-h675-dcb8c878-gmir?v=1792973222",
+"source": "Happening Next (exhibitions)",
+"id": "2bc6311c38"
 },
 {
 "title": "Artists’ Alliance",
@@ -134,11 +171,15 @@
 "cats": [
 "arts"
 ],
-"desc": "",
+"desc": "Drawing heavily on the archives of the late artist group, the Artists’ Alliance, AcA will mount a retrospective that showcases the work of this...",
 "url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-17",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
 "source": "Acadiana Center for the Arts",
-"id": "c785946aae"
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
+],
+"id": "d5773c2e0f"
 },
 {
 "title": "Philip Gould: A Selection of Works",
@@ -157,7 +198,10 @@
 "url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-17",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
 "source": "Acadiana Center for the Arts",
-"id": "5b889820fe"
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "c7f5af1cb0"
 },
 {
 "title": "Sebastian Lodrige: Burden | Artificial & Natural",
@@ -166,17 +210,21 @@
 "allDay": false,
 "ongoing": true,
 "venue": "Acadiana Center for the Arts",
-"address": "",
+"address": "Lafayette",
 "price": "Free",
 "free": true,
 "cats": [
 "arts"
 ],
-"desc": "",
+"desc": "I am unnaturally attracted to the easily accessible universe that is media and entertainment. Movies, Video games, and social media have become vices...",
 "url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-17",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
 "source": "Acadiana Center for the Arts",
-"id": "b9cb37dd2e"
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Lafayette Travel"
+],
+"id": "87f8b83e87"
 },
 {
 "title": "Valcour Records | 20 Years",
@@ -195,26 +243,29 @@
 "url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-17",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
 "source": "Acadiana Center for the Arts",
-"id": "d41c255e9c"
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "e607e2d6a3"
 },
 {
-"title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
-"start": "2026-11-18T00:00",
-"end": null,
-"allDay": true,
+"title": "Les Éditions Tintamarre Fall Book Launch",
+"start": "2026-11-17T18:00",
+"end": "2026-11-17T20:00",
+"allDay": false,
 "ongoing": false,
-"venue": "200 Beaullieu Dr Ste 6, Lafayette, LA, United States, Louisiana 70508",
-"address": "200 Beaullieu Dr, Lafayette, LA 70508-7230, United States, Lafayette",
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"arts"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/gather-andamp-glow-an-exclusive-fall-social-eid3a0e8e3uaq",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czgvYmFubmVycy9mZTA0Y2RlODE2MmI4NmM0MGZkOTg5MWY5NDgwMmUwNmFlY2I4MTU0YWY4YWE2YTM2NzAzNmEyNGY5ZDllOWUxLXJpbWctdzExNTItaDQ3NC1kY2Y4ZThkOC1nbWlyP3Y9MTc5MzEzNDk1MA.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "3b541dbc1a"
+"desc": "In the Robert D. Sidman Theater",
+"url": "https://www.citedesarts.org/events/les-editions-tintamarre-fall-book-launch",
+"image": "https://static.wixstatic.com/media/62d2c2_dd1eac9012d64954ad241cb45db1ea8d~mv2.jpeg/v1/fill/w_4500,h_5625,al_c,q_90/62d2c2_dd1eac9012d64954ad241cb45db1ea8d~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "cb363adc77"
 },
 {
 "title": "Cajun Jam Hosted by Jean Bertrand",
@@ -252,6 +303,9 @@
 "url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "81654b0ae6"
 },
 {
@@ -274,6 +328,28 @@
 "id": "8ea50eee35"
 },
 {
+"title": "Cajun and Creole Music on Campus",
+"start": "2026-11-18T12:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "University of Louisiana Lafayette Burke - Hawthorne Hall",
+"address": "231 Hebrard Blvd, Lafayette, LA 70503-2068, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Our pop-up concert series continues! Join us on November 18th at 12:30 in front of the KRVS radio station in Burke-Hawthorne Hall on West Saint Mary Blvd for traditional Louisiana music. Everyone is welcome to dance, play along, or enjoy the music from the shade. Cajun and Creole Music on Campus is",
+"url": "https://happeningnext.com/event/cajun-and-creole-music-on-campus-eid3a0eali07r",
+"image": "https://cdn.happeningnext.com/events4/banners/2b8e67603c3dfda6c5eddcf5240a64ab2fe428ea362e875ca3d241fbf142f442-rimg-w1080-h1350-dc281818-gmir?v=1794451809",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "327757b339"
+},
+{
 "title": "Cross Currents: Improvised Truths — Curtis Patterson and the Jazz of Form",
 "start": "2026-11-18T17:00",
 "end": "2026-11-18T19:00",
@@ -293,9 +369,36 @@
 "image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/UL-Digital-Billboards-16_9-1920-x-1080.webp",
 "source": "Hilliard Art Museum",
 "alsoOn": [
-"Happening Next (Lafayette live music)"
+"Happening Next (Lafayette live music)",
+"Happening Next (art)",
+"Happening Next (exhibitions)",
+"Happening Next (music)",
+"Happening Next (performances)"
 ],
 "id": "a5d8d5958a"
+},
+{
+"title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
+"start": "2026-11-18T17:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "200 Beaullieu Dr Ste 6, Lafayette, LA, United States, Louisiana 70508",
+"address": "200 Beaullieu Dr, Lafayette, LA 70508-7230, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food"
+],
+"desc": "An evening of exclusive indulgences awaits!\n🥂 Sip cocktails, enjoy live music, shop charming pop-up vendors, and discover event only specials, luxurious beauty packages, exceptional savings, and exciting raffle giveaways!✨",
+"url": "https://happeningnext.com/event/gather-andamp-glow-an-exclusive-fall-social-eid3a0e8e3uaq",
+"image": "https://cdn.happeningnext.com/events8/banners/fe04cde8162b86c40fd9891f94802e06aecb8154af8aa6a367036a24f9d9e9e1-rimg-w1152-h474-dcf8e8d8-gmir?v=1793134950",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "3b541dbc1a"
 },
 {
 "title": "Artist Round Up: Collaging, Flyer Making, and the Community Zine",
@@ -308,13 +411,37 @@
 "price": "Free",
 "free": true,
 "cats": [
-"arts"
+"arts",
+"community"
 ],
 "desc": "AcA's Artist Roundups gather together artists and creatives for a casual night of making connections while also making art. By bringing artists of various backgrounds together, Artist Roundups hope to encourage dialogue and collaboration across artistic disciplines and create a shared sense of community and belonging. This month, join former Artist Alliance member Jesse Poimboeuf for a night of collaging and mixed media artmaking as we put together the 7th issue of the Creative Acadiana Community Art Zine. Inspired by the grassroots flyers handmade by the Artist Alliance in the 90s you'll collage flyers of your own: for real events, fake events, concepts, or anything else you can imagine! Collaging materials will be provided but you're also encouraged to bring your own. Old photos, stickers, interestingly patterned paper. Everything 2 dimensional is fair game. Scissors will be provided but if you may also bring other cutting utensils if you wish. Creatives of all levels welcome!",
 "url": "https://acadianacenterforthearts.org/events/community-zine/?occurrence=2026-11-18",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Round-Up-Zine-Website.jpg",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Happening Next (art)"
+],
 "id": "6fde104d8f"
+},
+{
+"title": "Louisiana Writers Series with Gina Ferrara and Taylor Clement",
+"start": "2026-11-18T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "1204 Johnston St., Lafayette, LA, United States, Louisiana 70503",
+"address": "1204 Johnston St, Lafayette, LA 70503-2022, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Join us Wednesday, November 18, at 6:00 p.m. for the Louisiana Writers Series, presented by Deep South Writers with generous support from the Friends of the Humanities.\n\nThis special reading features two Louisiana writers whose work explores the intersections of place, memory, identity, and cultural",
+"url": "https://happeningnext.com/event/louisiana-writers-series-with-gina-ferrara-and-taylor-clement-eid3a0eahxkvj",
+"image": "https://cdn.happeningnext.com/events9/banners/4eb50368c181dd070c867c3fd6921084ed0b8aa23493564573dce755a29f9d8b-rimg-w1200-h1552-dcc8c8b8-gmir?v=1794390533",
+"source": "Happening Next (art)",
+"id": "a6e6d81b84"
 },
 {
 "title": "Yoga in the Park",
@@ -322,8 +449,8 @@
 "end": "2026-11-18T19:00",
 "allDay": false,
 "ongoing": false,
-"venue": "Location Name",
-"address": "",
+"venue": "Moncus Park",
+"address": "2913 Johnston St, Lafayette, LA",
 "price": "Free",
 "free": true,
 "cats": [
@@ -333,6 +460,10 @@
 "url": "https://moncuspark.org/calendar-events/yoga2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
 "source": "Moncus Park",
+"alsoOn": [
+"Happening Next (fitness)",
+"Happening Next (health wellness)"
+],
 "id": "7dd96a27ae"
 },
 {
@@ -361,7 +492,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -374,28 +505,51 @@
 "id": "572a10eed8"
 },
 {
-"title": "HODGE PODGE 4",
+"title": "Spirit in The Room at the Freetown Boom Boom Room",
+"start": "2026-11-18T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Freetown Boom Boom Room",
+"address": "300 McKinley Street ,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "LAFAYETTE! GET READY! 🤘🔥\n\nSpirit In The Room is coming to Freetown Boom Boom Room on Wednesday, November 18th, with Grave Promise!\n\nIf you’ve never experienced Spirit In The Room live, here’s your chance! Expect an intense, in-your-face performance you won’t forget!\n\n📍 Freetown Boom Boom Room | Lafa",
+"url": "https://happeningnext.com/event/spirit-in-the-room-at-the-freetown-boom-boom-room-eid3a0ean1wc0",
+"image": "https://cdn.happeningnext.com/events10/banners/c16dc9d7977da7c50b018d011264773f9e7f10b1ef5e52ee41b1cec77e5eefde-rimg-w1200-h1200-dc181818-gmir?v=1794470747",
+"source": "Happening Next (performances)",
+"id": "6fcff20da5"
+},
+{
+"title": "Eddie Pepitone (It’s Always Sunny in Philadelphia, Rick and Morty, Chappelle’s Show, Bob’s Burgers)",
 "start": "2026-11-19T00:00",
 "end": null,
 "allDay": true,
 "ongoing": false,
-"venue": "Blue Moon Saloon & Guest House",
-"address": "215 E Convent St, Lafayette",
+"venue": "Club 337",
+"address": "1521 W Pinhook Rd,Lafayette, Louisiana, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"theater"
 ],
 "desc": "",
-"url": "https://happeningnext.com/event/hodge-podge-4-eid27punbbwjhn",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy82Y2JjMTVmMC1lMjliLTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTA4MC1oMTM1MC1kY2M4YzhiOC1nbWlyLnBuZz92PTE3OTQ5MjkyNTk.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "a4062f8c92"
+"url": "https://happeningnext.com/event/eddie-pepitone-it’s-always-sunny-in-philadelphia-rick-and-morty-chappelle’s-show-bob’s-burgers-eid3a0dvkxc56",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy80ZDUxMmExMTAzMDQxMzNkMWE2YzZiYjdiOTlkZGI0NDA5ZGZiMjBlZGMyMGUzMmFmZDg0ZWVhNDBjZjNkNWI4LXJpbWctdzEyMDAtaDY3NS1kYzA4MDgwOC1nbWlyP3Y9MTc4NzUyNTQwOQ.avif",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)"
+],
+"id": "54c25ec22b"
 },
 {
 "title": "Southern Screen Festival | 16th Annual",
 "start": "2026-11-19T00:00",
-"end": null,
+"end": "2026-11-22T22:00",
 "allDay": true,
 "ongoing": false,
 "venue": "Acadiana Center for the Arts",
@@ -410,6 +564,10 @@
 "url": "https://www.southernscreen.org/attend?occurrence=2026-11-19",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Downtown Lafayette"
+],
 "id": "c5dbffb21f"
 },
 {
@@ -452,23 +610,46 @@
 "id": "8c5f685e58"
 },
 {
-"title": "Southern Screen Festival",
-"start": "2026-11-19T17:00",
-"end": "2026-11-22T22:00",
+"title": "Women's Resource Fair",
+"start": "2026-11-19T13:00",
+"end": "2026-11-19T15:00",
 "allDay": false,
-"ongoing": true,
-"venue": "Downtown Lafayette",
-"address": "",
-"price": "",
-"free": false,
+"ongoing": false,
+"venue": "Lafayette Parish Correctional Center",
+"address": "916 Lafayette Street, Lafayette",
+"price": "Free",
+"free": true,
 "cats": [
 "community"
 ],
-"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day from November 19-22 is sure to entertain, educate, and inspire.",
-"url": "https://www.downtownlafayette.org/event/southern-screen-festival",
-"image": "",
-"source": "Downtown Lafayette",
-"id": "0e0582e6cd"
+"desc": "Connect incarcerated women at LPCC with local resources, services, and community partners to support successful reentry.",
+"url": "https://happeningnext.com/event/womens-resource-fair-eid1ef0l77ap9ja",
+"image": "https://cdn.happeningnext.com/events10/banners/8f3b59c2918b8b8c425acd307b1c55acd0517970d5d42b1783bd67a5e67dfa67-rimg-w794-h369-dcf8f8f8-gmir.jpg?v=1794549668",
+"source": "Happening Next (exhibitions)",
+"alsoOn": [
+"Happening Next (health wellness)"
+],
+"id": "cec0ecc1f7"
+},
+{
+"title": "Friendsgiving",
+"start": "2026-11-19T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "2921 Verot School Rd. Lafayette, Lafayette, LA",
+"address": "2921 Verot School Rd, Lafayette, LA 70508-8024, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"family"
+],
+"desc": "Gathering the family together. Come join us at the table to give thanks! Potluck, music, games, family, friends, and thankful hearts",
+"url": "https://happeningnext.com/event/friendsgiving-eid3a0eahxlmn",
+"image": "https://cdn.happeningnext.com/events8/banners/ec7734dbc7c4f53d4c9e779c7f082f186e0a7c4664a3baeca69872532022c8a9-rimg-w1080-h1920-dce8d8b8-gmir?v=1794390547",
+"source": "Happening Next (music)",
+"id": "276e82058f"
 },
 {
 "title": "Language Café",
@@ -477,7 +658,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Moncus Park",
-"address": "",
+"address": "2913 Johnston St, Lafayette, LA",
 "price": "Free",
 "free": true,
 "cats": [
@@ -490,23 +671,31 @@
 "id": "65cd960794"
 },
 {
-"title": "HodgePodge 4: featuring Brester Durbin, Mitch Reed, Meredith Guy and Dairy Free",
+"title": "HODGE PODGE 4",
 "start": "2026-11-19T18:30",
-"end": null,
+"end": "2026-11-19T22:30",
 "allDay": false,
 "ongoing": false,
-"venue": "Blue Moon Saloon and Guest House",
-"address": "215 East Convent Street, Lafayette, Louisiana, 70501, United States",
+"venue": "Blue Moon Saloon & Guest House",
+"address": "215 E Convent St, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"music",
+"food",
+"arts"
 ],
-"desc": "Hodge Podge is a concert event ran solely by UL Music Business & Recording Arts students. These students spend an entire semester arranging a night of local music talents, food, raffle opportunities, and a fun atmosphere. The Hodge Podge crew gets the oppurtunity to have hands on experience with marketing, sponsorship, merchandising, collaborating with local artists, and more.",
-"url": "https://events.timely.fun/kw4jncf1/event/78485753/20261119183000",
-"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/hodgepodge_0YFB.png",
-"source": "Blue Moon Saloon",
-"id": "2bfb713d9d"
+"desc": "Hodge Podge is a concert event run solely by UL Music Business & Recording Arts students. These students spend an entire semester arranging a night of local musical talent, food, raffle opportunities, and a fun atmosphere. The Hodge Podge crew gets the opportunity to have hands-on experience with ma",
+"url": "https://happeningnext.com/event/hodge-podge-4-eid27punbbwjhn",
+"image": "https://cdn.happeningnext.com/events4/banners/3b04f560-e2fd-11f1-9ec1-3d7669158ddf-rimg-w1080-h1350-dcc8c8b8-gmir.png?v=1794971267",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Blue Moon Saloon",
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
+"id": "a4062f8c92"
 },
 {
 "title": "Gary Newman & His Rhythm Boys",
@@ -515,7 +704,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "Lafayette",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -529,6 +718,31 @@
 "Lafayette Travel"
 ],
 "id": "3bd75956ae"
+},
+{
+"title": "State of LA Danse, Thursday November 19",
+"start": "2026-11-19T19:00",
+"end": "2026-11-19T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Ducrest-Gilfry Auditorium in Angelle Hall",
+"address": "601 East Saint Mary Boulevard, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"music"
+],
+"desc": "Faculty and Guest Artist Dance Concert from the UL Lafayette Dance Program",
+"url": "https://happeningnext.com/event/state-of-la-danse-thursday-november-19-eid1ef0l9133ter",
+"image": "https://cdn.happeningnext.com/events5/banners/a92ac5c6759537eb93229dd35fa66ebd6ab1db7fe8253db23989878c647178fd-rimg-w1080-h1920-dc080808-gmir.jpg?v=1793290570",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (music)"
+],
+"id": "aea53beb15"
 },
 {
 "title": "Trivia Night at The Flats",
@@ -560,32 +774,19 @@
 "price": "$40",
 "free": false,
 "cats": [
-"arts"
+"music"
 ],
 "desc": "This show has sold out, but you can still watch the concert online! Join our waitlist to be notified if any seats open up prior to the concert. For two decades, Valcour Records has stood at the heart of Louisiana’s roots renaissance — preserving the traditions of Cajun, Creole, zydeco, and folk while amplifying the voices shaping its future. Founded in Eunice, Louisiana, by partners Joel Savoy and Phillip LaFargue, Valcour has become a touchstone for the state’s cultural identity, producing award-winning albums and nurturing artists whose music carries the sound and soul of Acadiana to audiences around the world. This special Louisiana Crossroads concert brings together the label’s musicians and collaborators for an evening that honors Valcour’s 20-year journey. Through live collaborations and stories, this evening traces the label’s evolution from a group of friends recording in Savoy’s living room, to a nationally respected imprint.   C.J. Chenier T’Monde Pine Leaf Boys The Band Courtbouillon featuring Wayne Toups Caleb Klauder and Reeb Willms Sammy Lind and Nadine Landry Joel Savoy Kyle Huval K. C. Jones Jesse Lege Johnny Nicholas Katie Shore Ann Savoy Jane Vidrine The Mamou Playboys Jourdan Thibodeaux Blake Miller Bonsoir Catin Josh Caffery Roger Kash Sabra Guzman Boma Bango Tif Lamson",
 "url": "https://acadianacenterforthearts.org/events/twenty-years-of-valcour-records/?occurrence=2026-11-19",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2025/12/cover_tabloid_17x11_landscape-1-1-scaled.jpg",
 "source": "Acadiana Center for the Arts",
-"id": "7dffdb5051"
-},
-{
-"title": "Making Spirits Bright",
-"start": "2026-11-20T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "200 Greenleaf Dr , Lafayette, LA, United States, Louisiana 70506",
-"address": "200 Greenleaf Dr, Lafayette, LA 70506-7400, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
+"alsoOn": [
+"Acadiana Center for the Arts (all events)",
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/making-spirits-bright-eid3a0e4b6fkw",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czkvYmFubmVycy9mNTc2ZmQxOTRlNzE3ZmY5OGQ1Yjg4ZmM5NDQwZmMwNDU5MjRhOTVjN2I1MDZkZWI4MTZiODM0MGM2YTQ4YjAxLXJpbWctdzEyMDAtaDE1NTMtZGNmOGY4ZTgtZ21pcj92PTE3OTA0MzE5MDY.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "a5dc515e6b"
+"id": "7dffdb5051"
 },
 {
 "title": "Southern Screen Festival | 16th Annual",
@@ -608,13 +809,54 @@
 "id": "2b0b9dfdcc"
 },
 {
+"title": "Christmas Pop-Up at MOOD!",
+"start": "2026-11-20T10:00",
+"end": "2026-11-21T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Mood By DMJ",
+"address": "1120 Coolidge Street Suite D,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Join us for our Holiday Open House at MOOD, where the season gets a little sparkle. Browse original art, handcrafted jewelry, and gorgeous topiaries while you sip champagne with friends.\n\nFind something one-of-a-kind for everyone on your list (and maybe a little something for yourself). 🥂\n\nCome earl",
+"url": "https://happeningnext.com/event/christmas-pop-up-at-mood-eid3a0ea1rcer",
+"image": "https://cdn.happeningnext.com/events9/banners/4c8061f061aebc127dbebf44979ca25ca6cc85753796f8bdb2a96df7b63de0f3-rimg-w1200-h675-dcb8a848-gmir?v=1794149075",
+"source": "Happening Next (art)",
+"id": "cd85664163"
+},
+{
+"title": "Lafayette Holiday Market - Lafayette LA",
+"start": "2026-11-20T10:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "CAJUNDOME Convention Center",
+"address": "Cajundome Convention Center, 444 Cajundome Blvd, Lafayette, LA 70506, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "🎄 Lafayette Holiday Market 🎄\n\nA Christmas Shopping Experience You Won’t Want to Miss\n\nKick off the holiday season at the Lafayette Holiday Market, a festive three-day Christmas shopping event featuring a carefully curated mix of boutique brands, specialty retailers, artisans, and holiday favorites—a",
+"url": "https://happeningnext.com/event/lafayette-holiday-market-lafayette-la-eid3a0de8jcf5",
+"image": "https://cdn.happeningnext.com/events10/banners/70db0dc7bd183a545cb8f03a8cf9681b21f37e5fe8473d6660acf7132d694dbb-rimg-w1200-h675-dce8d8d8-gmir?v=1787473576",
+"source": "Happening Next (exhibitions)",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
+"id": "ea2d084b80"
+},
+{
 "title": "Food Truck Friday : Fall Edition",
 "start": "2026-11-20T11:00",
 "end": "2026-11-20T14:00",
 "allDay": false,
 "ongoing": false,
 "venue": "Moncus Park",
-"address": "",
+"address": "2913 Johnston St, Lafayette, LA",
 "price": "Free",
 "free": true,
 "cats": [
@@ -624,7 +866,142 @@
 "url": "https://moncuspark.org/calendar-events/food-truck-friday-fall-edition/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/08/Food-Truck-Friday-Fall-Edition.jpg",
 "source": "Moncus Park",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
 "id": "c671c87136"
+},
+{
+"title": "Immersive Sound Bath w/ Violin & Handpan - Sara & Ryan",
+"start": "2026-11-20T18:30",
+"end": "2026-11-20T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "107 Montrose Ave., Ste. B, Lafayette, LA, United States, Louisiana 70503",
+"address": "107 Montrose Ave, Lafayette, LA 70503-3852, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"wellness"
+],
+"desc": "Step away from the noise of everyday life and enter a space designed for deep rest, reflection, and relaxation.\n\nOur Immersive Sound Bath invites you to settle into stillness as the resonant tones of crystal singing bowls, metal instruments, and other therapeutic sound tools create a calming soundsc",
+"url": "https://happeningnext.com/event/immersive-sound-bath-w-violin-andamp-handpan-sara-andamp-ryan-eid3a0eb79l3m",
+"image": "https://cdn.happeningnext.com/events4/banners/64bbd1276d4e89725f8ae6c7105b01c61f146b2d0ae95c6f306d72d8f9a74e90-rimg-w1200-h675-dc383838-gmir?v=1794777868",
+"source": "Happening Next (music)",
+"id": "19bc185fec"
+},
+{
+"title": "Making Spirits Bright",
+"start": "2026-11-20T18:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "LARC's Acadian Village",
+"address": "200 Greenleaf Dr, Lafayette, LA 70506-7400, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "✨ Making Spirits Bright at LARC’s Acadian Village ✨\n\nKick off the Christmas season with us at Making Spirits Bright, an exclusive 21+ first look at Noël Acadien au Village! 🎄🥂\n\nBefore the gates officially open for the Christmas season, spend the evening surrounded by the glow of thousands of Christm",
+"url": "https://happeningnext.com/event/making-spirits-bright-eid3a0e4b6fkw",
+"image": "https://cdn.happeningnext.com/events9/banners/f576fd194e717ff98d5b88fc9440fc045924a95c7b506deb816b8340c6a48b01-rimg-w1200-h1553-dcf8f8e8-gmir?v=1790431906",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (food & drinks)",
+"Happening Next (music)"
+],
+"id": "a5dc515e6b"
+},
+{
+"title": "State of LA Danse, Friday November 20th",
+"start": "2026-11-20T19:00",
+"end": "2026-11-20T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Ducrest-Gilfry Auditorium in Angelle Hall",
+"address": "601 East Saint Mary Boulevard, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"music"
+],
+"desc": "Faculty and Guest Artist Dance Concert from the UL Lafayette Dance Program",
+"url": "https://happeningnext.com/event/state-of-la-danse-friday-november-20th-eid1ef0l9159uga",
+"image": "https://cdn.happeningnext.com/events8/banners/318d51cf57fbe55f2e325a06747ab25ead4d61eda6361167c1c6e08e837049bd-rimg-w1080-h1920-dc080808-gmir.jpg?v=1793290623",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (music)"
+],
+"id": "61cf6c0afb"
+},
+{
+"title": "🐉 How to Train Your Dragon: The Musical JR. 🔥",
+"start": "2026-11-20T19:00",
+"end": "2026-11-22T14:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Wonderland Performing Arts",
+"address": "2807 Johnston St, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "🐉 How to Train Your Dragon: The Musical JR. 🔥\n\nGet ready to soar into an unforgettable adventure with Wonderland Performing Arts!\n\nFollow Hiccup, a young Viking who challenges tradition and befriends a dragon named Toothless. Together, they discover the power of friendship, courage, and embracing wh",
+"url": "https://happeningnext.com/event/how-to-train-your-dragon-the-musical-jr-eid3a0ebg3xop",
+"image": "https://cdn.happeningnext.com/events1/banners/71dce3bd38b088829b42b89a823d18e7f9f38e094065a81d0d0ebacc49fe504f-rimg-w1200-h1187-dcf8f8f8-gmir?v=1794938416",
+"source": "Happening Next (theatre)",
+"id": "aed61bae8e"
+},
+{
+"title": "Othello by William Shakespeare",
+"start": "2026-11-20T19:30",
+"end": "2026-11-20T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "The fourth play in the Cite des Arts 2026 theater season",
+"url": "https://www.citedesarts.org/events/othello-by-william-shakespeare-2026-11-20-19-30",
+"image": "https://static.wixstatic.com/media/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg/v1/fill/w_662,h_1024,al_c,q_85/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg",
+"source": "Cité des Arts",
+"id": "b2d7fc352c"
+},
+{
+"title": "Supercollider",
+"start": "2026-11-20T19:30",
+"end": "2026-11-20T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Doors open at 7:00 p.m. and show time is 7:30 p.m. in the Second Stage",
+"url": "https://www.citedesarts.org/events/supercollider-10",
+"image": "https://static.wixstatic.com/media/62d2c2_21f93126aa0c49589592ec45848bc940~mv2.jpeg/v1/fill/w_1640,h_924,al_c,q_85/62d2c2_21f93126aa0c49589592ec45848bc940~mv2.jpeg",
+"source": "Cité des Arts",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)",
+"Happening Next (dance)",
+"Happening Next (performances)",
+"Happening Next (theatre)"
+],
+"id": "f4eebcf154"
 },
 {
 "title": "Foghorn String Band",
@@ -633,7 +1010,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -644,6 +1021,25 @@
 "image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1789927620789-8JET311QZD2DQM1OMYNM/813430956_2115865972343142_6663890111324887400_n.jpg",
 "source": "Hideaway on Lee",
 "id": "fc5ab39db6"
+},
+{
+"title": "HWY 90 BAND WILL ROCK \"THE RUINS\"",
+"start": "2026-11-20T20:00",
+"end": "2026-11-20T23:00",
+"allDay": false,
+"ongoing": false,
+"venue": "The Ruins",
+"address": "1919 Kaliste Saloom Rd Suite 303,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "This Friday, November 20, 2026,\nMusic starts at 8:00pm\nHighway 90 Band is bringing our 70's and 80's Rock show to the stage at The Ruins!!\nHope to see you there\n✌️n ❤️\nPS, we now have T-Shirts for sale. $20 ea.",
+"url": "https://happeningnext.com/event/hwy-90-band-will-rock-andquotthe-ruinsandquot-eid3a0ebau76c",
+"image": "https://cdn.happeningnext.com/events5/banners/50fc879ef0800661db073f9920f87df15e65b09f89b0425a7488f4c869281ab8-rimg-w960-h959-dc281818-gmir?v=1794860667",
+"source": "Happening Next (music)",
+"id": "e4a16b1ec0"
 },
 {
 "title": "Southern Screen Film Festival with live Music by Sabine Mcalla",
@@ -667,23 +1063,23 @@
 "id": "87383d00a9"
 },
 {
-"title": "MainStreet Holiday Shop & Stroll",
+"title": "9th Annual - La fête de Noël - Holiday Market",
 "start": "2026-11-21T00:00",
 "end": null,
 "allDay": true,
 "ongoing": false,
-"venue": "MainStreet River Ranch",
-"address": "201 Settlers Trace Blvd, Lafayette, LA 70508-6781, United States, Lafayette",
+"venue": "139 Teurlings Drive , Lafayette, LA, United States, Louisiana 70501",
+"address": "139 Teurlings Dr, Lafayette, LA 70501-3832, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"community"
 ],
 "desc": "",
-"url": "https://happeningnext.com/event/mainstreet-holiday-shop-andamp-stroll-eid3a0e8epoc8",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9iMDhjZDA2NmJkMTZjZmMyYTgzOGE1ZGZlYWU2NmZkMTA4ZjRmNWRjMzA5Mzc2MGNhYjBmOWU0ZTA3ODFkZGVhLXJpbWctdzEyMDAtaDYyOC1kYzE4MTgxOC1nbWlyP3Y9MTc5MzE0MjY5Mg.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "2e6137fe2d"
+"url": "https://happeningnext.com/event/9th-annual-la-fête-de-noël-holiday-market-eid3a0e4bho9t",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9iNGYxYzJkYWIxZmQzNWI1NDA2NTY3MGU0NjIwMGI3YmM4ZGI4NTQwNzUwMDQxYjY5ZTE5MzIyZDBkMmI5MmRiLXJpbWctdzEyMDAtaDY3NS1kY2Y4ZThkOC1nbWlyP3Y9MTc5MDQzNTcxNQ.avif",
+"source": "Happening Next (art)",
+"id": "13a5dbdfd5"
 },
 {
 "title": "Southern Screen Festival | 16th Annual",
@@ -706,31 +1102,12 @@
 "id": "2f9d6bb701"
 },
 {
-"title": "Valcour Records Presents: Garden Party w/ Boma Bango + Evening Concert at the Sidecar!",
-"start": "2026-11-21T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "The Sidecar",
-"address": "422 Refinery St, Lafayette, LA 70501-8656, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/valcour-records-presents-garden-party-w-boma-bango-evening-concert-at-the-sidecar-eid3a0e7u6huj",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy83NzVlZTAwNzA0MDc1NzgwZTJlOTVhYTVjNjJlYjQ3YWU1Zjk1MTMwZjE5OGUxZDg5YzMwZGUzNjg2MzI5NTMyLXJpbWctdzEyMDAtaDY3NS1kYzk4YzhlOC1nbWlyP3Y9MTc5Mjg0ODYzOQ.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "f02a10f69f"
-},
-{
 "title": "White Boy Wasted : Project X Edition",
 "start": "2026-11-21T00:00",
 "end": "2026-11-22T00:00",
 "allDay": true,
 "ongoing": false,
-"venue": "113 W Grant St",
+"venue": "GRANT ST DANCE HALL",
 "address": "113 West Grant Street, Lafayette",
 "price": "",
 "free": false,
@@ -763,6 +1140,109 @@
 "id": "fb9b35e82f"
 },
 {
+"title": "The Essentials of Tai Chi",
+"start": "2026-11-21T08:00",
+"end": "2026-11-21T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-11-21-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "db9d1354d8"
+},
+{
+"title": "Native American Culture Day -- FREE Festival",
+"start": "2026-11-21T10:00",
+"end": "2026-11-21T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Vermilionville",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "Native American Culture Day is slated for Saturday, November 21, 2026 10 AM – 4 PM at Vermilionville. Admission is free. For more information call 337-233-4077 or visit www.vermilionville.org.",
+"url": "https://happeningnext.com/event/native-american-culture-day-free-festival-eid3a0e7lffp9",
+"image": "https://cdn.happeningnext.com/events6/banners/65e21e78e3bcacbb1d99b1c9b314e76507149586bdc0cc24776f3779937cbd30-rimg-w1200-h1195-dcf8f8f8-gmir?v=1792789379",
+"source": "Happening Next (festivals)",
+"id": "027117f638"
+},
+{
+"title": "Bayou Bloodfest Horror Expo",
+"start": "2026-11-21T11:00",
+"end": "2026-11-22T18:00",
+"allDay": false,
+"ongoing": false,
+"venue": "DoubleTree by Hilton Hotel Lafayette",
+"address": "Doubletree-Lafayette, 1521 W Pinhook Rd, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Attention horror fans in Louisiana and beyond.\n\nIntroducing Louisiana’s newest Horror Convention, Bayou Bloodfest Horror Expo.\n\nSave the date for this two-day celebration of the genre we all love. Featuring horror themed vendors, authors, celebrity guests, meet and greets, panels, pro photo ops, a",
+"url": "https://happeningnext.com/event/bayou-bloodfest-horror-expo-eid3a0d76ahf9",
+"image": "https://cdn.happeningnext.com/events5/banners/bfbfdbe1612c94bb1de4f59e906aee53093a3dfc2140068549ec77f6a98c7b7b-rimg-w940-h788-dc080808-gmir?v=1787574510",
+"source": "Happening Next (art)",
+"alsoOn": [
+"Happening Next (exhibitions)"
+],
+"id": "a4f3a05e4b"
+},
+{
+"title": "MainStreet Holiday Shop & Stroll",
+"start": "2026-11-21T12:00",
+"end": "2026-11-21T15:00",
+"allDay": false,
+"ongoing": false,
+"venue": "MainStreet River Ranch",
+"address": "201 Settlers Trace Blvd, Lafayette, LA 70508-6781, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food",
+"family"
+],
+"desc": "🌟 Join us for an unforgettable shopping event at Mainstreet River Ranch! 🎉\n\nBring the whole family and enjoy our MainStreet River Ranch Shop & Stroll event on November 21st, from noon to 3 PM.\n\nExplore fantastic retail deals, indulge in delicious food & drink specials from MainStreet restaurants, a",
+"url": "https://happeningnext.com/event/mainstreet-holiday-shop-andamp-stroll-eid3a0e8epoc8",
+"image": "https://cdn.happeningnext.com/events4/banners/b08cd066bd16cfc2a838a5dfeae66fd108f4f5dc3093760cab0f9e4e0781ddea-rimg-w1200-h628-dc181818-gmir?v=1793142692",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
+"id": "2e6137fe2d"
+},
+{
+"title": "Autumn Still Life",
+"start": "2026-11-21T14:00",
+"end": "2026-11-21T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Johnston St, Lafayette, LA, United States",
+"address": "100 Broadmoor Blvd, Lafayette, LA 70503-5112, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Join us for a relaxed autumn still life session using coloured pencils. We will cover simple shapes, proportion, shading and colour blending to create an autumn-themed drawing. Suitable for beginners. Participants bring their own pencils, paper and eraser. Please note: the host is not trained to pro",
+"url": "https://happeningnext.com/event/autumn-still-life-eid3a0eali0pj",
+"image": "https://cdn.happeningnext.com/events4/banners/336579da4a9b4130fd9839e365a0d254c325fe7d6274b009b96aa5a9f7958bf4-rimg-w1200-h1600-dc483828-gmir?v=1794451812",
+"source": "Happening Next (art)",
+"id": "5166e37437"
+},
+{
 "title": "An Afternoon with Carrie Simon!",
 "start": "2026-11-21T15:00",
 "end": "2026-11-21T17:00",
@@ -782,6 +1262,25 @@
 "id": "dc7ca8aa8d"
 },
 {
+"title": "Full STEAM Ahead",
+"start": "2026-11-21T15:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Lafayette, Louisiana",
+"address": "Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "🚂 ALL ABOARD! FULL STEAM AHEAD! 🎉\nSmall Minds, Big Discoveries!\n\nBrilliant Minds Academy is celebrating 5 YEARS of learning, growing, and making memories—and we want YOU to celebrate with us! 💛\n\nCalling all past and present BMA students, families, and staff! You are part of our story, and we would l",
+"url": "https://happeningnext.com/event/full-steam-ahead-eid3a0e832hc9",
+"image": "https://cdn.happeningnext.com/events10/banners/266447ab0ca34a65d484a2afddb7b1741b60b0e545c391e13699c2e0fa3d2cd7-rimg-w1024-h1536-dcf8f8f8-gmir?v=1792973213",
+"source": "Happening Next (art)",
+"id": "438977dcc9"
+},
+{
 "title": "Miracle on Jefferson St",
 "start": "2026-11-21T16:30",
 "end": "2026-12-31T23:00",
@@ -799,7 +1298,7 @@
 "url": "https://www.downtownlafayette.org/event/miracle-on-jefferson-st",
 "image": "",
 "source": "Downtown Lafayette",
-"id": "3a997fceb4"
+"id": "59f28890ec"
 },
 {
 "title": "Ragin' Fighting Championship 7",
@@ -808,11 +1307,10 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S College Rd, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
-"arts",
 "community"
 ],
 "desc": "ALL AGES NEED A TICKET\nExperience an action-packed night of live combat sports featuring youth MMA, rising amateur talent and professional fighters from across Louisiana and beyond.",
@@ -822,13 +1320,124 @@
 "id": "6e4ba555de"
 },
 {
+"title": "Valcour Records Presents: Garden Party w/ Boma Bango + Evening Concert at the Sidecar!",
+"start": "2026-11-21T17:00",
+"end": "2026-11-21T23:00",
+"allDay": false,
+"ongoing": false,
+"venue": "The Sidecar",
+"address": "422 Refinery St, Lafayette, LA 70501-8656, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Join us for a special DOUBLE throwdown on Saturday, November 21st at the Sidecar in Lafayette.\n\n5-7 pm: Garden Party ft. Boma Bango! Celebrate their newest release, On Va Voir, with Valcour Records and friends*\n\nAt 7 pm, we'll open up the other side of the venue for a special evening concert ft. Jo",
+"url": "https://happeningnext.com/event/valcour-records-presents-garden-party-w-boma-bango-evening-concert-at-the-sidecar-eid3a0e7u6huj",
+"image": "https://cdn.happeningnext.com/events5/banners/775ee00704075780e2e95aa5c62eb47ae5f95130f198e1d89c30de3686329532-rimg-w1200-h675-dc98c8e8-gmir?v=1792848639",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
+"id": "f02a10f69f"
+},
+{
+"title": "Dark Feminine Energy Celebration",
+"start": "2026-11-21T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "292 Ridge Road suite 9, Lafayette, LA",
+"address": "292 Ridge Rd, Lafayette, LA 70506-7212, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Dark Feminine Energy Celebration: Broom Decorating Night 🧹🌙\nThis Dark Feminine night is less about deep work and more about creating, connecting, laughing, and having a good time together.\nJoin us at Synergy for a relaxed evening of broom decorating, mocktails, grazing, games, good conversation, and",
+"url": "https://happeningnext.com/event/dark-feminine-energy-celebration-eid3a0e6736i4",
+"image": "https://cdn.happeningnext.com/events10/banners/c226f55d285fab99b9dea829a22dad34d334aea781bea4ddf00d7ea9edcf12c7-rimg-w1024-h1536-dce8d8d8-gmir?v=1791826715",
+"source": "Happening Next (art)",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
+"id": "d6b7faba42"
+},
+{
+"title": "State of LA Danse, Saturday November 21 7PM",
+"start": "2026-11-21T19:00",
+"end": "2026-11-21T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Ducrest-Gilfry Auditorium in Angelle Hall",
+"address": "601 East Saint Mary Boulevard, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"music"
+],
+"desc": "Faculty and Guest Artist Dance Concert from the UL Lafayette Dance Program",
+"url": "https://happeningnext.com/event/state-of-la-danse-saturday-november-21-7pm-eid1ef0l915cjjr",
+"image": "https://cdn.happeningnext.com/events3/banners/e8b48be325563f676f9730f74a78179947e50be3e1b9be051ec57bb94708fbd8-rimg-w1080-h1920-dc080808-gmir.jpg?v=1793290566",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (music)"
+],
+"id": "d646168e85"
+},
+{
+"title": "VAMPIRE NIGHTCLUB V 🦇",
+"start": "2026-11-21T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Loose Caboose",
+"address": "201 McKinley St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "one night a year, we dance 🦇\n\nMy beloved fellow immortals, the time has once again returned to meet on the dance floor 🩸 In your best vampiric cloth, meet us on the 21st night of November for dancing, drinking, and deadly looks\n\n11.21.26\nTHE LOOSE CABOOSE.\n18+. 7PM-2AM.\nCOSTUMES HEAVILY ENCOURAGED",
+"url": "https://happeningnext.com/event/vampire-nightclub-v-eid3a0e832jjb",
+"image": "https://cdn.happeningnext.com/events3/banners/074ead250e64cb71711fa5fefda1f54484479fb2eb8a8308ddec1be85950ab91-rimg-w844-h844-dc080808-gmir?v=1792973224",
+"source": "Happening Next (dance)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "dcfec558d7"
+},
+{
+"title": "Othello by William Shakespeare",
+"start": "2026-11-21T19:30",
+"end": "2026-11-21T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "The fourth play in the Cite des Arts 2026 theater season",
+"url": "https://www.citedesarts.org/events/othello-by-william-shakespeare-2026-11-21-19-30",
+"image": "https://static.wixstatic.com/media/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg/v1/fill/w_662,h_1024,al_c,q_85/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg",
+"source": "Cité des Arts",
+"id": "4643d1f3ee"
+},
+{
 "title": "Horace Trahan",
 "start": "2026-11-21T20:00",
 "end": "2026-11-21T22:00",
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -839,6 +1448,28 @@
 "image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1661657988610-7W0WMG5PVUGO9JN5FIJ7/299559843_3130398437220624_1203581314919374758_n.jpg",
 "source": "Hideaway on Lee",
 "id": "7f9f732cc2"
+},
+{
+"title": "Marble Orchard, Mourning Star, TBA",
+"start": "2026-11-21T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Freetown Boom Boom Room",
+"address": "300 McKinley St, Lafayette, LA 70501-8426, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Marble Orchard and Mourning Star are rolling through Freetown on their Ruin & Damnation tour! Local support TBA.\n\nDoors 8pm\nCover $10\n18 TO ENTER, 21 TO DRINK",
+"url": "https://happeningnext.com/event/marble-orchard-mourning-star-tba-eid3a0eahxlpm",
+"image": "https://cdn.happeningnext.com/events10/banners/0f68ee8e844f6f20bcb368ab3c92e7b1e8e7a58a3572f9d419205a8a381da39d-rimg-w1200-h1600-dc080808-gmir?v=1794390547",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "c5b97864a4"
 },
 {
 "title": "Michael Juan Nunez and the Blue Orchestra",
@@ -860,23 +1491,26 @@
 "id": "bec4d0f2df"
 },
 {
-"title": "Bal du Dimanche -- Balfa Toujours",
-"start": "2026-11-22T00:00",
+"title": "Rock-n-Bowl de Lafayette SPANK with School of Rock Lafayette",
+"start": "2026-11-21T21:00",
 "end": null,
-"allDay": true,
+"allDay": false,
 "ongoing": false,
-"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
-"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"venue": "Rock 'n' Bowl de Lafayette",
+"address": "905 Jefferson St,Lafayette,LA,United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/bal-du-dimanche-balfa-toujours-eid3a0e5hk2s4",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81OTIwMWM1N2MyZDBlMmRmYzE1YTQ5M2M5MGUwMDBkZDAxNzFiMjEzYTkyMTBmZTg3NWU5MDQxMzBiYzU0MDAwLXJpbWctdzgwMC1oNTM4LWRjNzg1ODU4LWdtaXI_dj0xNzkxMzUzMTU2.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "ae8e268805"
+"desc": "Spank the monkey with the school of Rock Lafayette",
+"url": "https://happeningnext.com/event/rock-n-bowl-de-lafayette-spank-with-school-of-rock-lafayette-eid3a0ea1rbv4",
+"image": "https://cdn.happeningnext.com/events5/banners/7b2baf03684b068220517aeef70fc88374dc2e115940007dd3804b1cc8c88517-rimg-w1200-h800-dc080808-gmir?v=1794149073",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (comedy)"
+],
+"id": "a9f56f66b4"
 },
 {
 "title": "Southern Screen Festival | 16th Annual",
@@ -904,7 +1538,7 @@
 "end": null,
 "allDay": true,
 "ongoing": false,
-"venue": "601 E St. Mary Blvd , Lafayette, La 70504, Lafayette, LA, United States, Louisiana 70504",
+"venue": "University of Louisiana at Lafayette; School of Music; 601 East St Mary, Lafayette, LA, United States, Louisiana 70501",
 "address": "601 E St Mary Blvd, Lafayette, LA 70503-2329, United States, Lafayette",
 "price": "",
 "free": false,
@@ -915,6 +1549,10 @@
 "url": "https://happeningnext.com/event/ul-symphony-presents-prokofiev’s-peter-and-the-wolf-eid3a0ea1rc5x",
 "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9kMDIxZGRjYWE1Yzk1YTc1MWQ0MjJiN2I5M2Y1OTA3NDNjMjZkNGZiZDIwMDZmNTcyMzJjNzMyNzYwM2ZmZmE3LXJpbWctdzEyMDAtaDkwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDE0OTA3NA.avif",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "68187dac38"
 },
 {
@@ -924,7 +1562,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -938,13 +1576,76 @@
 "id": "4496f58a5a"
 },
 {
+"title": "Bal du Dimanche -- Balfa Toujours",
+"start": "2026-11-22T13:00",
+"end": "2026-11-22T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Vermilionville",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Bayou Vermilion District & Vermilionville host the Bal du Dimanche (Sunday Dance) EVERY WEEK (may be pre-empted by private events). This live music series is held in Vermilionville’s Performance Center and rustic dancehall from 1-4 p.m. Admission is $12 and includes a self-guided tour of the Vermili",
+"url": "https://happeningnext.com/event/bal-du-dimanche-balfa-toujours-eid3a0e5hk2s4",
+"image": "https://cdn.happeningnext.com/events2/banners/59201c57c2d0e2dfc15a493c90e000dd0171b213a9210fe875e904130bc54000-rimg-w800-h538-dc785858-gmir?v=1791353156",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (food & drinks)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "ae8e268805"
+},
+{
+"title": "Othello by William Shakespeare",
+"start": "2026-11-22T14:00",
+"end": "2026-11-22T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "The fourth play in the Cite des Arts 2026 theater season",
+"url": "https://www.citedesarts.org/events/othello-by-william-shakespeare-2026-11-22-14-00",
+"image": "https://static.wixstatic.com/media/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg/v1/fill/w_662,h_1024,al_c,q_85/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg",
+"source": "Cité des Arts",
+"id": "408d01003f"
+},
+{
+"title": "BJ's Pizza House 4th Sunday cruise-in",
+"start": "2026-11-22T15:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "BJ's Pizza House",
+"address": "2484 W Congress St,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "popular event back for November! Come join us for great pizza and fellowship!",
+"url": "https://happeningnext.com/event/bjs-pizza-house-4th-sunday-cruise-in-eid3a0ebau7u0",
+"image": "https://cdn.happeningnext.com/events6/banners/81fee95ae725ea33e02b174d7fb9d60a98bc3c0413cda14a1d61c4e88d99662a-rimg-w960-h554-dcf8f8f8-gmir?v=1794860671",
+"source": "Happening Next (food & drinks)",
+"id": "55c41c9d8d"
+},
+{
 "title": "The Revelers",
 "start": "2026-11-22T19:00",
 "end": "2026-11-22T21:00",
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -979,9 +1680,9 @@
 },
 {
 "title": "\"This Place\" UL Lafayette Choirs Fall Concert",
-"start": "2026-11-23T00:00",
+"start": "2026-11-23T19:00",
 "end": null,
-"allDay": true,
+"allDay": false,
 "ongoing": false,
 "venue": "Ducrest/Gilfry Auditorium at Angelle Hall",
 "address": "Lafayette, LA, Lafayette",
@@ -990,31 +1691,16 @@
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Join our three choirs as we explore the idea of Home and place. From family to community, from spirituality to belonging, this music is a celebration of what it feels like to be home.",
 "url": "https://happeningnext.com/event/andquotthis-placeandquot-ul-lafayette-choirs-fall-concert-eid3a0e0kld99",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy85NGZkMTk3YmY1MzAwYTczZDhhM2YyODdmYThkOTdmOGZlNGU5ZDk4YjAwODc5NTlmZDkxMGQ0YjgxOTAxZDQzLXJpbWctdzExMzgtaDExMDYtZGMxODE4MDgtZ21pcj92PTE3ODg3MTY0MzY.avif",
+"image": "https://cdn.happeningnext.com/events5/banners/94fd197bf5300a73d8a3f287fa8d97f8fe4e9d98b0087959fd910d4b81901d43-rimg-w1138-h1106-dc181808-gmir?v=1788716436",
 "source": "Happening Next (Lafayette live music)",
-"id": "a4cefae2c0"
-},
-{
-"title": "Moncus Mondays-Free Parking",
-"start": "2026-11-23T05:00",
-"end": "2026-11-23T22:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness",
-"family"
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
 ],
-"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
-"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
-"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
-"source": "Moncus Park",
-"id": "7f60657974"
+"id": "a4cefae2c0"
 },
 {
 "title": "Night Hike",
@@ -1055,13 +1741,32 @@
 "id": "5116154913"
 },
 {
+"title": "Name That Tune",
+"start": "2026-11-24T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "BJ's Pizza House",
+"address": "2458 W Congress St, Lafayette, LA 70506-5549, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "In this ALL AUDIO Trivia, come test your ability to Name That Tune to win prizes and bragging rights!\nFree to play. Prizes for Top 3 teams. Up to 7 players per team.",
+"url": "https://happeningnext.com/event/name-that-tune-eid3a0ebg3wh8",
+"image": "https://cdn.happeningnext.com/events10/banners/b0c9ccbb4e435a9a1329cadc26a20337a9730102ccb0584e8dab5362295cca59-rimg-w1200-h675-dc481898-gmir?v=1794938406",
+"source": "Happening Next (music)",
+"id": "6352ec1298"
+},
+{
 "title": "Yoga in the Park",
 "start": "2026-11-25T18:00",
 "end": "2026-11-25T19:00",
 "allDay": false,
 "ongoing": false,
-"venue": "Location Name",
-"address": "",
+"venue": "Moncus Park",
+"address": "2913 Johnston St, Lafayette, LA",
 "price": "Free",
 "free": true,
 "cats": [
@@ -1112,6 +1817,45 @@
 "id": "d8ea2e0cf8"
 },
 {
+"title": "El Sidos Zydeco & Blues ANNUAL food drive",
+"start": "2026-11-26T00:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Fairfield",
+"address": "Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food"
+],
+"desc": "El Sido's Thanksgiving Food Drive :\n\nEl Sido's family, let's fill some tables. 🧡 Our annual Holiday Food Drive is Wednesday, November 18 at El Sido's, 1523 N Saint Antoine St. Doors 6pm, music 7pm till late, $20, DJ Pugg — with Nathan Williams, Leroy Thomas, Jeffery Broussard, Corey Ledet, Leon Chav",
+"url": "https://happeningnext.com/event/el-sidos-zydeco-andamp-blues-annual-food-drive-eid3a0eahxl7q",
+"image": "https://cdn.happeningnext.com/events2/banners/d86b4b5adc44d0859dd4f4d72ddf7b1f7d3e0ca63a4760b8646fb3628fefd2d8-rimg-w960-h960-dc381858-gmir?v=1794390540",
+"source": "Happening Next (music)",
+"id": "dbc9ed7734"
+},
+{
+"title": "2026 JPJ Memorial 1-mile Turkey Trot",
+"start": "2026-11-26T09:00",
+"end": "2026-11-26T11:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston St, Lafayette, LA",
+"price": "",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "Join us for the 5th Annual JPJ 1-mile Turkey Trot. The event will be held at 9am on Thanksgiving morning at Moncus Park in memory of Jean Paul Judice. Jean Paul believed that his message of loving our world began with family and friends; but, he hoped that by spreading a message of unconditional lov",
+"url": "https://happeningnext.com/event/2026-jpj-memorial-1-mile-turkey-trot-eid3a0e346dc2",
+"image": "https://cdn.happeningnext.com/events4/banners/90bbe56c915c4af373527ff7765a1ad25e23ed5f721f16f74e592f905a07f7a7-rimg-w1200-h600-dcc8e8a8-gmir?v=1789136213",
+"source": "Happening Next (fitness)",
+"id": "d7e27569c5"
+},
+{
 "title": "JPJ Memorial Turkey Trot",
 "start": "2026-11-26T09:00",
 "end": "2026-11-26T11:00",
@@ -1130,6 +1874,86 @@
 "image": "https://moncuspark.org/wp-content/uploads/2023/09/JPJMemorialTrot.jpg",
 "source": "Moncus Park",
 "id": "77fea69738"
+},
+{
+"title": "Thanksgiving Brunch",
+"start": "2026-11-26T11:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "City Club at River Ranch",
+"address": "1100 Camellia Blvd, Lafayette, LA 70508-6671, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Celebrate Thanksgiving with your family at City Club! Reserve your table for our annual Thanksgiving Brunch on Thursday, November 26th. Enjoy a grand buffet sure to delight your taste buds. Available seatings are at 11 AM, 11:30 AM, 1 PM, and 1:30 PM.\n\nAdults: $46.95++\nAges 11 & under: $20.95++\nAges",
+"url": "https://happeningnext.com/event/thanksgiving-brunch-eid3a0e8gmpb8",
+"image": "https://cdn.happeningnext.com/events4/banners/5a0967f90113520a3819b7f70a9ab2bf41557f6384e1bc2613bb5561febd65c2-rimg-w1200-h1527-dcf8f8f8-gmir?v=1793187493",
+"source": "Happening Next (food & drinks)",
+"id": "c80583b76f"
+},
+{
+"title": "FAITH FAMILY AND FRIENDS THANKSGIVING DINNER",
+"start": "2026-11-26T16:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "104 Rue Fontaine, Lafayette, LA, United States, Louisiana 70508",
+"address": "104 Rue Fountaine, Lafayette, LA 70508, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food",
+"family"
+],
+"desc": "🍂🦃 Faith Family & Friends Thanksgiving Dinner 🦃🍂\n\nThis year, Faith Lutheran is starting a new tradition—gathering around the table with our church family and friends for a Thanksgiving meal!\n\nWhether your family lives far away or you’d simply love to share the holiday with others, we invite you to j",
+"url": "https://happeningnext.com/event/faith-family-and-friends-thanksgiving-dinner-eid3a0e832ijl",
+"image": "https://cdn.happeningnext.com/events5/banners/ccad9ef4d8c87b4455109aa795a3f6f051a91dc46e2413bf3811679fd1607511-rimg-w1200-h1200-dcf8f8e8-gmir?v=1792973219",
+"source": "Happening Next (food & drinks)",
+"id": "f114383ac9"
+},
+{
+"title": "Mt. Sneaux Day 2026 Backpacker Lafayette",
+"start": "2026-11-27T15:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "1916 Kaliste Saloom Rd, Lafayette, LA 70508",
+"address": "1916 Kaliste Saloom Rd, Lafayette, LA 70508-6116, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "It's snowing in South Louisiana. Seriously. ❄️\n\nEvery Black Friday, The Backpacker pulls off the impossible: real snow, right here in the bayou state. Mt. Sneaux Day is back for 2026!\n\nWe're hauling in truckloads of the real stuff to all three of our stores. Here's what's waiting for you:\n\n☃️ Snowba",
+"url": "https://happeningnext.com/event/mt-sneaux-day-2026-backpacker-lafayette-eid3a0eb21w41",
+"image": "https://cdn.happeningnext.com/events10/banners/360a9bce07e3fa2e75f781e2cfbc5682d7e78b176bcc6d16d529ddb54f2e30ea-rimg-w1200-h675-dcd8d8c8-gmir?v=1794669165",
+"source": "Happening Next (food & drinks)",
+"id": "27ccc78715"
+},
+{
+"title": "Van Way & Cousin II",
+"start": "2026-11-27T17:15",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "1604 W Pinhook Rd, Lafayette, LA 70508-3729, United States",
+"address": "1604 W Pinhook Rd, Lafayette, LA 70508-3729, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Please join us at the Hidden Gator on Black Friday for 'Van Way & Cousin II'! Collages, paintings and \"figural art\" by Dillon Van Way & James Van Way.",
+"url": "https://happeningnext.com/event/van-way-andamp-cousin-ii-eid3a0e9178hu",
+"image": "https://cdn.happeningnext.com/events10/banners/928258da6a5efe30afb2b02d6b66165c669309558d492cca28c432e9fdaa8d3b-rimg-w1200-h945-dce8e8e8-gmir?v=1793625972",
+"source": "Happening Next (art)",
+"alsoOn": [
+"Happening Next (exhibitions)"
+],
+"id": "717cfebdb8"
 },
 {
 "title": "Troy Richard",
@@ -1170,6 +1994,25 @@
 "id": "a8d9afd9d6"
 },
 {
+"title": "The Good Dudes plus Tobias Lund | Rock'n'Bowl® de Lafayette",
+"start": "2026-11-27T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Dance off that Thanksgiving dinner! The Good Dudes bring their rock and soul to Rock'n'Bowl® de Lafayette on Friday, November 27 at 9:00 PM, with special guest Tobias Lund opening the show. Bring the whole family crew!",
+"url": "https://happeningnext.com/event/the-good-dudes-plus-tobias-lund-rocknbowl-de-lafayette-eid3a0e7u6i5i",
+"image": "https://cdn.happeningnext.com/events2/banners/795ce74829d45eae9f7baafad1ff86578fd40857266af81deb3953ab27dd1523-rimg-w1200-h628-dcf8e8d8-gmir?v=1792848641",
+"source": "Happening Next (music)",
+"id": "b1a13d6fde"
+},
+{
 "title": "$ideQue$t",
 "start": "2026-11-27T23:00",
 "end": null,
@@ -1189,83 +2032,6 @@
 "id": "eb1d0866c4"
 },
 {
-"title": "CRANIAL SLEDGE, MISLED, TRAINWRECK METHOD",
-"start": "2026-11-28T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "300 McKinley Street, Lafayette, LA",
-"address": "300 McKinley St, Lafayette, LA 70501-8426, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/cranial-sledge-misled-trainwreck-method-eid3a0eae2jtx",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy85Y2U4NjUyNDhkN2U0NDA1YWM1MzcwZDM4MjUwMjU3ZDM3MjFmOTRkZWQwNzgyY2ZjMjFhZmRlMGMyOWVhNjAyLXJpbWctdzg5Ni1oMTE5NS1kYzA4MDgwOC1nbWlyP3Y9MTc5NDMwOTYxMQ.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "b19ac60904"
-},
-{
-"title": "Christmas at Couret Holiday Market",
-"start": "2026-11-28T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "300 Flores Ct, Lafayette, LA 70507-5338, United States",
-"address": "300 Flores Ct, Lafayette, LA 70507-5338, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"community"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/christmas-at-couret-holiday-market-eid3a0e4b6fnv",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy83M2ZmNjFlZTE5NDM2NTA0YzViZDA0YmVjNmE4YWRhMGJlMGFlZDRhZTBkYTNhODY4ODI1YjYwNTlhN2ExYTA2LXJpbWctdzk2MC1oNzIwLWRjMDgwODA4LWdtaXI_dj0xNzkwNDMxOTA4.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "1e4ed9a36e"
-},
-{
-"title": "Rock n Bowl de Lafayette - Lafayette, LA.",
-"start": "2026-11-28T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "Rock 'n' Bowl de Lafayette",
-"address": "905 Jefferson St,Lafayette, Louisiana, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/rock-n-bowl-de-lafayette-lafayette-la-eid3a0eb4shmi",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8yMWIyMGQ5YmIyNWZiZjhjZGFiMGRhYTE3YmQxMDAwNmExOTAzNmExM2U4ZmE1ZjI5ZmVjYmZhMDgxOGJlMGE0LXJpbWctdzEyMDAtaDQ0NC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDcyMTA5NA.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "b053613b38"
-},
-{
-"title": "🔥 LEIF MECHE LIVE AT LA ESPUELA! 🔥",
-"start": "2026-11-28T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "La Espuela Cantina & Grill Carencro, La",
-"address": "3235 NW Evangeline Thwy, Lafayette, LA 70507-3537, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/leif-meche-live-at-la-espuela-eid3a0e7884go",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8zNTkzOWExMmE3MTA3Y2E1MjY5ZTA4MDQyMGQwMmExMjc1MTFhMDc1MTRiNmMzZTc2OWE5N2QxYTk2MmQ5Mzg0LXJpbWctdzEyMDAtaDQ0NC1kYzI4MjgyOC1nbWlyP3Y9MTc5MjYyMjY5Ng.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "af0000424b"
-},
-{
 "title": "Lafayette Farmers & Artisans Market",
 "start": "2026-11-28T08:00",
 "end": "2026-11-28T12:00",
@@ -1283,6 +2049,71 @@
 "image": "https://moncuspark.org/wp-content/uploads/2020/03/Springfest-2024-069.jpg",
 "source": "Moncus Park",
 "id": "ab18e77306"
+},
+{
+"title": "The Essentials of Tai Chi",
+"start": "2026-11-28T08:00",
+"end": "2026-11-28T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-11-28-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "ade59cdd89"
+},
+{
+"title": "Christmas at Couret Holiday Market",
+"start": "2026-11-28T09:00",
+"end": "2026-11-28T15:00",
+"allDay": false,
+"ongoing": false,
+"venue": "300 Flores Ct, Lafayette, LA 70507-5338, United States",
+"address": "300 Flores Ct, Lafayette, LA 70507-5338, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"community"
+],
+"desc": "Visit the beautiful historic grounds of Couret Farms on Saturday, November 28th for Christmas at Couret Holiday Market from 9 am - 3 pm. We will have pictures with Santa, live music throughout the day and delicious food trucks adding to the ambiance of our market area with over 60 vendors.\n\nOur ven",
+"url": "https://happeningnext.com/event/christmas-at-couret-holiday-market-eid3a0e4b6fnv",
+"image": "https://cdn.happeningnext.com/events4/banners/73ff61ee19436504c5bd04bec6a8ada0be0aed4ae0da3a868825b6059a7a1a06-rimg-w960-h720-dc080808-gmir?v=1790431908",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (food & drinks)",
+"Happening Next (music)"
+],
+"id": "1e4ed9a36e"
+},
+{
+"title": "TURKEY DAY CLASSIC IN THE BOOT",
+"start": "2026-11-28T10:00",
+"end": "2026-11-28T18:00",
+"allDay": false,
+"ongoing": false,
+"venue": "George Dupuis Recreation Center",
+"address": "1212 East Pont Des Mouton Road, Lafayette",
+"price": "$18",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Get ready for an exciting day of competition at the Turkey Day Classic in the Boot, presented by Royal Elite LLC!",
+"url": "https://happeningnext.com/event/turkey-day-classic-in-the-boot-eid1ef0kuposjpr",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=TURKEY+DAY+CLASSIC+IN+THE+BOOT&date=Sat%2C+28+Nov%2C+2026+at+10%3A00+am&bg=1",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (dance)"
+],
+"id": "ee149ddc62"
 },
 {
 "title": "Elise Riley Band",
@@ -1342,13 +2173,37 @@
 "id": "fac73220ab"
 },
 {
+"title": "CRANIAL SLEDGE, MISLED, TRAINWRECK METHOD",
+"start": "2026-11-28T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Freetown Boom Boom Room",
+"address": "300 McKinley St, Lafayette, LA 70501-8426, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Lafayette's own Cranial Sledge, along with Misled and Trainwreck Method LIVE at The Boom Boom Room!\n\nDoors 8pm\nCover $10\n18 TO ENTER, 21 TO DRINK",
+"url": "https://happeningnext.com/event/cranial-sledge-misled-trainwreck-method-eid3a0eae2jtx",
+"image": "https://cdn.happeningnext.com/events3/banners/9ce865248d7e4405ac5370d38250257d3721f94ded0782cfc21afde0c29ea602-rimg-w896-h1195-dc080808-gmir?v=1794309611",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "b19ac60904"
+},
+{
 "title": "Marley's Ghost",
 "start": "2026-11-28T20:00",
 "end": "2026-11-28T22:00",
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -1400,22 +2255,51 @@
 },
 {
 "title": "Bal du Dimanche -- Kristi Guillory & Friends",
-"start": "2026-11-29T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-11-29T13:00",
+"end": "2026-11-29T16:00",
+"allDay": false,
 "ongoing": false,
-"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"venue": "Vermilionville",
 "address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Bayou Vermilion District & Vermilionville host the Bal du Dimanche (Sunday Dance) EVERY WEEK (may be pre-empted by private events). This live music series is held in Vermilionville’s Performance Center and rustic dancehall from 1-4 p.m. Admission is $12 and includes a self-guided tour of the Vermili",
 "url": "https://happeningnext.com/event/bal-du-dimanche-kristi-guillory-andamp-friends-eid3a0e4bhnt1",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy80OWZjNWFjNjU5NDEyMTM2MzQ0OWRjNGVjMDc0Y2ZhOWFlZmJmNTgyNzZiNmI5MzU2ZmQzMDI2MTk1MGEzOTIxLXJpbWctdzEyMDAtaDExODgtZGNiOGI4NjgtZ21pcj92PTE3OTA0MzU3MTI.avif",
+"image": "https://cdn.happeningnext.com/events7/banners/49fc5ac6594121363449dc4ec074cfa9aefbf58276b6b9356fd30261950a3921-rimg-w1200-h1188-dcb8b868-gmir?v=1790435712",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (food & drinks)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "a5093addd8"
+},
+{
+"title": "The Nutcracker Tea",
+"start": "2026-11-29T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Blvd, Lafayette, LA 70503-2321, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Join us for The Nutcracker Tea—a magical, family-friendly afternoon designed to introduce young audiences to the wonder of the classical ballet The Nutcracker.\n\nPerfect for preschool and elementary-aged children, while welcoming guests of all ages, this festive experience brings the beloved story to",
+"url": "https://happeningnext.com/event/the-nutcracker-tea-eid3a0e832ket",
+"image": "https://cdn.happeningnext.com/events5/banners/3636071205ae864d00a36ab92f91ac2075eb2e5caaefbb7380431803ca357c96-rimg-w1200-h527-dcf8f8e8-gmir?v=1792973229",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
+"id": "d26c9f1760"
 },
 {
 "title": "SOSAWRLD 2",
@@ -1437,63 +2321,49 @@
 "id": "b5935728ab"
 },
 {
-"title": "Louisiana Christmas Day",
+"title": "Louisiana Christmas Day 2026: Fifth Anniversary Gala",
 "start": "2026-11-29T18:00",
 "end": null,
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "ALL AGES NEED A TICKET\n\nBayou Teche Music Productions presents LOUISIANA CHRISTMAS DAY: 5th Anniversary Gala",
-"url": "https://www.heymanncenter.com/events/2026/louisiana-christmas-day2",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LCD_2026_Website_Thumbnail.jpg&cb=a7726d21",
-"source": "Heymann Performing Arts Center",
-"id": "29279b3f22"
-},
-{
-"title": "Moncus Mondays-Free Parking",
-"start": "2026-11-30T05:00",
-"end": "2026-11-30T22:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness",
-"family"
-],
-"desc": "Start your week off right with Free Parking Mondays at Moncus Park! Every Monday, we're excited to offer complimentary parking to all our visitors. Whether you're coming for a morning jog, a leisurely picnic, or an evening stroll, you can park worry-free and enjoy all the park has to offer. Take advantage of this opportunity to explore our beautiful grounds, let the kids run wild on the playground, or simply relax in nature - all without reaching for your wallet. It's our way of saying \"thank you\" to our community and making the park even more accessible to everyone. Remember, free parking is available all day every Monday, from open to close (5:00 am to 10:00 pm). So come on out, leave your parking worries behind, and make the most of your Moncus Park experience!",
-"url": "https://moncuspark.org/calendar-events/free-parking-moncus-mondays/",
-"image": "https://moncuspark.org/wp-content/uploads/2024/08/FreeParking_MoncusPark.png",
-"source": "Moncus Park",
-"id": "e78789a8a5"
-},
-{
-"title": "Ragin' Roots Traditional Music Ensemble Showcase",
-"start": "2026-12-01T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "Warehouse 535",
-"address": "535 Garfield St,Lafayette, Louisiana, Lafayette",
+"address": "1373 S College Rd, Lafayette, LA 70503-2909, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music",
-"community"
+"theater",
+"family"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/ragin-roots-traditional-music-ensemble-showcase-eid3a0eae2i3l",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9kOGYzYTRlODQ3MDE1ZDY1MzQzN2Y5NWQ5OGI3Zjg2YzNiMzI5ZDJjMzhiMjFlMWFmOWQyOTIwMTYwOWNkMmY0LXJpbWctdzEyMDAtaDE1MDAtZGNmOGY4ZjgtZ21pcj92PTE3OTQzMDk1OTk.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "5200ed3a37"
+"desc": "Tickets: https://www.heymanncenter.com/events/2026/louisiana-christmas-day2\n\nJoin internationally acclaimed opera star André Courville and his Atchafalaya Orchestra for our Fifth Anniversary Gala concert of your favorite Christmas songs featuring special guest stars Grammy-nominated family trio Swee",
+"url": "https://happeningnext.com/event/louisiana-christmas-day-2026-fifth-anniversary-gala-eid3a0e2w5jtb",
+"image": "https://cdn.happeningnext.com/events10/banners/7bc6caae7aeff0f1a1d93fe55cf417be70f665664c2344d619fc01859231f754-rimg-w1200-h675-dc080808-gmir?v=1788933657",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Heymann Performing Arts Center"
+],
+"id": "1f86d48481"
+},
+{
+"title": "Life Skills Cafe' - NOVEMBER",
+"start": "2026-11-30T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Children's Museum of Acadiana",
+"address": "201 E Congress St, Lafayette, LA 70501-6919, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"family"
+],
+"desc": "🔥🚒 LIFE SKILLS CAFÉ: PRACTICE SAFETY THROUGH FUN! 🎨🧯\n\nWho says learning about fire safety can't be CREATIVE, COLORFUL, and FUN?! Join us for November's Functional Life Skills Café as we turn important safety lessons into hands-on activities, art projects, and exciting adventures! ❤️\n\nThis month",
+"url": "https://happeningnext.com/event/life-skills-cafe-november-eid3a0e9rc3pf",
+"image": "https://cdn.happeningnext.com/events7/banners/5d7aa033e2e077421e048530302cc4a8d4772d80551990bc9e334f146d7aa69b-rimg-w1200-h798-dcf8f8f8-gmir?v=1794007004",
+"source": "Happening Next (art)",
+"id": "1f8d089080"
 },
 {
 "title": "Acadiana Talent presnts Storytellers Open Mic Night hosted by Jason Harrington",
@@ -1515,10 +2385,35 @@
 "id": "1139f5bade"
 },
 {
-"title": "Candle Night Holiday Concert",
-"start": "2026-12-02T00:00",
+"title": "Ragin' Roots Traditional Music Ensemble Showcase",
+"start": "2026-12-01T18:30",
 "end": null,
-"allDay": true,
+"allDay": false,
+"ongoing": false,
+"venue": "Warehouse 535",
+"address": "535 Garfield St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"community"
+],
+"desc": "Ragin Roots: Traditional Music Ensemble Showcase & Christmas Party\n\nJoin us for an evening of hot tunes, hot gumbo and a whole lotta dancing as we celebrate the end of the Fall semester. Featuring our Cajun, Zydeco, Honky Tonk and R&B ensembles\n\nCome and support our talented students and all their h",
+"url": "https://happeningnext.com/event/ragin-roots-traditional-music-ensemble-showcase-eid3a0eae2i3l",
+"image": "https://cdn.happeningnext.com/events5/banners/d8f3a4e847015d653437f95d98b7f86c3b329d2c38b21e1af9d29201609cd2f4-rimg-w1200-h1500-dcf8f8f8-gmir?v=1794309599",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "5200ed3a37"
+},
+{
+"title": "Candle Night Holiday Concert",
+"start": "2026-12-02T18:30",
+"end": null,
+"allDay": false,
 "ongoing": false,
 "venue": "University of Louisiana at Lafayette; School of Music; 601 East St Mary, Lafayette, LA, United States, Louisiana 70501",
 "address": "601 E St Mary Blvd, Lafayette, LA 70503-2329, United States, Lafayette",
@@ -1527,11 +2422,38 @@
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Go from Sneaux Day to Candle Night…\n\nJoin the School of Music for CandleNight, a festive holiday concert filled with the familiar sounds of the season and a little extra sparkle. Bring the whole family for an evening of holiday favorites, blending beloved traditions with fresh musical moments, featu",
 "url": "https://happeningnext.com/event/candle-night-holiday-concert-eid3a0eae2jwv",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81OTkzYmM2MjE0M2NhM2ZhNDI4OWU4YzY1MmFjMzkwZTNkZWYzMjZjNWFkNjg3NjNiNzhiY2RlMGJlNGUzZTcyLXJpbWctdzEyMDAtaDE2NzktZGNjODE4MTgtZ21pcj92PTE3OTQzMDk2MTE.avif",
+"image": "https://cdn.happeningnext.com/events2/banners/5993bc62143ca3fa4289e8c652ac390e3def326c5ad68763b78bcde0be4e3e72-rimg-w1200-h1679-dcc81818-gmir?v=1794309611",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
 "id": "1e8a1ca490"
+},
+{
+"title": "Maria Bamford (Lady Dynamite, The Comedians of Comedy, Bob's Burgers)",
+"start": "2026-12-02T19:00",
+"end": "2026-12-02T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Club 337",
+"address": "1521 W Pinhook Rd,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Lafayette Comedy presents MARIA BAMFORD (Lady Dynamite, The Comedians of Comedy, Bob's Burgers) on Wednesday, Dec. 2 at 7:00 PM.\nDoors open at 6:30 PM\nTickets are on sale for $40 VIP (reserved seating in first 3 rows) or $30 General Admission (plus taxes/fees).\n\nMaria Bamford is revered for her deep",
+"url": "https://happeningnext.com/event/maria-bamford-lady-dynamite-the-comedians-of-comedy-bobs-burgers-eid3a0dwnu024",
+"image": "https://cdn.happeningnext.com/events6/banners/8bea8c3543346103ed4a67e9e0682b60199d8c86120aa147ca5ff0ed06cf5998-rimg-w1200-h675-dc181818-gmir?v=1788184678",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)"
+],
+"id": "9b39519cf5"
 },
 {
 "title": "Trivia Night with Jay Steiner",
@@ -1540,7 +2462,7 @@
 "allDay": false,
 "ongoing": false,
 "venue": "Hideaway on Lee",
-"address": "",
+"address": "407 Lee Ave, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
@@ -1595,23 +2517,64 @@
 "id": "09ee279fba"
 },
 {
-"title": "A Cajun Night Before Christmas",
+"title": "Meet, Mingle & Jingle Christmas Party",
+"start": "2026-12-03T16:00",
+"end": "2026-12-03T19:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Barnel's - The Art & Framing Gallery",
+"address": "302 Guilbeau Rd, Lafayette, LA 70506-6914, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Join us for a fun night of gifts & gatherings. MEET the Barnel's team, MINGLE with friends, and JINGLE with lite bites and wine!\n\nThis annual event is a great time to shop for one-of-a-kind art, Christmas décor and gifts, and toast the season.",
+"url": "https://happeningnext.com/event/meet-mingle-andamp-jingle-christmas-party-eid3a0e6hl4mx",
+"image": "https://cdn.happeningnext.com/events3/banners/664c0b50e528cdd2b26f86dd7c73485ff39fefac0cebe8d84640763791a5f7a5-rimg-w1200-h446-dcf8f8f8-gmir?v=1792115361",
+"source": "Happening Next (art)",
+"id": "69d2d75f6a"
+},
+{
+"title": "A Cajun Night Before Christmas at Heymann Performing Arts Center",
 "start": "2026-12-03T19:00",
-"end": null,
+"end": "2026-12-03T21:00",
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S. College Rd., Lafayette, LA 70503, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "arts"
 ],
 "desc": "AGES 2 AND UP NEED A TICKET\nExperience the magic of Louisiana's most beloved Christmas tale",
-"url": "https://www.heymanncenter.com/events/2025/a-cajun-night-before-christmas",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=ASO_42_CajunNightsmall.png&cb=d3e47810",
-"source": "Heymann Performing Arts Center",
-"id": "7dcde58ea8"
+"url": "https://happeningnext.com/event/a-cajun-night-before-christmas-at-heymann-performing-arts-center-eid15hwid39lse",
+"image": "https://cdn.happeningnext.com/events1/banners/53b85300-e153-11f1-ab69-a76145f05a1c-rimg-w1080-h1080-dc080808-gmir.png?v=1794788342",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Heymann Performing Arts Center"
+],
+"id": "bf344e8b66"
+},
+{
+"title": "It's a Wonderful Life: A Live Radio Play",
+"start": "2026-12-03T19:00",
+"end": "2026-12-06T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine Street, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"theater"
+],
+"desc": "Ascension Episcopal School 8th-12th graders present It's a Wonderful Life: A Live Radio Play",
+"url": "https://happeningnext.com/event/its-a-wonderful-life-a-live-radio-play-eid1ef0l8wvvoxa",
+"image": "https://cdn.happeningnext.com/events2/banners/0adca7956a16db5266533745c7f27a22a4adb2db5048b7b6ac3dddc8b5370bc1-rimg-w1200-h600-dc082858-gmir.jpg?v=1793404933",
+"source": "Happening Next (theatre)",
+"id": "671eaabbe2"
 },
 {
 "title": "The Collaboratory Open Jam Night",
@@ -1631,6 +2594,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/collaboratory%2012-3_xsWq.png",
 "source": "Blue Moon Saloon",
 "id": "5daccc2ba0"
+},
+{
+"title": "The Real Story of Christmas",
+"start": "2026-12-04T10:00",
+"end": "2026-12-06T10:00",
+"allDay": false,
+"ongoing": false,
+"venue": "150 Verona Dr, Lafayette, LA, US",
+"address": "150 Verona Dr, Lafayette, LA 70507-6402, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "🎄 The Real Story of Christmas is Back—and Better Than Ever! 🎄\n\nJoin us for a Broadway-style musical experience that brings some of the most beloved Christmas stories to life—each one pointing back to the true meaning of Christmas!\n\n📅 Show Dates:\nFriday, December 5 — 7 PM\nSaturday, December 6 — 1 PM",
+"url": "https://happeningnext.com/event/the-real-story-of-christmas-eid3a0e9kbxkv",
+"image": "https://cdn.happeningnext.com/events2/banners/aaf4e7f54caa3309a35b9cbad98f6c7085b461d6726c5cb0177a4fedc64b79ff-rimg-w1200-h628-dca81818-gmir?v=1793936955",
+"source": "Happening Next (performances)",
+"id": "9aa7d7d404"
 },
 {
 "title": "Twinkle Light Night",
@@ -1662,13 +2644,38 @@
 "price": "Free",
 "free": true,
 "cats": [
-"arts"
+"family"
 ],
 "desc": "Chorale Acadienne presents Christmas by Candlelight: Glorious Season, a joyous holiday celebration featuring an original holiday composition by director Rusty Roden as well as selections from Handel’s Messiah. Come and sing along with beloved carols, and bring the whole family!",
 "url": "https://choraleacadienne.com/season?occurrence=2026-12-04",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/c7623809-b5ae-428e-9055-02416883c82f.webp",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "93736beee3"
+},
+{
+"title": "Skyliners BIg Band Dance",
+"start": "2026-12-04T19:00",
+"end": "2026-12-04T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "PC53 - Petroleum Club of Lafayette",
+"address": "111 Heymann Blvd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "The Skyliners Big Band Dance\nJoin us for our last dance of the season in our 76th year, on Friday, December 4, 2026, from 7:00 to 10 PM at The Petroleum Club.\nGet ready to dance and listen to our fabulous 18-piece big band, featuring vocalists Billie Castle and Bill Roza, in an elegant ballroom!\nYo",
+"url": "https://happeningnext.com/event/skyliners-big-band-dance-eid3a0eae2iao",
+"image": "https://cdn.happeningnext.com/events4/banners/34106bf23c06782c27d0147ece320d5fe774c3cb50d814c0bb52c69ae9bd2b71-rimg-w1200-h565-dc080808-gmir?v=1794309600",
+"source": "Happening Next (dance)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "edaa35c146"
 },
 {
 "title": "Dom Francis",
@@ -1690,6 +2697,25 @@
 "id": "5851a331a4"
 },
 {
+"title": "The Vermillionaires | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-04T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Kick off December with a party, Lafayette! The Vermillionaires, the party band, take over Rock'n'Bowl® de Lafayette on Friday, December 4. Grab your crew and come dance the night away!",
+"url": "https://happeningnext.com/event/the-vermillionaires-rocknbowl-de-lafayette-eid3a0e832jv4",
+"image": "https://cdn.happeningnext.com/events3/banners/2114edc56285b3d6fb46556746a6fbcc7528f90f005b02ec01be830e54f1740d-rimg-w1200-h628-dc080808-gmir?v=1792973225",
+"source": "Happening Next (music)",
+"id": "c7682b4926"
+},
+{
 "title": "Lost Bayou Ramblers",
 "start": "2026-12-04T22:00",
 "end": null,
@@ -1709,99 +2735,23 @@
 "id": "9442c5320d"
 },
 {
-"title": "Divers Destination Who-Ville Underwater",
+"title": "Compartir Navideño de Belleza Real",
 "start": "2026-12-05T00:00",
 "end": null,
 "allDay": true,
 "ongoing": false,
-"venue": "Diver's Destination of Louisiana",
-"address": "201 Guilbeau Rd,Lafayette, Louisiana, Lafayette",
+"venue": "Ministerio Internacional Linaje Real Central",
+"address": "605 South College Road, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"food"
 ],
 "desc": "",
-"url": "https://happeningnext.com/event/divers-destination-who-ville-underwater-eid3a0e9utwia",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy82ZTkyZGQwMmI3OTRiNjk3Zjg1NmFjZGFhNDkxNWFmMjU4ZTM5OGNhMGU2NTZiMzMxYTQ2OTE5NjJlZjU2OGIzLXJpbWctdzExMjItaDE0MDItZGNmOGY4ZTgtZ21pcj92PTE3OTQwNzU0ODI.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "7cf1eda817"
-},
-{
-"title": "Shotgun Lillie | Rock'n'Bowl® de Lafayette",
-"start": "2026-12-05T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
-"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/shotgun-lillie-rocknbowl-de-lafayette-eid3a0eb54luq",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy82MWNmYjc3YjkyMDUwMjdjY2JmMzA2Y2U5MTJlZmM3NzhlYzAzMTA5MGY2Yzg4ZmJjODMzMDVhZTVjYTI0YjZjLXJpbWctdzEyMDAtaDgwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5NDczMDczNw.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "6bf10893d8"
-},
-{
-"title": "The reunion show",
-"start": "2026-12-05T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "Feed N Seed Lafayette",
-"address": "106 N Grant St,Lafayette, Louisiana, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/the-reunion-show-eid3a0dxatrq5",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy80OWUyZDE4MDBhZWM2M2E4MzRiZDMzMzljZTFlNjhkNWIzMTRkMDU5OThiNjg2NWE4ZTg2NDBhOGNmNTgyYWE1LXJpbWctdzk2MC1oOTYwLWRjZjhmOGY4LWdtaXI_dj0xNzg4MjI0OTcx.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "700a2a6183"
-},
-{
-"title": "WHOP BEZZY LIVE IN CONCERT!!!",
-"start": "2026-12-05T00:00",
-"end": "2026-12-06T00:00",
-"allDay": true,
-"ongoing": false,
-"venue": "GRANT ST DANCE HALL",
-"address": "113 W GRANT ST, LAFAYETTE",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-eid1ef0l8j8e33r",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9mY2NkYmM4ZGNiNzRkMjc5MWIxYmM2YTkwZDcyYWY5MTE0ZGQ4MDlmZTBhYjdkNDQyMDYxYTAyNDFiNzNjNTZjLXJpbWctdzEyMDAtaDY1Mi1kYzA4MDgwOC1nbWlyLmpwZz92PTE3OTE5MjUyNzk.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "d6ae0152e2"
-},
-{
-"title": "Whop Bezzy live in Concert Hosted by Scarface from Baddies & Mr.Cut water",
-"start": "2026-12-05T00:00",
-"end": "2026-12-06T00:00",
-"allDay": true,
-"ongoing": false,
-"venue": "113 W Grant St",
-"address": "113 W Grant St, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-hosted-by-scarface-from-baddies-andamp-mrcut-water-eid27punbglkmk",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy9mM2VhNDNhMC1lMjg1LTExZjEtYjE0My03ZmRjZjAwNmExODQtcmltZy13MTIwMC1oMTIzMC1kYzA4MDgwOC1nbWlyLnBuZz92PTE3OTQ5MjAwMzc.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "9b75815698"
+"url": "https://happeningnext.com/event/compartir-navideño-de-belleza-real-eid1ef0l97g1ita",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy81OWRhOTVjZWM5ZDgzMjZhMGMyZWU1OWIxNDRjMTYwZTM3NzE4Yjk5MTE1NTg2ZDM5ZTEwOGRhOTE3YWY5ZmIzLXJpbWctdzEyMDAtaDYwMC1kY2Y4ZjhmOC1nbWlyLmpwZz92PTE3OTM3ODI1Mjk.avif",
+"source": "Happening Next (food & drinks)",
+"id": "e92cab2168"
 },
 {
 "title": "Lafayette Farmers & Artisans Market",
@@ -1823,6 +2773,63 @@
 "id": "4714a9988e"
 },
 {
+"title": "The Essentials of Tai Chi",
+"start": "2026-12-05T08:00",
+"end": "2026-12-05T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-12-05-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "0ea1a1e4ba"
+},
+{
+"title": "Bubble and Brims: Holiday Sip and Shop",
+"start": "2026-12-05T10:00",
+"end": "2026-12-05T14:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Envious Events, LLC-Lafayette",
+"address": "4304 Moss Street ,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "🥂✨ Bubbles & Brims: A Holiday Sip & Shop 🎄\n\nCelebrate the season with Créole Brims Custom Hat Company at an elegant holiday shopping experience filled with Southern charm, festive sips, and beautiful finds!\n\nGather your friends and enjoy a thoughtfully curated selection of unique vendors, the signat",
+"url": "https://happeningnext.com/event/bubble-and-brims-holiday-sip-and-shop-eid3a0e6u1qnc",
+"image": "https://cdn.happeningnext.com/events6/banners/dba76fbf643825e1e312a7ca2bfd54a2e4e47946e96d2a7c4577ed7f050a1756-rimg-w1200-h1769-dc080808-gmir?v=1792448875",
+"source": "Happening Next (art)",
+"id": "c1e5c2ada1"
+},
+{
+"title": "Les Mains Guidees - Santons de Provence",
+"start": "2026-12-05T10:30",
+"end": "2026-12-05T13:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Vermilionville",
+"address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "In the Provence region of France, families celebrated the Yule season by displaying the nativity scene — and they got the idea of including their townsfolk in the figures present at the adoration of the infant Jesus — thus were created the “little Saints” of Provence — Les Santons de Provence. This",
+"url": "https://happeningnext.com/event/les-mains-guidees-santons-de-provence-eid3a0eb21vn6",
+"image": "https://cdn.happeningnext.com/events7/banners/cb18baf1de5a89e0bc84ff2935b9107cd90b35e76a14d45bbae05f3b8abf8c87-rimg-w640-h481-dcd8d8d8-gmir?v=1794669158",
+"source": "Happening Next (art)",
+"id": "bc757569f1"
+},
+{
 "title": "Artist Talk: Kate Gordon",
 "start": "2026-12-05T13:00",
 "end": "2026-12-05T15:00",
@@ -1840,15 +2847,81 @@
 "url": "https://acadianacenterforthearts.org/events/community-zine-2/?occurrence=2026-12-05",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Talk-Kate-Gordon-Website.jpg",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "e187bd1c8a"
 },
 {
-"title": "Home for the Holidays with the Dopsie Family: Christmas Tree Concert",
+"title": "🦌 Rudolph the Red-Nosed Reindeer JR. 🎄",
+"start": "2026-12-05T14:00",
+"end": "2026-12-06T14:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Wonderland Performing Arts",
+"address": "2807 Johnston St, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "🦌Rudolph the Red-Nosed Reindeer JR. 🎄\n\nGet ready for a magical holiday adventure with Wonderland Performing Arts!\n\nJoin Rudolph as he sets off on a journey to find where he truly belongs! Along the way, he meets some unforgettable misfits, discovers the importance of friendship and acceptance, and l",
+"url": "https://happeningnext.com/event/rudolph-the-red-nosed-reindeer-jr-eid3a0ebg3xun",
+"image": "https://cdn.happeningnext.com/events6/banners/a2ce3e5da5b644ae6ab21111c8ed36b2c36c2582f7b120eea72b546e2d4e9af0-rimg-w480-h480-dce8e8e8-gmir?v=1794938419",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (performances)"
+],
+"id": "f75ebde94d"
+},
+{
+"title": "Fightingville Holiday Stroll",
+"start": "2026-12-05T17:00",
+"end": "2026-12-05T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Black Cafe",
+"address": "518 S Pierce St, Lafayette, LA 70501-5941, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Join us on Saturday, December 5, for a festive neighborhood celebration bringing together local creativity, community, and holiday cheer!\n\nExplore the historic Fightingville neighborhood filled with holiday lights, live performances, creative activities, and plenty of opportunities to connect with y",
+"url": "https://happeningnext.com/event/fightingville-holiday-stroll-eid3a0ebau84t",
+"image": "https://cdn.happeningnext.com/events4/banners/cf9e03d802617e663d36ac6fead66dc4243d8ae8aa06164a9aa5f7f2e511a22b-rimg-w1200-h675-dc080808-gmir?v=1794860673",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (art)"
+],
+"id": "714c48f9cf"
+},
+{
+"title": "Divers Destination Who-Ville Underwater",
+"start": "2026-12-05T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Diver's Destination of Louisiana",
+"address": "201 Guilbeau Rd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🎄🤿 WHO’S READY TO PARTY, WHOVILLE STYLE?! 💚✨\n\nOur Whoville Underwater Christmas Party is coming to Diver’s Destination, and we’re ready for a night FULL of fun!\n\n📅 December 5th\n⏰ 6 PM–until!\n\nIf you’ve ever been to one of our parties, you already KNOW how much fun we have! 🥳 If you’ve never joined u",
+"url": "https://happeningnext.com/event/divers-destination-who-ville-underwater-eid3a0e9utwia",
+"image": "https://cdn.happeningnext.com/events6/banners/6e92dd02b794b697f856acdaa4915af258e398ca0e656b331a4691962ef568b3-rimg-w1122-h1402-dcf8f8e8-gmir?v=1794075482",
+"source": "Happening Next (Lafayette live music)",
+"id": "7cf1eda817"
+},
+{
+"title": "Home for the Holidays with the Dopsie Family! Christmas Tree Concert",
 "start": "2026-12-05T18:00",
 "end": "2026-12-05T21:00",
 "allDay": false,
 "ongoing": false,
-"venue": "Downtown Lafayette",
+"venue": "201 Polk St, Lafayette, LA 70501-6925, United States",
 "address": "207 Polk St, Lafayette, LA 70501-6925, United States, Lafayette",
 "price": "",
 "free": false,
@@ -1856,14 +2929,84 @@
 "music",
 "family"
 ],
-"desc": "Downtown’s Merry & Bright Holiday Experience is presented by Lafayette Coca-Cola Bottling Company, with support from Lafayette Travel, The Acadiana Advocate, and Chase Tower.",
-"url": "https://www.downtownlafayette.org/event/rockin-around-the-christmas-tree-concert",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81ZmY3YmYwYmEyZGY3YmRkMjk0ZmEyODI5OTk0Njk1YTU2NTBjNjFiY2UzOGRhMDBkYzk0NmRiZGQ5MmNiNmQ5LXJpbWctdzEyMDAtaDYwMy1kYzA4MDgwOC1nbWlyP3Y9MTc5NDM5MDU0OQ.avif",
-"source": "Downtown Lafayette",
+"desc": "There's no place like Downtown for the holidays!\n\nJoin us on Saturday, December 5th, as we transform Parc Sans Souci into a festive winter wonderland for an evening of live music, holiday cheer, and the lighting of Downtown Lafayette’s 25-foot Christmas tree!\n\nThis year’s Christmas concert is extra",
+"url": "https://happeningnext.com/event/home-for-the-holidays-with-the-dopsie-family-christmas-tree-concert-eid3a0eahxlvj",
+"image": "https://cdn.happeningnext.com/events2/banners/5ff7bf0ba2df7bdd294fa2829994695a5650c61bce38da00dc946dbdd92cb6d9-rimg-w1200-h603-dc080808-gmir?v=1794390549",
+"source": "Happening Next (Lafayette live music)",
 "alsoOn": [
-"Happening Next (Lafayette live music)"
+"Downtown Lafayette",
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
 ],
 "id": "74041e49a6"
+},
+{
+"title": "The reunion show",
+"start": "2026-12-05T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Feed N Seed Lafayette",
+"address": "106 N Grant St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Performing live with Golgothan and Soul Giant",
+"url": "https://happeningnext.com/event/the-reunion-show-eid3a0dxatrq5",
+"image": "https://cdn.happeningnext.com/events2/banners/49e2d1800aec63a834bd3339ce1e68d5b314d05998b6865a8e8640a8cf582aa5-rimg-w960-h960-dcf8f8f8-gmir?v=1788224971",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "700a2a6183"
+},
+{
+"title": "WHOP BEZZY LIVE IN CONCERT!!!",
+"start": "2026-12-05T20:00",
+"end": "2026-12-06T01:00",
+"allDay": false,
+"ongoing": false,
+"venue": "GRANT ST DANCE HALL",
+"address": "113 W GRANT ST, LAFAYETTE",
+"price": "$34",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "One BIG AZZ SAGITTARIUS PARTY WHOP BEZZY LIVE IN CONCERT!!",
+"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-eid1ef0l8j8e33r",
+"image": "https://cdn.happeningnext.com/events5/banners/fccdbc8dcb74d2791b1bc6a90d72af9114dd809fe0ab7d442061a0241b73c56c-rimg-w1200-h652-dc080808-gmir.jpg?v=1791925279",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "d6ae0152e2"
+},
+{
+"title": "Shotgun Lillie | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-05T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Saturday night rock is on! Shotgun Lillie brings the rock to Rock'n'Bowl® de Lafayette on Saturday, December 5 at 9:00 PM. Turn it up and come out with us!",
+"url": "https://happeningnext.com/event/shotgun-lillie-rocknbowl-de-lafayette-eid3a0eb54luq",
+"image": "https://cdn.happeningnext.com/events2/banners/61cfb77b9205027ccbf306ce912efc778ec031090f6c88fbc83305ae5ca24b6c-rimg-w1200-h800-dc080808-gmir?v=1794730737",
+"source": "Happening Next (Lafayette live music)",
+"id": "6bf10893d8"
 },
 {
 "title": "The Debtors",
@@ -1883,6 +3026,29 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/the%20debtors_JoJi.jpg",
 "source": "Blue Moon Saloon",
 "id": "47ccf823b1"
+},
+{
+"title": "Whop Bezzy live in Concert Hosted by Scarface from Baddies & Mr.Cut water",
+"start": "2026-12-05T21:00",
+"end": "2026-12-06T02:00",
+"allDay": false,
+"ongoing": false,
+"venue": "GRANT ST DANCE HALL",
+"address": "113 W Grant St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🔥💎 LAFAYETTE, GET READY! THE BADDIES ARE TAKING OVER GRANT STREET! 💎🔥\n\n🚨 SATURDAY, DECEMBER 5TH, 2026! 🚨\n\nIt’s going DOWN at GRANT STREET with WHOP BEEZY in the building! 🎤🔥\n\n🎉 Hosted by VELL CUT WATER & SCARFACE!\n\nDj Rocky on the turntables\n\nLadies, bring your girls! Fellas, grab your crew! It’s ti",
+"url": "https://happeningnext.com/event/whop-bezzy-live-in-concert-hosted-by-scarface-from-baddies-andamp-mrcut-water-eid27punbglkmk",
+"image": "https://cdn.happeningnext.com/events9/banners/8c1f4840-e2be-11f1-8329-5bf444c7bcd8-rimg-w1200-h1230-dc080808-gmir.png?v=1794944344",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
+"id": "9b75815698"
 },
 {
 "title": "Blonde Roses",
@@ -1923,22 +3089,49 @@
 "id": "bee7490a72"
 },
 {
-"title": "Bal du Dimanche -- Prends Courage",
-"start": "2026-12-06T00:00",
-"end": null,
-"allDay": true,
+"title": "Teddy Bear Tea 2026",
+"start": "2026-12-06T10:00",
+"end": "2026-12-06T16:00",
+"allDay": false,
 "ongoing": false,
-"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette",
+"price": "$66",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "Celebrate the season with a family-friendly holiday event full of sweet treats, festive fun, and unforgettable memories!",
+"url": "https://happeningnext.com/event/teddy-bear-tea-2026-eid1ef0l8b6g65a",
+"image": "https://cdn.happeningnext.com/events8/banners/7462653bc935c6c073cc1b81e1cb5dfffcf119333eb85317c30c2998583fde91-rimg-w1200-h600-dcf8e8e8-gmir.jpg?v=1791213425",
+"source": "Happening Next (food & drinks)",
+"alsoOn": [
+"Happening Next (health wellness)"
+],
+"id": "b451979f30"
+},
+{
+"title": "Bal du Dimanche -- Prends Courage",
+"start": "2026-12-06T13:00",
+"end": "2026-12-06T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Vermilionville",
 "address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Bayou Vermilion District & Vermilionville host the Bal du Dimanche (Sunday Dance) EVERY WEEK (may be pre-empted by private events). This live music series is held in Vermilionville’s Performance Center and rustic dancehall from 1-4 p.m. Admission is $12 and includes a self-guided tour of the Vermili",
 "url": "https://happeningnext.com/event/bal-du-dimanche-prends-courage-eid3a0e7lfk72",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9kNWRmNGQzODIyMGE5NjM1ZDNhZjJjNzlhNWE4ZGQ2YTNhMmYzNDE3OGI4MDFkNzE4ZWRmZmYyMjM5ZDZjZjE1LXJpbWctdzQ2OC1oMzMwLWRjMDgwODA4LWdtaXI_dj0xNzkyNzg5NDAw.avif",
+"image": "https://cdn.happeningnext.com/events7/banners/d5df4d38220a9635d3af2c79a5a8dd6a3a2f34178b801d718edfff2239d6cf15-rimg-w468-h330-dc080808-gmir?v=1792789400",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (dance)",
+"Happening Next (festivals)",
+"Happening Next (music)"
+],
 "id": "1656ef4028"
 },
 {
@@ -1960,6 +3153,64 @@
 "source": "Moncus Park",
 "alsoOn": [],
 "id": "099ad75325"
+},
+{
+"title": "Between The Pages",
+"start": "2026-12-06T15:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "292 Ridge Road suite 9, Lafayette, LA",
+"address": "292 Ridge Rd, Lafayette, LA 70506-7212, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "📚 BETWEEN THE PAGES\nA Synergy Book Swap\n\nGot books on your shelf that you’ve loved, finished, or are simply ready to pass along? Bring them to Synergy and let them find their next reader.\n\nJoin us Sunday, December 6 at 3 PM for a FREE afternoon of books, games, laughs, and a little friendly competit",
+"url": "https://happeningnext.com/event/between-the-pages-eid3a0e6736r2",
+"image": "https://cdn.happeningnext.com/events1/banners/57c63bb12a6c892ca59d9658833966860bc6099ce804d0fde3a9b576319f6f3a-rimg-w1024-h1536-dce8d8c8-gmir?v=1791826721",
+"source": "Happening Next (art)",
+"id": "e585edfdb8"
+},
+{
+"title": "Mahj & Music",
+"start": "2026-12-09T08:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "PC53 - Petroleum Club of Lafayette",
+"address": "111 Heymann Blvd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "A Mahjong Tournament Benefiting the Acadiana Symphony Orchestra\n\nGather your mahjong friends and join us for a fabulous day of tiles, friendly competition, and giving back!\n\nHosted by the Acadiana Symphony Women’s League, Mahj & Music brings together mahjong enthusiasts for a day of spirited play, d",
+"url": "https://happeningnext.com/event/mahj-andamp-music-eid3a0ebg3x40",
+"image": "https://cdn.happeningnext.com/events1/banners/c60b09bc1e3ff19b4f086756bd3419fbf4ff873b9e4536ee1c03cc686b227376-rimg-w1200-h675-dc083828-gmir?v=1794938412",
+"source": "Happening Next (music)",
+"id": "d089cd9b20"
+},
+{
+"title": "Artist Round Up: Dioramas",
+"start": "2026-12-09T18:00",
+"end": "2026-12-09T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "AcA's Artist Roundups gather together artists and creatives for a casual night of making connections while also making art. By bringing artists of various backgrounds together, Artist Roundups hope to encourage dialogue and collaboration across artistic disciplines and create a shared sense of community and belonging. This month, learn from AcA exhibiting artist Kate Gordon how to build small-scale collaged dioramas from paintings and found magazine clippings. The workshop will encourage artists to think spatially while using two-dimensional imagery. It will also offer the concept of using dioramas as a means to visualize exhibition plans and even curate spaces. Creatives of all levels and disciplines are encouraged to attend. Materials will be provided.",
+"url": "https://acadianacenterforthearts.org/events/artist-round-up-dioramas/?occurrence=2026-12-09",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Talk-Kate-Gordon-Website.jpg",
+"source": "Acadiana Center for the Arts (all events)",
+"id": "fd5875d152"
 },
 {
 "title": "Cajun Jam Hosted by Luke Huval",
@@ -2000,42 +3251,183 @@
 "id": "5793a9b13e"
 },
 {
-"title": "Candlelight: Tribute to Fleetwood Mac",
-"start": "2026-12-11T00:00",
-"end": null,
-"allDay": true,
+"title": "The American Creed in Words and Images",
+"start": "2026-12-10T16:30",
+"end": "2026-12-10T19:30",
+"allDay": false,
 "ongoing": false,
-"venue": "Petroleum Club of Lafayette",
-"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"venue": "Acadiana Center for the Arts",
+"address": "101 W. Vermilion St.,Lafayette,LA,United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"arts"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/candlelight-tribute-to-fleetwood-mac-eid1afw9x4sxwm",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy82OTY1NmNhMC1kZTg0LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMwODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDc5.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "aa3d26ce8e"
+"desc": "For teachers of 6–12 grade\nAmerica’s 250th anniversary is an ideal time to reflect on and explore the American Creed, what economist Gunnar Myrdal refers to as “ (what) Americans of all national origins, classes, regions, creeds, and colors, have . . . in common: a social ethos, a political creed.”",
+"url": "https://happeningnext.com/event/the-american-creed-in-words-and-images-eid3a0e7lfooe",
+"image": "https://cdn.happeningnext.com/events5/banners/51758f21c0ec81afb88a2f1e32b274b9f294273cbdad8f1d6db9f6298fb36214-rimg-w1200-h675-dcf8f8f8-gmir?v=1792789414",
+"source": "Happening Next (art)",
+"alsoOn": [
+"Happening Next (festivals)"
+],
+"id": "bcb604c719"
+},
+{
+"title": "Dance This Holiday",
+"start": "2026-12-10T19:00",
+"end": "2026-12-10T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Wonderland Center for Performing Arts",
+"address": "2807 Johnston Street, Lafayette",
+"price": "$25",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Get into the holiday spirit, hit the dance floor, and celebrate the season together in person!",
+"url": "https://happeningnext.com/event/dance-this-holiday-eid1ef0l92nedha",
+"image": "https://cdn.happeningnext.com/events2/banners/57e6feb9118c02b3d4569828eca8b46c623330ed452e9cf645b21e25ef48d188-rimg-w1200-h675-dc486868-gmir.jpg?v=1793404928",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (dance)"
+],
+"id": "ef854b1c18"
+},
+{
+"title": "2026 Diocesan Celebration of Our Lady of Guadalupe",
+"start": "2026-12-11T17:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Cathedral of St. John the Evangelist",
+"address": "914 St John St, Lafayette, LA 70501-6710, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Join us for a special celebration honoring the Feast Day of Our Lady of Guadalupe on December 11 at the Cathedral of St. John the Evangelist in Lafayette. The evening will begin with a bilingual recitation of the Rosary at 5:30 PM in the Cathedral Carmel School Yard Pavilion, followed by a processio",
+"url": "https://happeningnext.com/event/2026-diocesan-celebration-of-our-lady-of-guadalupe-eid3a0eali0vf",
+"image": "https://cdn.happeningnext.com/events5/banners/b6ced64ec51bf2dd103b2d70ba270d24f339a466a2f6a6a46fd97213e913d314-rimg-w1200-h1600-dc080808-gmir?v=1794451813",
+"source": "Happening Next (festivals)",
+"id": "b9a57018c7"
 },
 {
 "title": "Candlelight: Tribute to Michael Jackson",
-"start": "2026-12-11T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-11T18:00",
+"end": "2026-12-11T20:00",
+"allDay": false,
 "ongoing": false,
 "venue": "Petroleum Club of Lafayette",
 "address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "$50",
+"free": false,
+"cats": [
+"music",
+"theater",
+"family"
+],
+"desc": "⭐ Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Lafayette. Get your tickets now to discover the music of Michael Jackson at Petroleum Club of Lafayette under the gentle glow of candlelight. This is a tribute conc",
+"url": "https://happeningnext.com/event/candlelight-tribute-to-michael-jackson-eid1afw9wub5h1",
+"image": "https://cdn.happeningnext.com/events2/banners/8cf7e930-de85-11f1-a7be-298b5c0ef5b1-rimg-w550-h550-dc180808-gmir.jpg?v=1794480087",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "a80c31712f"
+},
+{
+"title": "Copy of Cypress Street Studios featuring Hijack The Float",
+"start": "2026-12-11T18:00",
+"end": "2026-12-11T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "AOC Community Media",
+"address": "101 Jefferson Street, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "CSS is an immersive training event where volunteers learn the art of live show production, focusing on camera operation and directing.",
+"url": "https://happeningnext.com/event/copy-of-cypress-street-studios-featuring-hijack-the-float-eid1ef0l8mjlw2r",
+"image": "https://cdn.happeningnext.com/events1/banners/e4bf3c113ac5acb6933eca0c51a7a850976feee669e1470d0f625cadfb7e3569-rimg-w1037-h1230-dc486848-gmir.png?v=1794549672",
+"source": "Happening Next (art)",
+"id": "648f34aa1d"
+},
+{
+"title": "Live Reading & Book Signing \" The Cajun Nativity \"",
+"start": "2026-12-11T19:00",
+"end": "2026-12-11T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "LARC's Acadian Village",
+"address": "200 Greenleaf Dr,Lafayette,LA,United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music"
+"arts"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/candlelight-tribute-to-michael-jackson-eid1afw9wub5h1",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy84Y2Y3ZTkzMC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMxODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDg3.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "a80c31712f"
+"desc": "\"Join me for a live reading and book signing of 'The Cajun Nativity.' Immerse yourself in our regional heritage with stories of bayou culture and tradition.\" Find me at the Pavilion.",
+"url": "https://happeningnext.com/event/live-reading-andamp-book-signing-andquot-the-cajun-nativity-andquot-eid3a0e37q0iq",
+"image": "https://cdn.happeningnext.com/events9/banners/4a52df4117ddf392c5bf24caea0ac802944e1971413d1670b5a30b5ae98248bd-rimg-w1080-h1421-dc181818-gmir?v=1789262562",
+"source": "Happening Next (performances)",
+"id": "86dd0f6796"
+},
+{
+"title": "UNE CHANSON DE NOËL AU LAC BIJOU!",
+"start": "2026-12-11T19:00",
+"end": "2026-12-11T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Grab your tickets and the Louisiana French holiday spirit today!",
+"url": "https://www.citedesarts.org/events/une-chanson-de-noel-au-lac-bijou-2026-12-11-19-00",
+"image": "https://static.wixstatic.com/media/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg/v1/fill/w_1079,h_880,al_c,q_85/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg",
+"source": "Cité des Arts",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)",
+"Happening Next (performances)",
+"Happening Next (theatre)"
+],
+"id": "b497d1b76a"
+},
+{
+"title": "Brian Posehn (Mandalorian, Just Shoot Me, Seinfeld, The Big Bang Theory)",
+"start": "2026-12-11T19:30",
+"end": "2026-12-11T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Club 337",
+"address": "Doubletree-Lafayette, 1521 W Pinhook Rd, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Friday, Dec. 11th @ 7:30PM\n\nClub 337 1521 W Pinhook Rd, Lafayette, LA\n\nLafayette Comedy presents the return of BRIAN POSEHN (as seen on Mandalorian, Just Shoot Me, Seinfeld, The Big Bang Theory) on Friday, Dec. 11th @ 7:30 PM at Club 337.\n\nTickets are on sale now:\nVIP (reserved seating in the first",
+"url": "https://happeningnext.com/event/brian-posehn-mandalorian-just-shoot-me-seinfeld-the-big-bang-theory-eid3a0dqs1cpw",
+"image": "https://cdn.happeningnext.com/events5/banners/b25f4201caa0e7bfc11abe30e8d6a98fe872213dd70ef8fe6fe4eb107c66c9e7-rimg-w1200-h675-dc080808-gmir?v=1788388769",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)",
+"Happening Next (food & drinks)",
+"Happening Next (performances)"
+],
+"id": "a3c02a4671"
 },
 {
 "title": "Louisiana Surf Department",
@@ -2055,6 +3447,71 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/lsd%20pic_628t.jpg",
 "source": "Blue Moon Saloon",
 "id": "385ed7fe1a"
+},
+{
+"title": "Candlelight: Tribute to Fleetwood Mac",
+"start": "2026-12-11T20:30",
+"end": "2026-12-11T22:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "$46",
+"free": false,
+"cats": [
+"music",
+"theater",
+"family"
+],
+"desc": "⭐ Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Lafayette. Get your tickets now to discover the music of Fleetwood Mac at Petroleum Club of Lafayette under the gentle glow of candlelight. This is a tribute concer",
+"url": "https://happeningnext.com/event/candlelight-tribute-to-fleetwood-mac-eid1afw9x4sxwm",
+"image": "https://cdn.happeningnext.com/events4/banners/69656ca0-de84-11f1-a7be-298b5c0ef5b1-rimg-w550-h550-dc080808-gmir.jpg?v=1794480079",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "aa3d26ce8e"
+},
+{
+"title": "The Essentials of Tai Chi",
+"start": "2026-12-12T08:00",
+"end": "2026-12-12T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-12-12-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "99c66dbde9"
+},
+{
+"title": "Vermilion River Run 10 Miler & 5 Mile",
+"start": "2026-12-12T08:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Picard Park",
+"address": "130 Park Ln,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Vermilion River Run 10 Miler\n\nSaturday, December 12, 2026 | 8:00 AM | Picard Park, Milton, Louisiana\n\nThe Vermilion River Run is the final race of the Triple Crown Challenge — and it’s strategically placed on the calendar before many spring marathons and half marathons. At 10 miles, it’s the per",
+"url": "https://happeningnext.com/event/vermilion-river-run-10-miler-andamp-5-mile-eid3a0dnwh39q",
+"image": "https://cdn.happeningnext.com/events4/banners/8fe281d381ec66e7dc68f9f93d5f098088e813ccacaca00fdb06906964013192-rimg-w600-h200-dcf8f8f8-gmir?v=1786966096",
+"source": "Happening Next (fitness)",
+"id": "5f219264ab"
 },
 {
 "title": "Create & Play Café",
@@ -2077,6 +3534,70 @@
 "id": "1049ae4a9a"
 },
 {
+"title": "Family Nutcracker Painting Class",
+"start": "2026-12-12T10:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "1507 Kaliste Saloom Rd, Lafayette, LA 70508-5761, United States",
+"address": "1507 Kaliste Saloom Rd, Lafayette, LA 70508-5761, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts",
+"family",
+"community"
+],
+"desc": "Who’s painting theirs hot pink? 🎨🎄\n\nJoin us for our Family Nutcracker Paint Class at Cake Society Studio! Come with a friend, bring the family, or grab a seat for yourself. Everyone gets their own 12-inch wooden nutcracker to paint and take home. Go classic Christmas or pick the boldest colors o",
+"url": "https://happeningnext.com/event/family-nutcracker-painting-class-eid3a0ebau7i5",
+"image": "https://cdn.happeningnext.com/events8/banners/f454f3bc04384616da9e0906453507b6d881248e22f4b1f5c6e37c11f27c285c-rimg-w960-h502-dcf8f8f8-gmir?v=1794860668",
+"source": "Happening Next (art)",
+"id": "0e93be7752"
+},
+{
+"title": "Fall '26 End of Season Shows: Day 1",
+"start": "2026-12-12T13:00",
+"end": "2026-12-12T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Feed N Seed Lafayette",
+"address": "106 N Grant St, Lafayette, LA 70501-6040, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "An all ages event!\n\nSCHEDULE\nRock 101 (Wed/Fri), 1:00 PM - 2:00 PM | ROCK 101\nPop Punk & Emo, 2:00 PM - 4:00 PM | PERFORMANCE PROGRAM\nHair Metal, 4:00 PM - 6:00 PM | PERFORMANCE PROGRAM\nBest of the 2000's, 6:00 PM - 8:00 PM | PERFORMANCE PROGRAM\nYacht Rock (Adult Band), 8:00 PM - 10:00 PM | ADULT PE",
+"url": "https://happeningnext.com/event/fall-26-end-of-season-shows-day-1-eid3a0ea1rhq8",
+"image": "https://cdn.happeningnext.com/events1/banners/3a93a2200d19e3928d43dd2f6b7c5b1930c01bee0f30bbca41a6a10e2255db99-rimg-w1200-h675-dc080808-gmir?v=1794149104",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (festivals)",
+"Happening Next (music)"
+],
+"id": "53d7dc403e"
+},
+{
+"title": "Artist Talk: Artists’ Alliance & Tattooed Walls",
+"start": "2026-12-12T16:30",
+"end": "2026-12-12T18:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "101 W Vermilion St, Lafayette, LA",
+"price": "Free",
+"free": true,
+"cats": [
+"arts",
+"community"
+],
+"desc": "Join former members of the Artists' Alliance as they perform a demonstration of one of their most famous art formats: Tattooed Walls. Through the use of an overhead projector, Tattooed Walls turns visual artmaking into a shifting performance piece that transforms in real time. As building sized images take shape, warp, and disappear, musicians and dancers respond in kind, creating a jazz-like improvisational experience that defies disciplinary boundaries. After the performance, our artists will join AcA Visual Arts Director Jaik Faulk in a discussion of their inspirations and process, as well as the history and legacy of the Tattoed Walls form.",
+"url": "https://acadianacenterforthearts.org/events/artists-alliance-and-tattooed-walls/?occurrence=2026-12-12",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Alliance-Tattooed-Walls-Website.jpg",
+"source": "Acadiana Center for the Arts (all events)",
+"id": "0b3ce48c26"
+},
+{
 "title": "December ArtWalk",
 "start": "2026-12-12T17:00",
 "end": "2026-12-12T21:00",
@@ -2094,6 +3615,26 @@
 "image": "",
 "source": "Downtown Lafayette",
 "id": "e9e5d17fb7"
+},
+{
+"title": "Energy Gala",
+"start": "2026-12-12T17:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "PC53 - Petroleum Club of Lafayette",
+"address": "111 Heymann Blvd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"food"
+],
+"desc": "The Lagcoe Energy Gala is an evening of celebration, connection, and recognition! Join us for a night of great music, dinner, an engaging guest speaker, and an awards ceremony honoring individuals and organizations making a difference in the energy industry.\n\nIt's an opportunity to come together, ce",
+"url": "https://happeningnext.com/event/energy-gala-eid3a0ea1rbm6",
+"image": "https://cdn.happeningnext.com/events3/banners/1fe9483ed708474e39cf541adbff08913222cf417dc89c06e351bbce760e9caf-rimg-w480-h270-dc081828-gmir?v=1794149070",
+"source": "Happening Next (music)",
+"id": "3a80258181"
 },
 {
 "title": "Christmas Holiday Hoot Night",
@@ -2115,17 +3656,58 @@
 "id": "07dfc1b5cd"
 },
 {
+"title": "Thrift It, Wear It, Rock It!",
+"start": "2026-12-12T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "DOF Cafe, 409 Patterson St., Lafayette, LA",
+"address": "409 Patterson St, Lafayette, LA 70501, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "🎄✨ I’VE GOT SOMETHING NEW FOR YOU! ✨🎄\n\nGet ready for a little HOLIDAY FUN with a fashion twist! 🎁👗💃🏽\n\nIf you love thrifting, fashion, finding a good bargain, getting dressed up, laughing with the girls, and making memories… this one is for YOU! 🛍️❤️\n\nCotton Creations is taking THRIFT SHOPPING TO THE",
+"url": "https://happeningnext.com/event/thrift-it-wear-it-rock-it-eid3a0e6hl4sv",
+"image": "https://cdn.happeningnext.com/events4/banners/e0dee3ec9cb62165dc00048e6c8a3872f523b80bd65e8ff62af01528a4875abf-rimg-w1024-h1536-dcf8f8f8-gmir?v=1792115363",
+"source": "Happening Next (music)",
+"id": "b11aa84dce"
+},
+{
+"title": "The Christmas Party Premiere: Characters Night Out",
+"start": "2026-12-12T19:00",
+"end": "2026-12-12T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Sunday's",
+"address": "431 Jefferson Street, Lafayette",
+"price": "$8",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "A festive night out where your favorite Christmas characters hit the party scene in person—come celebrate and make merry!",
+"url": "https://happeningnext.com/event/the-christmas-party-premiere-characters-night-out-eid1ef0l93tr5oa",
+"image": "https://cdn.happeningnext.com/events4/banners/6bfa7fb0f14c0f823a5a7575ee01a198756051c4efa62314bb6fb6690403d616-rimg-w1200-h1789-dc085838-gmir.jpg?v=1793533564",
+"source": "Happening Next (music)",
+"alsoOn": [
+"Happening Next (food & drinks)"
+],
+"id": "620ef67a0a"
+},
+{
 "title": "The Nutcracker - Evening",
 "start": "2026-12-12T19:00",
 "end": null,
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S College Rd, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
-"arts"
+"theater"
 ],
 "desc": "ALL AGES NEED A TICKET\n\nAcadiana's Favorite Family Holiday Tradition",
 "url": "https://www.heymanncenter.com/events/2026/the-nutcracker---evening2",
@@ -2134,23 +3716,161 @@
 "id": "de20c45a30"
 },
 {
+"title": "UNE CHANSON DE NOËL AU LAC BIJOU!",
+"start": "2026-12-12T19:00",
+"end": "2026-12-12T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Grab your tickets and the Louisiana French holiday spirit today!",
+"url": "https://www.citedesarts.org/events/une-chanson-de-noel-au-lac-bijou-2026-12-12-19-00",
+"image": "https://static.wixstatic.com/media/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg/v1/fill/w_1079,h_880,al_c,q_85/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "c5990c9724"
+},
+{
+"title": "Champions Course 5K",
+"start": "2026-12-13T10:00",
+"end": "2026-12-13T13:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston St, Lafayette, LA 70503-3245, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "🏃‍♀️ RUN WHERE THE CHAMPIONS RAN! 🏃‍♂️\n\nThe day after some of the country’s best young runners compete for national titles at Moncus Park, it’s YOUR turn to take on the course! 🏅\n\nJoin us on Sunday, December 13, at 10 AM for the Champions Course 5K, a one-of-a-kind cross-country experience on the",
+"url": "https://happeningnext.com/event/champions-course-5k-eid3a0e6dcclt",
+"image": "https://cdn.happeningnext.com/events3/banners/4aca6e3692d9802d22bd3a265bf2c779e36b69785414eb1e4d0ce4ef2cce2486-rimg-w1200-h675-dcc8f808-gmir?v=1791996231",
+"source": "Happening Next (fitness)",
+"id": "0a849420bd"
+},
+{
+"title": "River Ranch HOA Christmas Gumbo",
+"start": "2026-12-13T11:00",
+"end": "2026-12-13T13:00",
+"allDay": false,
+"ongoing": false,
+"venue": "POUR Restaurant & Bar",
+"address": "1 Degaulle Square, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"food"
+],
+"desc": "Get ready to spice up your holiday with some tasty gumbo and good vibes at the River Ranch HOA bash!",
+"url": "https://happeningnext.com/event/river-ranch-hoa-christmas-gumbo-eid1ef0l8x2sdjr",
+"image": "https://cdn.happeningnext.com/events5/banners/ff963736e346468cf44e543fa04dee00ac1b76418a8dee6b7c75cd6005f21627-rimg-w1200-h800-dc080808-gmir.jpg?v=1794549678",
+"source": "Happening Next (food & drinks)",
+"id": "dc903f44a0"
+},
+{
+"title": "Fall '26 End of Season Shows: Day 2",
+"start": "2026-12-13T13:00",
+"end": "2026-12-13T18:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Feed N Seed Lafayette",
+"address": "106 N Grant St, Lafayette, LA 70501-6040, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "An all ages event!\n\nSCHEDULE\nRock 101 (Tues/Thurs), 1:00 PM - 2:00 PM | ROCK 101\nMichael Jackson vs Prince, 2:00 PM - 4:00 PM | PERFORMANCE PROGRAM\nLed Zeppelin, 4:00 PM - 6:00 PM | PERFORMANCE PROGRAM\n\nLOCATION\nFeed N Seed | 106 N Grant Street, Lafayette, LA 70501\nhttps://belleviehospitality.com/p",
+"url": "https://happeningnext.com/event/fall-26-end-of-season-shows-day-2-eid3a0ea9em56",
+"image": "https://cdn.happeningnext.com/events3/banners/ff65fb0bc46a7b4b63bd8bbc75c4de4f9f3e20c649bf281ea78031bf6db43c37-rimg-w1200-h675-dc080808-gmir?v=1794227344",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "049af15028"
+},
+{
 "title": "The Nutcracker - Matinee",
 "start": "2026-12-13T14:00",
 "end": null,
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S College Rd, Lafayette, LA",
 "price": "",
 "free": false,
 "cats": [
-"arts"
+"theater"
 ],
 "desc": "ALL AGES NEED A TICKET\nAcadiana's Favorite Family Holiday Tradition",
 "url": "https://www.heymanncenter.com/events/2026/the-nutcracker---matinee2",
 "image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=24-138-005__HeymannGraphics_250x250.png&cb=007A1AD5",
 "source": "Heymann Performing Arts Center",
 "id": "66cd54bf92"
+},
+{
+"title": "UNE CHANSON DE NOËL AU LAC BIJOU!",
+"start": "2026-12-13T14:00",
+"end": "2026-12-13T15:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Grab your tickets and the Louisiana French holiday spirit today!",
+"url": "https://www.citedesarts.org/events/une-chanson-de-noel-au-lac-bijou-2026-12-13-14-00",
+"image": "https://static.wixstatic.com/media/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg/v1/fill/w_1079,h_880,al_c,q_85/62d2c2_859eeda219ab432cb5506f85fae87fe2~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "9141c8ae71"
+},
+{
+"title": "A Christmas Cantata",
+"start": "2026-12-13T15:00",
+"end": "2026-12-13T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Trinity Christian Methodist Episcopal Church",
+"address": "604 Lee Ave,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"family",
+"community"
+],
+"desc": "To celebrate the holidays the Acadiana Ecumenical choir of the Gospel Music Workshop of America will present music by the late great Glen Burleigh’s Christmas Cantata. Free to the public and family friendly event.",
+"url": "https://happeningnext.com/event/a-christmas-cantata-eid3a0e7lfwgf",
+"image": "https://cdn.happeningnext.com/events1/banners/57ca94334a7c8173143888f6fc35674ce0bd5939e93c403a35f78956b50106fa-rimg-w1103-h1470-dce8e8e8-gmir?v=1792789451",
+"source": "Happening Next (music)",
+"id": "7d98a7febf"
+},
+{
+"title": "Magical Christmas Party",
+"start": "2026-12-13T17:00",
+"end": "2026-12-14T17:30",
+"allDay": false,
+"ongoing": false,
+"venue": "City Club at River Ranch",
+"address": "1100 Camellia Blvd, Lafayette, LA 70508-6671, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "This year, our 'Magical Christmas Party' brings the the spirit of the holidays to life, filling your holiday with wonder and timeless magic. Enjoy a delightful buffet as little ones capture picture-perfect moments with Santa, thanks to our professional photographer! Join Mrs. Claus for enchanting ta",
+"url": "https://happeningnext.com/event/magical-christmas-party-eid3a0ebh1wqi",
+"image": "https://cdn.happeningnext.com/events5/banners/d30a6f0d0edb7bb9a2abcaddb62bb4b57bb6810eed69b6ce9871277b6d44f6ef-rimg-w754-h960-dcf8d8c8-gmir?v=1794949369",
+"source": "Happening Next (food & drinks)",
+"id": "9b656d9383"
 },
 {
 "title": "Work Of Fiction | 309 Versus Earth",
@@ -2170,6 +3890,25 @@
 "image": "",
 "source": "Blue Moon Saloon",
 "id": "fb0d5cf3d8"
+},
+{
+"title": "Elf Trivia",
+"start": "2026-12-14T18:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "La Pizzeria Lafayette",
+"address": "La Pizzeria, 3809 Ambassador Caffery Pkwy, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Come test your knowledge of Elf to win prizes and bragging rights!\nFree to play. Prizes for Top 3 teams. Up to 7 players per team.",
+"url": "https://happeningnext.com/event/elf-trivia-eid3a0e9gmukk",
+"image": "https://cdn.happeningnext.com/events7/banners/59775866c7486f49fa006f5dcc32241c6a3cb17754c101dc915ef7a66cf2d4d7-rimg-w1200-h675-dc78b8d8-gmir?v=1793873676",
+"source": "Happening Next (comedy)",
+"id": "ab69c62384"
 },
 {
 "title": "Acadiana Talent presents Storyteller's Open Mic Night hosted by Jason Harrington",
@@ -2192,9 +3931,9 @@
 },
 {
 "title": "Holiday Concert",
-"start": "2026-12-16T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-16T14:30",
+"end": "2026-12-16T16:00",
+"allDay": false,
 "ongoing": false,
 "venue": "400 Polly Ln, Lafayette, LA, United States, Louisiana 70508",
 "address": "400 Polly Ln, Lafayette, LA 70508-4966, United States, Lafayette",
@@ -2203,11 +3942,35 @@
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Join us for live music, indulgent flavors from our chef, and excellent company. Let us fill your holidays with a joy you will feel the whole year through.\n\nMemory Care: 2:30 - 4:00 PM\nAssisted Living: 3:00 - 5:00 PM\n\nRSVP Today! Call (337) 993-8898 or e-mail lafayette@blakeseniorliving.com",
 "url": "https://happeningnext.com/event/holiday-concert-eid3a0eae2j9a",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czgvYmFubmVycy80ODYzZmE4ZTIwNmEzM2I5MmY0NTc1NGE3YWYyZWFiZjY5MzMzNjg1ZjI0MmYzNjgyZTk0OGI5NDU5MTAxNmJmLXJpbWctdzEyMDAtaDYyOC1kY2Y4ZjhmOC1nbWlyP3Y9MTc5NDMwOTYwOA.avif",
+"image": "https://cdn.happeningnext.com/events8/banners/4863fa8e206a33b92f45754a7af2eabf69333685f242f3682e948b94591016bf-rimg-w1200-h628-dcf8f8f8-gmir?v=1794309608",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (food & drinks)",
+"Happening Next (music)"
+],
 "id": "4302497616"
+},
+{
+"title": "CGI Social Club Holiday Party",
+"start": "2026-12-16T17:30",
+"end": "2026-12-16T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Moncus Park",
+"address": "2913 Johnston Street, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"food"
+],
+"desc": "Get ready to mix, mingle, and celebrate the holidays with the CGI crew in a chill, festive vibe!",
+"url": "https://happeningnext.com/event/cgi-social-club-holiday-party-eid1ef0l9dol2or",
+"image": "https://cdn.happeningnext.com/events9/banners/87b069a73abc5403e7b1b8d5fb08babc5ca3a61adce1b6d79ccc58b72bd3a70e-rimg-w1200-h849-dc080808-gmir.jpg?v=1794549670",
+"source": "Happening Next (food & drinks)",
+"id": "62938cffa6"
 },
 {
 "title": "Cajun Jam",
@@ -2227,6 +3990,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam_L9F2.png",
 "source": "Blue Moon Saloon",
 "id": "64ca9f440c"
+},
+{
+"title": "Sparkle & Drip Gingerbread House Decorating",
+"start": "2026-12-17T10:00",
+"end": "2026-12-17T11:00",
+"allDay": false,
+"ongoing": false,
+"venue": "4422 Ambassador Caffery Pkwy, Lafayette, LA 70508",
+"address": "4422 Ambassador Caffery Pkwy, Lafayette, LA 70508-7395, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Get ready to bring your creativity to life at Sparkle & Drip! Join us for a fun-filled DIY experience where we'll transform cardboard gingerbread houses into festive works of art. From glitter and glam to ribbons, rhinestones, bows, and all things sweet, you'll have everything you need to create a o",
+"url": "https://happeningnext.com/event/sparkle-andamp-drip-gingerbread-house-decorating-eid3a0ebau70g",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Sparkle+%26+Drip+Gingerbread+House+Decorating&date=Thu%2C+17+Dec%2C+2026+at+10%3A00+am&bg=4",
+"source": "Happening Next (art)",
+"id": "354f53a5cc"
 },
 {
 "title": "Nether Hour",
@@ -2249,60 +4031,133 @@
 },
 {
 "title": "Candlelight: Christmas Carols on Strings",
-"start": "2026-12-18T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-18T18:00",
+"end": "2026-12-18T22:30",
+"allDay": false,
 "ongoing": false,
 "venue": "Petroleum Club of Lafayette",
 "address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
-"price": "",
+"price": "$40",
 "free": false,
 "cats": [
-"music"
+"music",
+"theater",
+"family"
 ],
-"desc": "",
+"desc": "⭐ Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Lafayette. Get your tickets now to discover the music of Christmas Carols on Strings at Petroleum Club of Lafayette under the gentle glow of candlelight. This is a",
 "url": "https://happeningnext.com/event/candlelight-christmas-carols-on-strings-eid1afw9k3neaa",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy85OWQwZjE2MC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGMwODA4MDgtZ21pci5qcGc_dj0xNzk0NDgwMDgx.avif",
+"image": "https://cdn.happeningnext.com/events3/banners/99d0f160-de85-11f1-a7be-298b5c0ef5b1-rimg-w550-h550-dc080808-gmir.jpg?v=1794480081",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "aaad90ae48"
 },
 {
 "title": "Christmas in the Park",
-"start": "2026-12-18T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-18T18:00",
+"end": "2026-12-18T21:00",
+"allDay": false,
 "ongoing": false,
-"venue": "2913 Johnston St, Lafayette, LA, United States, Louisiana 70503",
+"venue": "Moncus Park",
 "address": "2913 Johnston St, Lafayette, LA 70503-3245, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "🎄✨THREE NIGHTS. ONE PARK. SO MUCH HOLIDAY CHEER!✨🎄\n\nChristmas in the Park, presented by First Horizon Bank, is BACK December 18–20 from 6:00-9:00PM each night, and we’re turning Moncus Park into a holiday wonderland!\n\nGather your friends, bring the family, and get ready for a weekend filled with t",
 "url": "https://happeningnext.com/event/christmas-in-the-park-eid3a0e6dcc9w",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8xOThhY2U1MWI0MzFiZDk5NmYxNmU1ZDkxNjdmNzYxYWQ2MTdiMDc4NWVjN2ViM2NjNDEyYTM2MzY5YWE2ZTQ1LXJpbWctdzEyMDAtaDY3NS1kYzE4NDg4OC1nbWlyP3Y9MTc5MTk5NjIyNg.avif",
+"image": "https://cdn.happeningnext.com/events6/banners/198ace51b431bd996f16e5d9167f761ad617b0785ec7eb3cc412a36369aa6e45-rimg-w1200-h675-dc184888-gmir?v=1791996226",
 "source": "Happening Next (Lafayette live music)",
 "id": "9ff6b3ed61"
 },
 {
 "title": "Papa Noel's VIP Party 2026",
-"start": "2026-12-18T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-18T18:00",
+"end": "2026-12-18T21:00",
+"allDay": false,
 "ongoing": false,
 "venue": "Moncus Park",
 "address": "2913 Johnston Street, Lafayette",
-"price": "",
-"free": false,
+"price": "Free",
+"free": true,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Join us for a night of Christmas Magic!",
 "url": "https://happeningnext.com/event/papa-noels-vip-party-2026-eid1ef0l8b68lba",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNmZhNTA0NTdkZjQxMzkxM2VkMDRhZDZkNjA2MzhlYjhjZmEzNGQ3NjhjMWVkOGNkMzQ2N2E2NGRhNTFjYTI3Ni1yaW1nLXcxMjAwLWg2NzUtZGNmOGY4ZjgtZ21pci5qcGc_dj0xNzk0NTQ5NjY3.avif",
+"image": "https://cdn.happeningnext.com/events10/banners/6fa50457df413913ed04ad6d60638eb8cfa34d768c1ed8cd3467a64da51ca276-rimg-w1200-h675-dcf8f8f8-gmir.jpg?v=1794549667",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (festivals)",
+"Happening Next (music)"
+],
 "id": "a9cba6446a"
+},
+{
+"title": "Luke Null (Saturday Night Live!)",
+"start": "2026-12-18T19:00",
+"end": "2026-12-18T20:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Club 337",
+"address": "1521 W Pinhook Rd,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Luke Null (Saturday Night Live!)\nFriday December 18th, 2026 - 7:00PM\n\nClub 337 1521 W Pinhook Rd, Lafayette, LA\n\nLafayette Comedy presents comedian & musician LUKE NULL (as seen on Saturday Night Live!) on Friday, Dec. 18th at 7:00PM at Club 337 inside the Doubletree Hotel.\nTickets are on sale for $",
+"url": "https://happeningnext.com/event/luke-null-saturday-night-live-eid3a0e1u4r6v",
+"image": "https://cdn.happeningnext.com/events5/banners/f51cfaa7ca6c792b6ee66d77b0c82e941e28cbf3f64bc3927fa74341efe96054-rimg-w1200-h675-dc181818-gmir?v=1788804671",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (comedy)",
+"Happening Next (music)"
+],
+"id": "85449cfe52"
+},
+{
+"title": "Storytelling & Book Signing of \"The Cajun Nativity \"",
+"start": "2026-12-18T19:00",
+"end": "2026-12-18T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "LARC's Acadian Village",
+"address": "200 Greenleaf Dr,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "\"Join me for a live reading and book signing of 'The Cajun Nativity.' Immerse yourself in our regional heritage with stories of bayou culture and tradition.\" Find me at the Chapel.",
+"url": "https://happeningnext.com/event/storytelling-andamp-book-signing-of-andquotthe-cajun-nativity-andquot-eid3a0e808sol",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Storytelling+%26+Book+Signing+of+%22The+Cajun+Nativity+%22&date=Fri%2C+18+Dec%2C+2026+at+07%3A00+pm&bg=1",
+"source": "Happening Next (performances)",
+"id": "704d90ad28"
+},
+{
+"title": "Mama Jingle's Campy Christmas",
+"start": "2026-12-18T20:00",
+"end": "2026-12-18T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "This show is for MATURE AUDIENCES ONLY (18+)\nDoors open at 7:00 p.m. & Show time is 8:00 p.m.",
+"url": "https://www.citedesarts.org/events/mama-jingles-campy-christmas-2026-12-18-20-00",
+"image": "https://static.wixstatic.com/media/62d2c2_21dd2721dd93443c9f08da4eda138169~mv2.jpg/v1/fill/w_5100,h_5100,al_c,q_90/62d2c2_21dd2721dd93443c9f08da4eda138169~mv2.jpg",
+"source": "Cité des Arts",
+"id": "bfd51980ad"
 },
 {
 "title": "Mas Donkey",
@@ -2324,23 +4179,113 @@
 "id": "1d010083b5"
 },
 {
+"title": "The Essentials of Tai Chi",
+"start": "2026-12-19T08:00",
+"end": "2026-12-19T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-12-19-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "5ae9edb9d1"
+},
+{
 "title": "The Creole Nutcracker",
 "start": "2026-12-19T19:00",
 "end": null,
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S College Rd,Lafayette,LA,United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"arts"
+"theater"
 ],
-"desc": "AGES 2 AND UP NEED A TICKET\nThe Creole Nutcracker puts a Louisiana twist on the 19th Century fairytale and immerses the audience in the captivating world that is unique to Louisiana.",
-"url": "https://www.heymanncenter.com/events/2026/the-creole-nutcracker2",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=Creole_Nutcracker_2024_250x250p.png&cb=E99C9820",
-"source": "Heymann Performing Arts Center",
+"desc": "Experience the magic of the holidays, Louisiana style! Join us for The Creole Nutcracker on Saturday, December 19, 2026, at the Heymann Performing Arts Center in Lafayette, Louisiana. This reimagining of the beloved holiday classic celebrates the rich culture, vibrant traditions, and joyful spirit o",
+"url": "https://happeningnext.com/event/the-creole-nutcracker-eid3a0e832i7q",
+"image": "https://cdn.happeningnext.com/events2/banners/7ebd83de6ee5125bf20ed3f8a2bed88bdeb8173962431d23c75408ded1a9cd02-rimg-w1200-h1200-dc082808-gmir?v=1792973216",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (dance)",
+"Happening Next (music)",
+"Heymann Performing Arts Center"
+],
 "id": "0b7914fcdd"
+},
+{
+"title": "Sean Patton (Peacock, FX's English Teacher, Late Night with Jimmy Fallon)",
+"start": "2026-12-19T19:30",
+"end": "2026-12-19T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Club 337",
+"address": "1521 W Pinhook Rd,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "Saturday December 19th, 2026 - 7:30PM\n\nClub 337 1521 W Pinhook Rd, Lafayette, LA\n\nLafayette Comedy presents comedian SEAN PATTON (as seen on Peacock, FX's English Teacher, Late Night with Jimmy Fallon) at Club 337 on Saturday, December 19 at 7:30 p.m.\nTickets are on sale for $30 VIP, $25 General Adm",
+"url": "https://happeningnext.com/event/sean-patton-peacock-fxs-english-teacher-late-night-with-jimmy-fallon-eid3a0dr2bj75",
+"image": "https://cdn.happeningnext.com/events8/banners/7336f0c2f02841bcede52f64d0939fbc3c25d64068cddfe5ccf5d74cfd6a9f8e-rimg-w1200-h675-dc080808-gmir?v=1787262237",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)",
+"Happening Next (festivals)"
+],
+"id": "4e2b9f1889"
+},
+{
+"title": "Badder Santa 19!!",
+"start": "2026-12-19T20:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Ruins",
+"address": "1919 Kaliste Saloom Rd, Lafayette, LA 70508-6115, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"family"
+],
+"desc": "🎅🔥 BADDER SANTA IS BACK! 🔥🎄\n\n19 YEARS OF BAD SANTAS, BIG BEATS & ONE HELL OF A CHRISTMAS PARTY!\n\nLafayette, some parties come and go. Others become LEGENDARY!\n\nFor 19 editions, BADDER SANTA has been a holiday tradition in the Lafayette nightlife scene, and on SATURDAY, DECEMBER 19TH, we're bringing",
+"url": "https://happeningnext.com/event/badder-santa-19-eid3a0eae2i7q",
+"image": "https://cdn.happeningnext.com/events3/banners/d21c230926464a1145fa57abfc8414414b938f7ddd2ca1729caf67c35dd819f5-rimg-w851-h315-dc080808-gmir?v=1794309600",
+"source": "Happening Next (dance)",
+"id": "403d69378c"
+},
+{
+"title": "Mama Jingle's Campy Christmas",
+"start": "2026-12-19T20:00",
+"end": "2026-12-19T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "This show is for MATURE AUDIENCES ONLY (18+)\nDoors open at 7:00 p.m. & Show time is 8:00 p.m.",
+"url": "https://www.citedesarts.org/events/mama-jingles-campy-christmas-2026-12-19-20-00",
+"image": "https://static.wixstatic.com/media/62d2c2_21dd2721dd93443c9f08da4eda138169~mv2.jpg/v1/fill/w_5100,h_5100,al_c,q_90/62d2c2_21dd2721dd93443c9f08da4eda138169~mv2.jpg",
+"source": "Cité des Arts",
+"alsoOn": [
+"Happening Next (performances)",
+"Happening Next (theatre)"
+],
+"id": "fb843dfd83"
 },
 {
 "title": "Michael Scott Bourdeaux's 5th annual Holiday Honky Tonk",
@@ -2363,40 +4308,73 @@
 },
 {
 "title": "Bal du Dimanche -- Ray Thibodeaux & Allons Danser",
-"start": "2026-12-20T00:00",
-"end": null,
-"allDay": true,
+"start": "2026-12-20T13:00",
+"end": "2026-12-20T16:00",
+"allDay": false,
 "ongoing": false,
-"venue": "300 Fisher Rd, Lafayette, LA, United States, Louisiana 70508",
+"venue": "Vermilionville",
 "address": "300 Fisher Rd, Lafayette, LA 70508-2028, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Bayou Vermilion District & Vermilionville host the Bal du Dimanche (Sunday Dance) EVERY WEEK (may be pre-empted by private events). This live music series is held in Vermilionville’s Performance Center and rustic dancehall from 1-4 p.m. Admission is $12 and includes a self-guided tour of the Vermili",
 "url": "https://happeningnext.com/event/bal-du-dimanche-ray-thibodeaux-andamp-allons-danser-eid3a0ea1rcwg",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy82MGZkZjRhZmNhYWU0YTcxY2RhMDJhNTI2YzZjNzZiNDE2ZTdlOTM0ZjQyMzZjMmRkN2FmOGQ0MGYyMWU0MmJhLXJpbWctdzg4MS1oNTY0LWRjMjgyODI4LWdtaXI_dj0xNzk0MTQ5MDc2.avif",
+"image": "https://cdn.happeningnext.com/events1/banners/60fdf4afcaae4a71cda02a526c6c76b416e7e934f4236c2dd7af8d40f21e42ba-rimg-w881-h564-dc282828-gmir?v=1794149076",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (food & drinks)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "52eae78b15"
 },
 {
-"title": "Geno Delafose & French Rockin' Boogie | Rock'n'Bowl® de Lafayette",
-"start": "2026-12-20T00:00",
+"title": "Winter Light: A Cathedral Christmas | Lafayette",
+"start": "2026-12-20T15:00",
 "end": null,
-"allDay": true,
+"allDay": false,
 "ongoing": false,
-"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"venue": "Cathedral of St. John the Evangelist",
+"address": "914 St John St, Lafayette, LA 70501-6710, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Two historic Louisiana cathedrals and a Christmas story unlike any we've told before. ⛪️\n\nJoin Nova Luminae Choral Ensemble at the Cathedral of St. John the Evangelist in Lafayette for WINTER LIGHT: A Cathedral Christmas, part of our 2026 Christmas Concert Series! 🌟\n\nFollowing the Nativity story thr",
+"url": "https://happeningnext.com/event/winter-light-a-cathedral-christmas-lafayette-eid3a0e6hla6k",
+"image": "https://cdn.happeningnext.com/events5/banners/73bcb058a1a3876941f973404975438f633ca690a10a393fa86222a8e01dec8b-rimg-w1200-h675-dcb83868-gmir?v=1792115400",
+"source": "Happening Next (concerts)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "c245d51c14"
+},
+{
+"title": "Geno Delafose & French Rockin' Boogie | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-20T17:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
 "address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Zydeco Sunday!",
 "url": "https://happeningnext.com/event/geno-delafose-andamp-french-rockin-boogie-rocknbowl-de-lafayette-eid3a0eb1gtsj",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy80ZTcwMGQ1NGI4MmEyMzE4YjAxNDg1Yjg2NTkyZjEwNmRmMjQ2ZjZmMTU2OGQwZjAxNjViMjVlODEzZTVjZmNjLXJpbWctdzEyMDAtaDYyOC1kYzc4MDgxOC1nbWlyP3Y9MTc5NDY2MzUxMw.avif",
+"image": "https://cdn.happeningnext.com/events2/banners/4e700d54b82a2318b01485b86592f106df246f6f1568d0f0165b25e813e5cfcc-rimg-w1200-h628-dc780818-gmir?v=1794663513",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "796ae41d15"
 },
 {
@@ -2439,9 +4417,9 @@
 },
 {
 "title": "Ageless Healthcare 18th Annual Christmas Bash",
-"start": "2026-12-23T00:00",
+"start": "2026-12-23T11:00",
 "end": null,
-"allDay": true,
+"allDay": false,
 "ongoing": false,
 "venue": "Martin Luther King Multipurpose Center",
 "address": "309 Cora St,Lafayette,LA,United States, Lafayette",
@@ -2451,30 +4429,60 @@
 "music",
 "wellness"
 ],
-"desc": "",
+"desc": "Christmas comes but once a year and this year it’s a party for a life time! This year we are bringing the biggest Christmas bash to the MLK center in Lafayette. Wednesday December 23rd. It’s Ageless Healthcare’s Christmas Bash! Live in concert it’s Roi Chip Anthony! And Ladies get ready to clock tha",
 "url": "https://happeningnext.com/event/ageless-healthcare-18th-annual-christmas-bash-eid3a0e6xf07q",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy84MDc4MDY0Y2RhNGJiYTgzM2QwODkxY2U1YWE5MTQ4Y2Q4ZjFkZmRiMzJlNGI4MTUyMDZiM2FjMGM1M2MxMzE2LXJpbWctdzEyMDAtaDE3OTktZGMwODA4MDgtZ21pcj92PTE3OTI0OTc4NzI.avif",
+"image": "https://cdn.happeningnext.com/events4/banners/8078064cda4bba833d0891ce5aa9148cd8f1dfdb32e4b815206b3ac0c53c1316-rimg-w1200-h1799-dc080808-gmir?v=1792497872",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
 "id": "bc9822c977"
 },
 {
-"title": "Mannheim Steamroller Christmas",
+"title": "Mannheim Steamroller Christmas at Heymann Performing Arts Center",
 "start": "2026-12-23T19:30",
-"end": null,
+"end": "2026-12-23T21:30",
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S. College Rd., Lafayette, LA 70503, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "arts"
 ],
 "desc": "AGES 1 AND UP NEED A TICKET\nMANNHEIM STEAMROLLER CHRISTMAS by Chip Davis has been America’s favorite holiday tradition for over 40 years!",
-"url": "https://www.heymanncenter.com/events/2025/mannheim-steamroller",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LAF26_VENUE_250x250_MSC(1).jpg&cb=f269150b",
-"source": "Heymann Performing Arts Center",
-"id": "eab89df4f6"
+"url": "https://happeningnext.com/event/mannheim-steamroller-christmas-at-heymann-performing-arts-center-eid15hwiflcn4e",
+"image": "https://cdn.happeningnext.com/events5/banners/94b3c270-e1cd-11f1-ab69-a76145f05a1c-rimg-w1200-h747-dc080808-gmir.jpg?v=1794840878",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Heymann Performing Arts Center"
+],
+"id": "bb624d87ee"
+},
+{
+"title": "Mannhein Steamroller",
+"start": "2026-12-23T19:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "1373 S College Rd, Lafayette, LA 70503-2909, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "THE ULTIMATE HOLIDAY TRADITION\n\nMANNHEIM STEAMROLLER CHRISTMAS by Chip Davis has been America’s favorite holiday tradition for over 35 years! Grammy Award winner Chip Davis has created a show that features Mannheim Steamroller Christmas classics in the distinctive Mannheim sound. The program inclu",
+"url": "https://happeningnext.com/event/mannhein-steamroller-eid3a0du17dpf",
+"image": "https://cdn.happeningnext.com/events10/banners/f8fc699196a52f3a02045a4feb35d9317becad1cb98a78ada1a663ffc7c933b3-rimg-w1200-h628-dc080808-gmir?v=1787051190",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (music)"
+],
+"id": "e9856fb7f8"
 },
 {
 "title": "Cajun Jam",
@@ -2496,22 +4504,105 @@
 "id": "cc37ff3044"
 },
 {
-"title": "Clay Cormier & the Highway Boys plus Mike Broussard | Rock'n'Bowl® de Lafayette",
-"start": "2026-12-26T00:00",
+"title": "The King of the Ghetto Z-Ro Live in Concert",
+"start": "2026-12-25T21:00",
 "end": null,
-"allDay": true,
+"allDay": false,
 "ongoing": false,
-"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"venue": "Grant Street Dancehall",
+"address": "113 West Grant Street,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "The King of the Ghetto Z-Ro live in concert\nBuy tickets: Christmas337.eventbrite.com",
+"url": "https://happeningnext.com/event/the-king-of-the-ghetto-z-ro-live-in-concert-eid3a0ea1rd7c",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=The+King+of+the+Ghetto+Z-Ro+Live+in+Concert&date=Fri%2C+25+Dec%2C+2026+at+09%3A00+pm&bg=4",
+"source": "Happening Next (concerts)",
+"id": "af0b82a985"
+},
+{
+"title": "Z-ro live in concert Christmas Night at Grant Street",
+"start": "2026-12-25T21:00",
+"end": "2026-12-26T02:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Grant Street Dance Hall",
+"address": "113 w grant st., Lafayette",
+"price": "$49",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Z-ro live in concert Christmas Night at Grant Street",
+"url": "https://happeningnext.com/event/z-ro-live-in-concert-christmas-night-at-grant-street-eid1ef0l8c197er",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Z-ro+live+in+concert+Christmas+Night+at+Grant+Street&date=Fri%2C+25+Dec%2C+2026+at+09%3A00+pm&bg=1",
+"source": "Happening Next (concerts)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "ec09dbf18a"
+},
+{
+"title": "Lafayette CHRISTMAS STORY🎄🎁",
+"start": "2026-12-25T21:30",
+"end": "2026-12-26T02:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Club truth",
+"address": "114 McKinley St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Let's Keep them Bells Ringing 🔔🔔🔔",
+"url": "https://happeningnext.com/event/lafayette-christmas-story-eid27punbnrmf1",
+"image": "https://cdn.happeningnext.com/events7/banners/3ee38790-e2db-11f1-8329-5bf444c7bcd8-rimg-w1080-h1350-dc080808-gmir.png?v=1794956670",
+"source": "Happening Next (performances)",
+"id": "31868a1c42"
+},
+{
+"title": "The Essentials of Tai Chi",
+"start": "2026-12-26T08:00",
+"end": "2026-12-26T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2026-12-26-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "24cfdaf9df"
+},
+{
+"title": "Clay Cormier & the Highway Boys plus Mike Broussard | Rock'n'Bowl® de Lafayette",
+"start": "2026-12-26T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
 "address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "It's country music night at Rock'n'Bowl® de Lafayette with 2 powerhouse performers. Purchase your tickets now!",
 "url": "https://happeningnext.com/event/clay-cormier-andamp-the-highway-boys-plus-mike-broussard-rocknbowl-de-lafayette-eid3a0ebbh09p",
-"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Clay+Cormier+%26+the+Highway+Boys+plus+Mike+Broussard+%7C+Rock%27n%27Bowl+de+Lafayette&date=Sat%2C+26+Dec+at+09%3A00+pm&bg=1",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Clay+Cormier+%26+the+Highway+Boys+plus+Mike+Broussard+%7C+Rock%27n%27Bowl+de+Lafayette&date=Sat%2C+26+Dec%2C+2026+at+09%3A00+pm&bg=1",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (performances)"
+],
 "id": "c68863470c"
 },
 {
@@ -2553,42 +4644,197 @@
 "id": "f70e8583a3"
 },
 {
-"title": "Wayne Toups | Rock'n'Bowl® de Lafayette",
-"start": "2027-01-02T00:00",
-"end": null,
-"allDay": true,
+"title": "The Essentials of Tai Chi",
+"start": "2027-01-02T08:00",
+"end": "2027-01-02T09:00",
+"allDay": false,
 "ongoing": false,
-"venue": "905 Jefferson St, Lafayette, LA, United States, Louisiana 70501",
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2027-01-02-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "339a8b4ae4"
+},
+{
+"title": "Wayne Toups | Rock'n'Bowl® de Lafayette",
+"start": "2027-01-02T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
 "address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
-"desc": "",
+"desc": "Zydecajun night in Lafayette! Wayne Toups brings the Zydecajun to Rock'n'Bowl® de Lafayette on Saturday, January 2 at 9:00 PM. Come dance with us, y'all!",
 "url": "https://happeningnext.com/event/wayne-toups-rocknbowl-de-lafayette-eid3a0eb8s9bi",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy8yZmZjNDgzOTM2ODMzMjI2OGUxYTg1ZWM2M2MyNGQxMjYxYjJjZGViYzlkNzAzODBhZDFhZjNlNmJlZGQ2ZjAzLXJpbWctdzEyMDAtaDYyOC1kYzE4MDgxOC1nbWlyP3Y9MTc5NDgyNjA1Ng.avif",
+"image": "https://cdn.happeningnext.com/events4/banners/2ffc4839368332268e1a85ec63c24d1261b2cdebc9d70380ad1af3e6bedd6f03-rimg-w1200-h628-dc180818-gmir?v=1794826056",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)",
+"Happening Next (dance)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "a713981777"
 },
 {
-"title": "Candlelight: Coldplay vs. Imagine Dragons",
-"start": "2027-01-08T00:00",
-"end": null,
-"allDay": true,
+"title": "Mid-Winter Fair Rodeo",
+"start": "2027-01-06T21:30",
+"end": "2027-01-09T23:30",
+"allDay": false,
+"ongoing": true,
+"venue": "Blackham Coliseum",
+"address": "2330 Johnston Street, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/mid-winter-fair-rodeo-eid13twjih6pl6",
+"image": "https://cdn.happeningnext.com/events3/banners/b9329920-e2f2-11f1-9b92-b33731e29fa8-rimg-w1200-h514-dce8d8c8-gmir.jpg?v=1794966757",
+"source": "Happening Next (festivals)",
+"id": "654eed0197"
+},
+{
+"title": "Mid Winter Fair Rodeo",
+"start": "2027-01-08T03:30",
+"end": "2027-01-08T05:30",
+"allDay": false,
 "ongoing": false,
-"venue": "Petroleum Club of Lafayette",
-"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"venue": "Blackham Coliseum",
+"address": "2330 Johnston Street, Lafayette, LA 70506, US, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "📍 Venue: Blackham Coliseum\n🏠 Address: 2330 Johnston Street, Lafayette, LA 70506\n🌆 City: Lafayette\n📍 Location: 30.21, -92.03✨ Embark on an extraordinary journey at Mid Winter Fair Rodeo, where every moment promises to be unforgettable! 🌟 Imagine of transforming Blackham Coliseum in the heart of Lafa",
+"url": "https://happeningnext.com/event/mid-winter-fair-rodeo-eid1invtd16o7v",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Mid+Winter+Fair+Rodeo&date=Fri%2C+08+Jan%2C+2027&bg=5",
+"source": "Happening Next (festivals)",
+"id": "9982050bb4"
+},
+{
+"title": "Candlelight: 90s Hip Hop on Strings",
+"start": "2027-01-08T18:00",
+"end": "2027-01-08T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Petroleum Club Of Lafayette",
+"address": "111 Heymann Blvd, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "music"
 ],
 "desc": "",
+"url": "https://happeningnext.com/event/candlelight-90s-hip-hop-on-strings-eid13twl17xnje",
+"image": "https://cdn.happeningnext.com/events2/banners/16c0fdd0-dfb4-11f1-9dae-65c60f75a158-rimg-w1200-h788-dc080808-gmir.jpg?v=1794610022",
+"source": "Happening Next (dance)",
+"alsoOn": [
+"Happening Next (music)"
+],
+"id": "516943f6d4"
+},
+{
+"title": "50 1st Jokes - Comedians Tell Their First Jokes of the Year",
+"start": "2027-01-08T19:30",
+"end": "2027-01-08T21:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Club 337",
+"address": "Hilton-Lafayette, 1521 W Pinhook Rd, Lafayette, LA 70503, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "50 1st Jokes - Comedians Tell Their First Jokes of the Year\nFriday January 8th, 2027 - 7:30PM\n\nClub 337 1521 W Pinhook Rd, Lafayette, LA\n\nLafayette Comedy presents 50 First Jokes! 50 comedians tell their first joke of 2027!\nFRIDAY, January 8, 2027.\n\nThis show is FREE!!! Pay-what-you-want tip jar at",
+"url": "https://happeningnext.com/event/50-1st-jokes-comedians-tell-their-first-jokes-of-the-year-eid3a0e4cdmj3",
+"image": "https://cdn.happeningnext.com/events6/banners/e1f56e48166bef42190b0bc4776ad18b889c87baba1d628140933349814f2cd9-rimg-w1200-h675-dc7898b8-gmir?v=1790470117",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (comedy)",
+"Happening Next (performances)"
+],
+"id": "74c4c11936"
+},
+{
+"title": "Candlelight: Coldplay vs. Imagine Dragons",
+"start": "2027-01-08T20:30",
+"end": "2027-01-08T22:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Petroleum Club of Lafayette",
+"address": "111 Heymann Boulevard, Lafayette// 70503, Lafayette",
+"price": "$32",
+"free": false,
+"cats": [
+"music",
+"theater",
+"family"
+],
+"desc": "⭐ Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Lafayette. Get your tickets now to discover the music of Coldplay vs. Imagine Dragons at Petroleum Club of Lafayette under the gentle glow of candlelight. This is a",
 "url": "https://happeningnext.com/event/candlelight-coldplay-vs-imagine-dragons-eid1afw9nbs0gg",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy8yZGI1MDI1MC1kZTg1LTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13NTUwLWg1NTAtZGNiOGE4ODgtZ21pci5qcGc_dj0xNzk0NDgwMDky.avif",
+"image": "https://cdn.happeningnext.com/events3/banners/2db50250-de85-11f1-a7be-298b5c0ef5b1-rimg-w550-h550-dcb8a888-gmir.jpg?v=1794480092",
 "source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (art)",
+"Happening Next (concerts)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
 "id": "556b7c96a1"
+},
+{
+"title": "Mid Winter Fair Rodeo at Blackham Coliseum",
+"start": "2027-01-08T23:59",
+"end": "2027-01-09T01:59",
+"allDay": false,
+"ongoing": false,
+"venue": "Blackham Coliseum",
+"address": "2330 Johnston Street, Lafayette, LA 70506, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/mid-winter-fair-rodeo-at-blackham-coliseum-eid15hwhvdh2wp",
+"image": "https://cdn.happeningnext.com/events1/banners/6002d680-d19f-11f1-9547-cd6e084cb72b-rimg-w1200-h514-dce8d8c8-gmir.jpg?v=1793061786",
+"source": "Happening Next (festivals)",
+"id": "a7c57a106f"
+},
+{
+"title": "The Essentials of Tai Chi",
+"start": "2027-01-09T08:00",
+"end": "2027-01-09T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2027-01-09-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "d20260e38e"
 },
 {
 "title": "Create & Play Café",
@@ -2630,23 +4876,84 @@
 "id": "3d65e22fb5"
 },
 {
+"title": "3rd Annual Lovers Or Friends: 50 Shades of Red",
+"start": "2027-01-09T19:00",
+"end": "2027-01-09T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "The Wilyard",
+"address": "710 Jefferson Boulevard, Lafayette",
+"price": "$43",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Celebrate love, friendship, and every shade in between at our 3rd Annual Lovers Or Friends: 50 Shades of Red!",
+"url": "https://happeningnext.com/event/3rd-annual-lovers-or-friends-50-shades-of-red-eid1ef0l9gcgn1r",
+"image": "https://cdn.happeningnext.com/events3/banners/3b1476f6694a87d5f6db36e26810646e839dfd61ab0d217daf96a201ab2062f3-rimg-w1200-h1789-dc180808-gmir.jpg?v=1794439144",
+"source": "Happening Next (food & drinks)",
+"id": "ee6ab68ecb"
+},
+{
 "title": "The Wiz",
 "start": "2027-01-11T19:30",
-"end": null,
+"end": "2027-01-11T21:30",
 "allDay": false,
 "ongoing": false,
 "venue": "Heymann Performing Arts Center",
-"address": "",
+"address": "1373 S. College Rd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "AGES 1 AND UP NEED A TICKET\nThe Tony® Award-winning Best Musical that took the world by storm is back.",
+"url": "https://happeningnext.com/event/the-wiz-eid13twljmsou8",
+"image": "https://cdn.happeningnext.com/events4/banners/26fabe00-e1f5-11f1-ab69-a76145f05a1c-rimg-w1170-h700-dc080808-gmir.jpg?v=1794858031",
+"source": "Happening Next (theatre)",
+"alsoOn": [
+"Heymann Performing Arts Center"
+],
+"id": "23f2205ce6"
+},
+{
+"title": "Read Until Midnight Release Party for A Court of Forgotten Melody!",
+"start": "2027-01-11T22:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "302 A Jefferson Street, Lafayette, LA, United States, Louisiana 70501",
+"address": "302 Jefferson St, Lafayette, LA 70501-7045, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
 "arts"
 ],
-"desc": "AGES 1 AND UP NEED A TICKET\nThe Tony® Award-winning Best Musical that took the world by storm is back.",
-"url": "https://www.heymanncenter.com/events/2025/the-wiz",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=LAF26_VENUE_250x250_WIZ.jpg&cb=4192c330",
-"source": "Heymann Performing Arts Center",
-"id": "23f2205ce6"
+"desc": "We’re opening our doors at 10:30 p.m. on Jan. 11 for a cozy Read Until Midnight release event for A Court of Forgotten Melody!\n\nWe'll have cozy twinkle lights with crafts, drinks, and snacks as we channel our inner Valkyrie read-a-thon to midnight!\n\nAll participants must have ordered their ticket an",
+"url": "https://happeningnext.com/event/read-until-midnight-release-party-for-a-court-of-forgotten-melody-eid3a0ea9eme2",
+"image": "https://cdn.happeningnext.com/events7/banners/8ca6adc41bf692aae4f2b0119231944b3c12df187c2cb75d1e525f0e2088734f-rimg-w1200-h675-dcc8d8c8-gmir?v=1794227345",
+"source": "Happening Next (food & drinks)",
+"id": "92f54edc7d"
+},
+{
+"title": "Lafayette | Million Meals for MLK Packing Party",
+"start": "2027-01-12T09:00",
+"end": "2027-01-12T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Martin Luther King Recreation Center",
+"address": "309 Cora Street, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"food",
+"community"
+],
+"desc": "Join volunteers across Louisiana for a Million Meals for MLK Packing Party and help support our food banks and families across our state.",
+"url": "https://happeningnext.com/event/lafayette-million-meals-for-mlk-packing-party-eid1ef0l91dwvbr",
+"image": "https://cdn.happeningnext.com/events1/banners/8d0536b28619e447ddd25004babb9776d6fd3acb9355c25015d844623c519b37-rimg-w1200-h600-dc080808-gmir.jpg?v=1794549675",
+"source": "Happening Next (food & drinks)",
+"id": "127a475402"
 },
 {
 "title": "Dog Man: The Musical",
@@ -2660,36 +4967,119 @@
 "free": false,
 "cats": [
 "music",
-"arts"
+"theater"
 ],
-"desc": "ALL AGES NEED A TICKET\n\nA Hilarious, Heartfelt Family Adventure! Based on the worldwide bestselling hit series by Dav Pilkey, Dog Man: The Musical is a hilarious and heartwarming production. Recommended for ages 6+.",
-"url": "https://www.heymanncenter.com/events/2025/dog-man-the-musical",
-"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=Dog_Man_250_X_250.jpg&cb=1316f374",
-"source": "Heymann Performing Arts Center",
+"desc": "Based on the worldwide bestselling hit series by Dav Pilkey, Dog Man: The Musical is a hilarious and heartwarming production following the chronicles of Dog Man, who, with the head of a dog and the body of a policeman, loves to fight crime and chew on the furniture.\n\nBut while trying his best to be",
+"url": "https://happeningnext.com/event/dog-man-the-musical-eid3a0e5hmqow",
+"image": "https://cdn.happeningnext.com/events2/banners/5738f47592ed07b321290ce2ebb65951a37ada4ad6199e0f464f310d48c0a0aa-rimg-w820-h360-dc080808-gmir?v=1791353580",
+"source": "Happening Next (Lafayette live music)",
 "alsoOn": [
-"Happening Next (Lafayette live music)"
+"Happening Next (music)",
+"Heymann Performing Arts Center"
 ],
 "id": "664e331244"
 },
 {
+"title": "Harlem Globetrotters: Rivalry Tour Presented By Sprite",
+"start": "2027-01-13T19:00",
+"end": "2027-01-13T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Lafayette Cajundome",
+"address": "Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"community"
+],
+"desc": "InformationHave the Harlem Globetrotters finally met their match? The Washington Generals and new lineup of rivals step onto the court - hungry for a win, and out to prove it! The Harlem Globetrotters - the team that invented basketball culture - bring the Rivalry Tour to your city as part of their",
+"url": "https://happeningnext.com/event/harlem-globetrotters-rivalry-tour-presented-by-sprite-eid3fk95ge0g2",
+"image": "https://cdn.happeningnext.com/events2/banners/50ca33b03e3c63aab9d633c4104ee1c936b99d9ef5437e3e3184e3013e0ee069-rimg-w1024-h576-dc080808-gmir.jpg?v=1790611865",
+"source": "Happening Next (performances)",
+"id": "7621025faf"
+},
+{
 "title": "We Will Rock You",
-"start": "2027-01-14T00:00",
-"end": null,
-"allDay": true,
+"start": "2027-01-14T19:00",
+"end": "2027-01-14T21:30",
+"allDay": false,
 "ongoing": false,
 "venue": "Acadiana Center for the Arts",
 "address": "101 W Vermilion St, Lafayette, LA 70501-6915, United States, Lafayette",
 "price": "",
 "free": false,
 "cats": [
-"music",
+"music"
+],
+"desc": "🎸 WE WILL ROCK YOU! 👑\n\nTHE MUSIC OF QUEEN COMES ALIVE IN LAFAYETTE!\n\nGet ready, Acadiana — WE WILL ROCK YOU! 🤘🔥\n\nStreva Productions proudly presents WE WILL ROCK YOU, the electrifying rock musical featuring the legendary music of QUEEN!\n\nDirected by Jenny Ballard, this high-energy theatrical experie",
+"url": "https://happeningnext.com/event/we-will-rock-you-eid3a0e9kc225",
+"image": "https://cdn.happeningnext.com/events7/banners/82de412070c77cb61506f485f837ed89a16c191809fd4b79302de9d89d21ef37-rimg-w1200-h800-dc080808-gmir?v=1793936984",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (music)",
+"Happening Next (theatre)"
+],
+"id": "69eb2afaea"
+},
+{
+"title": "Miss Louisiana Ultimate USA Scholarship Pageant",
+"start": "2027-01-15T12:00",
+"end": "2027-01-17T12:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Wonderland Performing Arts",
+"address": "2807 Johnston St ,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
 "arts"
 ],
-"desc": "",
-"url": "https://happeningnext.com/event/we-will-rock-you-eid3a0e9kc225",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy84MmRlNDEyMDcwYzc3Y2I2MTUwNmY0ODVmODM3ZWQ4OWExNmMxOTE4MDlmZDRiNzkzMDJkZTlkODlkMjFlZjM3LXJpbWctdzEyMDAtaDgwMC1kYzA4MDgwOC1nbWlyP3Y9MTc5MzkzNjk4NA.avif",
-"source": "Happening Next (Lafayette live music)",
-"id": "69eb2afaea"
+"desc": "Join us January 15–17, 2027 for the inaugural Miss Louisiana Ultimate USA State Pageant!\n\n📍 Wonderland Center for Performing Arts\n💎 Theme: Bling on the Bayou\n👗 Opening Dresses: Gold\n👑 Six Age Divisions\n\nRegister here:\nhttps://form.jotform.com/261726286639065",
+"url": "https://happeningnext.com/event/miss-louisiana-ultimate-usa-scholarship-pageant-eid3a0e832hi6",
+"image": "https://cdn.happeningnext.com/events6/banners/35427fbc30d8778bbcff06a48a7d08cf3efe150b202c67b17890d93d6f194c6d-rimg-w500-h500-dcf8f8f8-gmir?v=1792973214",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (art)"
+],
+"id": "b0d66e2542"
+},
+{
+"title": "Bon Amis- Tacky Prom",
+"start": "2027-01-15T19:30",
+"end": "2027-01-15T23:30",
+"allDay": false,
+"ongoing": false,
+"venue": "4509 Lounge",
+"address": "4509 Johnston St.,Lafayette,LA,United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Mark your calendars and get your dancing shoes � ready!",
+"url": "https://happeningnext.com/event/bon-amis-tacky-prom-eid3a0e832gdq",
+"image": "https://cdn.happeningnext.com/events7/banners/d787cb3456c4121b4fac70abb1e7aeffa17aaaf48a99d68cf10682a7e01ccb9c-rimg-w1200-h1500-dc08d8c8-gmir?v=1792973208",
+"source": "Happening Next (dance)",
+"id": "f7f36ee5b0"
+},
+{
+"title": "The Essentials of Tai Chi",
+"start": "2027-01-16T08:00",
+"end": "2027-01-16T09:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501, USA",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Classes are every Saturday morning from 8:00 a.m. to 9:00 a.m.",
+"url": "https://www.citedesarts.org/events/the-essentials-of-tai-chi-2027-01-16-08-00",
+"image": "https://static.wixstatic.com/media/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg/v1/fill/w_480,h_640,al_c,q_80/62d2c2_9af69d489525450587f61416748f3f06~mv2.jpeg",
+"source": "Cité des Arts",
+"id": "cc02ce3637"
 }
 ]
 }

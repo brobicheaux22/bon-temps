@@ -21,7 +21,7 @@
   /* Acadiana flag: flag blue, festival red, gold */
   --bg: #FAF8F3; --surface: #FFFFFF; --surface-2: #EEEBE3; --ink: #1B2433; --ink-2: #5C6575; --line: #E4E0D6;
   --brand: #1F5BA6; --brand-ink: #FFFFFF; --accent: #C62F3E; --gold: #F4B41A;
-  --music: #C62F3E; --food: #A86B00; --arts: #6B4FA0; --wellness: #23855F; --family: #1F7FA6; --community: #5C6575;
+  --music: #C62F3E; --theater: #B0357A; --food: #A86B00; --arts: #6B4FA0; --wellness: #23855F; --family: #1F7FA6; --community: #5C6575;
   --shadow: 0 1px 2px rgba(20,30,50,.06), 0 4px 14px rgba(20,30,50,.06);
   --radius: 14px;
   color-scheme: light;
@@ -30,14 +30,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0F1726; --surface: #172238; --surface-2: #1E2B44; --ink: #EEF2F8; --ink-2: #A3AEC2; --line: #2A3A57;
     --brand: #7AAAF0; --brand-ink: #0F1726; --accent: #FF6B78; --gold: #F4B41A;
-    --music: #FF6B78; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
+    --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
     --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0F1726; --surface: #172238; --surface-2: #1E2B44; --ink: #EEF2F8; --ink-2: #A3AEC2; --line: #2A3A57;
   --brand: #7AAAF0; --brand-ink: #0F1726; --accent: #FF6B78; --gold: #F4B41A;
-  --music: #FF6B78; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
+  --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
   --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -55,6 +55,7 @@ header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srg
 .logo { display: flex; align-items: center; gap: 11px; text-decoration: none; flex: 1; min-width: 0; }
 .logo img { flex: none; width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 0 0 1px var(--line); }
 .logo b { display: block; font-size: 21px; line-height: 1.1; letter-spacing: -.02em; color: var(--brand); font-weight: 800; }
+.logo span { min-width: 0; }
 .logo small { display: block; color: var(--ink-2); font-size: 12.5px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .iconbtn { position: relative; flex: none; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 50%; color: var(--ink-2); }
 .iconbtn[aria-pressed="true"] { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
@@ -67,9 +68,21 @@ header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srg
 .search svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: var(--ink-2); }
 .filters { display: grid; gap: 10px; padding: 12px 0 12px; }
 /* when: one even segmented control */
-.seg { display: grid; grid-template-columns: repeat(5, 1fr); background: var(--surface-2); border-radius: 11px; padding: 3px; }
-.seg button { border: 0; background: none; border-radius: 8px; padding: 7px 2px; font-size: 13.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
-.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+/* when: one swipeable strip of ranges and days */
+.strip { position: relative; display: flex; gap: 6px; align-items: stretch; overflow-x: auto; padding: 0 16px; margin: 0 -16px; scrollbar-width: none; scroll-behavior: smooth; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 24px), transparent); mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 24px), transparent); }
+.strip::-webkit-scrollbar { display: none; }
+.strip button { flex: none; border: 0; background: var(--surface-2); color: var(--ink-2); border-radius: 12px; font-size: 13.5px; font-weight: 650; padding: 0 13px; min-height: 48px; white-space: nowrap; }
+.strip .tile { width: 50px; padding: 6px 0; text-align: center; line-height: 1.15; }
+.strip .tile small { display: block; font-size: 11px; font-weight: 650; letter-spacing: .02em; }
+.strip .tile b { display: block; font-size: 18px; font-weight: 750; color: var(--ink); }
+.strip .tile.none { opacity: .4; }
+.strip .tile { position: relative; }
+.strip .tile .hol { position: absolute; top: 3px; right: 3px; font-size: 10.5px; font-style: normal; line-height: 1; }
+.strip .tile.none .hol { opacity: 1; }
+.day .holname { margin-left: auto; font-size: 12.5px; font-weight: 650; color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.strip button[aria-pressed="true"] { background: var(--brand); color: var(--brand-ink); }
+.strip button[aria-pressed="true"] b { color: var(--brand-ink); }
+.strip .gap { flex: none; width: 1px; background: var(--line); margin: 8px 2px; }
 /* categories: one quiet scrolling row */
 .chips { display: flex; gap: 6px; overflow-x: auto; padding: 0 16px; margin: 0 -16px; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 24px), transparent); mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 24px), transparent); }
 .chips::-webkit-scrollbar { display: none; }
@@ -80,6 +93,18 @@ header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srg
 .chip.sep { margin-left: 4px; box-shadow: inset 1px 0 0 var(--line); border-radius: 0 999px 999px 0; padding-left: 14px; }
 .savedbar { display: flex; justify-content: space-between; align-items: center; background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--ink); border-radius: 11px; padding: 9px 12px; font-weight: 600; font-size: 14px; }
 .savedbar button { border: 0; background: none; color: var(--accent); font-weight: 650; }
+.venuebar { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: color-mix(in srgb, var(--brand) 10%, transparent); color: var(--ink); border-radius: 11px; padding: 10px 12px; font-size: 14px; margin-top: 4px; }
+.venuebar b { display: block; font-size: 15.5px; }
+.venuebar small { color: var(--ink-2); }
+.venuebar button { flex: none; border: 0; background: none; color: var(--brand); font-weight: 650; }
+.venuelink { display: inline-block; margin-top: 4px; border: 0; background: none; padding: 0; color: var(--brand); font-weight: 650; font-size: 14px; }
+.tip { position: relative; display: flex; gap: 12px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 40px 12px 12px; margin: 10px 0 2px; box-shadow: var(--shadow); font-size: 14px; }
+.tip img { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+.tip b { display: block; font-size: 15px; margin-bottom: 2px; }
+.tip p { margin: 0; color: var(--ink-2); }
+.tip .share { display: inline-block; vertical-align: -3px; }
+.tip .install { margin-top: 8px; border: 0; background: var(--brand); color: var(--brand-ink); border-radius: 999px; padding: 7px 14px; font-weight: 650; }
+.tip .x { position: absolute; top: 6px; right: 6px; border: 0; background: none; color: var(--ink-2); font-size: 20px; width: 30px; height: 30px; border-radius: 50%; }
 
 /* list */
 main { padding: 6px 0 40px; }
@@ -101,12 +126,21 @@ main { padding: 6px 0 40px; }
 .save[aria-pressed="true"] { color: var(--accent); }
 .empty { text-align: center; color: var(--ink-2); padding: 48px 12px; }
 .more { display: block; margin: 16px auto; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 10px 20px; }
+details.allday { background: var(--surface-2); border-radius: var(--radius); padding: 10px 12px; margin: 2px 0 10px; font-size: 14px; }
+details.allday summary { cursor: pointer; color: var(--ink-2); list-style: none; display: flex; gap: 6px; align-items: baseline; }
+details.allday summary::-webkit-details-marker { display: none; }
+details.allday summary b { color: var(--ink); flex: none; }
+details.allday summary span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+details.allday summary::after { content: "▾"; margin-left: auto; flex: none; }
+details.allday[open] summary::after { content: "▴"; }
+details.allday .card { margin-top: 8px; }
 details.ongoing { background: var(--surface-2); border-radius: var(--radius); padding: 10px 14px; margin: 10px 0 4px; }
 details.ongoing summary { cursor: pointer; font-weight: 650; font-size: 15px; }
 details.ongoing .card { margin-top: 8px; }
 
 /* footer */
 footer { border-top: 1px solid var(--line); padding: 22px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--ink-2); font-size: 14px; }
+footer .updated { margin: 0 0 16px; font-size: 13px; color: var(--ink-2); }
 footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 .cta { display: inline-block; margin: 10px 0 18px; border: 0; background: var(--accent); color: #fff; text-decoration: none; border-radius: 999px; padding: 10px 18px; font-weight: 650; }
 
@@ -165,7 +199,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
     <div class="bar">
       <a class="logo" href="./" aria-label="Bon Temps home">
         <img src="icon.svg" alt="">
-        <span><b>Bon Temps</b><small id="updated">Lafayette, LA</small></span>
+        <span><b>Bon Temps</b><small>Lafayette, LA</small></span>
       </a>
       <button class="iconbtn" id="themebtn" type="button" aria-label="Switch to night mode"></button>
       <button class="iconbtn" id="savedbtn" type="button" aria-pressed="false" aria-label="Saved events">
@@ -181,7 +215,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
       <input id="q" type="search" placeholder="Search bands, venues, events" autocomplete="off" aria-label="Search events">
     </label>
     <div class="filters" id="filters">
-      <div class="seg" id="when" role="group" aria-label="When"></div>
+      <div class="strip" id="when" role="group" aria-label="When"></div>
       <div class="chips" id="cats" role="group" aria-label="Category"></div>
     </div>
   </div>
@@ -190,6 +224,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 <main class="wrap" id="main" aria-live="polite"></main>
 
 <footer class="wrap">
+  <p class="updated" id="updated"></p>
   <h4>Know about something we missed?</h4>
   Bars, bands and organizers can add their events.<br>
   <button class="cta" id="submit" type="button">Submit an event</button>
@@ -210,10 +245,14 @@ const SUBMIT_FIELDS = {
 };
 
 const CATS = {
-  music: "Music", food: "Food & Drink", arts: "Arts & Culture",
+  music: "Music", theater: "Theater", food: "Food & Drink", arts: "Arts & Culture",
   wellness: "Wellness", family: "Family", community: "Community",
 };
-const WHEN = { today: "Today", tonight: "Tonight", weekend: "Weekend", week: "7 days", month: "30 days" };
+// The strip: three ranges, then one tile per day for the next two weeks ("d:2026-11-21")
+const WHEN = { upcoming: "Upcoming", tonight: "Tonight", weekend: "Weekend" };
+const STRIP_DAYS = 14;
+// (runs while the page is starting up, so it only uses function declarations)
+function validWhen(w) { return !!WHEN[w] || (/^d:\d{4}-\d{2}-\d{2}$/.test(w || "") && w.slice(2) >= iso10(lafNow())); }
 const DOW = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const PAGE = 120;
@@ -226,10 +265,35 @@ const store = {
 
 const state = {
   data: null, lastFetch: 0, q: "",
-  when: WHEN[store.get("when", "week")] ? store.get("when", "week") : "week", cats: new Set(store.get("cats", [])),
-  free: false, saved: false, shown: PAGE,
+  when: pickWhen(), cats: new Set(store.get("cats", [])),
+  free: false, saved: false, venue: null, shown: PAGE,
 };
-const saved = new Set(store.get("saved", []));
+// Saved events are kept on this device as full copies, so they survive refreshes, time away,
+// and an event dropping off its source. They're cleared a day after the event is over.
+const savedEvents = store.get("savedEvents", {});
+const saved = new Set([...store.get("saved", []), ...Object.keys(savedEvents)]);
+
+// Opens on "Tonight" in the evening and "Upcoming" during the day. A choice made during this
+// visit sticks until the tab is closed.
+function pickWhen() {
+  let chosen = null;
+  try { chosen = sessionStorage.getItem("bt-when"); } catch (_) {}
+  if (validWhen(chosen)) return chosen;
+  return lafNow().getHours() >= 16 ? "tonight" : "upcoming";
+}
+function rememberWhen(w) { try { sessionStorage.setItem("bt-when", w); } catch (_) {} }
+function persistSaved() { store.set("saved", [...saved]); store.set("savedEvents", savedEvents); }
+const findEvent = id => (state.data && state.data.events.find(x => x.id === id)) || savedEvents[id];
+function syncSaved() {
+  const byId = new Map(state.data.events.map(e => [e.id, e]));
+  const cutoff = addDays(dayStart(lafNow()), -1);
+  for (const id of [...saved]) {
+    if (byId.has(id)) savedEvents[id] = byId.get(id);  // freshest details
+    const e = savedEvents[id];
+    if (!e || (parse(e.end) || parse(e.start)) < cutoff) { saved.delete(id); delete savedEvents[id]; }
+  }
+  persistSaved();
+}
 
 // ---------- dates (events are stored in Lafayette local time) ----------
 const parse = s => {
@@ -259,10 +323,58 @@ function range(key) {
       const s = new Date(fri); s.setHours(17);
       return [new Date(Math.max(now, s)), addDays(fri, 3)];
     }
-    case "week": return [now, addDays(t0, 8)];
-    case "month": return [now, addDays(t0, 31)];
-    default: return [now, addDays(t0, 400)];
+    case "upcoming": return [now, addDays(t0, 31)];
+    case "all": return [now, addDays(t0, 400)];
+    default: {
+      if (key && key.startsWith("d:")) {  // one day; today starts now so finished events drop off
+        const d = parse(key.slice(2));
+        return [new Date(Math.max(now, d)), addDays(d, 1)];
+      }
+      return [now, addDays(t0, 31)];
+    }
   }
+}
+
+// ---------- holidays ----------
+// Major U.S. holidays (plus Mardi Gras, this is Lafayette), worked out for any year.
+function nthWeekday(y, m, weekday, n) {  // n = 1..4, or -1 for the last one
+  if (n > 0) { const d = new Date(y, m, 1); d.setDate(1 + (weekday - d.getDay() + 7) % 7 + (n - 1) * 7); return d; }
+  const d = new Date(y, m + 1, 0); d.setDate(d.getDate() - (d.getDay() - weekday + 7) % 7); return d;
+}
+function easter(y) {  // Gregorian computus
+  const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25);
+  const g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const month = Math.floor((h + l - 7 * m + 114) / 31), day = (h + l - 7 * m + 114) % 31 + 1;
+  return new Date(y, month - 1, day);
+}
+const HOLIDAYS = {};
+function holidayOn(d) {
+  const y = d.getFullYear();
+  if (!HOLIDAYS[y]) {
+    const list = [
+      [new Date(y, 0, 1), "🎆", "New Year's Day"],
+      [nthWeekday(y, 0, 1, 3), "🕊️", "Martin Luther King Jr. Day"],
+      [new Date(y, 1, 14), "❤️", "Valentine's Day"],
+      [addDays(easter(y), -47), "⚜️", "Mardi Gras"],
+      [new Date(y, 2, 17), "☘️", "St. Patrick's Day"],
+      [easter(y), "🐣", "Easter"],
+      [nthWeekday(y, 4, 0, 2), "💐", "Mother's Day"],
+      [nthWeekday(y, 4, 1, -1), "🇺🇸", "Memorial Day"],
+      [nthWeekday(y, 5, 0, 3), "👔", "Father's Day"],
+      [new Date(y, 5, 19), "✊🏾", "Juneteenth"],
+      [new Date(y, 6, 4), "🎆", "Independence Day"],
+      [nthWeekday(y, 8, 1, 1), "🛠️", "Labor Day"],
+      [new Date(y, 9, 31), "🎃", "Halloween"],
+      [new Date(y, 10, 11), "🎖️", "Veterans Day"],
+      [nthWeekday(y, 10, 4, 4), "🦃", "Thanksgiving"],
+      [new Date(y, 11, 24), "🎄", "Christmas Eve"],
+      [new Date(y, 11, 25), "🎄", "Christmas"],
+      [new Date(y, 11, 31), "🥂", "New Year's Eve"],
+    ];
+    HOLIDAYS[y] = Object.fromEntries(list.map(([date, emoji, name]) => [iso10(date), { emoji, name }]));
+  }
+  return HOLIDAYS[y][iso10(d)] || null;
 }
 
 // ---------- helpers ----------
@@ -286,9 +398,10 @@ async function load({ manual = false } = {}) {
     const data = await res.json();
     const before = state.data ? new Set(state.data.events.map(e => e.id)) : null;
     state.data = data; state.lastFetch = Date.now();
+    syncSaved();
     if (before) {
       const fresh = data.events.filter(e => !before.has(e.id)).length;
-      if (manual || fresh) toast(fresh ? `${fresh} new event${fresh > 1 ? "s" : ""} added` : "You're up to date");
+      if (manual || fresh) toast(fresh ? `${fresh} new event${fresh > 1 ? "s" : ""} added` : `Up to date · updated ${ago(data.updated)}`);
     }
     render();
   } catch (err) {
@@ -299,24 +412,49 @@ async function load({ manual = false } = {}) {
     updatedLabel();
   }
 }
-function updatedLabel() { $("updated").textContent = state.data ? `Lafayette, LA · Updated ${ago(state.data.updated)}` : "Lafayette, LA"; }
+function updatedLabel() { $("updated").textContent = state.data ? `Events updated ${ago(state.data.updated)}. New ones are added every couple of hours.` : ""; }
+
+// ---------- venues ----------
+// "Blue Moon Saloon and Guest House", "Blue Moon Saloon" -> "bluemoonsaloon"; "Rock'n'Bowl® de Lafayette" -> "rocknbowl"
+const VENUE_STOP = new Set(["the", "and", "guest", "house", "de", "la", "lafayette", "center", "centre", "for", "arts", "performing", "of", "at"]);
+function venueKey(v) {
+  if (!v) return "";
+  const first = v.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().split(/ - | \| |,| @ |\[/)[0];
+  const key = first.split(/\s+/).filter(w => !VENUE_STOP.has(w.replace(/[^a-z0-9]/g, ""))).join("").replace(/[^a-z0-9]/g, "");
+  return key.length >= 4 ? key : "";
+}
+function venueEvents(key) {
+  const now = lafNow();
+  return state.data.events.filter(e => venueKey(e.venue) === key && (parse(e.end) || parse(e.start)) >= dayStart(now));
+}
+function openVenue(key, name) {
+  closeSheet();
+  state.venue = { key, name }; state.saved = false; state.shown = PAGE;
+  scrollTo(0, 0); render();
+}
 
 // ---------- render ----------
 function filtered() {
+  if (state.venue) return venueEvents(state.venue.key);
   const [a, b] = state.saved ? range("all") : range(state.when);
-  return state.data.events.filter(e => {
-    if (state.saved && !saved.has(e.id)) return false;
-    if (state.cats.size && !e.cats.some(c => state.cats.has(c))) return false;
-    if (state.free && !e.free) return false;
-    if (!matches(e, state.q)) return false;
-    const s = parse(e.start), en = parse(e.end) || (e.allDay ? addDays(dayStart(s), 1) : new Date(+s + 2 * 3600e3));
-    return en > a && s < b;
-  });
+  const pool = state.saved ? Object.values(savedEvents).sort((x, y) => x.start.localeCompare(y.start)) : state.data.events;
+  return pool.filter(e => passes(e) && inWindow(e, a, b));
+}
+function passes(e) {
+  if (state.cats.size && !e.cats.some(c => state.cats.has(c))) return false;
+  if (state.free && !e.free) return false;
+  return matches(e, state.q);
+}
+function inWindow(e, a, b) {
+  const s = parse(e.start), en = parse(e.end) || (e.allDay ? addDays(dayStart(s), 1) : new Date(+s + 2 * 3600e3));
+  // all-day listings belong to whole days: "Tonight" (until 3 AM) shouldn't pull in tomorrow's
+  return en > a && s < (e.allDay ? dayStart(b) : b);
 }
 
-function card(e) {
-  const s = parse(e.start), c = e.cats[0] || "community";
-  const when = e.ongoing ? `Thru<small>${MON[parse(e.end).getMonth()]} ${parse(e.end).getDate()}</small>`
+function card(e, started = false) {
+  const s = parse(e.start), en = parse(e.end), c = e.cats[0] || "community";
+  const when = e.ongoing ? `Thru<small>${MON[en.getMonth()]} ${en.getDate()}</small>`
+    : started && en ? `Thru<small>${DOW[en.getDay()].slice(0, 3)}</small>`
     : e.allDay ? "All day" : `${fmtTime(s).replace(" ", "<small>")}</small>`;
   const tags = e.cats.map(k => `<span class="tag" style="--c:${catColor(k)}">${CATS[k]}</span>`).join("")
     + (e.free ? `<span class="tag free">Free</span>` : e.price ? `<span class="tag" style="--c:var(--ink-2)">${esc(e.price)}</span>` : "");
@@ -329,10 +467,23 @@ function card(e) {
 const heart = on => `<svg width="22" height="22" viewBox="0 0 24 24" fill="${on ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.2-9C1.4 7.9 3.4 4.5 6.8 4.5c2 0 3.5 1.1 4.2 2.5h2c.7-1.4 2.2-2.5 4.2-2.5 3.4 0 5.4 3.4 4 6.5C19 15.6 12 20 12 20z"/></svg>`;
 
 function renderChips() {
-  $("filters").hidden = state.saved;
+  $("filters").hidden = state.saved || !!state.venue;
   $("savedbtn").setAttribute("aria-pressed", state.saved);
   $("savedcount").hidden = !saved.size; $("savedcount").textContent = saved.size;
-  $("when").innerHTML = Object.entries(WHEN).map(([k, v]) => `<button type="button" data-when="${k}" aria-pressed="${state.when === k}">${v}</button>`).join("");
+  const t0 = dayStart(lafNow());
+  const live = state.data.events.filter(passes);
+  let strip = Object.entries(WHEN).map(([k, v]) => `<button type="button" data-when="${k}" aria-pressed="${state.when === k}">${v}</button>`).join("");
+  strip += `<span class="gap" aria-hidden="true"></span>`;
+  for (let i = 0; i < STRIP_DAYS; i++) {
+    const d = addDays(t0, i), key = "d:" + iso10(d), [a, b] = range(key);
+    const n = live.filter(e => !e.ongoing && inWindow(e, a, b)).length;
+    const name = i === 0 ? "Today" : DOW[d.getDay()].slice(0, 3);
+    const hol = holidayOn(d);
+    strip += `<button type="button" class="tile${n ? "" : " none"}" data-when="${key}" aria-pressed="${state.when === key}" title="${hol ? hol.name : ""}" aria-label="${DOW[d.getDay()]} ${MON[d.getMonth()]} ${d.getDate()}${hol ? ", " + hol.name : ""}, ${n} event${n === 1 ? "" : "s"}">${hol ? `<i class="hol" aria-hidden="true">${hol.emoji}</i>` : ""}<small>${name}</small><b>${d.getDate()}</b></button>`;
+  }
+  $("when").innerHTML = strip;
+  const on = $("when").querySelector('[aria-pressed="true"]');
+  if (on) $("when").scrollLeft = Math.max(0, on.offsetLeft - $("when").clientWidth / 2 + on.offsetWidth / 2);
   $("cats").innerHTML = `<button class="chip" type="button" data-cat="" aria-pressed="${!state.cats.size}">All</button>`
     + Object.entries(CATS).map(([k, v]) => `<button class="chip" type="button" data-cat="${k}" style="--c:${catColor(k)}" aria-pressed="${state.cats.has(k)}"><span class="dot"></span>${v}</button>`).join("")
     + `<button class="chip sep" type="button" data-free style="--c:var(--wellness)" aria-pressed="${state.free}">Free</button>`;
@@ -344,23 +495,36 @@ function render() {
   const list = filtered();
   const ongoing = list.filter(e => e.ongoing), dated = list.filter(e => !e.ongoing);
   let h = state.saved ? `<div class="savedbar">♥ Saved events (${saved.size})<button type="button" data-saved>Back to all</button></div>` : "";
+  if (state.venue) h = `<div class="venuebar"><div><b>${esc(state.venue.name)}</b><small>${list.length} upcoming event${list.length === 1 ? "" : "s"}</small></div><button type="button" data-allvenues>Back to all</button></div>`;
+  else if (!state.saved) h += tipHtml();
   if (!list.length) {
-    h += `<div class="empty">${state.saved ? "Nothing saved yet. Tap ♥ on an event to keep it here." : state.q ? `No events match “${esc(state.q)}”.` : "No events in this window. Try a wider range."}</div>`;
+    h += `<div class="empty">${state.venue ? "Nothing coming up here right now." : state.saved ? "Nothing saved yet. Tap ♥ on an event to keep it here." : state.q ? `No events match “${esc(state.q)}”.` : state.when.startsWith("d:") ? (holidayOn(parse(state.when.slice(2))) ? `Happy ${holidayOn(parse(state.when.slice(2))).name}! Nothing's listed for this day yet. Try another day or Upcoming.` : "Nothing listed for this day yet. Try another day or Upcoming.") : "No events in this window. Try Upcoming."}</div>`;
   } else {
     const now = lafNow(), today = dayStart(now);
-    let last = "";
+    // Events that began before the window (a festival that opened Thursday, seen on Saturday)
+    // sit under the first day shown, in the all-day row, marked "thru" their last day.
+    const from = state.venue || state.saved ? now : range(state.when)[0];
+    const groups = [];
     dated.slice(0, state.shown).forEach(e => {
-      const s = parse(e.start), d = dayStart(s < now ? now : s), key = d.toDateString();
-      if (key !== last) {
-        last = key;
-        const diff = Math.round((d - today) / 864e5);
-        const label = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : DOW[d.getDay()];
-        h += `<div class="day">${label} <span>${MON[d.getMonth()]} ${d.getDate()}</span></div>`;
-      }
-      h += card(e);
+      const s = parse(e.start), started = s < dayStart(from) || (s < from && +dayStart(s) !== +dayStart(from)), d = dayStart(started ? from : s);
+      let g = groups.find(x => +x.d === +d);
+      if (!g) groups.push(g = { d, timed: [], allday: [] });
+      if (e.allDay || started) g.allday.push({ e, started }); else g.timed.push(e);
     });
+    groups.sort((x, y) => x.d - y.d);
+    for (const g of groups) {
+      const diff = Math.round((g.d - today) / 864e5);
+      const label = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : DOW[g.d.getDay()];
+      const hol = holidayOn(g.d);
+      h += `<div class="day">${label} <span>${MON[g.d.getMonth()]} ${g.d.getDate()}</span>${hol ? `<span class="holname">${hol.emoji} ${hol.name}</span>` : ""}</div>`;
+      h += g.timed.map(e => card(e)).join("");
+      if (g.allday.length) {
+        const names = g.allday.slice(0, 2).map(x => esc(x.e.title)).join(", ") + (g.allday.length > 2 ? ` +${g.allday.length - 2}` : "");
+        h += `<details class="allday"${g.timed.length ? "" : " open"}><summary><b>All day</b><span>${names}</span></summary>${g.allday.map(x => card(x.e, x.started)).join("")}</details>`;
+      }
+    }
     if (dated.length > state.shown) h += `<button class="more" type="button" id="more">Show ${Math.min(PAGE, dated.length - state.shown)} more of ${dated.length - state.shown}</button>`;
-    if (ongoing.length) h += `<details class="ongoing"><summary>Exhibits & ongoing (${ongoing.length})</summary>${ongoing.map(card).join("")}</details>`;
+    if (ongoing.length) h += `<details class="ongoing"><summary>Exhibits & ongoing (${ongoing.length})</summary>${ongoing.map(e => card(e)).join("")}</details>`;
   }
   $("main").innerHTML = h;
   syncHead();
@@ -385,13 +549,14 @@ function calLinks(e) {
 }
 
 function openSheet(id) {
-  const e = state.data.events.find(x => x.id === id); if (!e) return;
+  const e = findEvent(id); if (!e) return;
   const s = parse(e.start), en = parse(e.end);
   let when;
   if (e.ongoing) when = `${fmtDate(s)} – ${fmtDate(en)}`;
   else if (e.allDay) when = `${fmtDate(s)} · All day`;
   else when = `${fmtDate(s)} · ${fmtTime(s)}${en ? ` – ${fmtTime(en)}` : ""}`;
   const place = [e.venue, e.address].filter(Boolean).join(", ");
+  const vkey = venueKey(e.venue), moreHere = vkey && state.data ? venueEvents(vkey).length : 0;
   const map = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(place + " Lafayette LA");
   const cal = calLinks(e);
   // Descriptions that still look like code are hidden in favor of the "find more details" link.
@@ -403,7 +568,7 @@ function openSheet(id) {
     <div class="tags">${e.cats.map(k => `<span class="tag" style="--c:${catColor(k)}">${CATS[k]}</span>`).join("")}${e.free ? `<span class="tag free">Free</span>` : ""}</div>
     <h2 id="sheet-title">${esc(e.title)}</h2>
     <div class="row">${ic('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>')}<div>${when}</div></div>
-    ${place ? `<div class="row">${ic('<path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>')}<div><a href="${map}" target="_blank" rel="noopener">${esc(place)}</a></div></div>` : ""}
+    ${place ? `<div class="row">${ic('<path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>')}<div><a href="${map}" target="_blank" rel="noopener">${esc(place)}</a>${moreHere > 1 ? `<br><button type="button" class="venuelink" data-venue="${vkey}" data-venuename="${esc(e.venue)}">See all ${moreHere} events here →</button>` : ""}</div></div>` : ""}
     ${e.price && !e.free ? `<div class="row">${ic('<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/>')}<div>${esc(e.price)}</div></div>` : ""}
     ${hasDetails
       ? `<section class="about"><h3>About this event</h3><p class="desc clamp" id="desc">${esc(e.desc)}</p><button type="button" class="readmore" id="readmore" hidden>Read more</button></section>`
@@ -428,6 +593,24 @@ function openSheet(id) {
     try { if (navigator.share) await navigator.share({ title: e.title, text, url }); else { await navigator.clipboard.writeText(`${text}\n${url}`); toast("Link copied"); } } catch (_) {}
   };
 }
+// ---------- "Add to Home Screen" tip ----------
+// Shown once until dismissed. On iPhone it also matters for saved events: Safari clears a
+// site's stored data after 7 days without a visit, but not for sites added to the Home Screen.
+let installPrompt = null;
+addEventListener("beforeinstallprompt", ev => { ev.preventDefault(); installPrompt = ev; if (state.data && !$("tip")) render(); });
+addEventListener("appinstalled", () => { store.set("tipDismissed", true); $("tip")?.remove(); });
+const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+function tipHtml() {
+  if (isStandalone() || store.get("tipDismissed", false)) return "";
+  const shareIcon = `<svg class="share" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Share"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>`;
+  let how;
+  if (isIOS()) how = `<p>Tap ${shareIcon} <b style="display:inline;font-size:inherit">Share</b>, then <b style="display:inline;font-size:inherit">Add to Home Screen</b>. It opens like an app and keeps your saved events safe.</p>`;
+  else if (installPrompt) how = `<p>Opens like an app, right from your home screen.</p><button type="button" class="install" data-install>Add to Home Screen</button>`;
+  else return "";  // desktop browsers without an install option: no tip
+  return `<div class="tip" id="tip"><img src="icon-192.png" alt=""><div><b>Add Bon Temps to your Home Screen</b>${how}</div><button type="button" class="x" data-tipclose aria-label="Dismiss">×</button></div>`;
+}
+
 // ---------- submit an event ----------
 function openSubmit() {
   const today = iso10(lafNow());
@@ -520,8 +703,13 @@ function closeSheet() {
 }
 
 function toggleSave(id) {
-  if (saved.has(id)) { saved.delete(id); toast("Removed from saved"); } else { saved.add(id); toast("Saved"); }
-  store.set("saved", [...saved]);
+  if (saved.has(id)) { saved.delete(id); delete savedEvents[id]; toast("Removed from saved"); }
+  else {
+    const e = findEvent(id); if (!e) return;
+    saved.add(id); savedEvents[id] = e; toast("Saved on this device");
+    try { navigator.storage?.persist?.(); } catch (_) {}  // ask the browser not to clear it
+  }
+  persistSaved();
   document.querySelectorAll(`[data-save="${id}"]`).forEach(b => {
     const on = saved.has(id); b.setAttribute("aria-pressed", on);
     if (b.classList.contains("save")) b.innerHTML = heart(on); else b.textContent = on ? "♥ Saved" : "♡ Save";
@@ -557,8 +745,12 @@ addEventListener("resize", syncHead);
 document.addEventListener("click", ev => {
   const t = ev.target.closest("button, .card, a"); if (!t) return;
   if (t.dataset.save) { ev.stopPropagation(); return toggleSave(t.dataset.save); }
-  if (t.dataset.when) { state.when = t.dataset.when; state.shown = PAGE; store.set("when", state.when); return render(); }
-  if ("saved" in t.dataset || t.id === "savedbtn") { state.saved = !state.saved; state.shown = PAGE; scrollTo(0, 0); return render(); }
+  if (t.dataset.when) { state.when = t.dataset.when; state.shown = PAGE; rememberWhen(state.when); return render(); }
+  if ("saved" in t.dataset || t.id === "savedbtn") { state.saved = !state.saved; state.venue = null; state.shown = PAGE; scrollTo(0, 0); return render(); }
+  if (t.dataset.venue) return openVenue(t.dataset.venue, t.dataset.venuename);
+  if ("allvenues" in t.dataset) { state.venue = null; state.shown = PAGE; scrollTo(0, 0); return render(); }
+  if ("tipclose" in t.dataset) { store.set("tipDismissed", true); $("tip")?.remove(); return; }
+  if ("install" in t.dataset && installPrompt) { installPrompt.prompt(); installPrompt.userChoice.finally(() => { installPrompt = null; $("tip")?.remove(); }); return; }
   if ("cat" in t.dataset) { const c = t.dataset.cat; if (!c) state.cats.clear(); else state.cats.has(c) ? state.cats.delete(c) : state.cats.add(c); store.set("cats", [...state.cats]); state.shown = PAGE; return render(); }
   if ("free" in t.dataset) { state.free = !state.free; return render(); }
   if (t.id === "more") { state.shown += PAGE; return render(); }
@@ -582,7 +774,10 @@ setInterval(updatedLabel, 60e3);
 
 // bontemps/#submit opens the form directly, handy for sending to venues and bands
 if (location.hash === "#submit") openSubmit();
-load().then(() => { const id = location.hash.slice(1); if (id && id !== "submit" && state.data) openSheet(id); });
+load().then(() => {
+  if (state.data && state.when === "tonight" && !filtered().length) { state.when = "upcoming"; render(); }
+  const id = location.hash.slice(1); if (id && id !== "submit" && state.data) openSheet(id);
+});
 </script>
 </body>
 </html>

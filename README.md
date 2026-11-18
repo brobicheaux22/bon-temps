@@ -22,6 +22,8 @@ and every 10 minutes while it's open. It shows "Updated X min ago" so people kno
 | Heymann Performing Arts Center | The venue's own calendar service |
 | Downtown Lafayette | Each event page |
 | Blue Moon Saloon | The venue's public "Subscribe" calendar feed |
+| Cité des Arts (theater, comedy, classes) | Each event page on its site |
+| Wonderland Performing Arts, UL Lafayette Dance & Theatre | **Not readable yet.** Wonderland's calendar loads with JavaScript; UL's season page still lists 2025-26. Add their shows with `manual.json` or the submit form |
 | Hideaway on Lee | The venue's own event page |
 | Happening Next (Lafayette live music) | Event data built into the page (third-party listings site) |
 | Cajundome, Rock'n'Bowl, Parish Brewing, Lafayette Public Library | **Off for now.** These need an AI service to read the page, and GitHub Models was retired in July 2026 |
@@ -83,7 +85,7 @@ Edit `collector/manual.json` (you can do it right on GitHub with the pencil icon
 
 These two entries are only examples. Replace them with real ones.
 
-Categories: `music`, `food`, `arts`, `wellness`, `family`, `community`.
+Categories: `music`, `theater`, `food`, `arts`, `wellness`, `family`, `community`.
 
 ## Running it on your computer
 
