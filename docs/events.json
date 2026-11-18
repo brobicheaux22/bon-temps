@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T22:59:31Z",
+"updated": "2026-11-18T01:22:26Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -141,25 +141,6 @@
 "id": "c785946aae"
 },
 {
-"title": "Kate Gordon: Tender Terrain",
-"start": "2026-11-17T09:00",
-"end": "2026-11-17T17:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-17",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
-"source": "Acadiana Center for the Arts",
-"id": "8dc71c57ee"
-},
-{
 "title": "Philip Gould: A Selection of Works",
 "start": "2026-11-17T09:00",
 "end": "2026-11-28T17:00",
@@ -291,6 +272,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20jean%20bertrand%20%2011-18_DgVI.png",
 "source": "Blue Moon Saloon",
 "id": "885f45db41"
+},
+{
+"title": "Kate Gordon: Tender Terrain",
+"start": "2026-11-18T09:00",
+"end": "2026-11-18T17:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-18",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
+"source": "Acadiana Center for the Arts",
+"id": "81654b0ae6"
 },
 {
 "title": "Mom Walks",
