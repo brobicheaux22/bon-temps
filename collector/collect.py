@@ -749,16 +749,9 @@ def manual_events(start, end):
     return out
 
 
-def _form_fields(body: str) -> dict:
-    fields = {}
-    for m in re.finditer(r"###\s*(.+?)\n+(.*?)(?=\n###|\Z)", body or "", re.S):
-        v = m.group(2).strip()
-        fields[m.group(1).strip().lower()] = "" if v == "_No response_" else v
-    return fields
-
-
 def _time_24h(t: str) -> str | None:
-    m = re.match(r"\s*(\d{1,2})(?::(\d{2}))?\s*([ap])\.?m?\.?", t or "", re.I)
+    """'8 PM', '8:30pm', '8:00:00 PM', '20:00' or '20:00:00' -> '20:00'."""
+    m = re.match(r"\s*(\d{1,2})(?::(\d{2}))?(?::\d{2})?\s*([ap])\.?m?\.?", t or "", re.I)
     if m:
         h = int(m.group(1)) % 12 + (12 if m.group(3).lower() == "p" else 0)
         return f"{h:02d}:{m.group(2) or '00'}"
@@ -766,27 +759,45 @@ def _time_24h(t: str) -> str | None:
     return f"{int(m.group(1)):02d}:{m.group(2)}" if m else None
 
 
-def submitted_events(start, end):
-    repo = os.environ.get("GITHUB_REPOSITORY")
-    if not repo:
-        raise Skip("runs on GitHub only")
-    headers = {"Accept": "application/vnd.github+json"}
-    if os.environ.get("GITHUB_TOKEN"):
-        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
-    issues = json.loads(fetch(f"https://api.github.com/repos/{repo}/issues?labels=approved&state=open&per_page=100",
-                              headers=headers))
+def _sheet_date(d: str) -> str | None:
+    """'2026-11-21', '11/21/2026' or '11/21' (Google Sheets may reformat dates) -> '2026-11-21'."""
+    d = (d or "").strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d):
+        return d
+    m = re.fullmatch(r"(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?", d)
+    if not m:
+        return None
+    year = int(m.group(3)) if m.group(3) else now_central().year
+    year += 2000 if year < 100 else 0
+    return f"{year:04d}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+
+
+APPROVED = {"yes", "y", "x", "approved", "approve", "ok", "true", "✓", "✔"}
+
+
+def src_sheet(src, start, end):
+    """Events people submitted through the site's form. Only rows with Approved = yes are used."""
+    import csv
+    import io
+    rows = list(csv.DictReader(io.StringIO(fetch(src["url"]))))
     out = []
-    for issue in issues:
-        f = _form_fields(issue.get("body", ""))
-        date = f.get("date (yyyy-mm-dd)") or f.get("date", "")
-        st, et = _time_24h(f.get("start time", "")), _time_24h(f.get("end time", ""))
-        cat = f.get("category", "").lower()
-        src = {"name": "Submitted", "cats": [c for c in CATEGORIES if c in cat]}
+    for raw in rows:
+        r = {(k or "").strip().lower(): (v or "").strip() for k, v in raw.items()}
+        if r.get("approved", "").lower() not in APPROVED:
+            continue
+        date = _sheet_date(r.get("date", ""))
+        if not date:
+            continue
+        st, et = _time_24h(r.get("start time", "")), _time_24h(r.get("end time", ""))
+        cat = r.get("category", "").lower()
+        s = {"name": src["name"], "cats": [c for c in CATEGORIES if c in cat]}
+        link = r.get("link", "")
+        if link and not link.startswith("http"):
+            link = "https://" + link
         out.append(make_event(
-            src, title=f.get("event name"), start=f"{date}T{st}" if st else date,
-            end=f"{date}T{et}" if et else None, venue=f.get("venue", ""), address=f.get("address", ""),
-            price=f.get("price", ""), url=f.get("link", "") or issue.get("html_url", ""),
-            desc=f.get("description", "")))
+            s, title=r.get("event name"), start=f"{date}T{st}" if st else date,
+            end=f"{date}T{et}" if et else None, venue=r.get("venue", ""), address=r.get("address", ""),
+            price=r.get("price", ""), url=link, desc=r.get("description", "")))
     return out
 
 
@@ -839,7 +850,7 @@ def merge(events):
 
 
 RUNNERS = {"tribe": src_tribe, "jsonld": src_jsonld, "ical": src_ical, "saffire": src_saffire,
-           "squarespace": src_squarespace, "downtown": src_downtown,
+           "squarespace": src_squarespace, "downtown": src_downtown, "sheet": src_sheet,
            "ticketmaster": src_ticketmaster, "page": src_page}
 
 
@@ -864,13 +875,12 @@ def main(argv):
     sources = [s for s in json.loads(SOURCES_FILE.read_text(encoding="utf-8"))["sources"]
                if s.get("enabled", True) and only in s["name"].lower()]
     if not only:
-        sources += [{"name": "Bon Temps", "type": "_manual"}, {"name": "Submitted", "type": "_submitted"}]
+        sources += [{"name": "Bon Temps", "type": "_manual"}]
 
     all_events, report = [], []
     for src in sources:
         t0 = time.time()
-        runner = {"_manual": lambda s, a, b: manual_events(a, b),
-                  "_submitted": lambda s, a, b: submitted_events(a, b)}.get(src["type"]) or RUNNERS[src["type"]]
+        runner = {"_manual": lambda s, a, b: manual_events(a, b)}.get(src["type"]) or RUNNERS[src["type"]]
         try:
             found = [e for e in runner(src, start, end) if e]
             found = [e for e in found if (e["end"] or e["start"]) >= cutoff and e["start"] <= iso(end)]

@@ -9,13 +9,9 @@ on:
         description: "Test one source by name (leave empty to check everything)"
         required: false
         default: ""
-  issues:
-    types: [labeled]          # re-run right away when you approve a submitted event
 
 permissions:
   contents: write   # save the new events.json
-  models: read      # free GitHub Models AI for reading venue pages
-  issues: read      # read approved event submissions
 
 concurrency:
   group: collect
@@ -23,7 +19,6 @@ concurrency:
 
 jobs:
   collect:
-    if: github.event_name != 'issues' || github.event.label.name == 'approved'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

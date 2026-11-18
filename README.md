@@ -35,22 +35,11 @@ Cover these with `manual.json` (weekly nights are easy, see below) and with subm
 
 To add or turn off a source, edit `collector/sources.json`.
 
-## Put it online (one time, about 10 minutes)
+## Where it lives
 
-1. **Create the repository.** Go to https://github.com/new, name it `bon-temps`, make it
-   **Public**, and click *Create repository*. (If you pick a different name, change `REPO` near the
-   top of the script in `docs/index.html`.)
-2. **Upload the files.** The easiest way is [GitHub Desktop](https://desktop.github.com):
-   *File → Add local repository →* choose the `bon-temps` folder → *create a repository* →
-   *Publish repository*. Or, on the repository page, use *Add file → Upload files* and drag in
-   everything inside the folder, including the `.github` folder.
-3. **Turn on the website.** In the repository: *Settings → Pages → Build and deployment →
-   Source: Deploy from a branch → Branch: `main`, folder `/docs` → Save.* In a minute or two
-   the site is live at `https://brobicheaux22.github.io/bon-temps/`.
-4. **Make two labels** for submissions: *Issues → Labels → New label*, named `submission`
-   and `approved`.
-5. **Run the collector once.** *Actions* tab → *Collect events* → *Run workflow*. After that it
-   runs by itself every 2 hours. This first run is also when the AI page reading turns on.
+- Website: https://brobicheaux22.github.io/bon-temps/
+- Project: https://github.com/brobicheaux22/bon-temps (GitHub Pages serves the `docs/` folder of `main`)
+- The *Collect events* workflow on the *Actions* tab runs every 2 hours. *Run workflow* runs it now.
 
 ### Optional: Ticketmaster (adds Cajundome concerts and touring shows)
 
@@ -60,10 +49,21 @@ secret*, name it `TICKETMASTER_API_KEY`, paste the key, save.
 
 ## Approving submitted events
 
-The "Submit an event" button opens a short form on GitHub (submitters need a free GitHub
-account). Each submission becomes an issue labeled `submission`. To publish it, add the
-`approved` label. The collector runs right away and the event shows up within a few minutes.
-Close the issue once the event is over.
+The "Submit an event" button opens a form right on the site, with no account needed. Link
+straight to it with `https://brobicheaux22.github.io/bon-temps/#submit` (handy for sending to
+venues and bands).
+
+Behind the scenes the form sends answers to a Google Form, and every submission lands as a row
+in its Google Sheet (*Bon Temps event submissions*).
+
+- **To publish an event,** type `yes` in its **Approved** column. It appears on the site at the
+  next update (within 2 hours, or right away if you click *Run workflow* on the Actions tab).
+- **To take one down,** delete the `yes`.
+- Don't rename, reorder or delete the form's questions or the sheet's columns: the site and the
+  collector rely on that order. The question IDs are in `SUBMIT_FIELDS` in `docs/index.html`,
+  and the sheet's published CSV link is the `Submitted` entry in `collector/sources.json`.
+- The published sheet is readable by anyone with its link, so don't add columns for
+  submitters' private details.
 
 ## Adding events by hand
 
@@ -93,8 +93,7 @@ python collector/collect.py "heymann"    # test one source without changing the 
 python -m http.server 8765 --directory docs
 ```
 
-Then open http://localhost:8765. The AI-read pages and submissions only run on GitHub, unless
-you set `GITHUB_TOKEN` to a GitHub token that has the *Models* permission.
+Then open http://localhost:8765.
 
 ## Free-tier limits
 

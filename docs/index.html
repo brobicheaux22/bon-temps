@@ -108,7 +108,28 @@ details.ongoing .card { margin-top: 8px; }
 /* footer */
 footer { border-top: 1px solid var(--line); padding: 22px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--ink-2); font-size: 14px; }
 footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
-.cta { display: inline-block; margin: 6px 0 18px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 999px; padding: 9px 16px; font-weight: 650; }
+.cta { display: inline-block; margin: 10px 0 18px; border: 0; background: var(--accent); color: #fff; text-decoration: none; border-radius: 999px; padding: 10px 18px; font-weight: 650; }
+
+/* submit-an-event form */
+.form h2 { margin: 6px 0 2px; }
+.form .lede { color: var(--ink-2); font-size: 14.5px; margin: 0 0 14px; }
+.form label { display: block; font-size: 13.5px; font-weight: 650; margin: 12px 0 5px; }
+.form label small { font-weight: 500; color: var(--ink-2); }
+.form input, .form select, .form textarea { width: 100%; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 10px; padding: 10px 12px; font-size: 16px; outline: none; -webkit-appearance: none; appearance: none; }
+.form textarea { min-height: 90px; resize: vertical; }
+.form input:focus, .form select:focus, .form textarea:focus { border-color: var(--brand); box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 18%, transparent); }
+.form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.form .row2 label { margin-top: 12px; }
+.form .err { color: var(--accent); font-size: 13.5px; margin: 6px 0 0; min-height: 1em; }
+.form [aria-invalid="true"] { border-color: var(--accent); }
+.form .send { width: 100%; margin-top: 16px; border: 0; background: var(--brand); color: var(--brand-ink); border-radius: 12px; padding: 13px; font-size: 16px; font-weight: 700; }
+.form .send:disabled { opacity: .6; }
+.form .fine { color: var(--ink-2); font-size: 12.5px; margin: 10px 0 0; text-align: center; }
+.form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.thanks { text-align: center; padding: 18px 4px 6px; }
+.thanks .big { font-size: 40px; line-height: 1; }
+.thanks p { color: var(--ink-2); margin: 8px 0 18px; }
+.thanks .actions { grid-template-columns: 1fr 1fr; }
 
 /* detail sheet */
 .scrim { position: fixed; inset: 0; background: rgba(10,20,20,.45); z-index: 40; }
@@ -171,7 +192,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 <footer class="wrap">
   <h4>Know about something we missed?</h4>
   Bars, bands and organizers can add their events.<br>
-  <a class="cta" id="submit" href="#" target="_blank" rel="noopener">Submit an event</a>
+  <button class="cta" id="submit" type="button">Submit an event</button>
 </footer>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -179,8 +200,14 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-// Change this if your GitHub repository has a different name.
-const REPO = "brobicheaux22/bon-temps";
+// "Submit an event" sends answers to this Google Form; they land in a Google Sheet for approval.
+// The numbers are the form's question IDs, in the form's question order.
+const SUBMIT_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfapK0EVXXUSMnXeXZ7tVsfPyvdC3B3DPv44BCvGLJpqKdv5g/formResponse";
+const SUBMIT_FIELDS = {
+  name: "entry.1947685435", date: "entry.1436712317", start: "entry.1497677929", end: "entry.222007628",
+  venue: "entry.1081429117", address: "entry.811791712", price: "entry.1586951292", category: "entry.1671384174",
+  link: "entry.894822772", description: "entry.1861025068",
+};
 
 const CATS = {
   music: "Music", food: "Food & Drink", arts: "Arts & Culture",
@@ -401,6 +428,90 @@ function openSheet(id) {
     try { if (navigator.share) await navigator.share({ title: e.title, text, url }); else { await navigator.clipboard.writeText(`${text}\n${url}`); toast("Link copied"); } } catch (_) {}
   };
 }
+// ---------- submit an event ----------
+function openSubmit() {
+  const today = iso10(lafNow());
+  const opts = Object.entries(CATS).map(([k, v]) => `<option value="${v}">${v}</option>`).join("");
+  $("sheet").innerHTML = `<div class="grab"></div><button class="close" type="button" id="close" aria-label="Close">×</button>
+    <form class="form" id="subform" novalidate>
+      <h2 id="sheet-title">Submit an event</h2>
+      <p class="lede">Playing a show, hosting a special or running a class in Lafayette? Add it here. We review every event before it goes live.</p>
+      <label for="f-name">Event name</label>
+      <input id="f-name" name="name" required maxlength="140" placeholder="Zydeco night with the Pine Leaf Boys" autocomplete="off">
+      <label for="f-date">Date</label>
+      <input id="f-date" name="date" type="date" required min="${today}">
+      <div class="row2">
+        <div><label for="f-start">Start time <small>(optional)</small></label><input id="f-start" name="start" type="time"></div>
+        <div><label for="f-end">End time <small>(optional)</small></label><input id="f-end" name="end" type="time"></div>
+      </div>
+      <label for="f-venue">Venue</label>
+      <input id="f-venue" name="venue" required maxlength="120" placeholder="Blue Moon Saloon">
+      <label for="f-address">Address <small>(optional)</small></label>
+      <input id="f-address" name="address" maxlength="160" placeholder="215 E Convent St, Lafayette">
+      <div class="row2">
+        <div><label for="f-price">Price <small>(optional)</small></label><input id="f-price" name="price" maxlength="60" placeholder="Free, $10"></div>
+        <div><label for="f-cat">Category</label><select id="f-cat" name="category">${opts}</select></div>
+      </div>
+      <label for="f-link">Link <small>(tickets, Instagram post or website)</small></label>
+      <input id="f-link" name="link" type="url" inputmode="url" maxlength="300" placeholder="https://">
+      <label for="f-desc">Description <small>(optional)</small></label>
+      <textarea id="f-desc" name="description" maxlength="1500" placeholder="A sentence or two about the event"></textarea>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="err" id="f-err" role="alert"></p>
+      <button class="send" type="submit" id="f-send">Submit event</button>
+      <p class="fine">No account needed. Events usually appear within a few hours of being approved.</p>
+    </form>`;
+  showSheet("#submit");
+  $("subform").addEventListener("submit", sendSubmission);
+  $("subform").addEventListener("input", ev => { ev.target.removeAttribute("aria-invalid"); $("f-err").textContent = ""; });
+  $("f-name").focus();
+}
+
+function iso10(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
+
+async function sendSubmission(ev) {
+  ev.preventDefault();
+  const f = ev.target, v = Object.fromEntries(new FormData(f));
+  for (const k in v) v[k] = String(v[k]).trim();
+  const bad = [];
+  if (!v.name) bad.push(["f-name", "Add the event's name."]);
+  if (!v.date) bad.push(["f-date", "Pick the date."]);
+  else if (v.date < iso10(lafNow())) bad.push(["f-date", "That date has already passed."]);
+  if (!v.venue) bad.push(["f-venue", "Add where it's happening."]);
+  if (v.link && !/^https?:\/\/\S+\.\S+/i.test(v.link)) {
+    if (/^\S+\.\S+$/.test(v.link)) v.link = "https://" + v.link; else bad.push(["f-link", "That link doesn't look right. Copy it from your browser's address bar."]);
+  }
+  if (bad.length) {
+    bad.forEach(([id]) => $(id).setAttribute("aria-invalid", "true"));
+    $("f-err").textContent = bad[0][1];
+    $(bad[0][0]).focus();
+    return;
+  }
+  const btn = $("f-send"); btn.disabled = true; btn.textContent = "Sending…";
+  try {
+    if (!v.website) {  // the hidden field is only ever filled in by spam bots
+      const body = new URLSearchParams();
+      for (const [k, id] of Object.entries(SUBMIT_FIELDS)) body.append(id, v[k] || "");
+      await fetch(SUBMIT_FORM, { method: "POST", mode: "no-cors", body });
+    }
+    $("sheet").innerHTML = `<div class="grab"></div><button class="close" type="button" id="close" aria-label="Close">×</button>
+      <div class="thanks"><div class="big">🎉</div><h2 id="sheet-title">Thanks, it's in</h2>
+      <p>We'll review “${esc(v.name)}” and it'll show up on Bon Temps once it's approved.</p>
+      <div class="actions"><button type="button" id="again">Submit another</button><button type="button" class="primary" id="done" style="grid-column:auto">Done</button></div></div>`;
+    $("close").onclick = closeSheet; $("done").onclick = closeSheet; $("again").onclick = openSubmit;
+  } catch (_) {
+    btn.disabled = false; btn.textContent = "Submit event";
+    $("f-err").textContent = navigator.onLine ? "Couldn't send that. Try again in a moment." : "You're offline. Connect and try again.";
+  }
+}
+
+function showSheet(hash) {
+  $("scrim").hidden = false; $("sheet").hidden = false; $("sheet").scrollTop = 0;
+  document.body.style.overflow = "hidden";
+  history.replaceState(null, "", hash);
+  $("close").onclick = closeSheet;
+}
+
 // "Blue Moon Saloon" for a venue's own feed, the listing site's name otherwise
 const sourceSite = e => e.source.replace(/\s*\(.*\)$/, "");
 function closeSheet() {
@@ -453,6 +564,7 @@ document.addEventListener("click", ev => {
   if (t.id === "more") { state.shown += PAGE; return render(); }
   if (t.id === "refresh") return load({ manual: true });
   if (t.id === "themebtn") return toggleTheme();
+  if (t.id === "submit") return openSubmit();
   if (t.id === "readmore") { const d = $("desc"); const open = d.classList.toggle("open"); t.textContent = open ? "Show less" : "Read more"; return; }
   if (t.classList.contains("card")) return openSheet(t.dataset.id);
 });
@@ -468,8 +580,9 @@ document.addEventListener("visibilitychange", () => { if (!document.hidden && Da
 setInterval(() => { if (!document.hidden) load(); }, 10 * 60e3);
 setInterval(updatedLabel, 60e3);
 
-$("submit").href = `https://github.com/${REPO}/issues/new?template=submit-event.yml`;
-load().then(() => { const id = location.hash.slice(1); if (id && state.data) openSheet(id); });
+// bontemps/#submit opens the form directly, handy for sending to venues and bands
+if (location.hash === "#submit") openSubmit();
+load().then(() => { const id = location.hash.slice(1); if (id && id !== "submit" && state.data) openSheet(id); });
 </script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     { "name": "Hideaway on Lee", "type": "squarespace", "url": "https://www.hideawayonlee.com/events", "venue": "Hideaway on Lee", "cats": ["music"] },
     { "name": "Happening Next (Lafayette live music)", "type": "jsonld", "url": "https://www.happeningnext.com/lafayette/live-music", "cats": ["music"], "_note": "Third-party listings site; covers Feed N Seed, Warehouse 535, Rock'n'Bowl and other clubs." },
     { "name": "Ticketmaster (Cajundome & touring shows)", "type": "ticketmaster" },
+    { "name": "Submitted", "type": "sheet", "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQX-hqPBIkbxYWygODHDWTSeWFB4qlFwxoCtMG4CIO22AGcopHBxHkk7O1yK7HKY5SmXbDzk5cR6mXO/pub?gid=699497852&single=true&output=csv", "_note": "Rows from the site's Submit an event form. Only rows with Approved = yes are published." },
 
     { "name": "Cajundome", "type": "page", "url": "https://www.cajundome.com/events", "venue": "Cajundome", "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
     { "name": "Rock'n'Bowl de Lafayette", "type": "page", "url": "https://www.rocknbowl.com/lafayette", "venue": "Rock'n'Bowl de Lafayette", "cats": ["music"], "enabled": false, "_note": "Needs an AI service to read the page; GitHub Models was retired in July 2026." },
