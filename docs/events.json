@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-19T01:19:54Z",
+"updated": "2026-11-19T03:00:16Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -9,7 +9,7 @@
 {
 "name": "Acadiana Center for the Arts",
 "ok": true,
-"count": 13
+"count": 14
 },
 {
 "name": "Acadiana Center for the Arts (all events)",
@@ -3221,7 +3221,10 @@
 "desc": "AcA's Artist Roundups gather together artists and creatives for a casual night of making connections while also making art. By bringing artists of various backgrounds together, Artist Roundups hope to encourage dialogue and collaboration across artistic disciplines and create a shared sense of community and belonging. This month, learn from AcA exhibiting artist Kate Gordon how to build small-scale collaged dioramas from paintings and found magazine clippings. The workshop will encourage artists to think spatially while using two-dimensional imagery. It will also offer the concept of using dioramas as a means to visualize exhibition plans and even curate spaces. Creatives of all levels and disciplines are encouraged to attend. Materials will be provided.",
 "url": "https://acadianacenterforthearts.org/events/artist-round-up-dioramas/?occurrence=2026-12-09",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Talk-Kate-Gordon-Website.jpg",
-"source": "Acadiana Center for the Arts (all events)",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "fd5875d152"
 },
 {
