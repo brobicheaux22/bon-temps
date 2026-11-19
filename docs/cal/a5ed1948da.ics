@@ -21,17 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:572a10eed8@bontemps
+UID:a5ed1948da@bontemps
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Chicago:20261118T190000
-DTEND;TZID=America/Chicago:20261118T210000
-SUMMARY:Trivia Night with Jay Steiner
-LOCATION:Hideaway on Lee\, 407 Lee Ave\, Lafayette
-DESCRIPTION:https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4
-URL:https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4
+DTSTART;TZID=America/Chicago:20270117T140000
+DTEND;TZID=America/Chicago:20270117T160000
+SUMMARY:HIGH SCHOOL BATTLE of the BANDS
+LOCATION:Warehouse 535\, 535 Garfield St\, Lafayette
+DESCRIPTION:https://happeningnext.com/event/high-school-battle-of-the-bands
+ -eid3a0e6rjtuk
+URL:https://happeningnext.com/event/high-school-battle-of-the-bands-eid3a0e
+ 6rjtuk
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Trivia Night with Jay Steiner
+DESCRIPTION:HIGH SCHOOL BATTLE of the BANDS
 TRIGGER:-PT1H
 END:VALARM
 END:VEVENT

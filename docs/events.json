@@ -1,25 +1,25 @@
 {
-"updated": "2026-11-19T05:41:24Z",
+"updated": "2026-11-19T07:26:17Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
 "ok": true,
-"count": 5
+"count": 4
 },
 {
 "name": "Acadiana Center for the Arts",
 "ok": true,
-"count": 14
+"count": 13
 },
 {
 "name": "Acadiana Center for the Arts (all events)",
 "ok": true,
-"count": 12
+"count": 11
 },
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 15
+"count": 13
 },
 {
 "name": "Lafayette Travel",
@@ -29,17 +29,17 @@
 {
 "name": "Heymann Performing Arts Center",
 "ok": true,
-"count": 9
+"count": 10
 },
 {
 "name": "Downtown Lafayette",
 "ok": true,
-"count": 12
+"count": 11
 },
 {
 "name": "Hideaway on Lee",
 "ok": true,
-"count": 10
+"count": 9
 },
 {
 "name": "Happening Next (Lafayette live music)",
@@ -54,7 +54,7 @@
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 50
+"count": 51
 },
 {
 "name": "Happening Next (comedy)",
@@ -74,7 +74,7 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 60
+"count": 61
 },
 {
 "name": "Happening Next (art)",
@@ -89,7 +89,7 @@
 {
 "name": "Happening Next (food & drinks)",
 "ok": true,
-"count": 29
+"count": 30
 },
 {
 "name": "Happening Next (health wellness)",
@@ -104,7 +104,7 @@
 {
 "name": "Happening Next (festivals)",
 "ok": true,
-"count": 11
+"count": 12
 },
 {
 "name": "Cité des Arts",
@@ -130,12 +130,12 @@
 {
 "name": "Submitted",
 "ok": true,
-"count": 2
+"count": 1
 },
 {
 "name": "Blue Moon Saloon",
 "ok": true,
-"count": 37
+"count": 36
 },
 {
 "name": "Wonderland Performing Arts",
@@ -188,275 +188,6 @@
 "id": "baf2f10196"
 },
 {
-"title": "Cajun Jam Hosted by Jean Bertrand",
-"start": "2026-11-18T08:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Blue Moon Saloon and Guest House",
-"address": "215 East Convent Street, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "Cajun Jam Hosted by Jean Bertrand\n\n \n\n• Happy Hour ALL NIGHT starts at 5 PM • $3 Crown • $3 Jameson • $4 local beers • $5 double wells • Music kicks off at 8 PM Bring your instrument and join the fun!\n\n \n\nComing to the show? If you book a room at Blue Moon Saloon the night of the gig, you get free entry + a free drink. Stay where the show is  https://shr.pn/BookNow",
-"url": "https://events.timely.fun/kw4jncf1/event/78437884/20261118080000",
-"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20jean%20bertrand%20%2011-18_DgVI.png",
-"source": "Blue Moon Saloon",
-"id": "885f45db41"
-},
-{
-"title": "Artists’ Alliance",
-"start": "2026-11-18T09:00",
-"end": "2027-01-09T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts - Main Gallery",
-"address": "101 W Vermilion St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "d5773c2e0f"
-},
-{
-"title": "Philip Gould: A Selection of Works",
-"start": "2026-11-18T09:00",
-"end": "2026-11-28T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "c7f5af1cb0"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-11-18T09:00",
-"end": "2026-12-23T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "87f8b83e87"
-},
-{
-"title": "Valcour Records | 20 Years",
-"start": "2026-11-18T09:00",
-"end": "2027-02-27T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "e607e2d6a3"
-},
-{
-"title": "Mom Walks",
-"start": "2026-11-18T09:30",
-"end": "2026-11-18T10:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston Street, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Join us for Mom Walks, a weekly gathering that brings moms together to enjoy movement, conversation, and fresh air in the heart of Moncus Park, presented by Lafayette Pediatric Dentistry. This growing community of local moms meets regularly to connect, walk at a comfortable pace, and spend time outdoors together. These walks offer a chance to build relationships, share experiences, and feel supported alongside others in similar seasons of motherhood. Mom Walks are designed to be simple, welcoming, and restorative. Come as you are, walk or linger as you like, and enjoy time in a space that feels calm and grounding. When: Every Wednesday at 9:30 AMWhere: Meet at the Veterans Memorial at Moncus Park Whether you are new to motherhood or have been on this journey for a while, you are invited to join us for connection, community, and time outside in the beautiful setting of Moncus Park. Completely free to attend and all mothers and maternal figures are welcome to join!",
-"url": "https://moncuspark.org/calendar-events/momwalks2026/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/01/MommyMe-_-Fall-2026-_-Moncus-Park-Fit-For-All-3.jpg",
-"source": "Moncus Park",
-"id": "8ea50eee35"
-},
-{
-"title": "Cross Currents: Improvised Truths — Curtis Patterson and the Jazz of Form",
-"start": "2026-11-18T17:00",
-"end": "2026-11-18T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hilliard Art Museum",
-"address": "710 E St Mary Blvd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"arts",
-"community"
-],
-"desc": "Join us for Improvised Truths: Curtis Patterson and the Jazz of Form , the latest iteration of Cross Currents, a series using visual art as a catalyst for interdisciplinary dialogue, as we explore how Patterson’s bronze and steel sculptures channel the improvisational language of jazz and African diasporic symbolism into visual metaphors of movement, continuity, and cross-cultural memory.\n\n5:00 p.m. Doors Open\n\n5:30 p.m. Panel Discussion\n\n6:30 p.m. Jazz Performance\n\nRSVP HERE\n\nPanelists\n\nDr. Sharlene Sinegal-DeCuir , Professor of History and Chair of African American and African Diaspora Studies, Xavier University of Louisiana\n\nDonald Harrison Jr. , saxophonist, composer, and Big Chief of the Congo Square Nation Afro-New Orleans Cultural Group\n\nDr. Allison Young , Associate Professor of Contemporary Art History, LSU\n\nModerated by Dr. Joel Rhone , Assistant Professor of Literature, University of Louisiana Lafayette\n\nFree for museum members, UL students, faculty and staff. General public entry with museum admission.\n\nPresented by Louisiana Endowment for the Humanities\n\nFunding for the 2026 Rebirth Grant has been provided by the State of Louisiana and administered by the Louisiana Endowment for the Humanities.\n\nThe views, findings, conclusions, or recommendations expressed by this organization do not necessarily represent those of either the Louisiana Endowment for the Humanities or the State of Louisiana.",
-"url": "https://hilliardartmuseum.org/event/cross-currents-improvised-truths-curtis-patterson-and-the-jazz-of-form/",
-"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/UL-Digital-Billboards-16_9-1920-x-1080.webp",
-"source": "Hilliard Art Museum",
-"alsoOn": [
-"Happening Next (Lafayette live music)"
-],
-"id": "a5d8d5958a"
-},
-{
-"title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
-"start": "2026-11-18T17:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "200 Beaullieu Dr Ste 6, Lafayette",
-"address": "",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "An evening of exclusive indulgences awaits!\n🥂 Sip cocktails, enjoy live music, shop charming pop-up vendors, and discover event only specials, luxurious beauty packages, exceptional savings, and exciting raffle giveaways!✨",
-"url": "https://happeningnext.com/event/gather-andamp-glow-an-exclusive-fall-social-eid3a0e8e3uaq",
-"image": "https://cdn.happeningnext.com/events8/banners/fe04cde8162b86c40fd9891f94802e06aecb8154af8aa6a367036a24f9d9e9e1-rimg-w1152-h474-dcf8e8d8-gmir?v=1793134950",
-"source": "Happening Next (Lafayette live music)",
-"id": "3b541dbc1a"
-},
-{
-"title": "Speak Out Against SpaceX",
-"start": "2026-11-18T17:30",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Abbeville Courthouse",
-"address": "100 N. State Street, 2nd floor",
-"price": "Free",
-"free": true,
-"cats": [
-"civic",
-"community"
-],
-"desc": "Here is a link to the meeting agenda:\n\nhttps://www.vppj.org/PDFforms/Agendas/Agendas%202026/11.Nov2026/01.Special%20Budget.PJ%20Agenda%2011-18-26%20-%20Corrected.02.pdf",
-"url": "https://www.instagram.com/p/Df0zoJlO5nf/?avpt=eXJteDd5ZHgzMnhu",
-"image": "",
-"source": "Submitted",
-"id": "e2f00c4159"
-},
-{
-"title": "Artist Round Up: Collaging, Flyer Making, and the Community Zine",
-"start": "2026-11-18T18:00",
-"end": "2026-11-18T20:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Acadiana Center for the Arts",
-"address": "101 W Vermilion St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts",
-"community"
-],
-"desc": "AcA's Artist Roundups gather together artists and creatives for a casual night of making connections while also making art. By bringing artists of various backgrounds together, Artist Roundups hope to encourage dialogue and collaboration across artistic disciplines and create a shared sense of community and belonging. This month, join former Artist Alliance member Jesse Poimboeuf for a night of collaging and mixed media artmaking as we put together the 7th issue of the Creative Acadiana Community Art Zine. Inspired by the grassroots flyers handmade by the Artist Alliance in the 90s you'll collage flyers of your own: for real events, fake events, concepts, or anything else you can imagine! Collaging materials will be provided but you're also encouraged to bring your own. Old photos, stickers, interestingly patterned paper. Everything 2 dimensional is fair game. Scissors will be provided but if you may also bring other cutting utensils if you wish. Creatives of all levels welcome!",
-"url": "https://acadianacenterforthearts.org/events/community-zine/?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Round-Up-Zine-Website.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "6fde104d8f"
-},
-{
-"title": "Yoga in the Park",
-"start": "2026-11-18T18:00",
-"end": "2026-11-18T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Join us for Yoga in the Park, part of the \"Fit For All\" series presented by Louisiana Orthopaedic Specialists & Orthopedic Urgent Care. Every Wednesday at 6:00 PM, unroll your mat and unwind with a free community yoga session at Moncus Park. Whether you're a seasoned yogi or trying it for the first time, it's an easy way to reset midweek and move alongside your neighbors. Location: First Horizon Amphitheater, unless otherwise noted What to know: Every Wednesday at 6:00 PM All ages and experience levels welcome Bring your own mat and water Wear comfortable clothing No registration required Completely free Class may be canceled or moved due to rain or excessive heat, check our social media stories each Wednesday for updates and location Instructer Schedule: 9/16- Neil Gresham 9/23 -Zoe Wingate 9/30 -Zoe Wingate 10/7- Jeanne Marie Lousao 10/14- Tammy Marlin *waiting for documents* 10/21- Neil Gresham 10/28- Zoe Wingate 11/4- Jeanne Marie Lousao 11/11- Zoe Wingate 11/18- Kayla Duhon 11/25- Allie Edge See you on the mat!",
-"url": "https://moncuspark.org/calendar-events/yoga2026/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
-"source": "Moncus Park",
-"id": "7dd96a27ae"
-},
-{
-"title": "Horror Book Club!",
-"start": "2026-11-18T18:15",
-"end": "2026-11-18T19:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Cavalier House Books",
-"address": "302 A Jefferson St",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "CHB Lafayette’s Horror Book Club pick for November is You Should Have Been Nicer to My Mom by Vincent Tirado.\nWe’ll meet at 6:15 p.m. on Nov. 18 at the bookstore to discuss this horror novel!\nPop by the bookshop, or order your copy here!: https://cavalierhousebooks.com/.../2026.../horror-book-club\nSynopsis:\nWhen Papi Ramon, the patriarch of the wealthy Abreu family dies, he gives the family one last message in the will: “One of you is el bacà, the demon that I made a deal with. Get rid of them or you will be damned.” Xiomara, the uncontested favorite of Papi Ramon (and therefore the least liked in the family), watches as everyone dismisses this as the joke of a senile old man and demands the lawyer obtain the previous will Papi wrote.\nWhile the lawyer drives back to his office, a storm breaks out, forcing the entire family—Xiomara’s aunts and uncles and cousins—to remain in the house. And the words of Papi’s will hang over their heads even heavier than the rain clouds. Over the course of the night, scandal after scandal is revealed to the public about the family. Suddenly a tense few hours of surviving her family turns into a vicious night of recrimination, violence, accusations…and murder.\nXiomara is faced with an impossible task: uproot a demon and somehow kill it or excise the ghosts that linger within her own family.\nAnd the clock is ticking...\n—---------------------\nHorror Book Club is CHB Lafayette's bimonthly book club focusing on horror and dark stories! A CHB Bookseller leads the discussion, and we vote at our meetings for our upcoming monthly picks.",
-"url": "https://www.downtownlafayette.org/event/horror-book-club-dbd23",
-"image": "",
-"source": "Downtown Lafayette",
-"id": "c5005913a1"
-},
-{
-"title": "Trivia Night with Jay Steiner",
-"start": "2026-11-18T19:00",
-"end": "2026-11-18T21:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hideaway on Lee",
-"address": "407 Lee Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4",
-"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1610159750942-LGVZ4UC44SZR3RB2VVO8/136058381_2722098468050625_7279102965653302622_o.jpg",
-"source": "Hideaway on Lee",
-"id": "572a10eed8"
-},
-{
 "title": "Eddie Pepitone (It’s Always Sunny in Philadelphia, Rick and Morty, Chappelle’s Show, Bob’s Burgers)",
 "start": "2026-11-19T00:00",
 "end": null,
@@ -478,6 +209,28 @@
 "Happening Next (comedy)"
 ],
 "id": "54c25ec22b"
+},
+{
+"title": "Artists’ Alliance",
+"start": "2026-11-19T09:00",
+"end": "2027-01-09T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts - Main Gallery",
+"address": "101 W Vermilion St, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "d5773c2e0f"
 },
 {
 "title": "Coffee & Connect: Caring Through the Holidays",
@@ -520,6 +273,72 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "486bcf11e8"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-19T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "c7f5af1cb0"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-19T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "87f8b83e87"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-19T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-19",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "e607e2d6a3"
 },
 {
 "title": "Creative Fitness For Seniors",
@@ -1546,12 +1365,12 @@
 "id": "bec4d0f2df"
 },
 {
-"title": "Rock-n-Bowl de Lafayette SPANK with School of Rock Lafayette",
+"title": "Spank the Monkey | Rock'n'Bowl® de Lafayette",
 "start": "2026-11-21T21:00",
 "end": null,
 "allDay": false,
 "ongoing": false,
-"venue": "Rock 'n' Bowl de Lafayette",
+"venue": "Rock'n'Bowl de Lafayette",
 "address": "905 Jefferson St, Lafayette",
 "price": "",
 "free": false,
@@ -1559,15 +1378,16 @@
 "music"
 ],
 "desc": "Turn it up, Lafayette! Spank the Monkey, the 90's rock band, rocks Rock'n'Bowl® de Lafayette on Saturday, November 21 at 9:00 PM. Bring your crew and rock out all night!",
-"url": "https://happeningnext.com/event/rock-n-bowl-de-lafayette-spank-with-school-of-rock-lafayette-eid3a0ea1rbv4",
-"image": "https://cdn.happeningnext.com/events5/banners/7b2baf03684b068220517aeef70fc88374dc2e115940007dd3804b1cc8c88517-rimg-w1200-h800-dc080808-gmir?v=1794149073",
-"source": "Happening Next (performances)",
+"url": "https://happeningnext.com/event/spank-the-monkey-rocknbowl-de-lafayette-eid3a0ebj589l",
+"image": "https://cdn.happeningnext.com/events10/banners/67bc23a946754e4270c1f21f04bd4ed62c2d3b4b3abe0ddd36c2576cdc2e8c48-rimg-w1200-h628-dc081838-gmir?v=1794987798",
+"source": "Happening Next (Lafayette live music)",
 "alsoOn": [
 "Happening Next (comedy)",
 "Happening Next (concerts)",
-"Happening Next (music)"
+"Happening Next (music)",
+"Happening Next (performances)"
 ],
-"id": "a9f56f66b4"
+"id": "e510e14f94"
 },
 {
 "title": "Bayou Bloodfest Horror Expo 2026",
@@ -4323,7 +4143,7 @@
 "end": null,
 "allDay": false,
 "ongoing": false,
-"venue": "Cavalier House Books",
+"venue": "302 A Jefferson Street, Lafayette",
 "address": "302 Jefferson St, Lafayette",
 "price": "",
 "free": false,
@@ -6087,7 +5907,7 @@
 "end": null,
 "allDay": false,
 "ongoing": false,
-"venue": "Cavalier House Books",
+"venue": "302 A Jefferson Street, Lafayette",
 "address": "302 Jefferson St, Lafayette",
 "price": "",
 "free": false,
@@ -6283,6 +6103,68 @@
 "image": "",
 "source": "Ragin' Cajuns home games",
 "id": "ef8432ce0f"
+},
+{
+"title": "A Knight to Toast the Saints",
+"start": "2027-01-17T12:30",
+"end": "2027-01-17T16:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Cathedral of St. John the Evangelist",
+"address": "914 St John St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/a-knight-to-toast-the-saints-eid3a0e7lfqld",
+"image": "https://cdn.happeningnext.com/events8/banners/475d0afc3b95d24a0aa42b8d3d285db5bf1b825fe47e82e01b989adc28f3bb62-rimg-w1200-h961-dc080808-gmir?v=1792789422",
+"source": "Happening Next (food & drinks)",
+"id": "0eb97fa61a"
+},
+{
+"title": "French Impressions",
+"start": "2027-01-17T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "1373 S College Rd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "AGES 2 AND UP NEED A TICKET\nLocation: Lafayette High School\nAn intimate journey through the elegance, color, and beauty of French chamber music",
+"url": "https://www.heymanncenter.com/events/2025/french-impressions3",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=ASO_42_Frenchsmall.png&cb=35aae8f7",
+"source": "Heymann Performing Arts Center",
+"id": "116191b85f"
+},
+{
+"title": "HIGH SCHOOL BATTLE of the BANDS",
+"start": "2027-01-17T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Warehouse 535",
+"address": "535 Garfield St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/high-school-battle-of-the-bands-eid3a0e6rjtuk",
+"image": "https://cdn.happeningnext.com/events4/banners/3f1feb0be07c97ddf5d29db75e1d0e2cdab1a52f1c1c9078f7a3bf1f4eb78b9b-rimg-w1200-h1200-dc080808-gmir?v=1792384711",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (festivals)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "a5ed1948da"
 }
 ]
 }
