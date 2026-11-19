@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T22:59:07Z",
+"updated": "2026-11-19T01:19:54Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -29,7 +29,7 @@
 {
 "name": "Heymann Performing Arts Center",
 "ok": true,
-"count": 9
+"count": 10
 },
 {
 "name": "Downtown Lafayette",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 38
+"count": 39
 },
 {
 "name": "Happening Next (theatre)",
@@ -54,12 +54,12 @@
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 49
+"count": 50
 },
 {
 "name": "Happening Next (comedy)",
 "ok": true,
-"count": 10
+"count": 11
 },
 {
 "name": "Happening Next (dance)",
@@ -74,7 +74,7 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 59
+"count": 60
 },
 {
 "name": "Happening Next (art)",
@@ -104,7 +104,7 @@
 {
 "name": "Happening Next (festivals)",
 "ok": true,
-"count": 11
+"count": 12
 },
 {
 "name": "Cité des Arts",
@@ -199,25 +199,6 @@
 "Lafayette Travel"
 ],
 "id": "d5773c2e0f"
-},
-{
-"title": "Kate Gordon: Tender Terrain",
-"start": "2026-11-18T09:00",
-"end": "2026-11-18T17:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-18",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
-"source": "Acadiana Center for the Arts",
-"id": "81654b0ae6"
 },
 {
 "title": "Philip Gould: A Selection of Works",
@@ -554,7 +535,10 @@
 "desc": "",
 "url": "https://acadianacenterforthearts.org/kate-gordon/?occurrence=2026-11-19",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/King_Kate-Gordon-1.jpg",
-"source": "Acadiana Center for the Arts (all events)",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "486bcf11e8"
 },
 {
@@ -3241,6 +3225,25 @@
 "id": "fd5875d152"
 },
 {
+"title": "Silverbacks' Annual Improvised Holiday Show",
+"start": "2026-12-09T19:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Cité des Arts",
+"address": "109 Vine St, Lafayette, LA 70501-7043, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"theater"
+],
+"desc": "It’s nearly that time of year again! On *Wednesday*, December 9th, Silverbacks Improv Theatre will interpret their signature improvisations through the lens of a brand new, completely made up Holiday!\n\nFor this show, each of the performers will be wearing a Holiday Sweater and invite the audience t",
+"url": "https://happeningnext.com/event/silverbacks-annual-improvised-holiday-show-eid3a0ebmlpc7",
+"image": "https://cdn.happeningnext.com/events8/banners/93d2db0db9e88519e292f61e45bea84ee1ac7fab31410ab0e0e637e91afc6df8-rimg-w1200-h675-dc980818-gmir?v=1795016491",
+"source": "Happening Next (comedy)",
+"id": "3fe3a06574"
+},
+{
 "title": "Cajun Jam Hosted by Luke Huval",
 "start": "2026-12-09T20:00",
 "end": null,
@@ -5146,6 +5149,49 @@
 "image": "https://cdn.happeningnext.com/events8/banners/475d0afc3b95d24a0aa42b8d3d285db5bf1b825fe47e82e01b989adc28f3bb62-rimg-w1200-h961-dc080808-gmir?v=1792789422",
 "source": "Happening Next (food & drinks)",
 "id": "0eb97fa61a"
+},
+{
+"title": "French Impressions",
+"start": "2027-01-17T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Heymann Performing Arts Center",
+"address": "1373 S College Rd, Lafayette, LA",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "AGES 2 AND UP NEED A TICKET\nLocation: Lafayette High School\nAn intimate journey through the elegance, color, and beauty of French chamber music",
+"url": "https://www.heymanncenter.com/events/2025/french-impressions3",
+"image": "https://cdn.saffire.com/images.ashx?t=ig&rid=HeymannCenter&i=ASO_42_Frenchsmall.png&cb=35aae8f7",
+"source": "Heymann Performing Arts Center",
+"id": "116191b85f"
+},
+{
+"title": "HIGH SCHOOL BATTLE of the BANDS",
+"start": "2027-01-17T14:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Warehouse 535",
+"address": "535 Garfield St,Lafayette, Louisiana, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Get ready for the 4th Annual HIGH SCHOOL BATTLE OF THE BANDS, happening January 17, 2027, at Warehouse 535, 535 Garfield St., Lafayette, LA! High-school-age musicians from across South Louisiana are invited to apply—band members do not have to attend the same school, younger musicians are welcome, a",
+"url": "https://happeningnext.com/event/high-school-battle-of-the-bands-eid3a0e6rjtuk",
+"image": "https://cdn.happeningnext.com/events4/banners/3f1feb0be07c97ddf5d29db75e1d0e2cdab1a52f1c1c9078f7a3bf1f4eb78b9b-rimg-w1200-h1200-dc080808-gmir?v=1792384711",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (festivals)",
+"Happening Next (music)",
+"Happening Next (performances)"
+],
+"id": "a5ed1948da"
 }
 ]
 }
