@@ -1,4 +1,18 @@
 {
-  "_help": "Events you add by hand, for places that only post on Instagram or Facebook. One-time event: {\"title\": \"...\", \"start\": \"2026-12-05T20:00\", \"end\": \"2026-12-05T23:00\", \"venue\": \"...\", \"price\": \"$10\", \"url\": \"https://instagram.com/...\", \"desc\": \"...\", \"cats\": [\"music\"]}. Weekly event: {\"title\": \"...\", \"weekly\": \"Wed\", \"time\": \"19:00\", \"endTime\": \"22:00\", \"venue\": \"...\"}. Categories: music, food, arts, wellness, family, community.",
-  "events": []
+  "_help": "Events you add by hand, for places that only post on Instagram or Facebook. One-time event: {\"title\": \"...\", \"start\": \"2026-12-05T20:00\", \"end\": \"2026-12-05T23:00\", \"venue\": \"...\", \"price\": \"$10\", \"url\": \"https://instagram.com/...\", \"desc\": \"...\", \"cats\": [\"music\"]}. Weekly event: {\"title\": \"...\", \"weekly\": \"Wed\", \"time\": \"19:00\", \"endTime\": \"22:00\", \"venue\": \"...\"}. Every night of a run: {\"title\": \"...\", \"from\": \"2026-12-01\", \"to\": \"2026-12-23\", \"time\": \"17:30\", \"endTime\": \"21:00\", \"venue\": \"...\"} (add \"days\": [\"Fri\", \"Sat\"] to list only those nights). Categories: music, theater, food, arts, wellness, family, civic, community.",
+  "events": [
+    {
+      "title": "Noël Acadien au Village",
+      "from": "2026-12-01",
+      "to": "2026-12-23",
+      "time": "17:30",
+      "endTime": "21:00",
+      "venue": "LARC's Acadian Village",
+      "address": "200 Greenleaf Dr, Lafayette, LA",
+      "price": "$10–$12",
+      "url": "https://acadianvillage.org/noel-acadien-au-village/",
+      "desc": "Lafayette's big Christmas lights festival: about half a million lights across the Acadian Village, including the lit-up chapel, plus holiday displays, live music, carnival rides, local food, photos with Santa and the Christmas Store.\n\nTickets: $10 in advance at area ShopRite stores, $11 online (plus a fee) or $12 at the gate. Kids 2 and under get in free.\n\nIt's a fundraiser for LARC, a Lafayette nonprofit that supports people with intellectual and developmental disabilities. Dates here are from LARC's 2026 announcements; check the village's website or Facebook page for weather closures.",
+      "cats": ["family", "community"]
+    }
+  ]
 }

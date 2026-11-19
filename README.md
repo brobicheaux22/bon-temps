@@ -1,17 +1,20 @@
 # Bon Temps
 
-**What's happening in Lafayette, LA**: live music, food and drink, arts, wellness, family and
-community events, collected automatically from venue calendars and local listings.
+**What's happening in Lafayette, LA**: live music, theater, food and drink, arts, wellness,
+family, sports, civic and community events, collected automatically from venue calendars and
+local listings.
 
 - `docs/` is the website (one page, no build step). GitHub Pages serves it.
-- `collector/collect.py` gathers events and writes `docs/events.json`.
+- `collector/collect.py` gathers events and writes `docs/events.json`, plus one calendar file
+  per event in `docs/cal/` (the "Apple Calendar" button opens these).
 - `.github/workflows/collect.yml` runs the collector **every 2 hours** for free on GitHub.
 
 The page reloads its event list when you tap the refresh button, when you come back to the tab,
-and every 10 minutes while it's open. It shows "Updated X min ago" so people know how fresh it is.
+and every 10 minutes while it's open. Today's events stay listed until midnight; finished ones
+are dimmed and marked "Ended" (or "Earlier" when the listing gives no end time).
 
 **When you change the page itself (`docs/index.html`), bump `APP_VERSION`** near the top of its
-script (for example `"2026-11-18.1"` → `"2026-11-18.2"`). Open copies of the site, including
+script (for example `"2026-11-18.8"` → `"2026-11-18.9"`). Open copies of the site, including
 Home Screen apps, notice the new version and reload themselves; otherwise phones can keep the old
 page for a while because GitHub Pages lets browsers cache it.
 
@@ -19,28 +22,45 @@ page for a while because GitHub Pages lets browsers cache it.
 
 | Source | How it's read |
 |---|---|
-| The Lafayette Mom (big citywide calendar) | Data feed |
 | Hilliard Art Museum | Data feed |
-| Acadiana Center for the Arts | Event data built into the page |
+| Acadiana Center for the Arts | Event data built into the page, plus every event page it lists |
 | Moncus Park | Event data built into the page |
-| Lafayette Travel (this weekend) | Event data built into the page |
+| Lafayette Travel (the tourism bureau's full calendar: festivals, parades, concerts) | Each event page listed in its sitemap. Only new or changed pages are opened (2 seconds apart, as the site asks); pages already read are remembered in `collector/lafayette-travel-cache.json`. Weekly regulars are skipped, and when a venue or organizer lists the same event, theirs wins (Lafayette Travel had Noël Acadien a week off) |
 | Heymann Performing Arts Center | The venue's own calendar service |
-| Downtown Lafayette | Each event page |
+| Downtown Lafayette | Each event page (venue, price and the full write-up) |
 | Blue Moon Saloon | The venue's public "Subscribe" calendar feed |
-| Cité des Arts (theater, comedy, classes) | Each event page on its site |
-| Wonderland Performing Arts, UL Lafayette Dance & Theatre | **Not readable yet.** Wonderland's calendar loads with JavaScript; UL's season page still lists 2025-26. Add their shows with `manual.json` or the submit form |
+| Cité des Arts, Wonderland Performing Arts | Each event page on their sites |
 | Hideaway on Lee | The venue's own event page |
-| Happening Next (Lafayette live music) | Event data built into the page (third-party listings site) |
-| Cajundome, Rock'n'Bowl, Parish Brewing, Lafayette Public Library | **Off for now.** These need an AI service to read the page, and GitHub Models was retired in July 2026 |
+| Happening Next (music, theater, comedy, art, food, wellness, festivals…) | Event data built into the page, plus each event's page for the full write-up (third-party listings site) |
+| Lafayette city government | The public events calendar; routine business (regular council and commission meetings, office closures, classes) is skipped |
+| Ragin' Cajuns home games | UL Athletics' public calendar feed; only home games are kept |
 | Ticketmaster (Cajundome & touring shows) | Free API key (optional, see below) |
 | Your own additions | `collector/manual.json` |
 | Submitted by the public | "Submit an event" form, after you approve it |
 
-Not connected: **Artmosphere** loads its calendar with JavaScript the collector can't read, and
-**Instagram/Facebook** don't allow outside apps to read posts.
-Cover these with `manual.json` (weekly nights are easy, see below) and with submissions.
+**Off for now:** Cajundome, Rock'n'Bowl, Parish Brewing and the Lafayette Public Library need an AI
+service to read their pages, and GitHub Models was retired in July 2026. UL's own arts calendar,
+Artmosphere and Instagram/Facebook can't be read either. UL performances still come in through
+Happening Next; cover the rest with `manual.json` and submissions.
 
-To add or turn off a source, edit `collector/sources.json`.
+To add or turn off a source, edit `collector/sources.json`. Useful settings there:
+
+- `hide.patterns`: titles that are always left out (clutter like "free parking").
+- `skip` on a source: titles to leave out from that source only.
+- `yield: true` on a listing site: its copy gives way when anyone else lists the same event.
+- `venueNames`: street address → venue name, for listings that only give an address.
+- `quality`: listings found only on listing sites (Happening Next, Lafayette Travel) are kept
+  when they're music, theater, food, arts, civic or sports, or at a known venue.
+- `bigEvents`: see below.
+
+## Big yearly events
+
+`bigEvents` in `collector/sources.json` lists the events Bon Temps should never miss (Festival
+International, Festivals Acadiens et Créoles, Mardi Gras parades, Noël Acadien, Downtown Alive,
+Bach Lunch). About six weeks before each one usually starts, the collector checks the site has it.
+If not, it opens a GitHub issue called **"Big events missing dates"** (GitHub emails you) saying
+what's missing. Add the dates to `manual.json`, and the issue closes itself once everything is
+listed.
 
 ## Where it lives
 
@@ -54,6 +74,14 @@ Get a free key at https://developer.ticketmaster.com (sign up → *My Apps* → 
 *Consumer Key*). In the repository: *Settings → Secrets and variables → Actions → New repository
 secret*, name it `TICKETMASTER_API_KEY`, paste the key, save.
 
+### Optional: visitor counts (private)
+
+1. Sign up at https://www.goatcounter.com (free) and pick a code, for example `bontemps`.
+2. Put the code in `GOATCOUNTER` near the top of the script in `docs/index.html`, and bump `APP_VERSION`.
+3. In GoatCounter's settings, leave **"Allow public viewing"** off so only you can see the numbers.
+
+It counts visits without cookies or personal data, and doesn't count the site while it runs on your computer.
+
 ## Approving submitted events
 
 The "Submit an event" button opens a form right on the site, with no account needed. Link
@@ -64,8 +92,13 @@ Behind the scenes the form sends answers to a Google Form, and every submission 
 in its Google Sheet (*Bon Temps event submissions*).
 
 - **To publish an event,** type `yes` in its **Approved** column. It appears on the site at the
-  next update (within 2 hours, or right away if you click *Run workflow* on the Actions tab).
+  next update (within 2 hours, or about 3 minutes if you click *Run workflow* on the Actions tab).
 - **To take one down,** delete the `yes`.
+- **Get an email for each new one:** in the Google Form, *Responses → ⋮ → Get email notifications
+  for new responses*.
+- **Corrections:** "Something wrong with this listing?" on each event sends a row with Category
+  **Correction** and the event's name, date and link. Fix the listing (or tell the venue), but
+  don't approve these rows: they're notes, not events.
 - Don't rename, reorder or delete the form's questions or the sheet's columns: the site and the
   collector rely on that order. The question IDs are in `SUBMIT_FIELDS` in `docs/index.html`,
   and the sheet's published CSV link is the `Submitted` entry in `collector/sources.json`.
@@ -83,24 +116,36 @@ Edit `collector/manual.json` (you can do it right on GitHub with the pencil icon
       "venue": "Buck & Johnny's", "cats": ["music", "food"] },
     { "title": "Holiday Market", "start": "2026-12-12T10:00", "end": "2026-12-12T16:00",
       "venue": "Moncus Park", "price": "Free", "url": "https://www.instagram.com/...",
-      "cats": ["food", "community"] }
+      "cats": ["food", "community"] },
+    { "title": "Noël Acadien au Village", "from": "2026-12-01", "to": "2026-12-23",
+      "time": "17:30", "endTime": "21:00", "venue": "LARC's Acadian Village" }
   ]
 }
 ```
 
-These two entries are only examples. Replace them with real ones.
+The first two entries are only examples. `from`/`to` lists the event every night of a run
+(add `"days": ["Fri", "Sat"]` for only those nights). Noël Acadien is in the real file: update
+its dates each fall.
 
-Categories: `music`, `theater`, `food`, `arts`, `wellness`, `family`, `community`.
+Categories: `music`, `theater`, `food`, `arts`, `wellness`, `family`, `sports`, `civic`, `community`.
+
+## Sharing
+
+- The address bar always matches what's on screen, and **Share this list** at the bottom sends
+  it: `?when=2026-11-21&cat=music` opens Saturday's music, `?when=weekend&free=1` this weekend's
+  free events. `when` can be a date, `tonight`, `weekend` or `picks`.
+- Texting the link shows a preview card (`docs/og.png`). To redraw it, edit `tools/og.html` and run
+  the command at the top of that file.
 
 ## Running it on your computer
 
 ```
 python collector/collect.py              # check every source and rebuild docs/events.json
 python collector/collect.py "heymann"    # test one source without changing the site
-python -m http.server 8765 --directory docs
+python -m http.server 8790 --directory docs
 ```
 
-Then open http://localhost:8765.
+Then open http://localhost:8790.
 
 ## Free-tier limits
 

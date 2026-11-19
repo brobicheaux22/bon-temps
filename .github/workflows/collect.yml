@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write   # save the new events.json
+  issues: write     # open the "Big events missing dates" reminder
 
 concurrency:
   group: collect
@@ -36,6 +37,8 @@ jobs:
           git config user.name "bon-temps-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/events.json collector/detail-cache.json
+          git add -A docs/cal
+          git add collector/lafayette-travel-cache.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Update events"
           git pull --rebase

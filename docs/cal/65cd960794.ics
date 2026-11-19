@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:65cd960794@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261119T180000
+DTEND;TZID=America/Chicago:20261119T190000
+SUMMARY:Language Café
+LOCATION:Moncus Park\, 2913 Johnston St\, Lafayette
+DESCRIPTION:Step into something global right here in Lafayette! Language Ca
+ fé is a dynamic monthly gathering where language\, culture\, and communit
+ y come together in an energetic\, welcoming atmosphere. Practice conversat
+ ional phrases\, discover new traditions\, and connect with neighbors from 
+ diverse backgrounds\, all in the heart of Moncus Park. Each month highligh
+ ts a different culture\, with international students and local cultural or
+ ganizations helping host the experience. Expect authentic conversations\, 
+ cultural insights\, and opportunities to learn directly from those who liv
+ e and share these traditions every day. Location: Treehouse Deck Fall 2026
+  Dates: September 17 - Hispanic Heritage Month: Spanish language and tradi
+ tions October 15 - Filipino American Heritage Month: Filipino Fiesta Novem
+ ber 19 - Native American Heritage Month: Native languages Whether you are 
+ brushing up on a second language\, curious about the world\, or simply loo
+ king to meet new people\, Language Café is a relaxed and engaging space t
+ o expand your perspective and build meaningful connections. Come learn. Co
+ me explore. Come connect. 🌍✨\n\nhttps://moncuspark.org/calendar-event
+ s/language-cafe/
+URL:https://moncuspark.org/calendar-events/language-cafe/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Language Café
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

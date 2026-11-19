@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6fde104d8f@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261118T180000
+DTEND;TZID=America/Chicago:20261118T200000
+SUMMARY:Artist Round Up: Collaging\, Flyer Making\, and the Community Zine
+LOCATION:Acadiana Center for the Arts\, 101 W Vermilion St\, Lafayette
+DESCRIPTION:AcA's Artist Roundups gather together artists and creatives for
+  a casual night of making connections while also making art. By bringing a
+ rtists of various backgrounds together\, Artist Roundups hope to encourage
+  dialogue and collaboration across artistic disciplines and create a share
+ d sense of community and belonging. This month\, join former Artist Allian
+ ce member Jesse Poimboeuf for a night of collaging and mixed media artmaki
+ ng as we put together the 7th issue of the Creative Acadiana Community Art
+  Zine. Inspired by the grassroots flyers handmade by the Artist Alliance i
+ n the 90s you'll collage flyers of your own: for real events\, fake events
+ \, concepts\, or anything else you can imagine! Collaging materials will b
+ e provided but you're also encouraged to bring your own. Old photos\, stic
+ kers\, interestingly patterned paper. Everything 2 dimensional is fair gam
+ e. Scissors will be provided but if you may also bring other cutting utens
+ ils if you wish. Creatives of all levels welcome!\n\nhttps://acadianacente
+ rforthearts.org/events/community-zine/?occurrence=2026-11-18
+URL:https://acadianacenterforthearts.org/events/community-zine/?occurrence=
+ 2026-11-18
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Artist Round Up: Collaging\, Flyer Making\, and the Community Z
+ ine
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

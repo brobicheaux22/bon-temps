@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- The link-preview picture (docs/og.png) shown when someone texts or posts the Bon Temps link.
+     Rebuild it with:
+     "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot=docs\og.png tools\og.html -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { background: #FAF8F3; font-family: Inter, "Segoe UI", sans-serif; color: #1B2433; position: relative; }
+  .band { position: absolute; inset: 0 0 auto 0; height: 14px; background: linear-gradient(90deg, #1F5BA6 0 33%, #F4B41A 33% 66%, #C62F3E 66%); }
+  .wrap { position: absolute; left: 90px; right: 90px; top: 110px; }
+  .row { display: flex; align-items: center; gap: 34px; }
+  img { width: 170px; height: 170px; border-radius: 38px; box-shadow: 0 10px 30px rgba(20,30,50,.15); }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 800; font-size: 132px; line-height: 1; margin: 0; color: #1F5BA6; letter-spacing: -.02em; }
+  .where { font-size: 34px; font-weight: 600; color: #5C6575; margin-top: 10px; }
+  p { font-size: 44px; font-weight: 600; margin: 64px 0 0; line-height: 1.25; }
+  .dots { display: flex; gap: 22px; margin-top: 30px; font-size: 27px; color: #5C6575; font-weight: 500; flex-wrap: wrap; }
+  .dots span::before { content: ""; display: inline-block; width: 15px; height: 15px; border-radius: 50%; background: var(--c); margin-right: 10px; vertical-align: 2px; }
+</style></head>
+<body>
+  <div class="band"></div>
+  <div class="wrap">
+    <div class="row">
+      <img src="../docs/icon-512.png" alt="">
+      <div><h1>Bon Temps</h1><div class="where">Lafayette, Louisiana</div></div>
+    </div>
+    <p>What's happening tonight, this weekend and beyond, updated all day.</p>
+    <div class="dots">
+      <span style="--c:#C62F3E">Live music</span><span style="--c:#B0357A">Theater</span><span style="--c:#A86B00">Food</span>
+      <span style="--c:#6B4FA0">Arts</span><span style="--c:#0F7C80">Sports</span><span style="--c:#5C6575">Festivals</span>
+    </div>
+  </div>
+</body></html>

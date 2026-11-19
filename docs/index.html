@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bon Temps · Lafayette events</title>
-<meta name="description" content="Bon Temps: live music, food, arts, wellness and family events around Lafayette, Louisiana, updated automatically.">
+<meta name="description" content="Bon Temps: live music, theater, food, arts, sports, family and civic events around Lafayette, Louisiana, updated automatically.">
 <meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F1726" media="(prefers-color-scheme: dark)">
 <link rel="manifest" href="manifest.webmanifest">
@@ -12,16 +12,27 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Bon Temps">
-<meta property="og:title" content="Bon Temps">
-<meta property="og:description" content="What's happening around Lafayette, LA, updated all day.">
-<meta property="og:image" content="icon-512.png">
+<!-- Link previews (texts, Facebook, Slack...). The picture is docs/og.png, made from tools/og.html -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bon Temps">
+<meta property="og:title" content="Bon Temps · What's happening in Lafayette">
+<meta property="og:description" content="Live music, theater, food, arts, sports and festivals around Lafayette, LA. Tonight, this weekend and beyond, updated all day.">
+<meta property="og:url" content="https://brody-robicheaux.github.io/bon-temps/">
+<meta property="og:image" content="https://brody-robicheaux.github.io/bon-temps/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bon Temps: what's happening in Lafayette, Louisiana">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
 <script>try { const t = JSON.parse(localStorage.getItem("bt-theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (_) {}</script>
 <style>
 :root {
   /* Acadiana flag: flag blue, festival red, gold */
   --bg: #FAF8F3; --surface: #FFFFFF; --surface-2: #EEEBE3; --ink: #1B2433; --ink-2: #5C6575; --line: #E4E0D6;
   --brand: #1F5BA6; --brand-ink: #FFFFFF; --accent: #C62F3E; --gold: #F4B41A;
-  --music: #C62F3E; --theater: #B0357A; --food: #A86B00; --arts: #6B4FA0; --wellness: #23855F; --family: #1F7FA6; --community: #5C6575;
+  --music: #C62F3E; --theater: #B0357A; --food: #A86B00; --arts: #6B4FA0; --wellness: #23855F; --family: #1F7FA6; --civic: #B4532A; --sports: #0F7C80; --community: #5C6575;
   --shadow: 0 1px 2px rgba(20,30,50,.06), 0 4px 14px rgba(20,30,50,.06);
   --radius: 14px;
   color-scheme: light;
@@ -30,14 +41,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0F1726; --surface: #172238; --surface-2: #1E2B44; --ink: #EEF2F8; --ink-2: #A3AEC2; --line: #2A3A57;
     --brand: #7AAAF0; --brand-ink: #0F1726; --accent: #FF6B78; --gold: #F4B41A;
-    --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
+    --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --civic: #F59A6B; --sports: #4FC3C7; --community: #A3AEC2;
     --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0F1726; --surface: #172238; --surface-2: #1E2B44; --ink: #EEF2F8; --ink-2: #A3AEC2; --line: #2A3A57;
   --brand: #7AAAF0; --brand-ink: #0F1726; --accent: #FF6B78; --gold: #F4B41A;
-  --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --community: #A3AEC2;
+  --music: #FF6B78; --theater: #F08BC0; --food: #F4B41A; --arts: #B794DB; --wellness: #5CC79A; --family: #6BC6E0; --civic: #F59A6B; --sports: #4FC3C7; --community: #A3AEC2;
   --shadow: 0 1px 2px rgba(0,0,0,.3); color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -54,7 +65,9 @@ header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srg
 .bar { display: flex; align-items: center; gap: 12px; padding: 14px 0 12px; }
 .logo { display: flex; align-items: center; gap: 11px; text-decoration: none; flex: 1; min-width: 0; }
 .logo img { flex: none; width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 0 0 1px var(--line); }
-.logo b { display: block; font-size: 21px; line-height: 1.1; letter-spacing: -.02em; color: var(--brand); font-weight: 800; }
+.logo b { display: block; font-size: 23px; line-height: 1.1; letter-spacing: -.01em; color: var(--brand); font-weight: 800; }
+.logo b, .day, .sheet h2, .venuebar b, footer h4, .tip b { font-family: Fraunces, Georgia, "Times New Roman", serif; }
+.day { font-weight: 700; font-size: 16.5px; letter-spacing: .005em; }
 .logo span { min-width: 0; }
 .logo small { display: block; color: var(--ink-2); font-size: 12.5px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .iconbtn { position: relative; flex: none; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 50%; color: var(--ink-2); }
@@ -93,6 +106,22 @@ header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srg
 .chip.sep { margin-left: 4px; box-shadow: inset 1px 0 0 var(--line); border-radius: 0 999px 999px 0; padding-left: 14px; }
 .savedbar { display: flex; justify-content: space-between; align-items: center; background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--ink); border-radius: 11px; padding: 9px 12px; font-weight: 600; font-size: 14px; }
 .savedbar button { border: 0; background: none; color: var(--accent); font-weight: 650; }
+.savedbar.searchbar { margin: 10px 0 4px; }
+.card.over { opacity: .6; }
+.sharelist { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 18px auto 4px; border: 1px solid var(--line); background: var(--surface); color: var(--brand); border-radius: 999px; padding: 9px 16px; font-weight: 650; font-size: 14px; }
+main.slide-l { animation: slideL .22s ease-out; } main.slide-r { animation: slideR .22s ease-out; }
+@keyframes slideL { from { opacity: .3; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+@keyframes slideR { from { opacity: .3; transform: translateX(-28px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { main.slide-l, main.slide-r { animation: none; } }
+.fix { margin-top: 14px; text-align: center; }
+.fix > button { border: 0; background: none; color: var(--ink-2); font-size: 13.5px; text-decoration: underline; text-underline-offset: 3px; padding: 6px; }
+.fixform { text-align: left; margin-top: 6px; }
+.fixform textarea { width: 100%; min-height: 84px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 10px; font: inherit; font-size: 15px; resize: vertical; box-sizing: border-box; }
+.fixform .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 8px; }
+.fixform .row button { border: 1px solid var(--line); background: var(--surface-2); border-radius: 10px; padding: 8px 14px; font-weight: 600; }
+.fixform .row .go { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+.card.over::before { background: var(--line); }
+.ended { font-weight: 650; color: var(--ink-2); }
 .venuebar { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: color-mix(in srgb, var(--brand) 10%, transparent); color: var(--ink); border-radius: 11px; padding: 10px 12px; font-size: 14px; margin-top: 4px; }
 .venuebar b { display: block; font-size: 15.5px; }
 .venuebar small { color: var(--ink-2); }
@@ -236,7 +265,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 
 <script>
 // Bump this whenever the page changes, so open apps notice and reload themselves.
-const APP_VERSION = "2026-11-18.1";
+const APP_VERSION = "2026-11-18.9";
 
 // "Submit an event" sends answers to this Google Form; they land in a Google Sheet for approval.
 // The numbers are the form's question IDs, in the form's question order.
@@ -247,9 +276,13 @@ const SUBMIT_FIELDS = {
   link: "entry.894822772", description: "entry.1861025068",
 };
 
+// Visitor counts: the site code from goatcounter.com (for https://CODE.goatcounter.com/count).
+// Empty = off. Only someone signed in to that GoatCounter account can see the numbers.
+const GOATCOUNTER = "bontemps";
+
 const CATS = {
   music: "Music", theater: "Theater", food: "Food & Drink", arts: "Arts & Culture",
-  wellness: "Wellness", family: "Family", community: "Community",
+  wellness: "Wellness", family: "Family", sports: "Sports", civic: "Civic", community: "Community",
 };
 // The strip: three ranges, then one tile per day for the next two weeks ("d:2026-11-21")
 const WHEN = { picks: "Top picks", tonight: "Tonight", weekend: "Weekend" };
@@ -272,6 +305,47 @@ const state = {
   when: pickWhen(), cats: new Set(store.get("cats", [])),
   free: false, saved: false, venue: null, shown: PAGE,
 };
+// A shared link opens on the same view: ?when=2026-11-21&cat=music,food&free=1&q=zydeco
+// (when: a date, tonight, weekend or picks). Old dates fall back to the usual default.
+const linked = new URLSearchParams(location.search);
+if (linked.has("when") || linked.has("cat") || linked.has("free") || linked.has("q")) {
+  const w = linked.get("when") || "";
+  const key = /^\d{4}-\d{2}-\d{2}$/.test(w) ? "d:" + w : w;
+  if (validWhen(key)) state.when = key;
+  if (linked.has("cat")) state.cats = new Set(linked.get("cat").split(",").filter(c => CATS[c]));
+  state.free = linked.get("free") === "1";
+  state.q = (linked.get("q") || "").trim().toLowerCase();
+}
+// Keep the address bar matching what's on screen, so copying or sharing it shares this view
+function viewParams() {
+  const p = new URLSearchParams();
+  if (!state.saved && !state.venue) {
+    p.set("when", state.when.startsWith("d:") ? state.when.slice(2) : state.when);
+    if (state.cats.size) p.set("cat", [...state.cats].join(","));
+    if (state.free) p.set("free", "1");
+    if (state.q) p.set("q", state.q);
+  }
+  return p;
+}
+function syncUrl() {
+  if (!$("sheet").hidden) return;  // the open event owns the #hash for now
+  const p = viewParams().toString().replace(/%2C/g, ",");
+  history.replaceState(null, "", location.pathname + (p ? "?" + p : "") + location.hash);
+}
+function viewTitle() {
+  const day = state.when.startsWith("d:") ? parse(state.when.slice(2)) : null;
+  const when = day ? `${DOW[day.getDay()]}, ${MON[day.getMonth()]} ${day.getDate()}` : WHEN[state.when];
+  const cats = [...state.cats].map(c => CATS[c]).join(" + ");
+  return `${cats ? cats + " · " : ""}${state.free ? "Free · " : ""}${when}${state.q ? ` · “${state.q}”` : ""} in Lafayette`;
+}
+async function shareView() {
+  const url = location.origin + location.pathname + "?" + viewParams().toString().replace(/%2C/g, ",");
+  const title = viewTitle();
+  try {
+    if (navigator.share) await navigator.share({ title: "Bon Temps", text: title, url });
+    else { await navigator.clipboard.writeText(`${title}\n${url}`); toast("Link copied"); }
+  } catch (_) {}
+}
 // Saved events are kept on this device as full copies, so they survive refreshes, time away,
 // and an event dropping off its source. They're cleared a day after the event is over.
 const savedEvents = store.get("savedEvents", {});
@@ -319,22 +393,22 @@ const fmtDate = d => `${DOW[d.getDay()].slice(0, 3)}, ${MON[d.getMonth()]} ${d.g
 function range(key) {
   const now = lafNow(), t0 = dayStart(now);
   switch (key) {
-    case "today": return [now, addDays(t0, 1)];
-    case "tonight": return [new Date(Math.max(now, new Date(t0).setHours(17))), new Date(addDays(t0, 1).setHours(3))];
+    case "today": return [t0, addDays(t0, 1)];
+    case "tonight": return [new Date(new Date(t0).setHours(17)), new Date(addDays(t0, 1).setHours(3))];
     case "weekend": {
       const dow = t0.getDay(); // Fri 5pm → Sun night
       let fri = addDays(t0, (5 - dow + 7) % 7); if (dow === 6) fri = addDays(t0, -1); if (dow === 0) fri = addDays(t0, -2);
       const s = new Date(fri); s.setHours(17);
-      return [new Date(Math.max(now, s)), addDays(fri, 3)];
+      return [t0 > s ? t0 : s, addDays(fri, 3)];
     }
     case "picks": return [now, addDays(t0, 8)];
-    case "all": return [now, addDays(t0, 400)];
+    case "all": return [t0, addDays(t0, 400)];
     default: {
-      if (key && key.startsWith("d:")) {  // one day; today starts now so finished events drop off
+      if (key && key.startsWith("d:")) {  // one whole day, so today's earlier events stay until midnight
         const d = parse(key.slice(2));
-        return [new Date(Math.max(now, d)), addDays(d, 1)];
+        return [d, addDays(d, 1)];
       }
-      return [now, addDays(t0, 31)];
+      return [t0, addDays(t0, 31)];
     }
   }
 }
@@ -391,7 +465,16 @@ function ago(iso) {
   const h = Math.round(mins / 60); if (h < 24) return `${h} hr ago`;
   return `${Math.round(h / 24)} days ago`;
 }
-const matches = (e, q) => !q || `${e.title} ${e.venue} ${e.desc} ${e.address} ${e.source}`.toLowerCase().includes(q);
+// Search ignores accents and curly quotes ("noel" finds "Noël", "cite" finds "Cité") and
+// matches every word in any order ("acadian noel")
+const fold = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[’‘]/g, "'");
+const searchText = new WeakMap();
+const matches = (e, q) => {
+  if (!q) return true;
+  let text = searchText.get(e);
+  if (!text) searchText.set(e, text = fold(`${e.title} ${e.venue} ${e.desc} ${e.address} ${e.source} ${(e.cats || []).map(c => CATS[c]).join(" ")}`));
+  return fold(q).split(/\s+/).filter(Boolean).every(w => text.includes(w));
+};
 
 // ---------- data ----------
 async function load({ manual = false } = {}) {
@@ -440,10 +523,11 @@ function openVenue(key, name) {
 // ---------- render ----------
 function filtered() {
   if (state.venue) return venueEvents(state.venue.key);
-  const [a, b] = state.saved ? range("all") : range(state.when);
+  // Searching looks through every upcoming event, whichever day or tab is selected
+  const [a, b] = state.saved || searching() ? range("all") : range(state.when);
   const pool = state.saved ? Object.values(savedEvents).sort((x, y) => x.start.localeCompare(y.start)) : state.data.events;
   const list = pool.filter(e => passes(e) && inWindow(e, a, b));
-  if (state.when !== "picks" || state.saved) return list;
+  if (state.when !== "picks" || state.saved || searching()) return list;
   // Top picks: the best-scoring events of the week, shown in date order
   // A weekly regular repeats over 2+ weeks (Cajun Jam); a play's 3-night run doesn't count
   const dates = {};
@@ -481,6 +565,7 @@ function pickScore(e, repeats) {
   if (e.allDay) score -= 1;
   return score;
 }
+function searching() { return !!state.q && !state.saved && !state.venue; }
 function passes(e) {
   if (state.cats.size && !e.cats.some(c => state.cats.has(c))) return false;
   if (state.free && !e.free) return false;
@@ -499,9 +584,12 @@ function card(e, started = false) {
     : e.allDay ? "All day" : `${fmtTime(s).replace(" ", "<small>")}</small>`;
   const tags = e.cats.map(k => `<span class="tag" style="--c:${catColor(k)}">${CATS[k]}</span>`).join("")
     + (e.free ? `<span class="tag free">Free</span>` : e.price ? `<span class="tag" style="--c:var(--ink-2)">${esc(e.price)}</span>` : "");
-  return `<div class="card" role="button" tabindex="0" data-id="${e.id}" style="--c:${catColor(c)}">
+  // Finished events stay on today's list, dimmed. Without an end time we only know it started,
+  // so it reads "Earlier" (after 3 hours) rather than claiming it ended.
+  const over = !e.allDay && !e.ongoing && (en || new Date(+s + 3 * 3600e3)) < lafNow() && (en ? "Ended" : "Earlier");
+  return `<div class="card${over ? " over" : ""}" role="button" tabindex="0" data-id="${e.id}" style="--c:${catColor(c)}">
     <div class="when">${when}</div>
-    <div class="info"><h3>${esc(e.title)}</h3><div class="meta">${esc(e.venue || e.address || e.source)}</div><div class="tags">${tags}</div></div>
+    <div class="info"><h3>${esc(e.title)}</h3><div class="meta">${over ? `<span class="ended">${over}</span> · ` : ""}${esc(e.venue || e.address || e.source)}</div><div class="tags">${tags}</div></div>
     <button class="save" type="button" data-save="${e.id}" aria-pressed="${saved.has(e.id)}" aria-label="${saved.has(e.id) ? "Unsave" : "Save"} ${esc(e.title)}">${heart(saved.has(e.id))}</button>
   </div>`;
 }
@@ -513,14 +601,15 @@ function renderChips() {
   $("savedcount").hidden = !saved.size; $("savedcount").textContent = saved.size;
   const t0 = dayStart(lafNow());
   const live = state.data.events.filter(passes);
-  let strip = Object.entries(WHEN).map(([k, v]) => `<button type="button" data-when="${k}" aria-pressed="${state.when === k}">${v}</button>`).join("");
+  const pick = k => !searching() && state.when === k;  // while searching, no day is selected
+  let strip = Object.entries(WHEN).map(([k, v]) => `<button type="button" data-when="${k}" aria-pressed="${pick(k)}">${v}</button>`).join("");
   strip += `<span class="gap" aria-hidden="true"></span>`;
   for (let i = 0; i < STRIP_DAYS; i++) {
     const d = addDays(t0, i), key = "d:" + iso10(d), [a, b] = range(key);
     const n = live.filter(e => !e.ongoing && inWindow(e, a, b)).length;
     const name = i === 0 ? "Today" : DOW[d.getDay()].slice(0, 3);
     const hol = holidayOn(d);
-    strip += `<button type="button" class="tile${n ? "" : " none"}" data-when="${key}" aria-pressed="${state.when === key}" title="${hol ? hol.name : ""}" aria-label="${DOW[d.getDay()]} ${MON[d.getMonth()]} ${d.getDate()}${hol ? ", " + hol.name : ""}, ${n} event${n === 1 ? "" : "s"}">${hol ? `<i class="hol" aria-hidden="true">${hol.emoji}</i>` : ""}<small>${name}</small><b>${d.getDate()}</b></button>`;
+    strip += `<button type="button" class="tile${n ? "" : " none"}" data-when="${key}" aria-pressed="${pick(key)}" title="${hol ? hol.name : ""}" aria-label="${DOW[d.getDay()]} ${MON[d.getMonth()]} ${d.getDate()}${hol ? ", " + hol.name : ""}, ${n} event${n === 1 ? "" : "s"}">${hol ? `<i class="hol" aria-hidden="true">${hol.emoji}</i>` : ""}<small>${name}</small><b>${d.getDate()}</b></button>`;
   }
   $("when").innerHTML = strip;
   const on = $("when").querySelector('[aria-pressed="true"]');
@@ -537,6 +626,7 @@ function render() {
   const ongoing = list.filter(e => e.ongoing), dated = list.filter(e => !e.ongoing);
   let h = state.saved ? `<div class="savedbar">♥ Saved events (${saved.size})<button type="button" data-saved>Back to all</button></div>` : "";
   if (state.venue) h = `<div class="venuebar"><div><b>${esc(state.venue.name)}</b><small>${list.length} upcoming event${list.length === 1 ? "" : "s"}</small></div><button type="button" data-allvenues>Back to all</button></div>`;
+  else if (searching()) h += `<div class="savedbar searchbar">🔍 ${list.length} match${list.length === 1 ? "" : "es"} in all upcoming events<button type="button" data-clearq>Clear</button></div>`;
   else if (!state.saved) h += tipHtml();
   if (!list.length) {
     h += `<div class="empty">${state.venue ? "Nothing coming up here right now." : state.saved ? "Nothing saved yet. Tap ♥ on an event to keep it here." : state.q ? `No events match “${esc(state.q)}”.` : state.when.startsWith("d:") ? (holidayOn(parse(state.when.slice(2))) ? `Happy ${holidayOn(parse(state.when.slice(2))).name}! Nothing's listed for this day yet. Try another day or Top picks.` : "Nothing listed for this day yet. Try another day or Top picks.") : "No events in this window. Try Top picks."}</div>`;
@@ -544,7 +634,7 @@ function render() {
     const now = lafNow(), today = dayStart(now);
     // Events that began before the window (a festival that opened Thursday, seen on Saturday)
     // sit under the first day shown, in the all-day row, marked "thru" their last day.
-    const from = state.venue || state.saved ? now : range(state.when)[0];
+    const from = state.venue || state.saved || searching() ? now : range(state.when)[0];
     const groups = [];
     dated.slice(0, state.shown).forEach(e => {
       const s = parse(e.start), started = s < dayStart(from) || (s < from && +dayStart(s) !== +dayStart(from)), d = dayStart(started ? from : s);
@@ -567,8 +657,10 @@ function render() {
     if (dated.length > state.shown) h += `<button class="more" type="button" id="more">Show ${Math.min(PAGE, dated.length - state.shown)} more of ${dated.length - state.shown}</button>`;
     if (ongoing.length) h += `<details class="ongoing"><summary>Exhibits & ongoing (${ongoing.length})</summary>${ongoing.map(e => card(e)).join("")}</details>`;
   }
+  if (list.length && !state.saved && !state.venue) h += `<button class="sharelist" type="button" id="sharelist"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13M7 8l5-5 5 5M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>Share this list</button>`;
   $("main").innerHTML = h;
   syncHead();
+  syncUrl();
 }
 
 
@@ -586,7 +678,11 @@ function calLinks(e) {
     e.allDay ? `DTSTART;VALUE=DATE:${f(s)}` : `DTSTART;TZID=America/Chicago:${t(s)}`,
     e.allDay ? `DTEND;VALUE=DATE:${f(addDays(s, 1))}` : `DTEND;TZID=America/Chicago:${t(en)}`,
     `SUMMARY:${icsEsc(e.title)}`, `LOCATION:${icsEsc([e.venue, e.address].filter(Boolean).join(", "))}`, `DESCRIPTION:${icsEsc(e.desc + "\n" + e.url)}`, `URL:${e.url}`, "END:VEVENT", "END:VCALENDAR"].join("\r\n");
-  return { google: g, ics: "data:text/calendar;charset=utf-8," + encodeURIComponent(ics) };
+  // iPhones only offer "Add to Calendar" for a real .ics web address, so events on the list use
+  // the file the collector writes (docs/cal/<id>.ics). A saved event that has since dropped
+  // off the list falls back to a file built here.
+  const listed = state.data && state.data.events.some(x => x.id === e.id);
+  return { google: g, ics: listed ? `cal/${e.id}.ics` : URL.createObjectURL(new Blob([ics], { type: "text/calendar" })) };
 }
 
 function openSheet(id) {
@@ -618,16 +714,18 @@ function openSheet(id) {
     <div class="actions">
       ${e.url && hasDetails ? `<a class="primary" href="${esc(e.url)}" target="_blank" rel="noopener">Event page and tickets ↗</a>` : ""}
       <a href="${cal.google}" target="_blank" rel="noopener">Google Calendar</a>
-      <a href="${cal.ics}" download="${esc(e.title.slice(0, 40).replace(/[^\w ]+/g, ""))}.ics">Apple / Outlook</a>
+      <a href="${cal.ics}" target="_blank" rel="noopener">Apple Calendar</a>
       <button type="button" data-save="${e.id}" aria-pressed="${saved.has(e.id)}">${saved.has(e.id) ? "♥ Saved" : "♡ Save"}</button>
       <button type="button" id="share">Share</button>
-    </div>`;
+    </div>
+    <div class="fix" id="fix"><button type="button" id="fixbtn">Something wrong with this listing?</button></div>`;
   $("scrim").hidden = false; $("sheet").hidden = false; $("sheet").scrollTop = 0;
   const d = $("desc"); if (d && d.scrollHeight > d.clientHeight + 4) $("readmore").hidden = false;
   document.body.style.overflow = "hidden";
   history.replaceState(null, "", "#" + e.id);
   $("close").focus();
   $("close").onclick = closeSheet;
+  $("fixbtn").onclick = () => openFix(e);
   $("share").onclick = async () => {
     const url = location.href.split("#")[0] + "#" + e.id;
     const text = `${e.title} · ${when}${place ? " · " + place : ""}`;
@@ -691,6 +789,34 @@ function openSubmit() {
   $("f-name").focus();
 }
 
+// Corrections go to the same Google Form as submissions, marked "Correction", so they show up
+// in the sheet (and its email notifications). They are never published.
+function openFix(e) {
+  $("fix").innerHTML = `<form class="fixform" id="fixform"><label for="fix-note"><b>What's wrong?</b> Wrong time, venue, cancelled, duplicate…</label>
+    <textarea id="fix-note" maxlength="1000" required placeholder="It starts at 8, not 7. It's at the Blue Moon, not downtown."></textarea>
+    <div class="row"><button type="button" id="fix-cancel">Cancel</button><button type="submit" class="go" id="fix-send">Send</button></div></form>`;
+  $("fix-note").focus();
+  $("fix-cancel").onclick = () => { $("fix").innerHTML = `<button type="button" id="fixbtn">Something wrong with this listing?</button>`; $("fixbtn").onclick = () => openFix(e); };
+  $("fixform").onsubmit = async ev => {
+    ev.preventDefault();
+    const note = $("fix-note").value.trim();
+    if (!note) return $("fix-note").focus();
+    $("fix-send").disabled = true; $("fix-send").textContent = "Sending…";
+    const v = { name: `Correction: ${e.title}`.slice(0, 140), date: e.start.slice(0, 10), start: e.allDay ? "" : e.start.slice(11, 16),
+      venue: e.venue || "-", address: e.address, category: "Correction", link: location.origin + location.pathname + "#" + e.id,
+      description: `${note}\n\n(Listing from ${e.source}. Event id ${e.id}.)` };
+    const body = new URLSearchParams();
+    for (const [k, id] of Object.entries(SUBMIT_FIELDS)) body.append(id, v[k] || "-");
+    try {
+      await fetch(SUBMIT_FORM, { method: "POST", mode: "no-cors", body });
+      $("fix").innerHTML = `<p class="fine">Thanks! We'll take a look and fix it.</p>`;
+    } catch (_) {
+      $("fix-send").disabled = false; $("fix-send").textContent = "Send";
+      toast(navigator.onLine ? "Couldn't send that. Try again." : "You're offline");
+    }
+  };
+}
+
 function iso10(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
 
 async function sendSubmission(ev) {
@@ -743,6 +869,7 @@ const sourceSite = e => e.source.replace(/\s*\(.*\)$/, "");
 function closeSheet() {
   $("scrim").hidden = true; $("sheet").hidden = true; document.body.style.overflow = "";
   history.replaceState(null, "", location.pathname + location.search);
+  syncUrl();
 }
 
 function toggleSave(id) {
@@ -788,7 +915,8 @@ addEventListener("resize", syncHead);
 document.addEventListener("click", ev => {
   const t = ev.target.closest("button, .card, a"); if (!t) return;
   if (t.dataset.save) { ev.stopPropagation(); return toggleSave(t.dataset.save); }
-  if (t.dataset.when) { state.when = t.dataset.when; state.shown = PAGE; rememberWhen(state.when); return render(); }
+  if (t.dataset.when) { clearSearch(); state.when = t.dataset.when; state.shown = PAGE; rememberWhen(state.when); return render(); }
+  if ("clearq" in t.dataset) { clearSearch(); state.shown = PAGE; return render(); }
   if ("saved" in t.dataset || t.id === "savedbtn") { state.saved = !state.saved; state.venue = null; state.shown = PAGE; scrollTo(0, 0); return render(); }
   if (t.dataset.venue) return openVenue(t.dataset.venue, t.dataset.venuename);
   if ("allvenues" in t.dataset) { state.venue = null; state.shown = PAGE; scrollTo(0, 0); return render(); }
@@ -797,6 +925,7 @@ document.addEventListener("click", ev => {
   if ("cat" in t.dataset) { const c = t.dataset.cat; if (!c) state.cats.clear(); else state.cats.has(c) ? state.cats.delete(c) : state.cats.add(c); store.set("cats", [...state.cats]); state.shown = PAGE; return render(); }
   if ("free" in t.dataset) { state.free = !state.free; return render(); }
   if (t.id === "more") { state.shown += PAGE; return render(); }
+  if (t.id === "sharelist") return shareView();
   if (t.id === "refresh") return load({ manual: true });
   if (t.id === "themebtn") return toggleTheme();
   if (t.id === "submit") return openSubmit();
@@ -808,6 +937,28 @@ document.addEventListener("keydown", ev => {
   if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList?.contains("card")) { ev.preventDefault(); openSheet(ev.target.dataset.id); }
 });
 $("scrim").addEventListener("click", closeSheet);
+
+// Swipe left/right on the list to move through the strip (Top picks, Tonight, Weekend, then each day)
+let touch = null;
+$("main").addEventListener("touchstart", ev => {
+  const t = ev.touches[0];
+  touch = ev.touches.length === 1 ? { x: t.clientX, y: t.clientY, at: Date.now() } : null;
+}, { passive: true });
+$("main").addEventListener("touchend", ev => {
+  if (!touch || !state.data || state.saved || state.venue || searching() || !$("sheet").hidden) return (touch = null);
+  const t = ev.changedTouches[0], dx = t.clientX - touch.x, dy = t.clientY - touch.y, quick = Date.now() - touch.at < 700;
+  touch = null;
+  if (!quick || Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.8) return;
+  const keys = [...$("when").querySelectorAll("[data-when]")].map(b => b.dataset.when);
+  const next = keys[keys.indexOf(state.when) + (dx < 0 ? 1 : -1)];
+  if (!next) return;
+  state.when = next; state.shown = PAGE; rememberWhen(next);
+  render();
+  const m = $("main"); m.classList.remove("slide-l", "slide-r"); void m.offsetWidth; m.classList.add(dx < 0 ? "slide-l" : "slide-r");
+  scrollTo({ top: 0 });
+}, { passive: true });
+function clearSearch() { state.q = ""; $("q").value = ""; }
+if (state.q) $("q").value = state.q;
 let qt; $("q").addEventListener("input", ev => { clearTimeout(qt); qt = setTimeout(() => { state.q = ev.target.value.trim().toLowerCase(); state.shown = PAGE; render(); }, 120); });
 
 // Phones (especially Home Screen apps) keep an old copy of this page for a while. Ask the
@@ -823,7 +974,8 @@ async function checkForUpdate() {
     let tried = null; try { tried = sessionStorage.getItem("bt-updated-to"); } catch (_) {}
     if (tried === latest) return;  // already reloaded for this version once; don't loop
     try { sessionStorage.setItem("bt-updated-to", latest); } catch (_) {}
-    location.replace(`${location.pathname}?v=${encodeURIComponent(latest)}${location.hash}`);
+    const q = new URLSearchParams(location.search); q.set("v", latest);
+    location.replace(`${location.pathname}?${q}${location.hash}`);
   } catch (_) {}
 }
 checkForUpdate();
@@ -836,6 +988,16 @@ document.addEventListener("visibilitychange", () => {
 });
 setInterval(() => { if (!document.hidden) load(); }, 10 * 60e3);
 setInterval(updatedLabel, 60e3);
+
+// Visitor counts (private to the GoatCounter account). Counts page views only: no cookies,
+// no personal data, and every view is counted as "/" so filters and events don't split the numbers.
+if (GOATCOUNTER && !/^(localhost|127\.|\[::1\])/.test(location.hostname)) {
+  window.goatcounter = { path: () => "/" };
+  const gc = document.createElement("script");
+  gc.async = true; gc.src = "https://gc.zgo.at/count.js";
+  gc.dataset.goatcounter = `https://${GOATCOUNTER}.goatcounter.com/count`;
+  document.head.appendChild(gc);
+}
 
 // bontemps/#submit opens the form directly, handy for sending to venues and bands
 if (location.hash === "#submit") openSubmit();

@@ -1,5 +1,5 @@
 {
-  "_help": "Each source is one place Bon Temps checks for events. type: tribe (WordPress 'The Events Calendar' sites), jsonld (pages with built-in event data), ical (calendar feeds), saffire (Saffire venue sites), eventlinks (a page linking to one page per event; links is a pattern for those links), wixsitemap (Wix sites: reads upcoming event pages from the sitemap), mecrest (WordPress Modern Events Calendar sites), sheet (published Google Sheet of submissions), squarespace (Squarespace event pages), downtown (Downtown Lafayette event pages), page (AI reads the page; currently unavailable), ticketmaster (needs TICKETMASTER_API_KEY). Set enabled to false to turn one off. venue is used when an event doesn't say where it is. cats adds categories to every event from that source; fallback is used only when an event matches no category. maxDays drops listings that run longer than that many days (open-ended 'weekly' listings).",
+  "_help": "Each source is one place Bon Temps checks for events. type: tribe (WordPress 'The Events Calendar' sites), jsonld (pages with built-in event data), ical (calendar feeds), saffire (Saffire venue sites), eventlinks (a page linking to one page per event; links is a pattern for those links), wixsitemap (Wix sites: reads upcoming event pages from the sitemap), mecrest (WordPress Modern Events Calendar sites), sheet (published Google Sheet of submissions), squarespace (Squarespace event pages), downtown (Downtown Lafayette event pages), lcg (Lafayette city government calendar), lafayettetravel (Lafayette Travel event pages from its sitemap), page (AI reads the page; currently unavailable), ticketmaster (needs TICKETMASTER_API_KEY). Set enabled to false to turn one off. venue is used when an event doesn't say where it is. cats adds categories to every event from that source; fallback is used only when an event matches no category. maxDays drops listings that run longer than that many days (open-ended 'weekly' listings).",
   "sources": [
     {
       "name": "The Lafayette Mom",
@@ -46,8 +46,15 @@
     },
     {
       "name": "Lafayette Travel",
-      "type": "jsonld",
-      "url": "https://www.lafayettetravel.com/events/this-weekend/"
+      "type": "lafayettetravel",
+      "url": "https://www.lafayettetravel.com/sitemap.xml",
+      "yield": true,
+      "maxDates": 8,
+      "pagesPerRun": 120,
+      "require": "festival|\\bfest\\b|fête|fete\\b|parade|courir|mardi gras|carnival|\\bfair\\b|rodeo|\\bexpo\\b|gala|concert|symphony|orchestra|chorale|choir|ballet|nutcracker|christmas|no[eë]l|holiday|lights|new year|countdown|celebration|boucherie|cook-?off|championships?|tournament|bowl game|air show|regatta|\\bmarket\\b",
+      "skip": "continuing educ|certification|training|seminar|conference|convention|webinar|workshop|\\bclass\\b|lessons?|meeting",
+      "warnAbove": 40,
+      "_note": "The tourism bureau's full calendar read from the event pages in its sitemap. To avoid clutter it only adds big kinds of events (require: festivals, parades, concerts, holiday shows, fairs...), never classes or business meetings (skip). yield: when a venue or organizer lists the same event, theirs wins, even if the dates disagree. Events with more than maxDates dates (weekly regulars) are skipped. Each run opens at most pagesPerRun new or changed pages, 2 seconds apart. The Actions log lists everything it adds ('events only it lists') and warns above warnAbove."
     },
     {
       "name": "Heymann Performing Arts Center",
@@ -211,6 +218,38 @@
       "_note": "Theater, comedy and classes. Reads upcoming event pages listed in the site's sitemap."
     },
     {
+      "name": "Lafayette city government",
+      "type": "lcg",
+      "url": "https://www.lafayettela.gov/your-government/events-calendar/",
+      "fallback": [
+        "community"
+      ],
+      "skip": "offices? closed|hearing examiner|commission|board of|council meeting|committee|zoning|adjustment|training|workshop|class\\b|orientation|deadline|budget work ?session",
+      "_note": "LCG's public events calendar. Routine business (regular council and commission meetings, office closures, classes) is skipped so only bigger public events show."
+    },
+    {
+      "name": "Ragin' Cajuns home games",
+      "type": "ical",
+      "url": "https://ragincajuns.com/calendar.ashx/calendar.ics",
+      "link": "https://ragincajuns.com/calendar",
+      "keep": "\\bvs\\.? .* @ Lafayette\\b",
+      "rename": [
+        ["^\\[\\w+\\]\\s*", ""],
+        ["^University of Louisiana at Lafayette\\s+", "Ragin' Cajuns "]
+      ],
+      "renameLocation": [
+        ["^Lafayette\\\\?,\\s*(La\\.,\\s*)?", ""]
+      ],
+      "renameLink": [
+        ["//admin\\.ragincajuns\\.com/", "//ragincajuns.com/"],
+        ["&amp;", "&"]
+      ],
+      "cats": [
+        "sports"
+      ],
+      "_note": "UL Athletics' public all-sports calendar feed; only home games (\"vs\", played in Lafayette) are kept. The site asks for 30 seconds between requests, so it's read once per run."
+    },
+    {
       "name": "Ticketmaster (Cajundome & touring shows)",
       "type": "ticketmaster"
     },
@@ -315,7 +354,7 @@
       "benefits? (?:meeting|seminar|enrollment)",
       "client appreciation",
       "\\brealty\\b",
-      "\\bmeeting\\b",
+      "^(?!.*\\b(?:public|community|town ?hall|neighborhood|special)\\b).*\\bmeeting\\b",
       "networking",
       "seminar",
       "webinar",
@@ -346,19 +385,45 @@
     "1373 S College Rd": "Heymann Performing Arts Center",
     "201 McKinley St": "The Loose Caboose",
     "407 Lee Ave": "Hideaway on Lee",
-    "1100 Camellia Blvd": "City Club at River Ranch"
+    "1100 Camellia Blvd": "City Club at River Ranch",
+    "301 W Congress St": "Lafayette Public Library, Main Branch",
+    "444 Cajundome Blvd": "Cajundome",
+    "2351 W Congress St": "Our Lady of Lourdes Stadium",
+    "200 Greenleaf Dr": "LARC's Acadian Village",
+    "139 Teurlings Dr": "Teurlings Catholic High School",
+    "126 S Buchanan St": "Basin Arts",
+    "1204 Johnston St": "Roy House (UL Center for Louisiana Studies)",
+    "107 Montrose Ave": "Paths to Restoration",
+    "2921 Verot School Rd": "The Stage Karaoke Bar",
+    "1604 W Pinhook Rd": "The Hidden Gator",
+    "300 Flores Ct": "Couret Farms",
+    "150 Verona Dr": "Crossroads Church",
+    "400 Polly Ln": "The Blake at Lafayette"
   },
+  "bigEvents": [
+    {"name": "Festival International de Louisiane", "match": "festival ?international", "usually": "04-22", "tip": "Five days downtown, last week of April. festivalinternational.org"},
+    {"name": "Festivals Acadiens et Créoles", "match": "festivals? acadiens", "usually": "10-09", "tip": "Second weekend of October at Girard Park. festivalsacadiens.com"},
+    {"name": "Mardi Gras parades", "match": "mardi ?gras|krewe", "usually": "mardigras-12", "leadDays": 40, "tip": "Lafayette's parades run the two weekends before Mardi Gras. gomardigras.com"},
+    {"name": "Noël Acadien au Village", "match": "no[eë]l acadi", "usually": "12-01", "tip": "Nightly through Dec 23 at LARC's Acadian Village. Add next year's dates in manual.json."},
+    {"name": "Downtown Alive! (spring)", "match": "downtown alive", "usually": "03-20", "tip": "Friday evening concerts downtown. downtownlafayette.org"},
+    {"name": "Downtown Alive! (fall)", "match": "downtown alive", "usually": "09-11", "tip": "Friday evening concerts downtown. downtownlafayette.org"},
+    {"name": "Bach Lunch", "match": "bach lunch", "usually": "03-13", "tip": "Friday lunchtime concerts at Parc Sans Souci. downtownlafayette.org"}
+  ],
+  "_bigEventsHelp": "Big yearly events Bon Temps should never miss. usually: month-day it normally starts (or mardigras-N: N days before Mardi Gras). Starting leadDays (default 45) before that date, if no listing matches 'match', the collector opens a GitHub issue (GitHub emails you) so you can add the dates by hand.",
   "_venueNamesHelp": "venueNames: street address -> venue name, for listings that only give an address. The collector also learns these from listings that include both.",
   "quality": {
     "_help": "Events listed ONLY by these aggregator sites are kept when they're music, theater, food or arts, have a public-event word in the title (keepWords), or are at a known venue (any venue another source covers, plus knownVenues below). Everything else (seminars, office parties, kids' camps) is left out. The Actions log lists what was left out each run.",
     "aggregators": [
-      "Happening Next"
+      "Happening Next",
+      "Lafayette Travel"
     ],
     "keepCats": [
       "music",
       "theater",
       "food",
-      "arts"
+      "arts",
+      "civic",
+      "sports"
     ],
     "keepWords": "\\b(?:5k|10k|run|race|walk|yoga|festival|fest|market|parade|fair|rodeo|gala|crawfish|boil|cook-?off|second line|mardi gras|parade|tour|concert|show|dance|trivia|bingo)\\b",
     "knownVenues": [

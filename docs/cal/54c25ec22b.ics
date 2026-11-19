@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:54c25ec22b@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Eddie Pepitone (It’s Always Sunny in Philadelphia\, Rick and Mort
+ y\, Chappelle’s Show\, Bob’s Burgers)
+LOCATION:Club 337\, 1521 W Pinhook Rd\, Lafayette
+DESCRIPTION:https://happeningnext.com/event/eddie-pepitone-it’s-always-su
+ nny-in-philadelphia-rick-and-morty-chappelle’s-show-bob’s-burgers-eid3
+ a0dvkxc56
+URL:https://happeningnext.com/event/eddie-pepitone-it’s-always-sunny-in-p
+ hiladelphia-rick-and-morty-chappelle’s-show-bob’s-burgers-eid3a0dvkxc5
+ 6
+END:VEVENT
+END:VCALENDAR

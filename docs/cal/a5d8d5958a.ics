@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a5d8d5958a@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261118T170000
+DTEND;TZID=America/Chicago:20261118T190000
+SUMMARY:Cross Currents: Improvised Truths — Curtis Patterson and the Jazz
+  of Form
+LOCATION:Hilliard Art Museum\, 710 E St Mary Blvd\, Lafayette
+DESCRIPTION:Join us for Improvised Truths: Curtis Patterson and the Jazz of
+  Form \, the latest iteration of Cross Currents\, a series using visual ar
+ t as a catalyst for interdisciplinary dialogue\, as we explore how Patters
+ on’s bronze and steel sculptures channel the improvisational language of
+  jazz and African diasporic symbolism into visual metaphors of movement\, 
+ continuity\, and cross-cultural memory.\n\n5:00 p.m. Doors Open\n\n5:30 p.
+ m. Panel Discussion\n\n6:30 p.m. Jazz Performance\n\nRSVP HERE\n\nPanelist
+ s\n\nDr. Sharlene Sinegal-DeCuir \, Professor of History and Chair of Afri
+ can American and African Diaspora Studies\, Xavier University of Louisiana
+ \n\nDonald Harrison Jr. \, saxophonist\, composer\, and Big Chief of the C
+ ongo Square Nation Afro-New Orleans Cultural Group\n\nDr. Allison Young \,
+  Associate Professor of Contemporary Art History\, LSU\n\nModerated by Dr.
+  Joel Rhone \, Assistant Professor of Literature\, University of Louisiana
+  Lafayette\n\nFree for museum members\, UL students\, faculty and staff. G
+ eneral public entry with museum admission.\n\nPresented by Louisiana Endow
+ ment for the Humanities\n\nFunding for the 2026 Rebirth Grant has been pro
+ vided by the State of Louisiana and administered by the Louisiana Endowmen
+ t for the Humanities.\n\nThe views\, findings\, conclusions\, or recommend
+ ations expressed by this organization do not necessarily represent those o
+ f either the Louisiana Endowment for the Humanities or the State of Louisi
+ ana.\n\nhttps://hilliardartmuseum.org/event/cross-currents-improvised-trut
+ hs-curtis-patterson-and-the-jazz-of-form/
+URL:https://hilliardartmuseum.org/event/cross-currents-improvised-truths-cu
+ rtis-patterson-and-the-jazz-of-form/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cross Currents: Improvised Truths — Curtis Patterson and the 
+ Jazz of Form
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

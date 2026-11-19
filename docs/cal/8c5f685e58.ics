@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8c5f685e58@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261119T120000
+DTEND;TZID=America/Chicago:20261119T130000
+SUMMARY:Artist Tour with Curtis Patterson + Melissa Messina
+LOCATION:Hilliard Art Museum\, 710 E St Mary Blvd\, Lafayette
+DESCRIPTION:Artist Curtis Patterson and Curator of Exhibition Melissa Messi
+ na will lead a tour of the exhibition.\n\nExperience Persistent Vision thr
+ ough the perspectives of artist Curtis Patterson and curator Melissa Messi
+ na. Together\, they’ll guide visitors through the exhibition\, offering 
+ insights into Patterson’s artistic practice\, the ideas and inspirations
+  behind the work\, and the stories that connect the pieces. Hear directly 
+ from the artist and curator as they explore the exhibition’s themes\, cr
+ eative processes\, and the ways art invites us to look back\, look forward
+ \, and see familiar ideas in new ways.\n\nAn engaging opportunity to exper
+ ience Persistent Vision through the voices of the people who know it best.
+ \n\nRSVP HERE\n\nhttps://hilliardartmuseum.org/event/artist-tour-with-curt
+ is-patterson-melissa-messina/
+URL:https://hilliardartmuseum.org/event/artist-tour-with-curtis-patterson-m
+ elissa-messina/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Artist Tour with Curtis Patterson + Melissa Messina
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

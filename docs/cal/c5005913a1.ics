@@ -1,0 +1,61 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5005913a1@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261118T181500
+DTEND;TZID=America/Chicago:20261118T193000
+SUMMARY:Horror Book Club!
+LOCATION:Cavalier House Books\, 302 A Jefferson St
+DESCRIPTION:CHB Lafayette’s Horror Book Club pick for November is You Sho
+ uld Have Been Nicer to My Mom by Vincent Tirado.\nWe’ll meet at 6:15 p.m
+ . on Nov. 18 at the bookstore to discuss this horror novel!\nPop by the bo
+ okshop\, or order your copy here!: https://cavalierhousebooks.com/.../2026
+ .../horror-book-club\nSynopsis:\nWhen Papi Ramon\, the patriarch of the we
+ althy Abreu family dies\, he gives the family one last message in the will
+ : “One of you is el bacà\, the demon that I made a deal with. Get rid o
+ f them or you will be damned.” Xiomara\, the uncontested favorite of Pap
+ i Ramon (and therefore the least liked in the family)\, watches as everyon
+ e dismisses this as the joke of a senile old man and demands the lawyer ob
+ tain the previous will Papi wrote.\nWhile the lawyer drives back to his of
+ fice\, a storm breaks out\, forcing the entire family—Xiomara’s aunts 
+ and uncles and cousins—to remain in the house. And the words of Papi’s
+  will hang over their heads even heavier than the rain clouds. Over the co
+ urse of the night\, scandal after scandal is revealed to the public about 
+ the family. Suddenly a tense few hours of surviving her family turns into 
+ a vicious night of recrimination\, violence\, accusations…and murder.\nX
+ iomara is faced with an impossible task: uproot a demon and somehow kill i
+ t or excise the ghosts that linger within her own family.\nAnd the clock i
+ s ticking...\n—---------------------\nHorror Book Club is CHB Lafayette'
+ s bimonthly book club focusing on horror and dark stories! A CHB Bookselle
+ r leads the discussion\, and we vote at our meetings for our upcoming mont
+ hly picks.\n\nhttps://www.downtownlafayette.org/event/horror-book-club-dbd
+ 23
+URL:https://www.downtownlafayette.org/event/horror-book-club-dbd23
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Horror Book Club!
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

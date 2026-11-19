@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bon Temps//Lafayette events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7dffdb5051@bontemps
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Chicago:20261119T193000
+DTEND;TZID=America/Chicago:20261119T213000
+SUMMARY:Twenty Years of Valcour Records
+LOCATION:Acadiana Center for the Arts - James Devin Moncus Theater\, 101 W.
+  Vermilion Street
+DESCRIPTION:This show has sold out\, but you can still watch the concert on
+ line! Join our waitlist to be notified if any seats open up prior to the c
+ oncert. For two decades\, Valcour Records has stood at the heart of Louisi
+ ana’s roots renaissance — preserving the traditions of Cajun\, Creole\
+ , zydeco\, and folk while amplifying the voices shaping its future. Founde
+ d in Eunice\, Louisiana\, by partners Joel Savoy and Phillip LaFargue\, Va
+ lcour has become a touchstone for the state’s cultural identity\, produc
+ ing award-winning albums and nurturing artists whose music carries the sou
+ nd and soul of Acadiana to audiences around the world. This special Louisi
+ ana Crossroads concert brings together the label’s musicians and collabo
+ rators for an evening that honors Valcour’s 20-year journey. Through liv
+ e collaborations and stories\, this evening traces the label’s evolution
+  from a group of friends recording in Savoy’s living room\, to a nationa
+ lly respected imprint.   C.J. Chenier T’Monde Pine Leaf Boys The Band C
+ ourtbouillon featuring Wayne Toups Caleb Klauder and Reeb Willms Sammy Lin
+ d and Nadine Landry Joel Savoy Kyle Huval K. C. Jones Jesse Lege Johnny Ni
+ cholas Katie Shore Ann Savoy Jane Vidrine The Mamou Playboys Jourdan Thibo
+ deaux Blake Miller Bonsoir Catin Josh Caffery Roger Kash Sabra Guzman Boma
+  Bango Tif Lamson\n\nhttps://acadianacenterforthearts.org/events/twenty-ye
+ ars-of-valcour-records/?occurrence=2026-11-19
+URL:https://acadianacenterforthearts.org/events/twenty-years-of-valcour-rec
+ ords/?occurrence=2026-11-19
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Twenty Years of Valcour Records
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

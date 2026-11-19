@@ -57,7 +57,9 @@ CATEGORIES = {
     "theater": r"theat(?:er|re)|musical|broadway|\ba play\b|stage play|new play|\bplays\b|shakespeare|playwright|ballet|nutcracker|opera\b|\bimprov\b|comedy|comedian|stand-up|drag show|cabaret|readers.? theat|on stage|\bthe wiz\b|saturday night live|\bsnl\b|late night with|netflix special|comedy central",
     "wellness": r"yoga|\brun\b|\b5k\b|\b10k\b|marathon|half marathon|\bwalk\b|fitness|workout|meditation|sound bath|wellness|\bhealth|pilates|\bbike|cycling|\bhike|tai chi|blood drive|zumba|mental health|run club",
     "family": r"\bkids?\b|children|family|storytime|story time|toddler|\bteens?\b|sensory|playtime|\bcamp\b|santa|easter egg|trick or treat|\bbaby|preschool",
-    "community": r"volunteer|clean ?up|fundraiser|benefit|charity|council|workshop|lecture|\btalk\b|seminar|networking|parade|\bfair\b|basketball|football|baseball|softball|volleyball|soccer|ragin|market|festival|\bclass\b",
+    "civic": r"town ?hall|public (?:forum|meeting|hearing|comment|input)|community (?:meeting|forum|conversation|input)|listening session|speak ?out|\brally\b|protest|\bmarch (?:for|against|on)\b|\bcandidates?\b|\bdebate|\belections?\b|\bvoters?\b|\bvoting\b|\bcity council|parish council|school board|legislat|lawmakers?|elected officials?|advocacy|\bforum\b|state of (?:the|homelessness)|\bcivic|ballot|petition|\bvigil\b|know your rights",
+    "sports": r"basketball|football|baseball|softball|volleyball|soccer|ragin.? cajuns|\btennis\b|track (?:and|&) field|\bgolf (?:tournament|classic)|\brodeo\b|\bboxing\b|wrestling|tailgat|\bgame day\b|championships?\b",
+    "community": r"volunteer|clean ?up|fundraiser|benefit|charity|workshop|lecture|\btalk\b|seminar|networking|parade|\bfair\b|market|festival|\bclass\b",
 }
 CATEGORY_ORDER = list(CATEGORIES)
 THEATER_HINT = r"best musical|musical theat|broadway|theat(?:er|re) company|stage play|\bplaywright|\ba play\b|\bplay by\b|by william shakespeare|ballet company|touring production"
@@ -195,6 +197,8 @@ def categorize(main_text: str, extra_text: str = "", forced: list[str] | None = 
     for text in (main_text, extra_text):
         t = text.lower()
         for name, pattern in CATEGORIES.items():
+            if name == "civic" and text is extra_text:  # only a title makes something civic
+                continue
             if name not in cats and re.search(pattern, t):
                 cats.append(name)
         if cats:
@@ -231,7 +235,7 @@ def make_event(src: dict, *, title, start, end=None, all_day=False, venue="", ad
         e = None
     all_day = bool(all_day) or date_only
     price_text, free = price_info(price)
-    desc = clean(desc, 1500, breaks=True)
+    desc = clean(desc, 4000, breaks=True)
     if looks_like_code(desc):  # couldn't clean it: show the "find more details" link instead
         desc = ""
     venue = clean(venue, 120)
@@ -366,7 +370,7 @@ def src_jsonld(src, start, end):
     page = fetch(src["url"])
     items = jsonld_events(page)
     if src.get("details"):  # list pages only give dates: open each event's page for times and details
-        items = [_with_details(x) for x in items]
+        items = [_with_details(x, src["details"] == "description") for x in items]
     events = [from_jsonld(src, x) for x in items]
     if not any(events):
         raise Skip("no event data found on the page")
@@ -380,21 +384,42 @@ DETAILS: dict = {}
 DETAILS_USED: set = set()
 
 
-def _with_details(x):
+DETAILS_VERSION = 2  # bump to re-read every cached page (2: full write-ups)
+
+
+def _full_text(page: str) -> str:
+    """The complete write-up shown on an event page. Some sites (Happening Next) cut the
+    description in their event data at 300 characters but print all of it on the page."""
+    m = re.search(r'<div[^>]+class="[^"]*\bep-desc\b[^"]*"[^>]*>', page)
+    if not m:
+        return ""
+    depth, pos = 1, m.end()
+    for t in re.finditer(r"<(/?)div\b[^>]*>", page[pos:]):
+        depth += -1 if t.group(1) else 1
+        if depth == 0:
+            return page[pos:pos + t.start()]
+    return ""
+
+
+def _with_details(x, desc_only: bool = False):
     url = x.get("url")
     if not url:
         return x
     DETAILS_USED.add(url)
-    if url not in DETAILS:
+    if url not in DETAILS or DETAILS[url].get("_v") != DETAILS_VERSION:
         try:
-            found = jsonld_events(fetch(url))
-            DETAILS[url] = found[0] if found else {}
+            page = fetch(url)
+            found = jsonld_events(page)
+            DETAILS[url] = {**(found[0] if found else {}), "_full": _full_text(page), "_v": DETAILS_VERSION}
         except (urllib.error.URLError, TimeoutError, ValueError):
             return x  # try again next run
         time.sleep(0.3)
-    d = DETAILS[url]
-    if not d:
-        return x
+    d = {k: v for k, v in DETAILS[url].items() if not k.startswith("_")}
+    full = DETAILS[url].get("_full", "")
+    if desc_only:  # recurring shows: the page lists every date, so keep this listing's date
+        d = {"description": d.get("description", "")}
+    if len(clean(full, 99999)) > len(clean(d.get("description") or x.get("description") or "", 99999)):
+        d["description"] = full
     merged = {**x, **{k: v for k, v in d.items() if v not in (None, "", [], {})}}
     merged["url"] = url
     return merged
@@ -500,6 +525,19 @@ def src_ical(src, start, end):
         desc_html = get("DESCRIPTION")
         img = get("X-WP-IMAGES-URL").split(";")[0] or (re.findall(r"<img[^>]+src='([^']+)'", desc_html) or [""])[0]
         location = get("LOCATION")
+        title = get("SUMMARY")
+        # keep: only events whose "title @ location" matches (UL: home games, "vs ... @ Lafayette, ...")
+        if src.get("keep") and not re.search(src["keep"], f"{title} @ {location}", re.I):
+            continue
+        for pat, rep in src.get("rename", []):  # tidy titles: "University of Louisiana at Lafayette" -> "Ragin' Cajuns"
+            title = re.sub(pat, rep, title).strip()
+        for pat, rep in src.get("renameLocation", []):  # "Lafayette, Cajundome" -> "Cajundome"
+            location = re.sub(pat, rep, location).strip()
+        link = get("URL") or src.get("link", "")
+        for pat, rep in src.get("renameLink", []):
+            link = re.sub(pat, rep, link)
+        if desc_html.strip().lower().startswith(get("SUMMARY").strip().lower()):
+            desc_html = ""  # the description only repeats the title
         cost = get("X-COST")  # X-COST-TYPE isn't used: some calendars mark every event "free" by default
         venue, _, addr = location.partition(" @ ")  # "Blue Moon Saloon @ 215 East Convent Street"
         for s in sorted(set(starts) - skip):
@@ -510,10 +548,10 @@ def src_ical(src, start, end):
                 continue
             fmt = "%Y-%m-%d" if date_only else "%Y-%m-%dT%H:%M"
             out.append(make_event(
-                src, title=get("SUMMARY"), start=s.strftime(fmt), end=e.strftime(fmt) if e and not date_only else None,
+                src, title=title, start=s.strftime(fmt), end=e.strftime(fmt) if e and not date_only else None,
                 venue=(venue if addr else location.split(",")[0]) if location else "",
-                address=addr or location,
-                price=cost, url=get("URL") or src.get("link", ""), desc=desc_html, image=img,
+                address=addr or (location if "," in location else ""),
+                price=cost, url=link, desc=desc_html, image=img,
             ))
     return out
 
@@ -701,17 +739,128 @@ def src_downtown(src, start, end):
         if rest and re.fullmatch(r"[A-Z][a-z]+ \d{1,2}, \d{4}", rest[0]):
             end_d = datetime.strptime(rest.pop(0), "%B %d, %Y").strftime("%Y-%m-%d")
             end_s = end_d + ("T" + rest[0].zfill(5) if rest and re.fullmatch(r"\d{1,2}:\d{2}", rest[0]) else "")
-        try:
-            attend = lines.index("Attend")
-        except ValueError:
-            attend = idx
-        block = lines[max(0, attend - 6):attend]
-        desc = max(block, key=len) if block else ""
-        venue = next((block[i - 1] for i, l in enumerate(block) if l == "|" and i > 0), "")
-        address = next((block[i + 1] for i, l in enumerate(block) if l == "|" and i + 1 < len(block)), "")
-        out.append(make_event(src, title=clean(title.group(1)), start=start_s, end=end_s,
+        # Under the title: date and times, then "Venue | Address", the price, the write-up, "Attend"
+        name = clean(title.group(1))
+        top = max((i for i, l in enumerate(lines[:idx]) if clean(l) == name), default=-1)
+        attend = next((i for i in range(top + 1, idx) if lines[i] == "Attend"), idx)
+        body = lines[top + 1:attend]
+        bar = next((i for i, l in enumerate(body[:14]) if l == "|"), None)
+        venue = address = ""
+        if bar is not None:
+            venue = body[bar - 1] if bar > 0 else ""
+            address = body[bar + 1] if bar + 1 < len(body) else ""
+            body = body[bar + 2:]
+            if re.search(r"\d{1,2}:\d{2}|^\W*$", venue):  # no venue given, only the time
+                venue = ""
+            if len(address) > 70 or not re.search(r"\d", address):  # that's the write-up, not an address
+                body.insert(0, address)
+                address = ""
+        else:  # no address given: skip the date and time lines
+            when = re.compile(r"(?i)^(-|–|[A-Z][a-z]+day, .*\d{4}|[A-Z][a-z]{2}|[A-Z][a-z]{2} \d{1,2}|\d{1,2}:\d{2} ?[ap]m)$")
+            while body and when.match(body[0]):
+                body.pop(0)
+        venue = re.sub(r"\s+[-–]\s+Lafayette$", "", venue)  # "Cavalier House Books - Lafayette"
+        price = ""
+        if body and re.fullmatch(r"(?i)free|\$[\d.,]+(\s*[-–]\s*\$?[\d.,]+)?|\$?[\d.,]+\s*(\+|and up)?", body[0]):
+            price = body.pop(0)
+        desc = "\n".join(l for l in body if l and l != "|")
+        out.append(make_event(src, title=name, start=start_s, end=end_s, price=price,
                               venue=venue, address=address, url=url, desc=desc))
         time.sleep(0.5)
+    return out
+
+
+# ---------- source: Lafayette Travel's full calendar (event pages listed in its sitemap) ----------
+
+LT_FILE = ROOT / "collector" / "lafayette-travel-cache.json"
+LT_CACHE: dict = {}
+
+
+def _lt_read(url: str) -> dict:
+    """One Lafayette Travel event page -> what we need from it. The page's own event data gives
+    the name, place, picture and write-up; a script on the page lists every date ("12/7/2026,
+    12/8/2026, ...") and the start and end times."""
+    page = fetch(url)
+    found = jsonld_events(page)
+    x = found[0] if found else {}
+    var = lambda name: (re.search(r'var %s = "([^"]*)";' % name, page) or [None, ""])[1]
+    city = (re.search(r'location\.city = "([^"]*)"', page) or [None, ""])[1]
+    dates = []
+    for d in var("dates").split(","):
+        m = re.fullmatch(r"\s*(\d{1,2})/(\d{1,2})/(\d{4})\s*", d)
+        if m:
+            dates.append(f"{m[3]}-{int(m[1]):02d}-{int(m[2]):02d}")
+    return {"item": x, "dates": dates, "start": var("startDate"), "end": var("endDate"), "city": city}
+
+
+def src_lafayette_travel(src, start, end):
+    """Lafayette Travel lists Lafayette-area events months ahead (festivals, parades, concerts).
+    Its sitemap names every event page with the date it last changed, so each run only opens
+    pages that are new or changed (2 seconds apart, as the site asks). Weekly regulars (more
+    than maxDates dates) are skipped: the venues' own calendars cover those better."""
+    if LT_FILE.exists() and not LT_CACHE:
+        try:
+            LT_CACHE.update(json.loads(LT_FILE.read_text(encoding="utf-8")))
+        except ValueError:
+            pass
+    sitemap = fetch(src["url"])
+    pages = re.findall(r"<loc>([^<]*/event/[^<]+)</loc>\s*<lastmod>([^<]*)</lastmod>", sitemap)
+    recent = (now_central() - timedelta(days=400)).strftime("%Y-%m-%d")
+    pages = sorted(((u, m) for u, m in pages if m[:10] >= recent), key=lambda p: p[1], reverse=True)
+    budget = int(os.environ.get("LT_PAGE_BUDGET") or src.get("pagesPerRun", 120))
+    out, first, last = [], start.strftime("%Y-%m-%d"), end.strftime("%Y-%m-%d")
+    for url, mod in pages:
+        hit = LT_CACHE.get(url)
+        if not hit or hit.get("lastmod") != mod:
+            if budget <= 0:
+                continue  # read on a later run
+            budget -= 1
+            try:
+                LT_CACHE[url] = {"lastmod": mod, **_lt_read(url)}
+            except (urllib.error.URLError, TimeoutError, ValueError):
+                continue
+            time.sleep(2)
+        info = LT_CACHE[url]
+        days = [d for d in info["dates"] if first <= d <= last]
+        if not days or len(info["dates"]) > src.get("maxDates", 8):
+            continue
+        if info.get("city") and not in_area(info["city"]):
+            continue
+        x = info["item"]
+        if not x:
+            continue
+        clock = lambda s: _time_24h(m.group(1)) if (m := re.search(r"(\d{1,2}:\d{2}\s*[AaPp]\.?[Mm]\.?)", s or "")) else None
+        t0, t1 = clock(info["start"]), clock(info["end"])  # "Monday, December 7, 2026 5:30 PM" -> "17:30"
+        for d in days:
+            e = from_jsonld(src, {**x, "url": url, "startDate": f"{d}T{t0}" if t0 else d,
+                                  "endDate": f"{d}T{t1}" if t0 and t1 else None})
+            if e:
+                out.append(e)
+    listed = {u for u, _ in pages}
+    LT_FILE.write_text(json.dumps({u: v for u, v in LT_CACHE.items() if u in listed},
+                                  ensure_ascii=False), encoding="utf-8")
+    return out
+
+
+# ---------- source: Lafayette Consolidated Government events calendar ----------
+
+def src_lcg(src, start, end):
+    """The city-parish calendar lists each event as a link whose address holds its date and
+    time: events.lafayettela.gov/default/detail/2026-11-24-1630-City-Parish-Council-Meeting.
+    Routine business (src["skip"]) is left out."""
+    page = fetch(src["url"])
+    skip = re.compile(src.get("skip") or r"$^", re.I)
+    out, seen = [], set()
+    for m in re.finditer(r'<a[^>]+href="(https://events\.lafayettela\.gov/[^"]*/detail/'
+                         r'(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})-[^"]*)"[^>]*>(.*?)</a>', page, re.S):
+        url, day, hh, mm, label = m.groups()
+        title = clean(label) or clean(url.rsplit("/", 1)[-1][16:].replace("-", " "))
+        if not title or url in seen or skip.search(title):
+            continue
+        seen.add(url)
+        out.append(make_event(src, title=title, start=f"{day}T{hh}:{mm}", url=url))
+    if not out and "events.lafayettela.gov" not in page:
+        raise Skip("no events found on the page")
     return out
 
 
@@ -844,7 +993,18 @@ def manual_events(start, end):
         s = {"name": m.get("source") or "Bon Temps", "cats": m.get("cats")}
         common = dict(venue=m.get("venue", ""), address=m.get("address", ""), price=m.get("price", ""),
                       url=m.get("url", ""), desc=m.get("desc", ""), image=m.get("image", ""))
-        if m.get("weekly"):  # e.g. "weekly": "Wed", "time": "19:00", "endTime": "22:00"
+        if m.get("from") and m.get("to"):  # every night of a run: "from": "2026-12-01", "to": "2026-12-23"
+            d = max(datetime.strptime(m["from"], "%Y-%m-%d"), start.replace(hour=0, minute=0, second=0, microsecond=0))
+            last = min(datetime.strptime(m["to"], "%Y-%m-%d"), end)
+            days = [DAY_NAMES.index(x[:3].lower()) for x in m.get("days", [])]  # optional: only these weekdays
+            while d <= last:
+                if not days or d.weekday() in days:
+                    ds = d.strftime("%Y-%m-%d")
+                    out.append(make_event(s, title=m["title"],
+                                          start=f"{ds}T{m['time']}" if m.get("time") else ds,
+                                          end=f"{ds}T{m['endTime']}" if m.get("endTime") else None, **common))
+                d += timedelta(days=1)
+        elif m.get("weekly"):  # e.g. "weekly": "Wed", "time": "19:00", "endTime": "22:00"
             day = DAY_NAMES.index(m["weekly"][:3].lower())
             d = start.replace(hour=0, minute=0, second=0, microsecond=0)
             d += timedelta(days=(day - d.weekday()) % 7)
@@ -938,6 +1098,83 @@ def _same_event(a, b):
     ta, tb = (re.sub(r"[^a-z0-9]", "", x["title"].lower()) for x in (a, b))
     short, long_ = sorted((ta, tb), key=len)
     return len(short) >= 6 and short in long_
+
+
+_FILLER = {"the", "a", "an", "and", "of", "at", "in", "on", "with", "w", "ft", "feat", "featuring", "live",
+           "presents", "night", "show", "for", "to", "de", "la", "le", "les", "du", "et", "lafayette"}
+
+
+def _words(title: str) -> set:
+    import unicodedata
+    plain = unicodedata.normalize("NFD", title or "").encode("ascii", "ignore").decode().lower()
+    return {w for w in re.findall(r"[a-z0-9]+", plain) if w not in _FILLER and len(w) > 1}
+
+
+def _likely_same(a, b) -> bool:
+    """Second look for duplicates the first merge misses, because listing sites word titles
+    differently: 'Spirit In The Room + Grave Promise' and 'Spirit in The Room at the Freetown Boom
+    Boom Room'. Same day, starts within 30 minutes, and either nearly the same name, or the same
+    venue and at least half the name's words in common."""
+    if a["start"][:10] != b["start"][:10]:
+        return False
+    if not (a["allDay"] or b["allDay"]):
+        sa, sb = parse_when(a["start"])[0], parse_when(b["start"])[0]
+        if abs((sa - sb).total_seconds()) > 1800:
+            return False
+    import difflib
+    ka, kb = title_key(a["title"]), title_key(b["title"])
+    if len(ka) >= 8 and difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.85:
+        return True
+    wa, wb = _words(a["title"]), _words(b["title"])
+    if not wa or not wb:
+        return False
+    overlap = len(wa & wb) / min(len(wa), len(wb))
+    same_place = venue_key(a["venue"]) and venue_key(a["venue"]) == venue_key(b["venue"])
+    return bool(same_place and overlap >= 0.5 and len(wa & wb) >= 1)
+
+
+def dedupe_pass(events: list[dict]) -> tuple[list[dict], list[str]]:
+    """Merge the pairs _likely_same finds. The venue's or organizer's own listing is kept (a
+    listing site's copy only fills in what's missing), and the other site is noted in alsoOn."""
+    out, notes = [], []
+    by_day: dict[str, list[dict]] = {}
+    for e in sorted(events, key=lambda x: (x.get("_yield", False), -_richness(x))):
+        day = by_day.setdefault(e["start"][:10], [])
+        twin = next((k for k in day if not k.get("ongoing") and not e.get("ongoing") and _likely_same(k, e)), None)
+        if not twin:
+            day.append(e)
+            out.append(e)
+            continue
+        for f in ("end", "venue", "address", "price", "desc", "image"):
+            if not twin.get(f) and e.get(f):
+                twin[f] = e[f]
+        if len(e.get("desc", "")) > len(twin.get("desc", "")) * 2:
+            twin["desc"] = e["desc"]
+        also = set(twin.get("alsoOn", [])) | {e["source"]} | set(e.get("alsoOn", []))
+        also.discard(twin["source"])
+        twin["alsoOn"] = sorted(also)
+        notes.append(f"{e['start'][:10]}  “{twin['title'][:45]}” ({twin['source'][:22]})  =  “{e['title'][:45]}” ({e['source'][:22]})")
+    return out, notes
+
+
+def title_key(title: str) -> str:
+    """'Noël Acadien au Village' -> 'noelacadienauvillage' (first 30 letters, no accents)."""
+    import unicodedata
+    t = unicodedata.normalize("NFD", title or "").encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"^(?:the|\d+(?:st|nd|rd|th)? annual)\s+", "", t)
+    return re.sub(r"[^a-z0-9]", "", t)[:30]
+
+
+def _close_title(key: str, keys: set) -> bool:
+    """Same event name, allowing small spelling differences ('Acadian' vs 'Acadien') and extra
+    words on the official listing ('The Nutcracker' / 'The Nutcracker - Matinee')."""
+    import difflib
+    if len(key) < 8:
+        return key in keys
+    if key in keys or (len(key) >= 10 and any(k.startswith(key) for k in keys)):
+        return True
+    return any(abs(len(k) - len(key)) <= 3 and difflib.SequenceMatcher(None, key, k).ratio() >= 0.9
+               for k in keys if k[:3] == key[:3])
 
 
 def merge(events):
@@ -1047,14 +1284,16 @@ def venue_key(v: str) -> str:
 
 
 RUNNERS = {"tribe": src_tribe, "jsonld": src_jsonld, "ical": src_ical, "saffire": src_saffire,
-           "squarespace": src_squarespace, "downtown": src_downtown, "sheet": src_sheet, "eventlinks": src_eventlinks,
+           "squarespace": src_squarespace, "downtown": src_downtown, "lcg": src_lcg,
+           "lafayettetravel": src_lafayette_travel, "sheet": src_sheet, "eventlinks": src_eventlinks,
            "wixsitemap": src_wixsitemap, "mecrest": src_mecrest,
            "ticketmaster": src_ticketmaster, "page": src_page}
 
 
 def main(argv):
     only = argv[1].lower() if len(argv) > 1 else ""
-    start = now_central().replace(minute=0, second=0, microsecond=0) - timedelta(hours=3)
+    # keep everything from today (since midnight), so today's earlier events stay listed
+    start = now_central().replace(hour=0, minute=0, second=0, microsecond=0)
     end = start + timedelta(days=DAYS_AHEAD)
     cutoff = iso(start)
 
@@ -1087,8 +1326,15 @@ def main(argv):
         runner = {"_manual": lambda s, a, b: manual_events(a, b)}.get(src["type"]) or RUNNERS[src["type"]]
         try:
             found = [e for e in runner(src, start, end) if e]
+            if src.get("skip"):  # titles this source gets wrong or that are routine business
+                skip = re.compile(src["skip"], re.I)
+                found = [e for e in found if not skip.search(e["title"])]
+            if src.get("require"):  # only these kinds of events from this source (big ones)
+                need = re.compile(src["require"], re.I)
+                found = [e for e in found if need.search(e["title"])]
             for e in found:
                 e["_order"] = order
+                e["_yield"] = bool(src.get("yield"))
             found = [e for e in found if (e["end"] or e["start"]) >= cutoff and e["start"] <= iso(end)]
             if src.get("maxDays"):  # open-ended "weekly trivia since 2022" style listings
                 limit = timedelta(days=src["maxDays"])
@@ -1127,7 +1373,21 @@ def main(argv):
         all_events = [e for e in all_events if not hidden.search(e["title"].strip())]
         print(f"hid {before - len(all_events)} clutter listings")
 
+    # Listing sites marked "yield" step aside when the venue or organizer lists the same event,
+    # even on different dates (Lafayette Travel had Noël Acadien a week off)
+    official = {title_key(e["title"]) for e in all_events if not e.get("_yield")}
+    yielded = [e for e in all_events if e.get("_yield") and _close_title(title_key(e["title"]), official)]
+    if yielded:
+        drop = {id(e) for e in yielded}
+        all_events = [e for e in all_events if id(e) not in drop]
+        print(f"{len(yielded)} listing-site copies gave way to the official listing: "
+              + ", ".join(sorted({e['title'][:40] for e in yielded})[:12]))
+
     events = merge(all_events)
+    events, twins = dedupe_pass(events)
+    print(f"merged {len(twins)} more duplicates that listing sites worded differently")
+    for t in twins:
+        print("   = " + t)
 
     # Venues on your address list always show that address (listing sites sometimes get it wrong)
     canon = {venue_key(name): f"{street}, Lafayette, LA" for street, name in config.get("venueNames", {}).items()}
@@ -1148,18 +1408,207 @@ def main(argv):
         print(f"left out {len(dropped)} low-quality aggregator listings")
         for e in dropped:  # shown in the Actions log, to spot anything worth adding back
             print(f"   - {e['start'][:10]} {e['title'][:60]} @ {e['venue'][:40]}")
+
+    # Clutter check: what the listing sites marked "yield" add that nobody else lists
+    for src in config["sources"]:
+        if src.get("yield") and src.get("enabled", True):
+            only_here = [e for e in events if e["source"] == src["name"] and not e.get("alsoOn")]
+            shared = [e for e in events if src["name"] in (e.get("alsoOn") or []) or (e["source"] == src["name"] and e.get("alsoOn"))]
+            print(f"{src['name']}: {len(only_here)} events only it lists, {len(shared)} also listed elsewhere")
+            for e in only_here:
+                print(f"   + {e['start'][:16]} {e['title'][:55]} @ {e['venue'][:35]} {e['cats']}")
+            if len(only_here) > src.get("warnAbove", 40):
+                print(f"   ! that's more than {src.get('warnAbove', 40)}: check for clutter")
+    # Short, readable addresses: "301 W Congress St, Lafayette" (no state, ZIP or country)
+    for e in events:
+        e["address"] = short_address(e.get("address", ""))
+        if re.match(r"\d", e["venue"] or ""):  # venue that is only an address
+            e["venue"] = short_address(e["venue"])
+            if street_key(e["venue"]) and street_key(e["venue"]) == street_key(e["address"]):
+                e["address"] = ""  # don't show the same address twice
+
+    if not only and config.get("bigEvents"):
+        missing = check_big_events(events, config["bigEvents"])
+        print(f"big yearly events check: {len(missing)} missing")
+        report_big_events(missing)
+
     events.sort(key=lambda e: (e["start"], e["title"]))
     for e in events:
         e["id"] = hashlib.sha1(_key(e).encode()).hexdigest()[:10]
         e.pop("_guess", None)
         e.pop("_order", None)
+        e.pop("_yield", None)
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps({
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": report,
         "events": events,
     }, ensure_ascii=False, indent=0), encoding="utf-8")
-    print(f"\nwrote {len(events)} events to {OUT_FILE.relative_to(ROOT)}")
+    write_calendar_files(events)
+    print(f"\nwrote {len(events)} events to {OUT_FILE.relative_to(ROOT)} (and a calendar file for each)")
+
+
+def short_address(a: str) -> str:
+    """'301 W Congress St, Lafayette, LA 70501-6823, United States, Lafayette' -> '301 W Congress St, Lafayette'."""
+    a = re.sub(r",?\s*(United States|USA|US)\b\.?", "", a or "")
+    a = re.sub(r"(?:\b(?:LA|Louisiana)\b\.?|\bLa\.(?=\W|$))\s*(?:\d{5}(?:-\d{4})?)?", "", a)
+    a = re.sub(r"\b\d{5}(?:-\d{4})?\b", "", a)
+    parts = [p.strip(" .") for p in a.split(",")]
+    out = []
+    for p in parts:
+        if p and p.lower() not in (x.lower() for x in out):  # "Lafayette, Lafayette"
+            out.append(p)
+    return re.sub(r"\s{2,}", " ", ", ".join(out)).strip(" ,")
+
+
+def easter(year: int):
+    """Western Easter (anonymous Gregorian algorithm); Mardi Gras is 47 days before."""
+    a, b, c = year % 19, year // 100, year % 100
+    d, e = divmod(b, 4)
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = divmod(c, 4)
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month, day = divmod(h + l - 7 * m + 114, 31)
+    return datetime(year, month, day + 1)
+
+
+def check_big_events(events: list[dict], big: list[dict]) -> list[str]:
+    """Big yearly events that should be on the site by now but aren't. Each entry in
+    sources.json 'bigEvents' says roughly when it usually starts ("04-22", or "mardigras-14" for
+    14 days before Mardi Gras); within 'leadDays' of that date, at least one listing should match."""
+    today = now_central().replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
+    titles = [title_key(e["title"]) + " " + e["title"].lower() for e in events]
+    missing = []
+    for b in big:
+        for year in (today.year, today.year + 1):
+            when = b["usually"]
+            if when.startswith("mardigras"):
+                usual = easter(year) - timedelta(days=47 + int(when.split("-")[1] if "-" in when else 0))
+            else:
+                usual = datetime(year, *map(int, when.split("-")))
+            days = (usual - today).days
+            if 0 <= days <= b.get("leadDays", 45):
+                if not any(re.search(b["match"], t, re.I) for t in titles):
+                    missing.append(f"**{b['name']}** usually starts around {usual:%b} {usual.day} ({days} days away), "
+                                   f"but nothing on the site matches it yet. {b.get('tip', '')}".rstrip())
+                break
+    return missing
+
+
+def report_big_events(missing: list[str]) -> None:
+    """Prints the list, adds it to the Actions run summary, and keeps one GitHub issue up to date
+    (GitHub emails you when it's opened). The issue closes itself once everything is listed."""
+    title = "Big events missing dates"
+    for m in missing:
+        print("   ! " + re.sub(r"\*\*", "", m))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary and missing:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write("### Big events missing dates\n\n" + "\n".join(f"- {m}" for m in missing) + "\n")
+    token, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if not (token and repo):
+        return
+
+    def api(method, path, body=None):
+        req = urllib.request.Request(f"https://api.github.com/repos/{repo}{path}", method=method,
+                                     data=json.dumps(body).encode() if body is not None else None,
+                                     headers={"Authorization": f"Bearer {token}", "User-Agent": USER_AGENT,
+                                              "Accept": "application/vnd.github+json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read() or b"null")
+
+    try:
+        issue = next((i for i in api("GET", "/issues?state=open&per_page=100")
+                      if i["title"] == title and "pull_request" not in i), None)
+        body = ("These big yearly events usually start soon, but no source lists them yet. Add this year's "
+                "dates to `collector/manual.json` (see the Noël Acadien entry for a nightly run), or close "
+                "this if it isn't happening.\n\n" + "\n".join(f"- {m}" for m in missing))
+        if missing and not issue:
+            api("POST", "/issues", {"title": title, "body": body})
+        elif missing and issue["body"] != body:
+            api("PATCH", f"/issues/{issue['number']}", {"body": body})
+        elif not missing and issue:
+            api("PATCH", f"/issues/{issue['number']}", {"state": "closed"})
+    except (urllib.error.URLError, TimeoutError, ValueError) as err:
+        print(f"   (couldn't update the GitHub issue: {err})")
+
+
+CAL_DIR = ROOT / "docs" / "cal"
+VTIMEZONE = """BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE"""
+
+
+def _ics_text(s) -> str:
+    s = str(s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,")
+    return s.replace("\r", "").replace("\n", "\\n")
+
+
+def _ics_fold(line: str) -> str:
+    """iCal lines are at most 75 bytes; longer ones continue on the next line after a space."""
+    out, cur = [], b""
+    for ch in line:
+        b = ch.encode("utf-8")
+        if len(cur) + len(b) > (75 if not out else 74):
+            out.append(cur.decode("utf-8"))
+            cur = b""
+        cur += b
+    out.append(cur.decode("utf-8"))
+    return "\r\n ".join(out)
+
+
+def write_calendar_files(events: list[dict]) -> None:
+    """docs/cal/<id>.ics for every event: the site's "Apple Calendar" button opens these.
+    Phones (iPhones especially) only offer "Add to Calendar" for a real .ics web address."""
+    CAL_DIR.mkdir(parents=True, exist_ok=True)
+    keep = {f"{e['id']}.ics" for e in events}
+    for old in CAL_DIR.glob("*.ics"):
+        if old.name not in keep:
+            old.unlink()
+    stamp = "20260101T000000Z"  # fixed, so unchanged events don't produce new files every run
+    for e in events:
+        s = parse_when(e["start"])[0]
+        en = parse_when(e["end"])[0] if e.get("end") else None
+        if e.get("allDay"):
+            last = en.date() if en else s.date()
+            when = [f"DTSTART;VALUE=DATE:{s:%Y%m%d}",
+                    f"DTEND;VALUE=DATE:{max(last, s.date()) + timedelta(days=1):%Y%m%d}"]
+            alarm = []
+        else:
+            en = en if en and en > s else s + timedelta(hours=2)
+            when = [f"DTSTART;TZID=America/Chicago:{s:%Y%m%dT%H%M%S}",
+                    f"DTEND;TZID=America/Chicago:{en:%Y%m%dT%H%M%S}"]
+            alarm = ["BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{_ics_text(e['title'])}",
+                     "TRIGGER:-PT1H", "END:VALARM"]  # reminder an hour before
+        place = ", ".join(x for x in (e.get("venue"), e.get("address")) if x)
+        about = "\n\n".join(x for x in (e.get("desc"), e.get("url")) if x)
+        lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bon Temps//Lafayette events//EN",
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH", *VTIMEZONE.split("\n"),
+                 "BEGIN:VEVENT", f"UID:{e['id']}@bontemps", f"DTSTAMP:{stamp}", *when,
+                 f"SUMMARY:{_ics_text(e['title'])}", f"LOCATION:{_ics_text(place)}",
+                 f"DESCRIPTION:{_ics_text(about)}",
+                 *([f"URL:{e['url']}"] if e.get("url") else []), *alarm, "END:VEVENT", "END:VCALENDAR"]
+        text = "\r\n".join(_ics_fold(l) for l in lines) + "\r\n"
+        path = CAL_DIR / f"{e['id']}.ics"
+        if not path.exists() or path.read_bytes() != text.encode("utf-8"):
+            path.write_bytes(text.encode("utf-8"))
 
 
 if __name__ == "__main__":
