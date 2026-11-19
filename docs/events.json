@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-19T19:09:41Z",
+"updated": "2026-11-19T21:00:17Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -39,12 +39,12 @@
 {
 "name": "Hideaway on Lee",
 "ok": true,
-"count": 9
+"count": 22
 },
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 39
+"count": 40
 },
 {
 "name": "Happening Next (theatre)",
@@ -2444,6 +2444,25 @@
 "id": "1f86d48481"
 },
 {
+"title": "Two Bands: Minos the Saint & Burris",
+"start": "2026-11-29T19:00",
+"end": "2026-11-29T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/two-bands-minos-the-saint-burris",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1795030098619-B9PKL13MEAOJOF25H0OR/866681728_1744988960959642_4060356555958215023_n.jpg",
+"source": "Hideaway on Lee",
+"id": "d1bdf24e4b"
+},
+{
 "title": "Life Skills Cafe' - NOVEMBER",
 "start": "2026-11-30T18:00",
 "end": null,
@@ -2561,7 +2580,10 @@
 "desc": "Join our three choirs as we celebrate the ideas of home and belonging in our fall concert entitled \"This Place.\" This concert shares the title of the Imperial College Chamber Choir's latest album, released this summer. Looking forward to our collaboration with them in June 2027!",
 "url": "https://happeningnext.com/event/fall-concert-andquotthis-placeandquot-eid3a0eboneuv",
 "image": "https://cdn.happeningnext.com/events7/banners/ebf096adb507dd3f827e29adc7cb08c25bd8131d3f6b99bd51abd0dbaecf85bb-rimg-w1138-h1106-dc181808-gmir?v=1795072651",
-"source": "Happening Next (concerts)",
+"source": "Happening Next (Lafayette live music)",
+"alsoOn": [
+"Happening Next (concerts)"
+],
 "id": "345b9e370d"
 },
 {
@@ -2792,6 +2814,25 @@
 "id": "671eaabbe2"
 },
 {
+"title": "Nouveau String Band",
+"start": "2026-12-03T19:00",
+"end": "2026-12-03T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/nouveau-string-band-4-9hpj6-8ktz8-dzbxl-6x6hr-yd459-ylka6-3mf97-d5e2p-9rsm3-ft957-fwkj4-jblr4-jnrnh-2cte4-ryekc-hnz4m-zl7x4-xbdj5-9cdxd-5bbp7-zgsww-lpa3t-xd3gs-h9k73-hskk9-ldxab",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1674421066512-IBHHTWNOANJO7RV4VR9O/318084926_3218628638397603_8174122633813339770_n.jpg",
+"source": "Hideaway on Lee",
+"id": "de12670ac4"
+},
+{
 "title": "The Collaboratory Open Jam Night",
 "start": "2026-12-03T20:00",
 "end": null,
@@ -2976,6 +3017,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/dom%20francis%20pic_UW1F.jpg",
 "source": "Blue Moon Saloon",
 "id": "5851a331a4"
+},
+{
+"title": "Nik Parr & The Selfless Lovers",
+"start": "2026-12-04T20:00",
+"end": "2026-12-04T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/nik-parr-the-selfless-lovers-1",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1795030553659-2SVXMD8BPLUS8HBWVOC4/889839367_1752166650241873_4865865995739926162_n.jpg",
+"source": "Hideaway on Lee",
+"id": "3500db7739"
 },
 {
 "title": "The Vermillionaires | Rock'n'Bowl® de Lafayette",
@@ -3270,6 +3330,25 @@
 "id": "700a2a6183"
 },
 {
+"title": "Ruben Moreno",
+"start": "2026-12-05T20:00",
+"end": "2026-12-05T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/ruben-moreno-5bcm9",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1789926618186-ZCM7P4SW35RGBQFCZ67S/801873423_1692823946176144_6470466070425172101_n.jpg",
+"source": "Hideaway on Lee",
+"id": "a09a14f006"
+},
+{
 "title": "WHOP BEZZY LIVE IN CONCERT!!!",
 "start": "2026-12-05T20:00",
 "end": "2026-12-06T01:00",
@@ -3540,6 +3619,25 @@
 "id": "390f341ddf"
 },
 {
+"title": "Steve Riley and Mamou Playboys",
+"start": "2026-12-06T19:00",
+"end": "2026-12-06T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/steve-riley-and-mamou-playboys-2789r-y6e8l",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1763165843912-UQWAXNHH111S4J03JMIC/577656520_1412007647591110_9083918814041354754_n.jpg",
+"source": "Hideaway on Lee",
+"id": "6807c3728b"
+},
+{
 "title": "Noël Acadien au Village",
 "start": "2026-12-07T17:30",
 "end": "2026-12-07T21:00",
@@ -3685,6 +3783,25 @@
 "id": "fd5875d152"
 },
 {
+"title": "Trivia Night with Jay Steiner",
+"start": "2026-12-09T19:00",
+"end": "2026-12-09T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/xe75yzxtxzfmkl4-y83kt-ckpfl",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1610159750942-LGVZ4UC44SZR3RB2VVO8/136058381_2722098468050625_7279102965653302622_o.jpg",
+"source": "Hideaway on Lee",
+"id": "2a61ee2365"
+},
+{
 "title": "Silverbacks' Annual Improvised Holiday Show",
 "start": "2026-12-09T19:30",
 "end": null,
@@ -3810,6 +3927,25 @@
 "Happening Next (dance)"
 ],
 "id": "ef854b1c18"
+},
+{
+"title": "Has Beans - Free Show!",
+"start": "2026-12-10T19:00",
+"end": "2026-12-10T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/has-beans-free-show",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1795119616398-ULBT3JTIS15U1EBN54BW/912163198_1773381811324968_7887654207071063082_n.jpg",
+"source": "Hideaway on Lee",
+"id": "2a000cebb0"
 },
 {
 "title": "Christmas at The Bayou Christmas Concert",
@@ -4008,6 +4144,25 @@
 "Happening Next (performances)"
 ],
 "id": "a3c02a4671"
+},
+{
+"title": "Julian Primeaux",
+"start": "2026-12-11T20:00",
+"end": "2026-12-11T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/julian-primeaux-3-w92yy-g9tnb-jtzps-aklzs-45ldw-apmcp-4w9tt-aebt8",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1753064011097-M91GXXEMY7QU6JSXHHGY/518337892_1310893694369173_3083855644395358307_n.jpg",
+"source": "Hideaway on Lee",
+"id": "14f2e62a25"
 },
 {
 "title": "Louisiana Surf Department",
@@ -4419,6 +4574,25 @@
 "id": "c5990c9724"
 },
 {
+"title": "Alphonse Ardoin & Zydeco Kingz",
+"start": "2026-12-12T20:00",
+"end": "2026-12-12T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/alphonse-ardoin-zydeco-kingz-1-cadkj-shc62-f3aml",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1774912731994-TWPPA6OD1K0PT3IC2BYH/656431149_1531621428963064_1708108463270663372_n.jpg",
+"source": "Hideaway on Lee",
+"id": "8cf29f0b06"
+},
+{
 "title": "Christmas at The Bayou Christmas Concert",
 "start": "2026-12-13T00:00",
 "end": null,
@@ -4600,6 +4774,25 @@
 "image": "",
 "source": "Bon Temps",
 "id": "dbaf84abdc"
+},
+{
+"title": "Prends Courage",
+"start": "2026-12-13T19:00",
+"end": "2026-12-13T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/prends-courage-2-d2y56-b2z6p-zapsr-z2l57",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1756517905906-9XHVBJQCVYKXJXRU62VH/539106932_1343166764475199_1741151475017091988_n.jpg",
+"source": "Hideaway on Lee",
+"id": "b502598756"
 },
 {
 "title": "Work Of Fiction | 309 Versus Earth",
@@ -4837,6 +5030,25 @@
 "image": "",
 "source": "Bon Temps",
 "id": "31f52d44f0"
+},
+{
+"title": "6th Annual Christmas Caroling with Wilson Savoy",
+"start": "2026-12-17T18:00",
+"end": "2026-12-17T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/6th-annual-christmas-caroling-with-wilson-savoy",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1795120178576-C5HQARTU4ONSK0M0DFJ0/895931508_1756024673189404_384162248054806791_n.jpg",
+"source": "Hideaway on Lee",
+"id": "db0703545b"
 },
 {
 "title": "Nether Hour",
@@ -5197,6 +5409,25 @@
 "id": "403d69378c"
 },
 {
+"title": "Horace Trahan",
+"start": "2026-12-19T20:00",
+"end": "2026-12-19T22:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Horace Trahan, the maker of the hit single, “That Butt Thing,” in 1999, is a world renowned Cajun and Zydeco artist, respected for his ability to pull the hell out of an accordion and belt out vocals that will give you chills. Having over-stepped boundaries and bypassed the stereotypes of naysayers, this native of Ossun, Louisiana, has made a huge and highly anticipated comeback on the music scene!\nAt the age of fifteen, Horace wanted to learn to play the accordion. His father brought him to Felix Richard, a strong accordionist and first cousin who lived in Cankton, LA. Horace was a natural and booked his first gig within six months of learning to play.\nHorace was very comfortable in a musical setting, as he had purchased his first guitar at the age of twelve and had also begun playing the saxophone in the fifth grade. It was when he combined his angelic-pitched voice with the skills he honed on a Crown single row accordion, which the musical magic began. Horace was sixteen years old when he began singing Cajun music in French and in English. Not long after making his mark on bass drum in the marching band at Carencro High School and graduating, Horace hit the road and began touring with D.L. Menard. The road schedules would take the talented eighteen year-old musician to New York, Boston, Chicago, Canada, France, California, and the summer Olympics in Atlanta.\nTwo years later, in 1996, Horace and D.L. Menard recorded a CD on Swallow Records. During this time, at the age of twenty, Horace also released his first CD entitled, Ossun Blues, for the same label.\nHorace’s music took root quickly, and he formed a band called, “The Ossun Express.” The band consisted of an accordion, fiddle, guitar, bass, drums, and sometimes a triangle. This version of “The Ossun Express” never recorded, but played many local venues and festivals, making a name for the group. In the year 2000, Horace revamped his band with all new members, and they were called, “The New Ossun Express.” It was at this time that Horace recorded his second album entitled, Get On Board, on the Zydeco Hound label. In 2001 they followed up with his third and final album on the same label, entitled, Reach Out and Touch a Hand, which was later renamed by its new owner, Fred Charlie, as That Butt Thing, for the title track of the same name. These golden, classic recordings are currently a part of ‘la crème de la crème,’ under the ownership of Floyd Soileu’s Flat Town Music Company.\nHaving thoroughly learned the business of owning the music you write and create, Horace’s self-released albums, Keep Walking, (August 2010); his Christmas In Every Way EP, (December 2011); All The Way, (August 2012), and most recently, Until The End (December 2017), are extremely successful records registered under his own record label and publishing company, The Redemptive Process. Horace also recorded By Special Request, a grand slam of a cover album, released on Maison de Soul Records in November of 2013.\nIn April of 2012, Horace Trahan was called to collaborate with the Canadian, electro hip-hop band, Radio Radio, on two tracks for their third album entitled, Havre de Grace. The first song, “Y’en a qui connais,” appears as track number four (4) on the CD, and features Horace Trahan as the creator of the track’s title and the chorus, as well as performing accordion and vocals. The second song, “One Day/ Liberez-moi,” features Horace, as the writer and singer of the chorus. “One Day/ Liberez-moi,” was released as a download bonus on their label, Bonsound, later that year. Havre de Grace won ‘best hip-hop album’ at the ADISQ 2012 Awards and the East-Coast Music Awards 2012.\nHorace’s most recent project is the completion of a documentary entitled, Cajun and Creole: Black and White, produced by his wife, Chantelle Trahan, in 2013. The film features Horace, a Louisiana Cajun, and his father-in-law, Rodney Bernard, a Louisiana Creole, and the ties that bind them musically, geographically, culturally…",
+"url": "https://www.hideawayonlee.com/events/horace-trahan-4-xg3ds-y2xrl-n5scz-lh2r7-b9gp8-dkdxz-wm2kd-m373j-89ffj-8h3j4-bplxx-hfl6e-8k8gf-8klhw-gd9l5-5bhcx-be7l2-8tjtf",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1661657988610-7W0WMG5PVUGO9JN5FIJ7/299559843_3130398437220624_1203581314919374758_n.jpg",
+"source": "Hideaway on Lee",
+"id": "a65b31e064"
+},
+{
 "title": "Mama Jingle's Campy Christmas",
 "start": "2026-12-19T20:00",
 "end": "2026-12-19T21:30",
@@ -5349,6 +5580,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Amis%20Du%20Teche%205-29_6K0w.png",
 "source": "Blue Moon Saloon",
 "id": "8d3b342bc3"
+},
+{
+"title": "Filles et Pères (Daughters and Fathers)",
+"start": "2026-12-20T19:00",
+"end": "2026-12-20T21:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Hideaway on Lee",
+"address": "407 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://www.hideawayonlee.com/events/hmjgx5qjxfphg61r6y1vh3hvlg8aht-p6cxm",
+"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1789927430139-KXL1Q4LI6ZVNS9LO7WG8/805924360_1692821042843101_6953230594546101094_n.jpg",
+"source": "Hideaway on Lee",
+"id": "a3d7d11d8b"
 },
 {
 "title": "Noël Acadien au Village",
