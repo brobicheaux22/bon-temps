@@ -1,10 +1,10 @@
 {
-"updated": "2026-11-19T05:29:43Z",
+"updated": "2026-11-19T05:41:24Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
 "ok": true,
-"count": 4
+"count": 5
 },
 {
 "name": "Acadiana Center for the Arts",
@@ -34,7 +34,7 @@
 {
 "name": "Downtown Lafayette",
 "ok": true,
-"count": 11
+"count": 12
 },
 {
 "name": "Hideaway on Lee",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 38
+"count": 39
 },
 {
 "name": "Happening Next (theatre)",
@@ -74,7 +74,7 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 61
+"count": 60
 },
 {
 "name": "Happening Next (art)",
@@ -99,7 +99,7 @@
 {
 "name": "Happening Next (fitness)",
 "ok": true,
-"count": 5
+"count": 6
 },
 {
 "name": "Happening Next (festivals)",
@@ -130,7 +130,7 @@
 {
 "name": "Submitted",
 "ok": true,
-"count": 1
+"count": 2
 },
 {
 "name": "Blue Moon Saloon",
