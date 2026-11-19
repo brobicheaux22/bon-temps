@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-19T17:14:56Z",
+"updated": "2026-11-19T19:09:41Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -54,7 +54,7 @@
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 51
+"count": 55
 },
 {
 "name": "Happening Next (comedy)",
@@ -69,7 +69,7 @@
 {
 "name": "Happening Next (concerts)",
 "ok": true,
-"count": 32
+"count": 33
 },
 {
 "name": "Happening Next (music)",
@@ -94,12 +94,12 @@
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 18
+"count": 19
 },
 {
 "name": "Happening Next (fitness)",
 "ok": true,
-"count": 6
+"count": 9
 },
 {
 "name": "Happening Next (festivals)",
@@ -1257,6 +1257,25 @@
 "id": "f02a10f69f"
 },
 {
+"title": "The Last Mangos",
+"start": "2026-11-21T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "329 Dulles Dr, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"arts"
+],
+"desc": "Come enjoy this free, live show with the whole fam.",
+"url": "https://happeningnext.com/event/the-last-mangos-eid3a0ebra38d",
+"image": "https://cdn.happeningnext.com/events7/banners/3a4070bc432fa7cb1755d190992c89be2e3c29ba40e625d76b2d142c628eb989-rimg-w960-h720-dc080808-gmir?v=1795101005",
+"source": "Happening Next (performances)",
+"id": "636abeb382"
+},
+{
 "title": "State of LA Danse, Saturday November 21 7PM",
 "start": "2026-11-21T19:00",
 "end": "2026-11-21T21:00",
@@ -1714,6 +1733,25 @@
 "id": "5547485764"
 },
 {
+"title": "HIT Tennis",
+"start": "2026-11-25T11:30",
+"end": "2026-11-25T12:30",
+"allDay": false,
+"ongoing": false,
+"venue": "City Club at River Ranch",
+"address": "1100 Camellia Blvd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"sports"
+],
+"desc": "Looking to level up your game?\nHigh Intensity Tennis takes place every Wednesday from 11:30 AM–12:30 PM, featuring fast drills, footwork, and a great workout. All levels are welcome and no sign up is needed. Just show up ready to play!\nMembers $28 | Non-members $30\nCall the Pro Shop with any questions at 337.216.6588.",
+"url": "https://happeningnext.com/event/hit-tennis-eid3a0ebra9as",
+"image": "https://cdn.happeningnext.com/events10/banners/0107e8dd8030c373ca5ea319af4208655daf9c1412380a8f55b5cc56a128a23c-rimg-w1200-h675-dc586868-gmir?v=1795101024",
+"source": "Happening Next (fitness)",
+"id": "f90efdda61"
+},
+{
 "title": "Camellia Crossing: Acadiana’s Gleaux Run",
 "start": "2026-11-25T18:00",
 "end": null,
@@ -1768,6 +1806,9 @@
 "url": "https://moncuspark.org/calendar-events/yoga2026/",
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
 "source": "Moncus Park",
+"alsoOn": [
+"Happening Next (fitness)"
+],
 "id": "6dfc61dd24"
 },
 {
@@ -2503,6 +2544,25 @@
 "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/lafayette/Screenshot-2025-11-17-at-09-28-01-Chorale-Acadienne---Lafayette-LA_B8428DFF-02A8-B3A3-8D8739C948086D7D_b842c878-f025-4066-10064fc6b4a06f02.png",
 "source": "Lafayette Travel",
 "id": "1c9cb6c3c5"
+},
+{
+"title": "Fall Concert: \"This Place\"",
+"start": "2026-12-01T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "ULL Angelle Hall Doucet-Gilfrey Auditorium",
+"address": "601 E Saint Mary Blvd, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Join our three choirs as we celebrate the ideas of home and belonging in our fall concert entitled \"This Place.\" This concert shares the title of the Imperial College Chamber Choir's latest album, released this summer. Looking forward to our collaboration with them in June 2027!",
+"url": "https://happeningnext.com/event/fall-concert-andquotthis-placeandquot-eid3a0eboneuv",
+"image": "https://cdn.happeningnext.com/events7/banners/ebf096adb507dd3f827e29adc7cb08c25bd8131d3f6b99bd51abd0dbaecf85bb-rimg-w1138-h1106-dc181808-gmir?v=1795072651",
+"source": "Happening Next (concerts)",
+"id": "345b9e370d"
 },
 {
 "title": "Noël Acadien au Village",
@@ -3575,6 +3635,10 @@
 "url": "https://happeningnext.com/event/line-dance-class-andamp-holiday-social-eid3a0ebmlru4",
 "image": "https://cdn.happeningnext.com/events8/banners/6deef87d498f163389a79367e9a749a803f5435608da51856f446e97b5a9e7ab-rimg-w960-h960-dcf8f8f8-gmir?v=1795016512",
 "source": "Happening Next (dance)",
+"alsoOn": [
+"Happening Next (fitness)",
+"Happening Next (health wellness)"
+],
 "id": "9612c19e6c"
 },
 {
@@ -3782,7 +3846,10 @@
 "desc": "",
 "url": "https://happeningnext.com/event/lafayette-gay-men’s-chorus-inaugural-holiday-concert-eid3a0ebonerp",
 "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9lZDRlNjEwNGQzMjEwZGFhZTAyOWI2MzZlZDYzZDVlNjFmZmU1ODNlNGU4NzA3ZWI5MTcyMGU1OWQyMGZlNmQ4LXJpbWctdzc0Mi1oOTYwLWRjMTgzODQ4LWdtaXI_dj0xNzk1MDcyNjQz.avif",
-"source": "Happening Next (music)",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (music)"
+],
 "id": "42d950b013"
 },
 {
@@ -5056,7 +5123,10 @@
 "desc": "Crystal Christmas: An Immersive Holiday Sound Experience\nSaturday, December 19, 2026 | 6:00–7:00 PM\nLARC’s Acadian Village Chapel | Lafayette, Louisiana\nhttps://acadianvillage.org/\nCelebrate the beauty and wonder of the Christmas season through an enchanting hour of music, featuring the luminous sounds of crystal singing bowls, harp, and the singing Mermaid Voices of Susan Grain, Lori Henderson and Cindy Dressill.\nCrystal Christmas weaves the Mermaid voices together with seasonal melodies, layered soundscapes, delicate harp melodies, and the ethereal resonance of crystal bowls and crystal harp. This angelic crystallizing music is meant to uplift you in to pausing, breathing and reconnecting with the wonder of the Season.\nJoin us inside the beautiful Acadian Village Chapel dripping with twinkling lights!Crystal Christmas is a performance happening within the Chapel at Acadian Village.\nAll donations go to LARC’s mission to help individuals with intellectual and developmental disabilities reach their goals of self-sufficiency, quality of life and self-worth.\n✨ Saturday, December 19\n✨ 6:00–7:00 PM\n✨ LARC’s Acadian Village Chapel\nhttps://acadianvillage.thundertix.com/events/273507\nWe look forward to sharing this musical evening with you!",
 "url": "https://happeningnext.com/event/crystal-christmas-holiday-singing-with-crystal-harp-eid3a0ebra69l",
 "image": "https://cdn.happeningnext.com/events10/banners/51e32980f3309d880b482fc310abdbcc4b5ef2d857f2ed633da9bc89bdc9aa83-rimg-w1200-h1600-dcf8f8f8-gmir?v=1795101015",
-"source": "Happening Next (music)",
+"source": "Happening Next (performances)",
+"alsoOn": [
+"Happening Next (music)"
+],
 "id": "7e81f90333"
 },
 {
