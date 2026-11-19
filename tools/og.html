@@ -1,33 +1,42 @@
-<!doctype html>
-<!-- The link-preview picture (docs/og.png) shown when someone texts or posts the Bon Temps link.
-     Rebuild it with:
-     "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot=docs\og.png tools\og.html -->
+﻿<!doctype html>
+<!-- The link-preview picture (docs/og-poster.png) shown when someone texts or posts the Bon Temps link.
+     Rebuild it with (from the project folder):
+     "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --hide-scrollbars --virtual-time-budget=6000 --window-size=1200,630 --screenshot=%CD%\docs\og-poster.png %CD%\tools\og.html
+     If you change the picture, also give it a new file name (and update og:image in docs/index.html):
+     apps like iMessage and Facebook keep showing an old picture for the same address. -->
 <html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 <style>
   html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
-  body { background: #FAF8F3; font-family: Inter, "Segoe UI", sans-serif; color: #1B2433; position: relative; }
-  .band { position: absolute; inset: 0 0 auto 0; height: 14px; background: linear-gradient(90deg, #1F5BA6 0 33%, #F4B41A 33% 66%, #C62F3E 66%); }
-  .wrap { position: absolute; left: 90px; right: 90px; top: 110px; }
-  .row { display: flex; align-items: center; gap: 34px; }
-  img { width: 170px; height: 170px; border-radius: 38px; box-shadow: 0 10px 30px rgba(20,30,50,.15); }
-  h1 { font-family: Fraunces, Georgia, serif; font-weight: 800; font-size: 132px; line-height: 1; margin: 0; color: #1F5BA6; letter-spacing: -.02em; }
-  .where { font-size: 34px; font-weight: 600; color: #5C6575; margin-top: 10px; }
-  p { font-size: 44px; font-weight: 600; margin: 64px 0 0; line-height: 1.25; }
-  .dots { display: flex; gap: 22px; margin-top: 30px; font-size: 27px; color: #5C6575; font-weight: 500; flex-wrap: wrap; }
-  .dots span::before { content: ""; display: inline-block; width: 15px; height: 15px; border-radius: 50%; background: var(--c); margin-right: 10px; vertical-align: 2px; }
+  body { background: #F1E4C8; position: relative; font-family: Oswald, sans-serif; color: #22180F; }
+  .flag { position: absolute; right: -120px; top: -40px; width: 620px; height: 720px; transform: rotate(9deg); }
+  .grain { position: absolute; inset: 0; opacity: .5; mix-blend-mode: multiply; }
+  .wrap { position: absolute; left: 70px; top: 70px; width: 640px; }
+  .kick { display: inline-block; background: #C62F3E; color: #F1E4C8; font-weight: 700; font-size: 28px; letter-spacing: .25em; padding: 6px 16px 6px 20px; transform: rotate(-2deg); }
+  h1 { font-family: Ultra, serif; font-size: 136px; line-height: .9; margin: 22px 0 0; color: #1F4F96; }
+  .tag { font-size: 46px; font-weight: 700; line-height: 1.1; margin-top: 26px; text-transform: uppercase; letter-spacing: .02em; }
+  .list { margin-top: 26px; font-size: 25px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #5a4632; line-height: 1.6; }
+  .list b { color: #C62F3E; }
+  .stamp { position: absolute; left: 520px; bottom: 54px; border: 4px solid #C62F3E; color: #C62F3E; font-weight: 700; font-size: 24px; letter-spacing: .2em;
+           padding: 8px 16px; transform: rotate(-8deg); opacity: .85; text-transform: uppercase; }
 </style></head>
 <body>
-  <div class="band"></div>
+  <svg class="flag" viewBox="0 0 600 720">
+    <defs><clipPath id="c"><rect width="600" height="720"/></clipPath></defs>
+    <g clip-path="url(#c)">
+      <rect width="600" height="360" fill="#1F4F96"/><rect y="360" width="600" height="360" fill="#C62F3E"/>
+      <polygon points="0,0 300,360 0,720" fill="#F7F1E3"/>
+      <g fill="#F7F1E3" font-size="62" font-family="serif"><text x="268" y="185">⚜</text><text x="338" y="185">⚜</text><text x="408" y="185">⚜</text></g>
+      <polygon points="90,330 104,372 148,372 112,398 126,440 90,414 54,440 68,398 32,372 76,372" fill="#F4B41A"/>
+      <g fill="#F4B41A"><rect x="330" y="470" width="110" height="130"/><rect x="320" y="440" width="26" height="40"/><rect x="372" y="440" width="26" height="40"/><rect x="424" y="440" width="26" height="40"/><rect x="370" y="540" width="30" height="60" fill="#C62F3E"/></g>
+    </g>
+  </svg>
+  <svg class="grain" width="1200" height="630"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .33  0 0 0 0 .2  0 0 0 .35 0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
   <div class="wrap">
-    <div class="row">
-      <img src="../docs/icon-512.png" alt="">
-      <div><h1>Bon Temps</h1><div class="where">Lafayette, Louisiana</div></div>
-    </div>
-    <p>What's happening tonight, this weekend and beyond, updated all day.</p>
-    <div class="dots">
-      <span style="--c:#C62F3E">Live music</span><span style="--c:#B0357A">Theater</span><span style="--c:#A86B00">Food</span>
-      <span style="--c:#6B4FA0">Arts</span><span style="--c:#0F7C80">Sports</span><span style="--c:#5C6575">Festivals</span>
-    </div>
+    <span class="kick">Lafayette, La.</span>
+    <h1>Bon<br>Temps</h1>
+    <div class="tag">Everything going on<br>in Lafayette</div>
+    <div class="list">Live music <b>/</b> Theater <b>/</b> Food<br>Arts <b>/</b> Sports <b>/</b> Festivals</div>
   </div>
 </body></html>
+

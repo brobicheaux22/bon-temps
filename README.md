@@ -8,6 +8,7 @@ local listings.
 - `collector/collect.py` gathers events and writes `docs/events.json`, plus one calendar file
   per event in `docs/cal/` (the "Apple Calendar" button opens these).
 - `.github/workflows/collect.yml` runs the collector **every 2 hours** for free on GitHub.
+- [CHANGELOG.md](CHANGELOG.md) lists what's changed, in plain English.
 
 The page reloads its event list when you tap the refresh button, when you come back to the tab,
 and every 10 minutes while it's open. Today's events stay listed until midnight; finished ones
@@ -129,12 +130,17 @@ its dates each fall.
 
 Categories: `music`, `theater`, `food`, `arts`, `wellness`, `family`, `sports`, `civic`, `community`.
 
+## What's new
+
+[CHANGELOG.md](CHANGELOG.md) is a plain-English list of every round of updates. Add an entry at
+the top after each one.
+
 ## Sharing
 
 - The address bar always matches what's on screen, and **Share this list** at the bottom sends
   it: `?when=2026-11-21&cat=music` opens Saturday's music, `?when=weekend&free=1` this weekend's
   free events. `when` can be a date, `tonight`, `weekend` or `picks`.
-- Texting the link shows a preview card (`docs/og.png`). To redraw it, edit `tools/og.html` and run
+- Texting the link shows a preview card (`docs/og-poster.png`). To redraw it, edit `tools/og.html` and run
   the command at the top of that file.
 
 ## Running it on your computer
