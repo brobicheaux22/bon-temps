@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-19T15:03:53Z",
+"updated": "2026-11-19T17:14:56Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -74,7 +74,7 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 61
+"count": 65
 },
 {
 "name": "Happening Next (art)",
@@ -89,7 +89,7 @@
 {
 "name": "Happening Next (food & drinks)",
 "ok": true,
-"count": 30
+"count": 31
 },
 {
 "name": "Happening Next (health wellness)",
@@ -1731,6 +1731,25 @@
 "image": "",
 "source": "Submitted",
 "id": "dbaecac13d"
+},
+{
+"title": "Pre-Feast Party 🎉",
+"start": "2026-11-25T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "329 Dulles Dr, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "Get out of the kitchen and come drink!",
+"url": "https://happeningnext.com/event/pre-feast-party-eid3a0ebra5h0",
+"image": "https://cdn.happeningnext.com/events2/banners/d9bcd2206c8f6741ebe114eafb86700179b3c7717b1963be131f9af74715cd67-rimg-w1080-h1350-dc080808-gmir?v=1795101010",
+"source": "Happening Next (food & drinks)",
+"id": "ef1a669e0d"
 },
 {
 "title": "Yoga in the Park",
@@ -3748,6 +3767,25 @@
 "id": "074fbb368e"
 },
 {
+"title": "Lafayette Gay Men’s Chorus Inaugural Holiday Concert",
+"start": "2026-12-11T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "First United Methodist Church Lafayette, La",
+"address": "703 Lee Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/lafayette-gay-men’s-chorus-inaugural-holiday-concert-eid3a0ebonerp",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy9lZDRlNjEwNGQzMjEwZGFhZTAyOWI2MzZlZDYzZDVlNjFmZmU1ODNlNGU4NzA3ZWI5MTcyMGU1OWQyMGZlNmQ4LXJpbWctdzc0Mi1oOTYwLWRjMTgzODQ4LWdtaXI_dj0xNzk1MDcyNjQz.avif",
+"source": "Happening Next (music)",
+"id": "42d950b013"
+},
+{
 "title": "2026 Diocesan Celebration of Our Lady of Guadalupe",
 "start": "2026-12-11T17:30",
 "end": null,
@@ -5002,6 +5040,26 @@
 "id": "c4eae472eb"
 },
 {
+"title": "Crystal Christmas - Holiday Singing with Crystal Harp",
+"start": "2026-12-19T18:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "LARC's Acadian Village",
+"address": "200 Greenleaf Dr, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"theater"
+],
+"desc": "Crystal Christmas: An Immersive Holiday Sound Experience\nSaturday, December 19, 2026 | 6:00–7:00 PM\nLARC’s Acadian Village Chapel | Lafayette, Louisiana\nhttps://acadianvillage.org/\nCelebrate the beauty and wonder of the Christmas season through an enchanting hour of music, featuring the luminous sounds of crystal singing bowls, harp, and the singing Mermaid Voices of Susan Grain, Lori Henderson and Cindy Dressill.\nCrystal Christmas weaves the Mermaid voices together with seasonal melodies, layered soundscapes, delicate harp melodies, and the ethereal resonance of crystal bowls and crystal harp. This angelic crystallizing music is meant to uplift you in to pausing, breathing and reconnecting with the wonder of the Season.\nJoin us inside the beautiful Acadian Village Chapel dripping with twinkling lights!Crystal Christmas is a performance happening within the Chapel at Acadian Village.\nAll donations go to LARC’s mission to help individuals with intellectual and developmental disabilities reach their goals of self-sufficiency, quality of life and self-worth.\n✨ Saturday, December 19\n✨ 6:00–7:00 PM\n✨ LARC’s Acadian Village Chapel\nhttps://acadianvillage.thundertix.com/events/273507\nWe look forward to sharing this musical evening with you!",
+"url": "https://happeningnext.com/event/crystal-christmas-holiday-singing-with-crystal-harp-eid3a0ebra69l",
+"image": "https://cdn.happeningnext.com/events10/banners/51e32980f3309d880b482fc310abdbcc4b5ef2d857f2ed633da9bc89bdc9aa83-rimg-w1200-h1600-dcf8f8f8-gmir?v=1795101015",
+"source": "Happening Next (music)",
+"id": "7e81f90333"
+},
+{
 "title": "The Creole Nutcracker",
 "start": "2026-12-19T19:00",
 "end": null,
@@ -5709,6 +5767,25 @@
 "Happening Next (music)"
 ],
 "id": "516943f6d4"
+},
+{
+"title": "Bikini Truck Stop , Grey Areas Ghost Prism & Soul Giant",
+"start": "2027-01-08T18:30",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Feed N Seed Lafayette",
+"address": "106 N Grant St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Bikini Truck Stop\n\non Tour from Austin Texas\n\nwith\n\nGhost Prism\n\nGrey Areas\n\nand\n\nSoul Giant!\n\nDoors 630\nMusic 730\n\nJanuary 8\n\n$10\n\nALL AGES",
+"url": "https://happeningnext.com/event/bikini-truck-stop-grey-areas-ghost-prism-andamp-soul-giant-eid3a0ebra5vs",
+"image": "https://cdn.happeningnext.com/events10/banners/59a28efcb134248253a57d23c6629508168d4e7dca0617407353ef8a6e04197c-rimg-w1080-h1671-dc582868-gmir?v=1795101013",
+"source": "Happening Next (music)",
+"id": "4227fcd49f"
 },
 {
 "title": "50 1st Jokes - Comedians Tell Their First Jokes of the Year",
