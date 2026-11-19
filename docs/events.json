@@ -1,10 +1,10 @@
 {
-"updated": "2026-11-19T03:00:16Z",
+"updated": "2026-11-19T05:12:52Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
 "ok": true,
-"count": 5
+"count": 4
 },
 {
 "name": "Acadiana Center for the Arts",
@@ -19,7 +19,7 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 14
+"count": 13
 },
 {
 "name": "Lafayette Travel",
@@ -34,7 +34,7 @@
 {
 "name": "Downtown Lafayette",
 "ok": true,
-"count": 12
+"count": 11
 },
 {
 "name": "Hideaway on Lee",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 39
+"count": 38
 },
 {
 "name": "Happening Next (theatre)",
@@ -74,12 +74,12 @@
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 60
+"count": 61
 },
 {
 "name": "Happening Next (art)",
 "ok": true,
-"count": 43
+"count": 41
 },
 {
 "name": "Happening Next (exhibitions)",
@@ -94,12 +94,12 @@
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 21
+"count": 18
 },
 {
 "name": "Happening Next (fitness)",
 "ok": true,
-"count": 6
+"count": 5
 },
 {
 "name": "Happening Next (festivals)",
@@ -120,7 +120,7 @@
 {
 "name": "Submitted",
 "ok": true,
-"count": 2
+"count": 1
 },
 {
 "name": "Blue Moon Saloon",
@@ -268,69 +268,6 @@
 "id": "e607e2d6a3"
 },
 {
-"title": "Cross Currents: Improvised Truths — Curtis Patterson and the Jazz of Form",
-"start": "2026-11-18T17:00",
-"end": "2026-11-18T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hilliard Art Museum",
-"address": "710 E St Mary Blvd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"arts",
-"community"
-],
-"desc": "Join us for Improvised Truths: Curtis Patterson and the Jazz of Form , the latest iteration of Cross Currents, a series using visual art as a catalyst for interdisciplinary dialogue, as we explore how Patterson’s bronze and steel sculptures channel the improvisational language of jazz and African diasporic symbolism into visual metaphors of movement, continuity, and cross-cultural memory.\n\n5:00 p.m. Doors Open\n\n5:30 p.m. Panel Discussion\n\n6:30 p.m. Jazz Performance\n\nRSVP HERE\n\nPanelists\n\nDr. Sharlene Sinegal-DeCuir , Professor of History and Chair of African American and African Diaspora Studies, Xavier University of Louisiana\n\nDonald Harrison Jr. , saxophonist, composer, and Big Chief of the Congo Square Nation Afro-New Orleans Cultural Group\n\nDr. Allison Young , Associate Professor of Contemporary Art History, LSU\n\nModerated by Dr. Joel Rhone , Assistant Professor of Literature, University of Louisiana Lafayette\n\nFree for museum members, UL students, faculty and staff. General public entry with museum admission.\n\nPresented by Louisiana Endowment for the Humanities\n\nFunding for the 2026 Rebirth Grant has been provided by the State of Louisiana and administered by the Louisiana Endowment for the Humanities.\n\nThe views, findings, conclusions, or recommendations expressed by this organization do not necessarily represent those of either the Louisiana Endowment for the Humanities or the State of Louisiana.",
-"url": "https://hilliardartmuseum.org/event/cross-currents-improvised-truths-curtis-patterson-and-the-jazz-of-form/",
-"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/UL-Digital-Billboards-16_9-1920-x-1080.webp",
-"source": "Hilliard Art Museum",
-"id": "a5d8d5958a"
-},
-{
-"title": "✨ Gather & Glow/ An Exclusive Fall Social.✨",
-"start": "2026-11-18T17:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "200 Beaullieu Dr Ste 6, Lafayette, LA, United States, Louisiana 70508",
-"address": "200 Beaullieu Dr, Lafayette, LA 70508-7230, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"food"
-],
-"desc": "An evening of exclusive indulgences awaits!\n🥂 Sip cocktails, enjoy live music, shop charming pop-up vendors, and discover event only specials, luxurious beauty packages, exceptional savings, and exciting raffle giveaways!✨",
-"url": "https://happeningnext.com/event/gather-andamp-glow-an-exclusive-fall-social-eid3a0e8e3uaq",
-"image": "https://cdn.happeningnext.com/events8/banners/fe04cde8162b86c40fd9891f94802e06aecb8154af8aa6a367036a24f9d9e9e1-rimg-w1152-h474-dcf8e8d8-gmir?v=1793134950",
-"source": "Happening Next (Lafayette live music)",
-"alsoOn": [
-"Happening Next (music)"
-],
-"id": "3b541dbc1a"
-},
-{
-"title": "Speak Out Against SpaceX",
-"start": "2026-11-18T17:30",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Abbeville Courthouse",
-"address": "100 N. State Street, 2nd floor",
-"price": "Free",
-"free": true,
-"cats": [
-"community"
-],
-"desc": "Here is a link to the meeting agenda:\n\nhttps://www.vppj.org/PDFforms/Agendas/Agendas%202026/11.Nov2026/01.Special%20Budget.PJ%20Agenda%2011-18-26%20-%20Corrected.02.pdf",
-"url": "https://www.instagram.com/p/Df0zoJlO5nf/?avpt=eXJteDd5ZHgzMnhu",
-"image": "",
-"source": "Submitted",
-"id": "e2f00c4159"
-},
-{
 "title": "Artist Round Up: Collaging, Flyer Making, and the Community Zine",
 "start": "2026-11-18T18:00",
 "end": "2026-11-18T20:00",
@@ -349,71 +286,9 @@
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Artist-Round-Up-Zine-Website.jpg",
 "source": "Acadiana Center for the Arts",
 "alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Happening Next (art)"
+"Acadiana Center for the Arts (all events)"
 ],
 "id": "6fde104d8f"
-},
-{
-"title": "Louisiana Writers Series with Gina Ferrara and Taylor Clement",
-"start": "2026-11-18T18:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "1204 Johnston St., Lafayette, LA, United States, Louisiana 70503",
-"address": "1204 Johnston St, Lafayette, LA 70503-2022, United States, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "Join us Wednesday, November 18, at 6:00 p.m. for the Louisiana Writers Series, presented by Deep South Writers with generous support from the Friends of the Humanities.\n\nThis special reading features two Louisiana writers whose work explores the intersections of place, memory, identity, and cultural",
-"url": "https://happeningnext.com/event/louisiana-writers-series-with-gina-ferrara-and-taylor-clement-eid3a0eahxkvj",
-"image": "https://cdn.happeningnext.com/events9/banners/4eb50368c181dd070c867c3fd6921084ed0b8aa23493564573dce755a29f9d8b-rimg-w1200-h1552-dcc8c8b8-gmir?v=1794390533",
-"source": "Happening Next (art)",
-"id": "a6e6d81b84"
-},
-{
-"title": "Yoga in the Park",
-"start": "2026-11-18T18:00",
-"end": "2026-11-18T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston St, Lafayette, LA",
-"price": "Free",
-"free": true,
-"cats": [
-"wellness"
-],
-"desc": "Join us for Yoga in the Park, part of the \"Fit For All\" series presented by Louisiana Orthopaedic Specialists & Orthopedic Urgent Care. Every Wednesday at 6:00 PM, unroll your mat and unwind with a free community yoga session at Moncus Park. Whether you're a seasoned yogi or trying it for the first time, it's an easy way to reset midweek and move alongside your neighbors. Location: First Horizon Amphitheater, unless otherwise noted What to know: Every Wednesday at 6:00 PM All ages and experience levels welcome Bring your own mat and water Wear comfortable clothing No registration required Completely free Class may be canceled or moved due to rain or excessive heat, check our social media stories each Wednesday for updates and location Instructer Schedule: 9/16- Neil Gresham 9/23 -Zoe Wingate 9/30 -Zoe Wingate 10/7- Jeanne Marie Lousao 10/14- Tammy Marlin *waiting for documents* 10/21- Neil Gresham 10/28- Zoe Wingate 11/4- Jeanne Marie Lousao 11/11- Zoe Wingate 11/18- Kayla Duhon 11/25- Allie Edge See you on the mat!",
-"url": "https://moncuspark.org/calendar-events/yoga2026/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
-"source": "Moncus Park",
-"alsoOn": [
-"Happening Next (fitness)",
-"Happening Next (health wellness)"
-],
-"id": "7dd96a27ae"
-},
-{
-"title": "Horror Book Club!",
-"start": "2026-11-18T18:15",
-"end": "2026-11-18T19:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Downtown Lafayette",
-"address": "",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "While the lawyer drives back to his office, a storm breaks out, forcing the entire family—Xiomara’s aunts and uncles and cousins—to remain in the house. And the words of Papi’s will hang over their heads even heavier than the rain clouds. Over the course of the night, scandal after scandal is revealed to the public about the family. Suddenly a tense few hours of surviving her family turns into a vicious night of recrimination, violence, accusations…and murder.",
-"url": "https://www.downtownlafayette.org/event/horror-book-club-dbd23",
-"image": "",
-"source": "Downtown Lafayette",
-"id": "c5005913a1"
 },
 {
 "title": "Trivia Night with Jay Steiner",
@@ -1466,6 +1341,25 @@
 "id": "a9f56f66b4"
 },
 {
+"title": "Spank the Monkey | Rock'n'Bowl® de Lafayette",
+"start": "2026-11-21T21:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "Rock'n'Bowl de Lafayette",
+"address": "905 Jefferson St, Lafayette, LA 70501-7900, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Turn it up, Lafayette! Spank the Monkey, the 90's rock band, rocks Rock'n'Bowl® de Lafayette on Saturday, November 21 at 9:00 PM. Bring your crew and rock out all night!",
+"url": "https://happeningnext.com/event/spank-the-monkey-rocknbowl-de-lafayette-eid3a0ebj589l",
+"image": "https://cdn.happeningnext.com/events10/banners/67bc23a946754e4270c1f21f04bd4ed62c2d3b4b3abe0ddd36c2576cdc2e8c48-rimg-w1200-h628-dc081838-gmir?v=1794987798",
+"source": "Happening Next (music)",
+"id": "e510e14f94"
+},
+{
 "title": "Southern Screen Festival | 16th Annual",
 "start": "2026-11-22T00:00",
 "end": null,
@@ -1768,6 +1662,25 @@
 "image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1794768867550-RO1SL72ZXCCUZJPIX76G/884789974_1744985494293322_6294533251426956489_n.jpg",
 "source": "Hideaway on Lee",
 "id": "64106f5fcb"
+},
+{
+"title": "Keith Frank - Thanksgiving Eve Takeover",
+"start": "2026-11-25T19:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "The Ruins",
+"address": "1919 Kaliste Saloom Rd, Lafayette, LA 70508-6115, United States, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "THE BOSS IS COMING TO THE RUINS!\n\nThat's right, we're bringing in the one and only KEITH FRANK & THE SOILEAU ZYDECO BAND!\n\nThe Zydeco Boss is taking over Thanksgiving Eve, bringing his signature high-energy Louisiana zydeco sound, accordion-driven grooves, and dance-floor favorites to Lafayette!\n\nGe",
+"url": "https://happeningnext.com/event/keith-frank-thanksgiving-eve-takeover-eid3a0ebmlp98",
+"image": "https://cdn.happeningnext.com/events10/banners/f368efc73d58572653aa660a706a428437313134627a3347244d8ff32971cf00-rimg-w1080-h1080-dc180808-gmir?v=1795016490",
+"source": "Happening Next (music)",
+"id": "29413b5c8f"
 },
 {
 "title": "Overstuffed Trivia Night at Legends Annex",
