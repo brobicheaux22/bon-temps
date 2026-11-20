@@ -265,7 +265,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 
 <script>
 // Bump this whenever the page changes, so open apps notice and reload themselves.
-const APP_VERSION = "2026-11-20.1";
+const APP_VERSION = "2026-11-20.2";
 
 // "Submit an event" sends answers to this Google Form; they land in a Google Sheet for approval.
 // The numbers are the form's question IDs, in the form's question order.
@@ -280,9 +280,8 @@ const SUBMIT_FIELDS = {
 // Empty = off. Only someone signed in to that GoatCounter account can see the numbers.
 const GOATCOUNTER = "bontemps";
 
-// The public site, and the separate site holding copies of the calendar files for the Home Screen app
+// The public site (event pages for sharing live under it)
 const SITE = "https://brody-robicheaux.github.io/bon-temps/";
-const CAL_SITE = "https://brody-robicheaux.github.io/bon-temps-cal/";
 const homeScreenApp = () => navigator.standalone === true || matchMedia("(display-mode: standalone)").matches;
 const isListed = e => !!(state.data && state.data.events.some(x => x.id === e.id));
 
@@ -687,11 +686,11 @@ function calLinks(e) {
   // iPhones only offer "Add to Calendar" for a real .ics web address, so events on the list use
   // the file the collector writes (docs/cal/<id>.ics). A saved event that has since dropped
   // off the list falls back to a file built here.
-  // The Home Screen app keeps links to its own address inside its bare window, which can't open
-  // calendar files (blank white page). There the button uses a copy of the file on a separate
-  // site (the bon-temps-cal project), which iPhone opens in a Safari window that can.
+  // The Home Screen app opens links on its own domain inside its bare window, which can't open
+  // calendar files (blank white page). There the button uses an "x-safari-https://" link, which
+  // iPhones (iOS 17+) open in real Safari, and Safari offers "Add to Calendar".
   const listed = isListed(e);
-  const file = homeScreenApp() ? `${CAL_SITE}${e.id}.ics` : `cal/${e.id}.ics`;
+  const file = homeScreenApp() ? `x-safari-${SITE}cal/${e.id}.ics` : `cal/${e.id}.ics`;
   return { google: g, ics: listed ? file : URL.createObjectURL(new Blob([ics], { type: "text/calendar" })) };
 }
 
@@ -724,7 +723,7 @@ function openSheet(id) {
     <div class="actions">
       ${e.url && hasDetails ? `<a class="primary" href="${esc(e.url)}" target="_blank" rel="noopener">Event page and tickets ↗</a>` : ""}
       <a href="${cal.google}" target="_blank" rel="noopener">Google Calendar</a>
-      <a href="${cal.ics}" target="_blank" rel="noopener">Apple Calendar</a>
+      <a href="${cal.ics}"${homeScreenApp() ? "" : ` target="_blank" rel="noopener"`}>Apple Calendar</a>
       <button type="button" data-save="${e.id}" aria-pressed="${saved.has(e.id)}">${saved.has(e.id) ? "♥ Saved" : "♡ Save"}</button>
       <button type="button" id="share">Share</button>
     </div>

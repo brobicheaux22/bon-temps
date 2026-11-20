@@ -7,8 +7,8 @@ local listings.
 - `docs/` is the website (one page, no build step). GitHub Pages serves it.
 - `collector/collect.py` gathers events and writes `docs/events.json`, plus for every event:
   - a calendar file in `docs/cal/` (the "Apple Calendar" button opens these). The Home Screen app
-    can't open files from its own address, so there the button uses copies on a second site,
-    [bon-temps-cal](https://github.com/brody-robicheaux/bon-temps-cal), which copies them every 20 minutes;
+    can't open calendar files in its own window, so there the button uses an `x-safari-https://`
+    link that opens the file in real Safari (iOS 17 and newer);
   - a small page in `docs/e/` that the Share button sends, so the link preview shows the event's
     name, day, time and venue before forwarding to the event.
 - `.github/workflows/collect.yml` runs the collector **every 2 hours** for free on GitHub.
