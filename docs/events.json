@@ -1,25 +1,25 @@
 {
-"updated": "2026-11-20T05:08:38Z",
+"updated": "2026-11-20T07:26:13Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
 "ok": true,
-"count": 4
+"count": 3
 },
 {
 "name": "Acadiana Center for the Arts",
 "ok": true,
-"count": 14
+"count": 12
 },
 {
 "name": "Acadiana Center for the Arts (all events)",
 "ok": true,
-"count": 11
+"count": 10
 },
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 13
+"count": 12
 },
 {
 "name": "Lafayette Travel",
@@ -34,27 +34,27 @@
 {
 "name": "Downtown Lafayette",
 "ok": true,
-"count": 11
+"count": 10
 },
 {
 "name": "Hideaway on Lee",
 "ok": true,
-"count": 22
+"count": 21
 },
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 40
+"count": 39
 },
 {
 "name": "Happening Next (theatre)",
 "ok": true,
-"count": 14
+"count": 13
 },
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 55
+"count": 54
 },
 {
 "name": "Happening Next (comedy)",
@@ -64,27 +64,27 @@
 {
 "name": "Happening Next (dance)",
 "ok": true,
-"count": 21
+"count": 20
 },
 {
 "name": "Happening Next (concerts)",
 "ok": true,
-"count": 33
+"count": 31
 },
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 65
+"count": 63
 },
 {
 "name": "Happening Next (art)",
 "ok": true,
-"count": 44
+"count": 39
 },
 {
 "name": "Happening Next (exhibitions)",
 "ok": true,
-"count": 7
+"count": 6
 },
 {
 "name": "Happening Next (food & drinks)",
@@ -94,12 +94,12 @@
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 19
+"count": 16
 },
 {
 "name": "Happening Next (fitness)",
 "ok": true,
-"count": 9
+"count": 8
 },
 {
 "name": "Happening Next (festivals)",
@@ -119,7 +119,7 @@
 {
 "name": "Ragin' Cajuns home games",
 "ok": true,
-"count": 17
+"count": 16
 },
 {
 "name": "Ticketmaster (Cajundome & touring shows)",
@@ -135,7 +135,7 @@
 {
 "name": "Blue Moon Saloon",
 "ok": true,
-"count": 36
+"count": 35
 },
 {
 "name": "Wonderland Performing Arts",
@@ -169,220 +169,6 @@
 "id": "2bc6311c38"
 },
 {
-"title": "Yin Yoga with Sound Bath - Cami",
-"start": "2026-11-16T16:00",
-"end": "2026-11-19T09:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Paths to Restoration",
-"address": "107 Montrose Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"wellness"
-],
-"desc": "Slow down, settle into the moment, and discover the power of stillness.\nYin Yoga is a slow, meditative practice that invites you to hold gentle poses for several minutes, allowing you to gradually work into the body's deeper connective tissues. Rather than flowing from pose to pose, you'll be encouraged to breathe, observe, and explore your own edge with patience and mindfulness.\nAs you remain in each posture, you'll have the opportunity to notice areas of tension, practice staying present through mild discomfort, and cultivate greater flexibility, self-awareness, and inner calm. Throughout class, your instructor will offer gentle guidance to help quiet the mind and support your experience.\nThe practice concludes with an immersive sound bath during Savasana, the final resting pose. Crystal singing bowls, Tibetan singing bowls, gongs, and other therapeutic sound instruments create a rich landscape of resonant tones that encourage deep relaxation and a peaceful transition into rest.\nWhether you're looking to improve mobility, reduce stress, or simply carve out time to reconnect with yourself, this class offers a space to slow down, breathe deeply, and leave feeling refreshed and restored.\nNo prior yoga experience is necessary. All bodies and experience levels are welcome.",
-"url": "https://happeningnext.com/event/yin-yoga-with-sound-bath-cami-eid3a0eb21wft",
-"image": "https://cdn.happeningnext.com/events2/banners/1775687dc9a3566f2d5d0a54a760fd92460e1a80154c4c22319d7d5b85e42a3c-rimg-w1200-h675-dc383838-gmir?v=1794669167",
-"source": "Happening Next (health wellness)",
-"id": "baf2f10196"
-},
-{
-"title": "Eddie Pepitone (It’s Always Sunny in Philadelphia, Rick and Morty, Chappelle’s Show, Bob’s Burgers)",
-"start": "2026-11-19T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "Club 337",
-"address": "1521 W Pinhook Rd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"theater"
-],
-"desc": "",
-"url": "https://happeningnext.com/event/eddie-pepitone-it’s-always-sunny-in-philadelphia-rick-and-morty-chappelle’s-show-bob’s-burgers-eid3a0dvkxc56",
-"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy80ZDUxMmExMTAzMDQxMzNkMWE2YzZiYjdiOTlkZGI0NDA5ZGZiMjBlZGMyMGUzMmFmZDg0ZWVhNDBjZjNkNWI4LXJpbWctdzEyMDAtaDY3NS1kYzA4MDgwOC1nbWlyP3Y9MTc4NzUyNTQwOQ.avif",
-"source": "Happening Next (theatre)",
-"alsoOn": [
-"Happening Next (art)"
-],
-"id": "54c25ec22b"
-},
-{
-"title": "Artists’ Alliance",
-"start": "2026-11-19T09:00",
-"end": "2027-01-09T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts - Main Gallery",
-"address": "101 W Vermilion St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-19",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "d5773c2e0f"
-},
-{
-"title": "Coffee & Connect: Caring Through the Holidays",
-"start": "2026-11-19T09:00",
-"end": "2026-11-19T10:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Buckner Prosthetics, 111 South College Road, Lafayette, LA",
-"address": "111 S College Rd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"food",
-"wellness"
-],
-"desc": "Caring Through the Holidays\nComfort, Care, and Connect ❤️\nMeaningful moments with loved ones, cherished traditions, and the support to enjoy them. Join us this Thursday for conversations about comfort, care, and quality of life this holiday season.\n✨ Dolly Brandt with Compassus Hospice & Palliative Care and Chrissy Thompson with HOPE Healthcare & Hospice will share how hospice care can support individuals and families, bringing comfort and helping make room for the moments that matter most.\n✨ Dr. Lauren Young with NeuroElite PT will introduce specialized rehabilitation for individuals with neurologic conditions, exploring ways to support mobility, independence, and quality of life while helping families better support their loved ones.\nWhether you’re caring for someone you love or connecting families with resources, come learn and connect with us!\n📅 Thursday, November 19\n⏰ 9:00–10:30 AM\n📍 Hosted by Buckner Prosthetics\nBring a friend and join us!\nFree for members and $20 for non-members. Includes breakfast, coffee, education & meaningful conversation. Registration required! ❤️\nLink below!\nHub City Connect\nEngage. Empower. Educate.",
-"url": "https://happeningnext.com/event/coffee-andamp-connect-caring-through-the-holidays-eid3a0ebau7o2",
-"image": "https://cdn.happeningnext.com/events10/banners/e6ab5ade5240cdecf04c5bac9b6f8d2ccf94efc8d21219bdd4125c6c5551cc07-rimg-w626-h960-dcf8f8f8-gmir?v=1794860668",
-"source": "Happening Next (health wellness)",
-"id": "3b6f023de3"
-},
-{
-"title": "Philip Gould: A Selection of Works",
-"start": "2026-11-19T09:00",
-"end": "2026-11-28T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-19",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "c7f5af1cb0"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-11-19T09:00",
-"end": "2026-12-23T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-19",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "87f8b83e87"
-},
-{
-"title": "Valcour Records | 20 Years",
-"start": "2026-11-19T09:00",
-"end": "2027-02-27T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-19",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "e607e2d6a3"
-},
-{
-"title": "Creative Fitness For Seniors",
-"start": "2026-11-19T10:00",
-"end": "2026-11-19T10:45",
-"allDay": false,
-"ongoing": false,
-"venue": "Basin Arts",
-"address": "126 S Buchanan St, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"wellness"
-],
-"desc": "Join Aly Schexnayder for a welcoming, adaptable movement class designed to support mobility, balance, coordination, and overall well-being. Creative Fitness for Seniors offers a relaxed way to stay active, connect with others, and move at your own pace.\nNo dance or fitness experience necessary. Just wear something\ncomfortable and come ready to move!\n📅 Thursdays | September 17 to December 17, 2026 | No class November 26\n🕙 10:00 to 10:45 AM\n📍 Basin Arts | 126 S. Buchanan St.\n✨ FREE | Open to adults 60+\nREGISTER HERE: https://basinarts.as.me/schedule/45d24a52/?appointmentTypeIds[]=97749393",
-"url": "https://happeningnext.com/event/creative-fitness-for-seniors-eid3a0eb21vk7",
-"image": "https://cdn.happeningnext.com/events1/banners/88aab62a62027cfc3eda8152ff28825319240a3ddf9994af261c559f9ec2dafc-rimg-w1200-h676-dce8f8f8-gmir?v=1794669159",
-"source": "Happening Next (art)",
-"alsoOn": [
-"Happening Next (fitness)",
-"Happening Next (health wellness)"
-],
-"id": "22c7c99667"
-},
-{
-"title": "Artist Tour with Curtis Patterson + Melissa Messina",
-"start": "2026-11-19T12:00",
-"end": "2026-11-19T13:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hilliard Art Museum",
-"address": "710 E St Mary Blvd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"arts",
-"community"
-],
-"desc": "Artist Curtis Patterson and Curator of Exhibition Melissa Messina will lead a tour of the exhibition.\n\nExperience Persistent Vision through the perspectives of artist Curtis Patterson and curator Melissa Messina. Together, they’ll guide visitors through the exhibition, offering insights into Patterson’s artistic practice, the ideas and inspirations behind the work, and the stories that connect the pieces. Hear directly from the artist and curator as they explore the exhibition’s themes, creative processes, and the ways art invites us to look back, look forward, and see familiar ideas in new ways.\n\nAn engaging opportunity to experience Persistent Vision through the voices of the people who know it best.\n\nRSVP HERE",
-"url": "https://hilliardartmuseum.org/event/artist-tour-with-curtis-patterson-melissa-messina/",
-"image": "https://hilliardartmuseum.org/wp-content/uploads/2026/11/Event-Thumbnail-Website-1.webp",
-"source": "Hilliard Art Museum",
-"id": "8c5f685e58"
-},
-{
-"title": "Women's Resource Fair",
-"start": "2026-11-19T13:00",
-"end": "2026-11-19T15:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Lafayette Parish Correctional Center",
-"address": "916 Lafayette Street, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"community"
-],
-"desc": "Connect incarcerated women at LPCC with local resources, services, and community partners to support successful reentry.\nAbout this Event\nWomen’s Resource Fair on November 19th at Lafayette Parish Correctional Center (LPCC) specifically for women who are currently incarcerated.\nWe are inviting community organizations and service providers to participate and connect directly with women who are preparing for reentry and thinking about their next steps after incarceration.\nThis is an opportunity for vendors to share information about the services and resources they provide, answer questions, and help women make meaningful connections before they return to the community. We are especially interested in organizations offering resources related to housing, employment, education, healthcare, mental health and wellness, family support, financial stability, recovery, legal services, transportation, and other reentry-related needs.\nOur goal is to bring community resources directly to women who may need them and help build connections that can continue beyond release.\nEvent Details:\nDate: November 19\nTime: 1:00–3:00 PM\nVendor Setup: 12:00 PM\nLocation: Lafayette Parish Correctional Center (LPCC)",
-"url": "https://happeningnext.com/event/womens-resource-fair-eid1ef0l77ap9ja",
-"image": "https://cdn.happeningnext.com/events10/banners/8f3b59c2918b8b8c425acd307b1c55acd0517970d5d42b1783bd67a5e67dfa67-rimg-w794-h369-dcf8f8f8-gmir.jpg?v=1794549668",
-"source": "Happening Next (exhibitions)",
-"alsoOn": [
-"Happening Next (health wellness)"
-],
-"id": "cec0ecc1f7"
-},
-{
 "title": "Southern Screen Festival",
 "start": "2026-11-19T17:00",
 "end": "2026-11-22T22:00",
@@ -390,7 +176,7 @@
 "ongoing": true,
 "venue": "Acadiana Center for the Arts",
 "address": "101 W Vermilion St",
-"price": "Free",
+"price": "",
 "free": false,
 "cats": [
 "arts",
@@ -398,186 +184,9 @@
 ],
 "desc": "Multiple Options: Passes or Individual Tickets\nWhether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day from November 19-22 is sure to entertain, educate, and inspire.\n​\nLet Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers!\n​",
 "url": "https://www.downtownlafayette.org/event/southern-screen-festival",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
+"image": "",
 "source": "Downtown Lafayette",
-"alsoOn": [
-"Acadiana Center for the Arts"
-],
 "id": "c5ae6b4100"
-},
-{
-"title": "Friendsgiving",
-"start": "2026-11-19T18:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "The Stage Karaoke Bar",
-"address": "2921 Verot School Rd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"family"
-],
-"desc": "Gathering the family together. Come join us at the table to give thanks! Potluck, music, games, family, friends, and thankful hearts",
-"url": "https://happeningnext.com/event/friendsgiving-eid3a0eahxlmn",
-"image": "https://cdn.happeningnext.com/events8/banners/ec7734dbc7c4f53d4c9e779c7f082f186e0a7c4664a3baeca69872532022c8a9-rimg-w1080-h1920-dce8d8b8-gmir?v=1794390547",
-"source": "Happening Next (music)",
-"id": "276e82058f"
-},
-{
-"title": "Language Café",
-"start": "2026-11-19T18:00",
-"end": "2026-11-19T19:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"community"
-],
-"desc": "Step into something global right here in Lafayette! Language Café is a dynamic monthly gathering where language, culture, and community come together in an energetic, welcoming atmosphere. Practice conversational phrases, discover new traditions, and connect with neighbors from diverse backgrounds, all in the heart of Moncus Park. Each month highlights a different culture, with international students and local cultural organizations helping host the experience. Expect authentic conversations, cultural insights, and opportunities to learn directly from those who live and share these traditions every day. Location: Treehouse Deck Fall 2026 Dates: September 17 - Hispanic Heritage Month: Spanish language and traditions October 15 - Filipino American Heritage Month: Filipino Fiesta November 19 - Native American Heritage Month: Native languages Whether you are brushing up on a second language, curious about the world, or simply looking to meet new people, Language Café is a relaxed and engaging space to expand your perspective and build meaningful connections. Come learn. Come explore. Come connect. 🌍✨",
-"url": "https://moncuspark.org/calendar-events/language-cafe/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/08/Language-Cafe-at-Moncus-Park-_-Fall-2026.jpg",
-"source": "Moncus Park",
-"id": "65cd960794"
-},
-{
-"title": "Ragin' Cajuns Women's Basketball vs Tarleton State",
-"start": "2026-11-19T18:00",
-"end": "2026-11-19T20:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Cajundome",
-"address": "444 Cajundome Blvd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"sports"
-],
-"desc": "",
-"url": "https://ragincajuns.com/calendar.aspx?game_id=15512&sport_id=10",
-"image": "",
-"source": "Ragin' Cajuns home games",
-"id": "68270971fd"
-},
-{
-"title": "HODGE PODGE 4",
-"start": "2026-11-19T18:30",
-"end": "2026-11-19T22:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Blue Moon Saloon & Guest House",
-"address": "215 E Convent St, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"food",
-"arts"
-],
-"desc": "Hodge Podge is a concert event run solely by UL Music Business & Recording Arts students. These students spend an entire semester arranging a night of local musical talent, food, raffle opportunities, and a fun atmosphere. The Hodge Podge crew gets the opportunity to have hands-on experience with marketing, sponsorship, merchandising, collaborating with local artists, and more.\nThis year's Hodge Podge has Meredith Guy for the pre-show, along with Dairy Free, Mitch Reed, and Brewster Durbin!\nCome to a concert experience like no other on November 19th at the Blue Moon Saloon!",
-"url": "https://happeningnext.com/event/hodge-podge-4-eid27punbbwjhn",
-"image": "https://cdn.happeningnext.com/events10/banners/1497d190-e3ac-11f1-afaa-49835c778578-rimg-w1080-h1350-dcc8c8b8-gmir.png?v=1795046364",
-"source": "Happening Next (Lafayette live music)",
-"alsoOn": [
-"Blue Moon Saloon",
-"Happening Next (art)",
-"Happening Next (concerts)",
-"Happening Next (music)"
-],
-"id": "a4062f8c92"
-},
-{
-"title": "Gary Newman & His Rhythm Boys",
-"start": "2026-11-19T19:00",
-"end": "2026-11-19T21:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hideaway on Lee",
-"address": "407 Lee Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://www.hideawayonlee.com/events/gary-newman-his-rhythm-boys",
-"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1792881760146-SI6BDUBCOGLIKESBNULU/843970511_1721768793281659_1783794214476183709_n+%281%29.jpg",
-"source": "Hideaway on Lee",
-"id": "3bd75956ae"
-},
-{
-"title": "State of LA Danse, Thursday November 19",
-"start": "2026-11-19T19:00",
-"end": "2026-11-19T21:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Ducrest-Gilfry Auditorium in Angelle Hall",
-"address": "601 East Saint Mary Boulevard, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"music"
-],
-"desc": "Faculty and Guest Artist Dance Concert from the UL Lafayette Dance Program",
-"url": "https://happeningnext.com/event/state-of-la-danse-thursday-november-19-eid1ef0l9133ter",
-"image": "https://cdn.happeningnext.com/events5/banners/a92ac5c6759537eb93229dd35fa66ebd6ab1db7fe8253db23989878c647178fd-rimg-w1080-h1920-dc080808-gmir.jpg?v=1793290570",
-"source": "Happening Next (performances)",
-"alsoOn": [
-"Happening Next (art)",
-"Happening Next (concerts)",
-"Happening Next (dance)",
-"Happening Next (music)"
-],
-"id": "aea53beb15"
-},
-{
-"title": "Trivia Night at The Flats",
-"start": "2026-11-19T19:00",
-"end": "2026-11-19T20:00",
-"allDay": false,
-"ongoing": false,
-"venue": "The Flats",
-"address": "427 Jefferson St",
-"price": "Free",
-"free": true,
-"cats": [
-"community"
-],
-"desc": "Join us on the back patio for four rounds of general knowledge trivia. Teams can have 1-6 players. Prizes for teams with the top three scores for the night. Trivia starts at 7pm sharp.",
-"url": "https://www.downtownlafayette.org/event/trivia-night-at-the-flats",
-"image": "",
-"source": "Downtown Lafayette",
-"id": "3ec7fcf8a9"
-},
-{
-"title": "Twenty Years of Valcour Records",
-"start": "2026-11-19T19:30",
-"end": "2026-11-19T21:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Acadiana Center for the Arts - James Devin Moncus Theater",
-"address": "101 W. Vermilion Street",
-"price": "$40",
-"free": false,
-"cats": [
-"music",
-"arts"
-],
-"desc": "This show has sold out, but you can still watch the concert online! Join our waitlist to be notified if any seats open up prior to the concert. For two decades, Valcour Records has stood at the heart of Louisiana’s roots renaissance — preserving the traditions of Cajun, Creole, zydeco, and folk while amplifying the voices shaping its future. Founded in Eunice, Louisiana, by partners Joel Savoy and Phillip LaFargue, Valcour has become a touchstone for the state’s cultural identity, producing award-winning albums and nurturing artists whose music carries the sound and soul of Acadiana to audiences around the world. This special Louisiana Crossroads concert brings together the label’s musicians and collaborators for an evening that honors Valcour’s 20-year journey. Through live collaborations and stories, this evening traces the label’s evolution from a group of friends recording in Savoy’s living room, to a nationally respected imprint.   C.J. Chenier T’Monde Pine Leaf Boys The Band Courtbouillon featuring Wayne Toups Caleb Klauder and Reeb Willms Sammy Lind and Nadine Landry Joel Savoy Kyle Huval K. C. Jones Jesse Lege Johnny Nicholas Katie Shore Ann Savoy Jane Vidrine The Mamou Playboys Jourdan Thibodeaux Blake Miller Bonsoir Catin Josh Caffery Roger Kash Sabra Guzman Boma Bango Tif Lamson",
-"url": "https://acadianacenterforthearts.org/events/twenty-years-of-valcour-records/?occurrence=2026-11-19",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2025/12/cover_tabloid_17x11_landscape-1-1-scaled.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)",
-"Happening Next (art)",
-"Happening Next (concerts)",
-"Happening Next (music)"
-],
-"id": "7dffdb5051"
 },
 {
 "title": "Bayou Bloodfest Horror Expo 2026",
@@ -622,6 +231,28 @@
 "id": "2b0b9dfdcc"
 },
 {
+"title": "Artists’ Alliance",
+"start": "2026-11-20T09:00",
+"end": "2027-01-09T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts - Main Gallery",
+"address": "101 W Vermilion St, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-20",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "d5773c2e0f"
+},
+{
 "title": "Kate Gordon: Tender Terrain",
 "start": "2026-11-20T09:00",
 "end": "2026-11-20T17:00",
@@ -642,6 +273,72 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "898e7115c4"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-20T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-20",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "c7f5af1cb0"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-20T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-20",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "87f8b83e87"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-20T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-20",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "e607e2d6a3"
 },
 {
 "title": "Christmas Pop-Up at MOOD!",
@@ -744,6 +441,25 @@
 "image": "",
 "source": "Lafayette city government",
 "id": "00da09a184"
+},
+{
+"title": "Guided Meditation - Jenni",
+"start": "2026-11-20T16:30",
+"end": "2026-11-20T17:30",
+"allDay": false,
+"ongoing": false,
+"venue": "Paths to Restoration",
+"address": "107 Montrose Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "This class offers a guided experience to slow down, quiet the mind, and reconnect with yourself through breath,\nreflection, stillness, and nature-inspired meditation.",
+"url": "https://happeningnext.com/event/guided-meditation-jenni-eid3a0ebra8x1",
+"image": "https://cdn.happeningnext.com/events3/banners/84cdff9238978ae1355512514674bd599d9d8aa1dd68cba91783c8d507633648-rimg-w960-h540-dc080808-gmir?v=1795101023",
+"source": "Happening Next (health wellness)",
+"id": "01b30bb3cf"
 },
 {
 "title": "Immersive Sound Bath w/ Violin & Handpan - Sara & Ryan",
@@ -1621,6 +1337,25 @@
 "id": "a4cefae2c0"
 },
 {
+"title": "Yin Yoga with Sound Bath - Cami",
+"start": "2026-11-24T09:00",
+"end": "2026-11-24T10:00",
+"allDay": false,
+"ongoing": false,
+"venue": "Paths to Restoration",
+"address": "107 Montrose Ave, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "Slow down, settle into the moment, and discover the power of stillness.\nYin Yoga is a slow, meditative practice that invites you to hold gentle poses for several minutes, allowing you to gradually work into the body's deeper connective tissues. Rather than flowing from pose to pose, you'll be encouraged to breathe, observe, and explore your own edge with patience and mindfulness.\nAs you remain in each posture, you'll have the opportunity to notice areas of tension, practice staying present through mild discomfort, and cultivate greater flexibility, self-awareness, and inner calm. Throughout class, your instructor will offer gentle guidance to help quiet the mind and support your experience.\nThe practice concludes with an immersive sound bath during Savasana, the final resting pose. Crystal singing bowls, Tibetan singing bowls, gongs, and other therapeutic sound instruments create a rich landscape of resonant tones that encourage deep relaxation and a peaceful transition into rest.\nWhether you're looking to improve mobility, reduce stress, or simply carve out time to reconnect with yourself, this class offers a space to slow down, breathe deeply, and leave feeling refreshed and restored.\nNo prior yoga experience is necessary. All bodies and experience levels are welcome.",
+"url": "https://happeningnext.com/event/yin-yoga-with-sound-bath-cami-eid3a0ebra6ra",
+"image": "https://cdn.happeningnext.com/events1/banners/9c1e4fdd5444690bcb592676870228578ae00f2bca7e11935603894f96609d36-rimg-w1200-h675-dc383838-gmir?v=1795101016",
+"source": "Happening Next (health wellness)",
+"id": "6a1e2a26a2"
+},
+{
 "title": "Ragin' Cajuns Women's Basketball vs Nicholls",
 "start": "2026-11-24T17:00",
 "end": "2026-11-24T19:00",
@@ -1790,7 +1525,8 @@
 "image": "https://moncuspark.org/wp-content/uploads/2026/01/Yoga-in-the-Park-_-Spring-2026-_-Moncus-Park-Fit-For-All-1.png",
 "source": "Moncus Park",
 "alsoOn": [
-"Happening Next (fitness)"
+"Happening Next (fitness)",
+"Happening Next (health wellness)"
 ],
 "id": "6dfc61dd24"
 },
@@ -2128,7 +1864,10 @@
 "desc": "Hype Haus Pop-Up is an in-person hangout packed with fresh vibes, cool finds, and good times.\nAbout this Event\nCome hang out in-store at Hype Haus Pop-Up!\n\nJoin Lafayette native, lululemon ambassador, and founder of Hype Haus Fitness in New Orleans and Baton Rouge, Sara, for a high energy, music driven mat class at lululemon Lafayette November 28th at 8am.\n\nThis full body workout combines rhythmic movement, strength exercises, and resistance band work for a low impact experience that brings the burn and challenges you from head to toe.\n\nExpect great music, feel good movement, and the kind of workout that leaves you feeling stronger, empowered, and wanting more. All fitness levels welcome!",
 "url": "https://happeningnext.com/event/lululemon-x-hype-haus-pop-up-eid1ef0l9ip4aoa",
 "image": "https://cdn.happeningnext.com/events8/banners/533544c7dbc67df8c1f2ce552aaa25f290e79b9bab338af29ac63f1fe8b5c1f4-rimg-w1200-h841-dc080808-gmir.jpg?v=1795045627",
-"source": "Happening Next (fitness)",
+"source": "Happening Next (music)",
+"alsoOn": [
+"Happening Next (fitness)"
+],
 "id": "0300f2f260"
 },
 {
@@ -2565,7 +2304,8 @@
 "image": "https://cdn.happeningnext.com/events7/banners/ebf096adb507dd3f827e29adc7cb08c25bd8131d3f6b99bd51abd0dbaecf85bb-rimg-w1138-h1106-dc181808-gmir?v=1795072651",
 "source": "Happening Next (Lafayette live music)",
 "alsoOn": [
-"Happening Next (concerts)"
+"Happening Next (concerts)",
+"Happening Next (music)"
 ],
 "id": "345b9e370d"
 },
@@ -6090,7 +5830,10 @@
 "desc": "Bikini Truck Stop\n\non Tour from Austin Texas\n\nwith\n\nGhost Prism\n\nGrey Areas\n\nand\n\nSoul Giant!\n\nDoors 630\nMusic 730\n\nJanuary 8\n\n$10\n\nALL AGES",
 "url": "https://happeningnext.com/event/bikini-truck-stop-grey-areas-ghost-prism-andamp-soul-giant-eid3a0ebra5vs",
 "image": "https://cdn.happeningnext.com/events10/banners/59a28efcb134248253a57d23c6629508168d4e7dca0617407353ef8a6e04197c-rimg-w1080-h1671-dc582868-gmir?v=1795101013",
-"source": "Happening Next (music)",
+"source": "Happening Next (concerts)",
+"alsoOn": [
+"Happening Next (music)"
+],
 "id": "4227fcd49f"
 },
 {
