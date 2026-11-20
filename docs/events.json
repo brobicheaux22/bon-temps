@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T07:26:13Z",
+"updated": "2026-11-20T09:11:29Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 39
+"count": 43
 },
 {
 "name": "Happening Next (theatre)",
@@ -1953,6 +1953,25 @@
 "id": "b6d8e0a5b9"
 },
 {
+"title": "Live Music : Saylor Brasseaux",
+"start": "2026-11-28T18:00",
+"end": "2026-11-28T20:00",
+"allDay": false,
+"ongoing": false,
+"venue": "329 Dulles Dr, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "Friday fun on the patio. Come dance, drink and sing.",
+"url": "https://happeningnext.com/event/live-music-saylor-brasseaux-eid3a0ebra8ia",
+"image": "https://dyn-image.allevents.in/generate-image?v=4&title=Live+Music+%3A+Saylor+Brasseaux&date=Sat%2C+28+Nov%2C+2026+at+06%3A00+pm&bg=3",
+"source": "Happening Next (Lafayette live music)",
+"id": "0b748baf83"
+},
+{
 "title": "Grand Nathainiel",
 "start": "2026-11-28T19:00",
 "end": null,
@@ -2894,6 +2913,26 @@
 "image": "https://cdn.happeningnext.com/events7/banners/cb18baf1de5a89e0bc84ff2935b9107cd90b35e76a14d45bbae05f3b8abf8c87-rimg-w640-h481-dcd8d8d8-gmir?v=1794669158",
 "source": "Happening Next (art)",
 "id": "bc757569f1"
+},
+{
+"title": "Winterfest 2026 feat. Acadiana Santa",
+"start": "2026-12-05T11:00",
+"end": null,
+"allDay": false,
+"ongoing": false,
+"venue": "329 Dulles Dr, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"music",
+"family"
+],
+"desc": "All day, family friendly event, with beer releases, live music, Acadiana Santa and more!",
+"url": "https://happeningnext.com/event/winterfest-2026-feat-acadiana-santa-eid3a0ebra2xh",
+"image": "https://cdn.happeningnext.com/events2/banners/61b146c413c8ff4ba66944db5d947ad9f9fa44d0cf3bd0dec90a015f757d537d-rimg-w1080-h1080-dcf8f8f8-gmir?v=1795101003",
+"source": "Happening Next (Lafayette live music)",
+"id": "ec098d0c6b"
 },
 {
 "title": "Artist Talk: Kate Gordon",
@@ -5830,8 +5869,9 @@
 "desc": "Bikini Truck Stop\n\non Tour from Austin Texas\n\nwith\n\nGhost Prism\n\nGrey Areas\n\nand\n\nSoul Giant!\n\nDoors 630\nMusic 730\n\nJanuary 8\n\n$10\n\nALL AGES",
 "url": "https://happeningnext.com/event/bikini-truck-stop-grey-areas-ghost-prism-andamp-soul-giant-eid3a0ebra5vs",
 "image": "https://cdn.happeningnext.com/events10/banners/59a28efcb134248253a57d23c6629508168d4e7dca0617407353ef8a6e04197c-rimg-w1080-h1671-dc582868-gmir?v=1795101013",
-"source": "Happening Next (concerts)",
+"source": "Happening Next (Lafayette live music)",
 "alsoOn": [
+"Happening Next (concerts)",
 "Happening Next (music)"
 ],
 "id": "4227fcd49f"
