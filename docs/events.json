@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T19:09:53Z",
+"updated": "2026-11-20T20:58:51Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -79,7 +79,7 @@
 {
 "name": "Happening Next (art)",
 "ok": true,
-"count": 39
+"count": 40
 },
 {
 "name": "Happening Next (exhibitions)",
@@ -89,12 +89,12 @@
 {
 "name": "Happening Next (food & drinks)",
 "ok": true,
-"count": 31
+"count": 32
 },
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 16
+"count": 17
 },
 {
 "name": "Happening Next (fitness)",
@@ -1647,6 +1647,25 @@
 "id": "dbc9ed7734"
 },
 {
+"title": "Thankful Thursdays",
+"start": "2026-11-26T07:00",
+"end": "2026-11-26T07:01",
+"allDay": false,
+"ongoing": false,
+"venue": "111 Rena Drive, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "We are thankful for you! Join us for Thankful Thursdays every Thursday in November. 14% off ALL groceries with your Sandra’s blue bag! Stock up for Thanksgiving with the BEST prices in town. Don’t have a blue bag? Grab one for only $3 and save all year long. Added November bonus… 7% off all groceries every single day with your blue bag!",
+"url": "https://happeningnext.com/event/thankful-thursdays-eid3a0ebw1v8c",
+"image": "https://cdn.happeningnext.com/events6/banners/ce84a96bb151acfc400f87c28fbd272573bd1b903bb7a945e03034374352bf3e-rimg-w960-h365-dcc88848-gmir?v=1795177816",
+"source": "Happening Next (food & drinks)",
+"id": "b873ec5c5f"
+},
+{
 "title": "JPJ Memorial Turkey Trot",
 "start": "2026-11-26T09:00",
 "end": "2026-11-26T11:00",
@@ -2466,6 +2485,25 @@
 "image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/Cajun%20Jam%20drew%20simon%20%2012-2_Tqey.png",
 "source": "Blue Moon Saloon",
 "id": "bc3ee80ca6"
+},
+{
+"title": "Coffee with the Wedding Krewe | Lafayette, LA (December 2026)",
+"start": "2026-12-03T00:00",
+"end": "2026-12-03T11:30",
+"allDay": false,
+"ongoing": false,
+"venue": "118 W Vermilion St, Lafayette",
+"address": "",
+"price": "",
+"free": false,
+"cats": [
+"food"
+],
+"desc": "JOIN US AT SOJOURN TEA SHOP FOR THE VERY FIRST LAFAYETTE WEDDING KREWE MEET UP!\nCome spend the morning with NOW Weddings and your fellow Lafayette-area wedding professionals at Sojourn Tea Shop!\nAs we wrap up the year, take a little break from the holiday hustle and spend some time with the people who make weddings happen.\nOur Wedding Krewe Meetups are a chance to step away from the emails, timelines, and to-do lists for a bit and actually connect with your local wedding community.\nMeet someone new, reconnect with industry friends, swap ideas, and enjoy a relaxed morning together. A little holiday cheer is always welcome, too! 🎄\nBring your business cards and invite a friend! We'll have our Wedding Krewe prize drawing during the meetup, so make sure to drop your card in for a chance to win.\nWhether you're already part of the NOW Weddings Wedding Krewe or you're curious about the community and want to get to know us, you're welcome to join us.\nThe meetup is free to attend, but we ask that you support our host with a food or beverage purchase while you're there. Grab a cup of tea or a bite, stay for a while, and get to know some of the people who make our local wedding community what it is.\nWedding Krewe members + non-members are welcome.",
+"url": "https://happeningnext.com/event/coffee-with-the-wedding-krewe-lafayette-la-december-2026-eid3a0ebra60q",
+"image": "https://cdn.happeningnext.com/events5/banners/173f09c865c484989c532b8ffc3759796b4de896dfe2636122613e542cc36749-rimg-w1200-h600-dc080808-gmir?v=1795101012",
+"source": "Happening Next (art)",
+"id": "c5c5dccc77"
 },
 {
 "title": "Christmas Market",
