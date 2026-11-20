@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T02:57:09Z",
+"updated": "2026-11-20T05:08:38Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -9,7 +9,7 @@
 {
 "name": "Acadiana Center for the Arts",
 "ok": true,
-"count": 13
+"count": 14
 },
 {
 "name": "Acadiana Center for the Arts (all events)",
@@ -4376,7 +4376,10 @@
 "desc": "Join former members of the Artists' Alliance as they perform a demonstration of one of their most famous art formats: Tattooed Walls. Through the use of an overhead projector, Tattooed Walls turns visual artmaking into a shifting performance piece that transforms in real time. As building sized images take shape, warp, and disappear, musicians and dancers respond in kind, creating a jazz-like improvisational experience that defies disciplinary boundaries. After the performance, our artists will join AcA Visual Arts Director Jaik Faulk in a discussion of their inspirations and process, as well as the history and legacy of the Tattoed Walls form.",
 "url": "https://acadianacenterforthearts.org/events/artists-alliance-and-tattooed-walls/?occurrence=2026-12-12",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Alliance-Tattooed-Walls-Website.jpg",
-"source": "Acadiana Center for the Arts (all events)",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "0b3ce48c26"
 },
 {
