@@ -1445,6 +1445,7 @@ def main(argv):
         "events": events,
     }, ensure_ascii=False, indent=0), encoding="utf-8")
     write_calendar_files(events)
+    write_event_pages(events)
     print(f"\nwrote {len(events)} events to {OUT_FILE.relative_to(ROOT)} (and a calendar file for each)")
 
 
@@ -1534,6 +1535,65 @@ def report_big_events(missing: list[str]) -> None:
             api("PATCH", f"/issues/{issue['number']}", {"state": "closed"})
     except (urllib.error.URLError, TimeoutError, ValueError) as err:
         print(f"   (couldn't update the GitHub issue: {err})")
+
+
+PAGE_DIR = ROOT / "docs" / "e"
+SITE_URL = "https://brody-robicheaux.github.io/bon-temps/"
+
+
+def _when_text(e: dict) -> str:
+    """'Sat, Nov 21 · 8 PM', 'Sat, Nov 21 · All day' or 'Thru Dec 23' for exhibits."""
+    s = parse_when(e["start"])[0]
+    en = parse_when(e["end"])[0] if e.get("end") else None
+    day = f"{s:%a}, {s:%b} {s.day}"
+    if e.get("ongoing") and en:
+        return f"{day} – {en:%b} {en.day}"
+    if e.get("allDay"):
+        return f"{day} · All day"
+    t = f"{s.hour % 12 or 12}" + (f":{s:%M}" if s.minute else "") + (" AM" if s.hour < 12 else " PM")
+    return f"{day} · {t}"
+
+
+def write_event_pages(events: list[dict]) -> None:
+    """docs/e/<id>.html for every event, so a shared event link shows that event in the preview
+    (Messages, Facebook...): those apps read a page's preview tags but ignore the #part of a link,
+    so '/bon-temps/#id' always previewed as the home page. Each page keeps the regular poster
+    picture, puts what/when/where in the title, and sends visitors straight to the event."""
+    PAGE_DIR.mkdir(parents=True, exist_ok=True)
+    keep = {f"{e['id']}.html" for e in events}
+    for old in PAGE_DIR.glob("*.html"):
+        if old.name not in keep:
+            old.unlink()
+    for e in events:
+        title = " · ".join(x for x in (e["title"], _when_text(e), e.get("venue")) if x)
+        blurb = re.sub(r"\s+", " ", e.get("desc") or "").strip()
+        if len(blurb) > 180:
+            blurb = blurb[:180].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+        blurb = blurb or "Live music, theater, food, arts, sports and festivals around Lafayette, LA."
+        url, target = f"{SITE_URL}e/{e['id']}", f"../#{e['id']}"
+        h = lambda x: html.escape(x, quote=True)
+        text = f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{h(title)}</title>
+<meta name="description" content="{h(blurb)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bon Temps">
+<meta property="og:title" content="{h(title)}">
+<meta property="og:description" content="{h(blurb)}">
+<meta property="og:url" content="{h(url)}">
+<meta property="og:image" content="{SITE_URL}og-poster.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{h(url)}">
+<meta http-equiv="refresh" content="0; url={h(target)}">
+<script>location.replace({json.dumps(target)});</script>
+</head><body><p><a href="{h(target)}">{h(title)}</a> on Bon Temps</p></body></html>
+"""
+        path = PAGE_DIR / f"{e['id']}.html"
+        if not path.exists() or path.read_text(encoding="utf-8") != text:
+            path.write_text(text, encoding="utf-8", newline="\n")
 
 
 CAL_DIR = ROOT / "docs" / "cal"

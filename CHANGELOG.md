@@ -4,6 +4,11 @@ A plain-English list of updates, newest first. For the technical details, see th
 [page changes](https://github.com/brody-robicheaux/bon-temps/commits/main/docs/index.html) and
 [collector changes](https://github.com/brody-robicheaux/bon-temps/commits/main/collector/collect.py).
 
+## Nov 20, 2026: Event previews and Apple Calendar on the Home Screen
+
+- Sharing an event now sends a link whose preview shows the event: name, day, time and venue.
+- Apple Calendar now works from the Home Screen app too (it used to open a blank page).
+
 ## Nov 19, 2026: New link preview
 
 - Texting or posting the Bon Temps link now shows a festival-poster card with the Acadiana flag: "Everything going on in Lafayette."

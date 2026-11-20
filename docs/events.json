@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T20:58:51Z",
+"updated": "2026-11-20T21:12:55Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 43
+"count": 44
 },
 {
 "name": "Happening Next (theatre)",
@@ -2772,6 +2772,25 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "93736beee3"
+},
+{
+"title": "FIRST FRIDAY LIVE HOLIDAY BASH!! #Sagittarius Edition",
+"start": "2026-12-04T19:00",
+"end": "2026-12-05T02:00",
+"allDay": false,
+"ongoing": false,
+"venue": "The Brass Room",
+"address": "1302 Surrey St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"music"
+],
+"desc": "We’re Celebrating Sagittarius Season & Ending the year with a bang for the Holiday edition of First Friday LIVE at THE BRASS ROOM!!\nROI “CHIP” will be live in the building with a few soulful special guests so don’t miss it!!\n#DjBigSam/ #DjMixology /#DjSpider/ #DjBabyBoy in the building !!\nSpecial guests #DemLigonBoiz #TheLejitBrothers & more!!\nGet ya party tables/sections at (337)251-5686",
+"url": "https://happeningnext.com/event/first-friday-live-holiday-bash-sagittarius-edition-eid3a0ebw1uom",
+"image": "https://cdn.happeningnext.com/events8/banners/2756cbb3c9c9a9addf051cc3f3394ee61cc473c2db94075b91abae255357a888-rimg-w960-h960-dcf8f8f8-gmir?v=1795177814",
+"source": "Happening Next (Lafayette live music)",
+"id": "3a7adcc29c"
 },
 {
 "title": "Skyliners BIg Band Dance",

@@ -265,7 +265,7 @@ footer h4 { margin: 0 0 6px; color: var(--ink); font-size: 15px; }
 
 <script>
 // Bump this whenever the page changes, so open apps notice and reload themselves.
-const APP_VERSION = "2026-11-19.1";
+const APP_VERSION = "2026-11-20.1";
 
 // "Submit an event" sends answers to this Google Form; they land in a Google Sheet for approval.
 // The numbers are the form's question IDs, in the form's question order.
@@ -279,6 +279,12 @@ const SUBMIT_FIELDS = {
 // Visitor counts: the site code from goatcounter.com (for https://CODE.goatcounter.com/count).
 // Empty = off. Only someone signed in to that GoatCounter account can see the numbers.
 const GOATCOUNTER = "bontemps";
+
+// The public site, and the separate site holding copies of the calendar files for the Home Screen app
+const SITE = "https://brody-robicheaux.github.io/bon-temps/";
+const CAL_SITE = "https://brody-robicheaux.github.io/bon-temps-cal/";
+const homeScreenApp = () => navigator.standalone === true || matchMedia("(display-mode: standalone)").matches;
+const isListed = e => !!(state.data && state.data.events.some(x => x.id === e.id));
 
 const CATS = {
   music: "Music", theater: "Theater", food: "Food & Drink", arts: "Arts & Culture",
@@ -681,8 +687,12 @@ function calLinks(e) {
   // iPhones only offer "Add to Calendar" for a real .ics web address, so events on the list use
   // the file the collector writes (docs/cal/<id>.ics). A saved event that has since dropped
   // off the list falls back to a file built here.
-  const listed = state.data && state.data.events.some(x => x.id === e.id);
-  return { google: g, ics: listed ? `cal/${e.id}.ics` : URL.createObjectURL(new Blob([ics], { type: "text/calendar" })) };
+  // The Home Screen app keeps links to its own address inside its bare window, which can't open
+  // calendar files (blank white page). There the button uses a copy of the file on a separate
+  // site (the bon-temps-cal project), which iPhone opens in a Safari window that can.
+  const listed = isListed(e);
+  const file = homeScreenApp() ? `${CAL_SITE}${e.id}.ics` : `cal/${e.id}.ics`;
+  return { google: g, ics: listed ? file : URL.createObjectURL(new Blob([ics], { type: "text/calendar" })) };
 }
 
 function openSheet(id) {
@@ -727,9 +737,11 @@ function openSheet(id) {
   $("close").onclick = closeSheet;
   $("fixbtn").onclick = () => openFix(e);
   $("share").onclick = async () => {
-    const url = location.href.split("#")[0] + "#" + e.id;
+    // Events on the list have their own page (docs/e/<id>.html) whose link preview shows the
+    // event's name, day, time and venue; the preview already says it all, so no extra text is sent.
+    const url = isListed(e) ? `${SITE}e/${e.id}` : location.href.split("#")[0] + "#" + e.id;
     const text = `${e.title} · ${when}${place ? " · " + place : ""}`;
-    try { if (navigator.share) await navigator.share({ title: e.title, text, url }); else { await navigator.clipboard.writeText(`${text}\n${url}`); toast("Link copied"); } } catch (_) {}
+    try { if (navigator.share) await navigator.share({ title: e.title, url }); else { await navigator.clipboard.writeText(`${text}\n${url}`); toast("Link copied"); } } catch (_) {}
   };
 }
 // ---------- "Add to Home Screen" tip ----------
