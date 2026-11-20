@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T15:01:57Z",
+"updated": "2026-11-20T17:05:15Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -225,9 +225,6 @@
 "url": "https://www.southernscreen.org/attend?occurrence=2026-11-20",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
 "source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
 "id": "2b0b9dfdcc"
 },
 {
@@ -687,6 +684,9 @@
 "url": "https://www.southernscreen.org/attend?occurrence=2026-11-21",
 "image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
 "source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
 "id": "2f9d6bb701"
 },
 {
