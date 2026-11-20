@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T01:13:55Z",
+"updated": "2026-11-20T02:57:09Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -59,7 +59,7 @@
 {
 "name": "Happening Next (comedy)",
 "ok": true,
-"count": 11
+"count": 10
 },
 {
 "name": "Happening Next (dance)",
@@ -205,8 +205,7 @@
 "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy80ZDUxMmExMTAzMDQxMzNkMWE2YzZiYjdiOTlkZGI0NDA5ZGZiMjBlZGMyMGUzMmFmZDg0ZWVhNDBjZjNkNWI4LXJpbWctdzEyMDAtaDY3NS1kYzA4MDgwOC1nbWlyP3Y9MTc4NzUyNTQwOQ.avif",
 "source": "Happening Next (theatre)",
 "alsoOn": [
-"Happening Next (art)",
-"Happening Next (comedy)"
+"Happening Next (art)"
 ],
 "id": "54c25ec22b"
 },
