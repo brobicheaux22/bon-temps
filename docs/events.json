@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21T02:55:41Z",
+"updated": "2026-11-21T05:01:59Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -39,7 +39,7 @@
 {
 "name": "Hideaway on Lee",
 "ok": true,
-"count": 21
+"count": 20
 },
 {
 "name": "Happening Next (Lafayette live music)",
@@ -59,7 +59,7 @@
 {
 "name": "Happening Next (comedy)",
 "ok": true,
-"count": 10
+"count": 9
 },
 {
 "name": "Happening Next (dance)",
@@ -114,7 +114,7 @@
 {
 "name": "Lafayette city government",
 "ok": true,
-"count": 1
+"count": 0
 },
 {
 "name": "Ragin' Cajuns home games",
@@ -399,25 +399,6 @@
 "id": "ca75fc02ec"
 },
 {
-"title": "2nd Annual PARCsGiving",
-"start": "2026-11-20T16:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "",
-"address": "",
-"price": "",
-"free": false,
-"cats": [
-"community"
-],
-"desc": "",
-"url": "https://events.lafayettela.gov/default/detail/2026-11-20-1600-2nd-Annual-PARCsGiving",
-"image": "",
-"source": "Lafayette city government",
-"id": "00da09a184"
-},
-{
 "title": "Guided Meditation - Jenni",
 "start": "2026-11-20T16:30",
 "end": "2026-11-20T17:30",
@@ -562,31 +543,11 @@
 "source": "Cité des Arts",
 "alsoOn": [
 "Happening Next (art)",
-"Happening Next (comedy)",
 "Happening Next (dance)",
 "Happening Next (performances)",
 "Happening Next (theatre)"
 ],
 "id": "f4eebcf154"
-},
-{
-"title": "Foghorn String Band",
-"start": "2026-11-20T20:00",
-"end": "2026-11-20T22:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Hideaway on Lee",
-"address": "407 Lee Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "",
-"url": "https://www.hideawayonlee.com/events/foghorn-string-band",
-"image": "https://images.squarespace-cdn.com/content/v1/5e5959c0bfd4157aee22bd55/1789927620789-8JET311QZD2DQM1OMYNM/813430956_2115865972343142_6663890111324887400_n.jpg",
-"source": "Hideaway on Lee",
-"id": "fc5ab39db6"
 },
 {
 "title": "HWY 90 BAND WILL ROCK \"THE RUINS\"",
