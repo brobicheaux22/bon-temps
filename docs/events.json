@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21T08:57:36Z",
+"updated": "2026-11-21T10:55:13Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -44,7 +44,7 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 43
+"count": 44
 },
 {
 "name": "Happening Next (theatre)",
@@ -94,12 +94,12 @@
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 15
+"count": 16
 },
 {
 "name": "Happening Next (fitness)",
 "ok": true,
-"count": 8
+"count": 10
 },
 {
 "name": "Happening Next (festivals)",
@@ -4749,6 +4749,25 @@
 "id": "1d010083b5"
 },
 {
+"title": "Cajun Country Run 2026 — Half Marathon, 10K, 5K & Fun Run",
+"start": "2026-12-19T00:00",
+"end": null,
+"allDay": true,
+"ongoing": false,
+"venue": "Acadiana Park",
+"address": "Lafayette Consolidated Government, 1201 E Alexander St, Lafayette",
+"price": "",
+"free": false,
+"cats": [
+"wellness"
+],
+"desc": "",
+"url": "https://happeningnext.com/event/cajun-country-run-2026-—-half-marathon-10k-5k-andamp-fun-run-eid3a0ebra7ju",
+"image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy8zNGJkNDQ1ZjBmNGU4YTBhNjAzNDg0MWZiYjliYWNiZWUyNGRiMjhhMmE0NTk1ZmRmZTU0ZThlNjhlN2I5ZWUzLXJpbWctdzc0MS1oOTYwLWRjMDgyODI4LWdtaXI_dj0xNzk1MTAxMDIw.avif",
+"source": "Happening Next (fitness)",
+"id": "a7e0f7d81e"
+},
+{
 "title": "The Essentials of Tai Chi",
 "start": "2026-12-19T08:00",
 "end": "2026-12-19T09:00",
@@ -4843,9 +4862,10 @@
 "desc": "Crystal Christmas: An Immersive Holiday Sound Experience\nSaturday, December 19, 2026 | 6:00–7:00 PM\nLARC’s Acadian Village Chapel | Lafayette, Louisiana\nhttps://acadianvillage.org/\nCelebrate the beauty and wonder of the Christmas season through an enchanting hour of music, featuring the luminous sounds of crystal singing bowls, harp, and the singing Mermaid Voices of Susan Grain, Lori Henderson and Cindy Dressill.\nCrystal Christmas weaves the Mermaid voices together with seasonal melodies, layered soundscapes, delicate harp melodies, and the ethereal resonance of crystal bowls and crystal harp. This angelic crystallizing music is meant to uplift you in to pausing, breathing and reconnecting with the wonder of the Season.\nJoin us inside the beautiful Acadian Village Chapel dripping with twinkling lights!Crystal Christmas is a performance happening within the Chapel at Acadian Village.\nAll donations go to LARC’s mission to help individuals with intellectual and developmental disabilities reach their goals of self-sufficiency, quality of life and self-worth.\n✨ Saturday, December 19\n✨ 6:00–7:00 PM\n✨ LARC’s Acadian Village Chapel\nhttps://acadianvillage.thundertix.com/events/273507\nWe look forward to sharing this musical evening with you!",
 "url": "https://happeningnext.com/event/crystal-christmas-holiday-singing-with-crystal-harp-eid3a0ebra69l",
 "image": "https://cdn.happeningnext.com/events10/banners/51e32980f3309d880b482fc310abdbcc4b5ef2d857f2ed633da9bc89bdc9aa83-rimg-w1200-h1600-dcf8f8f8-gmir?v=1795101015",
-"source": "Happening Next (performances)",
+"source": "Happening Next (Lafayette live music)",
 "alsoOn": [
-"Happening Next (music)"
+"Happening Next (music)",
+"Happening Next (performances)"
 ],
 "id": "7e81f90333"
 },
