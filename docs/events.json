@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21T05:01:59Z",
+"updated": "2026-11-21T07:16:26Z",
 "sources": [
 {
 "name": "Hilliard Art Museum",
@@ -9,7 +9,7 @@
 {
 "name": "Acadiana Center for the Arts",
 "ok": true,
-"count": 12
+"count": 11
 },
 {
 "name": "Acadiana Center for the Arts (all events)",
@@ -19,12 +19,12 @@
 {
 "name": "Moncus Park",
 "ok": true,
-"count": 12
+"count": 11
 },
 {
 "name": "Lafayette Travel",
 "ok": true,
-"count": 21
+"count": 20
 },
 {
 "name": "Heymann Performing Arts Center",
@@ -44,17 +44,17 @@
 {
 "name": "Happening Next (Lafayette live music)",
 "ok": true,
-"count": 44
+"count": 43
 },
 {
 "name": "Happening Next (theatre)",
 "ok": true,
-"count": 13
+"count": 12
 },
 {
 "name": "Happening Next (performances)",
 "ok": true,
-"count": 54
+"count": 52
 },
 {
 "name": "Happening Next (comedy)",
@@ -64,37 +64,37 @@
 {
 "name": "Happening Next (dance)",
 "ok": true,
-"count": 20
+"count": 18
 },
 {
 "name": "Happening Next (concerts)",
 "ok": true,
-"count": 31
+"count": 30
 },
 {
 "name": "Happening Next (music)",
 "ok": true,
-"count": 63
+"count": 59
 },
 {
 "name": "Happening Next (art)",
 "ok": true,
-"count": 40
+"count": 38
 },
 {
 "name": "Happening Next (exhibitions)",
 "ok": true,
-"count": 6
+"count": 5
 },
 {
 "name": "Happening Next (food & drinks)",
 "ok": true,
-"count": 32
+"count": 29
 },
 {
 "name": "Happening Next (health wellness)",
 "ok": true,
-"count": 17
+"count": 15
 },
 {
 "name": "Happening Next (fitness)",
@@ -109,7 +109,7 @@
 {
 "name": "Cité des Arts",
 "ok": true,
-"count": 18
+"count": 16
 },
 {
 "name": "Lafayette city government",
@@ -135,7 +135,7 @@
 {
 "name": "Blue Moon Saloon",
 "ok": true,
-"count": 35
+"count": 34
 },
 {
 "name": "Wonderland Performing Arts",
@@ -189,133 +189,6 @@
 "id": "c5ae6b4100"
 },
 {
-"title": "Bayou Bloodfest Horror Expo 2026",
-"start": "2026-11-20T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "DoubleTree by Hilton Lafayette",
-"address": "1521 W. Pinhook Rd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"arts"
-],
-"desc": "Bayou Bloodfest Horror Expo brings horror fans, filmmakers, artists, cosplayers, and pop culture enthusiasts together for a thrilling weekend of entertainment in Lafayette. Held at the DoubleTree by Hilton, the inaugural event features celebrity guest appearances, autograph sessions, panel discussions, vendors, artists, cosplay, collectibles, and immersive horror-themed experiences. Bayou Bloodfest adds a unique genre convention to Lafayette's event calendar while attracting visitors from across the Gulf South for a weekend celebrating all things horror.",
-"url": "https://www.lafayettetravel.com/event/bayou-bloodfest-horror-expo-2026/48273/",
-"image": "",
-"source": "Lafayette Travel",
-"id": "e3ddf46ccf"
-},
-{
-"title": "Southern Screen Festival | 16th Annual",
-"start": "2026-11-20T00:00",
-"end": null,
-"allDay": true,
-"ongoing": false,
-"venue": "Acadiana Center for the Arts",
-"address": "101 W Vermilion St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts",
-"community"
-],
-"desc": "Whether you are flying in from many miles away or trekking across town, Southern Screen Festival attracts entertainment lovers and creators to see something new and learn something unforgettable. With dozens of films screenings, plus an array of workshops, panels, parties, and live performances, the four day celebration every November is sure to entertain, educate, and inspire. Let Southern Screen show you how the heart of Cajun Country showcases emerging and innovative storytellers! Every year, the Southern Screen Festival is honored to host some of the most interesting and innovative creators from across Louisiana and the globe. Spanning film, television, music, podcasts and emerging media, Southern Screen welcomes professionals who can share knowledge and inspire our Southern Louisiana communities Southern Screen is a multidisciplinary 501(c)(3) nonprofit arts organization dedicated to supporting and celebrating storytellers across film, music, and the broader creative arts. Through year-round events, workshops, and community programming, we provide emerging and established artists opportunities to develop their craft, share their work, and connect with audiences. By expanding access to diverse forms of storytelling, Southern Screen strengthens the creative community and culminates this work each year with theSouthern Screen Festival in November.",
-"url": "https://www.southernscreen.org/attend?occurrence=2026-11-20",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/09/SS2026-ACA-Cover-Image.jpg",
-"source": "Acadiana Center for the Arts",
-"id": "2b0b9dfdcc"
-},
-{
-"title": "Artists’ Alliance",
-"start": "2026-11-20T09:00",
-"end": "2027-01-09T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts - Main Gallery",
-"address": "101 W Vermilion St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-20",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "d5773c2e0f"
-},
-{
-"title": "Philip Gould: A Selection of Works",
-"start": "2026-11-20T09:00",
-"end": "2026-11-28T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-20",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "c7f5af1cb0"
-},
-{
-"title": "Sebastian Lodrige: Burden | Artificial & Natural",
-"start": "2026-11-20T09:00",
-"end": "2026-12-23T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-20",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "87f8b83e87"
-},
-{
-"title": "Valcour Records | 20 Years",
-"start": "2026-11-20T09:00",
-"end": "2027-02-27T17:00",
-"allDay": false,
-"ongoing": true,
-"venue": "Acadiana Center for the Arts",
-"address": "",
-"price": "Free",
-"free": true,
-"cats": [
-"arts"
-],
-"desc": "",
-"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-20",
-"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
-"source": "Acadiana Center for the Arts",
-"alsoOn": [
-"Acadiana Center for the Arts (all events)"
-],
-"id": "e607e2d6a3"
-},
-{
 "title": "Christmas Pop-Up at MOOD!",
 "start": "2026-11-20T10:00",
 "end": "2026-11-21T16:00",
@@ -335,158 +208,6 @@
 "id": "cd85664163"
 },
 {
-"title": "Lafayette Holiday Market - Lafayette LA",
-"start": "2026-11-20T10:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "CAJUNDOME Convention Center",
-"address": "Cajundome Convention Center, 444 Cajundome Blvd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"community"
-],
-"desc": "🎄 Lafayette Holiday Market 🎄\nA Christmas Shopping Experience You Won’t Want to Miss\nKick off the holiday season at the Lafayette Holiday Market, a festive three-day Christmas shopping event featuring a carefully curated mix of boutique brands, specialty retailers, artisans, and holiday favorites—all under one roof.\nShop unique gifts, seasonal décor, fashion, jewelry, gourmet treats, and more while enjoying the warm, cheerful spirit of the holidays. Whether you’re checking off your Christmas list or simply soaking in the festive atmosphere, this is the perfect way to celebrate the season with friends and family.\n🎁 What to Expect:\n✨ One-of-a-kind holiday gifts\n✨ Boutique & specialty vendors\n✨ Festive Christmas atmosphere\n✨ Perfect shopping experience for all ages\nMake it a holiday tradition and join us for a weekend full of shopping, cheer, and Christmas magic in Lafayette!\n👉 Mark “Going,” invite your friends, and watch for ticket promos, vendor spotlights, and special holiday surprises.\nTickets available now!\n#LafayetteHolidayMarket #ChristmasShopping #HolidayMarket #ShopSmall #HolidayTraditions #AEM #LHM",
-"url": "https://happeningnext.com/event/lafayette-holiday-market-lafayette-la-eid3a0de8jcf5",
-"image": "https://cdn.happeningnext.com/events10/banners/70db0dc7bd183a545cb8f03a8cf9681b21f37e5fe8473d6660acf7132d694dbb-rimg-w1200-h675-dce8d8d8-gmir?v=1787473576",
-"source": "Happening Next (exhibitions)",
-"alsoOn": [
-"Happening Next (food & drinks)"
-],
-"id": "ea2d084b80"
-},
-{
-"title": "Food Truck Friday : Fall Edition",
-"start": "2026-11-20T11:00",
-"end": "2026-11-20T14:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Moncus Park",
-"address": "2913 Johnston St, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"food"
-],
-"desc": "Food Truck Friday: Fall Edition Food Truck Friday is back at Moncus Park for a limited run this October and November! Every Friday, grab lunch from your favorite local food trucks, then stay awhile. Settle in under the oaks, enjoy tables inside or out, and make an afternoon of it with shade, fans, yard games, and plenty of room for the kids to play. Trucks are announced each Friday morning on our Facebook page, so keep an eye on our page to see who's cooking that day! When: Friday, October 2 Friday, October 9 Friday, October 16 Friday, October 23 Friday, November 6 Friday, November 13 Friday, November 20 Time: 11am to 2pm Where: Moncus Park, 2913 Johnston St, Lafayette Kick off your Friday the right way. The fall weather's perfect for it, so come on out, enjoy the park, and support some local trucks while you're at it!",
-"url": "https://moncuspark.org/calendar-events/food-truck-friday-fall-edition/",
-"image": "https://moncuspark.org/wp-content/uploads/2026/08/Food-Truck-Friday-Fall-Edition.jpg",
-"source": "Moncus Park",
-"alsoOn": [
-"Happening Next (food & drinks)"
-],
-"id": "c671c87136"
-},
-{
-"title": "Breath work Yin, & Sound - Heather",
-"start": "2026-11-20T12:00",
-"end": "2026-11-20T13:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Paths to Restoration",
-"address": "107 Montrose Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"wellness",
-"community"
-],
-"desc": "Slow down, settle into the moment, and discover the power of stillness.\nYin Yoga is a slow, meditative practice that invites you to hold gentle poses for several minutes, allowing you to gradually work into the body's deeper connective tissues. Rather than flowing from pose to pose, you'll be encouraged to breathe, observe, and explore your own edge with patience and mindfulness.\nAs you remain in each posture, you'll have the opportunity to notice areas of tension, practice staying present through mild discomfort, and cultivate greater flexibility, self-awareness, and inner calm. Throughout class, your instructor will offer gentle guidance to help quiet the mind and support your experience.\nThe practice concludes with a 15 minute immersive sound bath during Savasana, the final resting pose. Crystal singing bowls, Tibetan singing bowls, gongs, and other therapeutic sound instruments create a rich landscape of resonant tones that encourage deep relaxation and a peaceful transition into rest.\nWhether you're looking to improve mobility, reduce stress, or simply carve out time to reconnect with yourself, this class offers a space to slow down, breathe deeply, and leave feeling refreshed and restored.\nNo prior yoga experience is necessary. All bodies and experience levels are welcome. See less",
-"url": "https://happeningnext.com/event/breath-work-yin-andamp-sound-heather-eid3a0eb21w11",
-"image": "https://cdn.happeningnext.com/events7/banners/b835e348026f280db30ab25aaf226564c4d5ab3397b1cb5b60f96d43792bc0c9-rimg-w1200-h675-dc383838-gmir?v=1794669163",
-"source": "Happening Next (health wellness)",
-"id": "ca75fc02ec"
-},
-{
-"title": "Guided Meditation - Jenni",
-"start": "2026-11-20T16:30",
-"end": "2026-11-20T17:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Paths to Restoration",
-"address": "107 Montrose Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"wellness"
-],
-"desc": "This class offers a guided experience to slow down, quiet the mind, and reconnect with yourself through breath,\nreflection, stillness, and nature-inspired meditation.",
-"url": "https://happeningnext.com/event/guided-meditation-jenni-eid3a0ebra8x1",
-"image": "https://cdn.happeningnext.com/events3/banners/84cdff9238978ae1355512514674bd599d9d8aa1dd68cba91783c8d507633648-rimg-w960-h540-dc080808-gmir?v=1795101023",
-"source": "Happening Next (health wellness)",
-"id": "01b30bb3cf"
-},
-{
-"title": "Immersive Sound Bath w/ Violin & Handpan - Sara & Ryan",
-"start": "2026-11-20T18:30",
-"end": "2026-11-20T20:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Paths to Restoration",
-"address": "107 Montrose Ave, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"wellness"
-],
-"desc": "Step away from the noise of everyday life and enter a space designed for deep rest, reflection, and relaxation.\nOur Immersive Sound Bath invites you to settle into stillness as the resonant tones of crystal singing bowls, metal instruments, and other therapeutic sound tools create a calming soundscape around you. As you rest comfortably, the vibrations and layered sounds encourage mindfulness, relaxation, and a deeper connection with yourself.\nHeld within our peaceful forest room, this experience surrounds you with the calming presence of nature while providing a comfortable environment to fully unwind. Bolsters, blankets, and mats are available to support your body so you can simply arrive, get comfortable, and let yourself rest.\nA sound bath can be a deeply personal experience. Some participants find moments of quiet reflection, others experience a sense of emotional release, and many leave feeling grounded, refreshed, and restored.\nNo experience is necessary. Come as you are. Allow yourself the space to pause, breathe, and reconnect.",
-"url": "https://happeningnext.com/event/immersive-sound-bath-w-violin-andamp-handpan-sara-andamp-ryan-eid3a0eb79l3m",
-"image": "https://cdn.happeningnext.com/events4/banners/64bbd1276d4e89725f8ae6c7105b01c61f146b2d0ae95c6f306d72d8f9a74e90-rimg-w1200-h675-dc383838-gmir?v=1794777868",
-"source": "Happening Next (music)",
-"id": "19bc185fec"
-},
-{
-"title": "Making Spirits Bright",
-"start": "2026-11-20T18:30",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "LARC's Acadian Village",
-"address": "200 Greenleaf Dr, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"food"
-],
-"desc": "✨ Making Spirits Bright at LARC’s Acadian Village ✨\nKick off the Christmas season with us at Making Spirits Bright, an exclusive 21+ first look at Noël Acadien au Village! 🎄🥂\nBefore the gates officially open for the Christmas season, spend the evening surrounded by the glow of thousands of Christmas lights while enjoying live music, delicious food, free cocktail tastings, and plenty of holiday cheer.\n📅 Friday, November 20, 2026\n⏰ 6:30 PM – Midnight\n📍 LARC’s Acadian Village\n200 Greenleaf Dr., Lafayette, LA 70506\n🔞 21+ Event\n✨ WHAT TO EXPECT:\n🎄 An exclusive first look at Noël Acadien au Village\n🥂 FREE cocktail tastings\n🍽️ Food\n🎶 Live music\n✨ The Village illuminated for Christmas\n📸 Beautiful holiday photo opportunities\n🎉 A festive, adults-only night out\n🎟️ TICKETS\nIndividual Ticket — $25\nReserved Table — $210\nWhether you’re planning a date night, girls’ night, holiday outing with friends, or just ready to get into the Christmas spirit, Making Spirits Bright is the perfect way to start the season.\nCome sip, eat, listen to great music, stroll beneath the lights, and experience a little Christmas magic before everyone else. ❤️🎄✨\nWhere the lights glow, the drinks flow & the Christmas magic begins!\n📞 For more information: 337-981-2364, option 7 or 8\nMore exciting details, including our live entertainment and evening lineup, will be announced soon—stay tuned!",
-"url": "https://happeningnext.com/event/making-spirits-bright-eid3a0e4b6fkw",
-"image": "https://cdn.happeningnext.com/events9/banners/f576fd194e717ff98d5b88fc9440fc045924a95c7b506deb816b8340c6a48b01-rimg-w1200-h1553-dcf8f8e8-gmir?v=1790431906",
-"source": "Happening Next (Lafayette live music)",
-"alsoOn": [
-"Happening Next (food & drinks)",
-"Happening Next (music)"
-],
-"id": "a5dc515e6b"
-},
-{
-"title": "State of LA Danse, Friday November 20th",
-"start": "2026-11-20T19:00",
-"end": "2026-11-20T21:00",
-"allDay": false,
-"ongoing": false,
-"venue": "Ducrest-Gilfry Auditorium in Angelle Hall",
-"address": "601 East Saint Mary Boulevard, Lafayette",
-"price": "Free",
-"free": true,
-"cats": [
-"music"
-],
-"desc": "Faculty and Guest Artist Dance Concert from the UL Lafayette Dance Program",
-"url": "https://happeningnext.com/event/state-of-la-danse-friday-november-20th-eid1ef0l9159uga",
-"image": "https://cdn.happeningnext.com/events8/banners/318d51cf57fbe55f2e325a06747ab25ead4d61eda6361167c1c6e08e837049bd-rimg-w1080-h1920-dc080808-gmir.jpg?v=1793290623",
-"source": "Happening Next (performances)",
-"alsoOn": [
-"Happening Next (art)",
-"Happening Next (concerts)",
-"Happening Next (dance)",
-"Happening Next (music)"
-],
-"id": "61cf6c0afb"
-},
-{
 "title": "🐉 How to Train Your Dragon: The Musical JR. 🔥",
 "start": "2026-11-20T19:00",
 "end": "2026-11-22T14:00",
@@ -504,90 +225,6 @@
 "image": "https://cdn.happeningnext.com/events1/banners/71dce3bd38b088829b42b89a823d18e7f9f38e094065a81d0d0ebacc49fe504f-rimg-w1200-h1187-dcf8f8f8-gmir?v=1794938416",
 "source": "Happening Next (theatre)",
 "id": "aed61bae8e"
-},
-{
-"title": "Othello by William Shakespeare",
-"start": "2026-11-20T19:30",
-"end": "2026-11-20T21:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Cité des Arts",
-"address": "109 Vine St, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"theater"
-],
-"desc": "The fourth play in the Cite des Arts 2026 theater season",
-"url": "https://www.citedesarts.org/events/othello-by-william-shakespeare-2026-11-20-19-30",
-"image": "https://static.wixstatic.com/media/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg/v1/fill/w_662,h_1024,al_c,q_85/62d2c2_b1f62c0e454c4daab44a309656e50576~mv2.jpg",
-"source": "Cité des Arts",
-"id": "b2d7fc352c"
-},
-{
-"title": "Supercollider",
-"start": "2026-11-20T19:30",
-"end": "2026-11-20T21:30",
-"allDay": false,
-"ongoing": false,
-"venue": "Cité des Arts",
-"address": "109 Vine St, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"theater"
-],
-"desc": "Doors open at 7:00 p.m. and show time is 7:30 p.m. in the Second Stage",
-"url": "https://www.citedesarts.org/events/supercollider-10",
-"image": "https://static.wixstatic.com/media/62d2c2_21f93126aa0c49589592ec45848bc940~mv2.jpeg/v1/fill/w_1640,h_924,al_c,q_85/62d2c2_21f93126aa0c49589592ec45848bc940~mv2.jpeg",
-"source": "Cité des Arts",
-"alsoOn": [
-"Happening Next (art)",
-"Happening Next (dance)",
-"Happening Next (performances)",
-"Happening Next (theatre)"
-],
-"id": "f4eebcf154"
-},
-{
-"title": "HWY 90 BAND WILL ROCK \"THE RUINS\"",
-"start": "2026-11-20T20:00",
-"end": "2026-11-20T23:00",
-"allDay": false,
-"ongoing": false,
-"venue": "The Ruins",
-"address": "1919 Kaliste Saloom Rd Suite 303, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music"
-],
-"desc": "This Friday, November 20, 2026,\nMusic starts at 8:00pm\nHighway 90 Band is bringing our 70's and 80's Rock show to the stage at The Ruins!!\nHope to see you there\n✌️n ❤️\nPS, we now have T-Shirts for sale. $20 ea.",
-"url": "https://happeningnext.com/event/hwy-90-band-will-rock-andquotthe-ruinsandquot-eid3a0ebau76c",
-"image": "https://cdn.happeningnext.com/events5/banners/50fc879ef0800661db073f9920f87df15e65b09f89b0425a7488f4c869281ab8-rimg-w960-h959-dc281818-gmir?v=1794860667",
-"source": "Happening Next (music)",
-"id": "e4a16b1ec0"
-},
-{
-"title": "Southern Screen Film Festival with live Music by Sabine Mcalla",
-"start": "2026-11-20T20:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "Blue Moon Saloon and Guest House",
-"address": "215 East Convent Street, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"music",
-"arts",
-"community"
-],
-"desc": "It’s night two of the Southern Screen Festival, and we’re celebrating with live music by Sabine McCalla ! A New Orleans favorite, McCalla brings soulful songwriting and a vibrant blend of American roots music, from Southern blues and soul to Brazilian samba. Her debut album, Don’t Call Me Baby , captures the sound that has delighted dancers and revelers for years. Join filmmakers, artists, friends, and fellow music lovers for good company and soulful sounds. sabine-mccalla.com\n\n \n\nAbout the Artist\n\nSabine McCalla is a New Orleans singer-songwriter whose music brings together Southern soul, blues, Brazilian samba, and a broad range of roots influences. Her debut full-length album, Don’t Call Me Baby , released in November 2025 and co-produced by Ajaï Combelic and Sam Doores of the Deslondes, has earned more than 1.75 million streams and praise from publications including No Depression, Songlines, and Uncut. She has shared stages with Nick Shoulders, Rainbow Girls, John Craigie, and the Deslondes, and performed at the UK’s End of the Road Festival. Her work also extends to film, with an appearance alongside her sister Leyla McCalla in Ryan Coogler’s Sinners and performance and music contributions to Taylor McFadden’s Lovers . sabine-mccalla.com",
-"url": "https://events.timely.fun/kw4jncf1/event/78509490/20261120200000",
-"image": "https://timelyapp-prod.s3.us-west-2.amazonaws.com/images/54756026/sabine%20mcalla%20pic_2p6J.jpg",
-"source": "Blue Moon Saloon",
-"id": "87383d00a9"
 },
 {
 "title": "9th Annual - La fête de Noël - Holiday Market",
@@ -689,6 +326,28 @@
 "id": "db9d1354d8"
 },
 {
+"title": "Artists’ Alliance",
+"start": "2026-11-21T09:00",
+"end": "2027-01-09T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts - Main Gallery",
+"address": "101 W Vermilion St, Lafayette",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/artists-alliance/?occurrence=2026-11-21",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/08/Spring-Summer-Fall-and-Winter-Light-2026-oil-on-canvas-24_-x-36_.jpeg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "d5773c2e0f"
+},
+{
 "title": "Kate Gordon: Tender Terrain",
 "start": "2026-11-21T09:00",
 "end": "2026-11-21T17:00",
@@ -709,6 +368,72 @@
 "Acadiana Center for the Arts (all events)"
 ],
 "id": "6f39470b37"
+},
+{
+"title": "Philip Gould: A Selection of Works",
+"start": "2026-11-21T09:00",
+"end": "2026-11-28T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/philip-gould-2026?occurrence=2026-11-21",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/GouldHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "c7f5af1cb0"
+},
+{
+"title": "Sebastian Lodrige: Burden | Artificial & Natural",
+"start": "2026-11-21T09:00",
+"end": "2026-12-23T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/sebastian-lodrige/?occurrence=2026-11-21",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/10/Asset-1-scaled.png",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "87f8b83e87"
+},
+{
+"title": "Valcour Records | 20 Years",
+"start": "2026-11-21T09:00",
+"end": "2027-02-27T17:00",
+"allDay": false,
+"ongoing": true,
+"venue": "Acadiana Center for the Arts",
+"address": "",
+"price": "Free",
+"free": true,
+"cats": [
+"arts"
+],
+"desc": "",
+"url": "https://acadianacenterforthearts.org/valcour-records?occurrence=2026-11-21",
+"image": "https://acadianacenterforthearts.org/wp-content/uploads/2026/11/ValcourHeader.jpg",
+"source": "Acadiana Center for the Arts",
+"alsoOn": [
+"Acadiana Center for the Arts (all events)"
+],
+"id": "e607e2d6a3"
 },
 {
 "title": "Native American Culture Day -- FREE Festival",
@@ -1516,8 +1241,8 @@
 "end": null,
 "allDay": false,
 "ongoing": false,
-"venue": "The Ruins",
-"address": "1919 Kaliste Saloom Rd, Lafayette",
+"venue": "1919 Kaliste Saloom Rd Suite 303, Lafayette",
+"address": "",
 "price": "",
 "free": false,
 "cats": [
@@ -5171,25 +4896,6 @@
 "Happening Next (festivals)"
 ],
 "id": "4e2b9f1889"
-},
-{
-"title": "Badder Santa 19!!",
-"start": "2026-12-19T20:00",
-"end": null,
-"allDay": false,
-"ongoing": false,
-"venue": "The Ruins",
-"address": "1919 Kaliste Saloom Rd, Lafayette",
-"price": "",
-"free": false,
-"cats": [
-"family"
-],
-"desc": "🎅🔥 BADDER SANTA IS BACK! 🔥🎄\n19 YEARS OF BAD SANTAS, BIG BEATS & ONE HELL OF A CHRISTMAS PARTY!\nLafayette, some parties come and go. Others become LEGENDARY!\nFor 19 editions, BADDER SANTA has been a holiday tradition in the Lafayette nightlife scene, and on SATURDAY, DECEMBER 19TH, we're bringing it back for another MASSIVE Christmas dance party at THE RUINS NIGHT CLUB!\n🎁 IT ALL STARTED WITH A SIMPLE IDEA...\nYears ago, Mike Jamez wanted to do something a little different for Christmas. Bring people together, raise some money for a good cause, round up some of the hottest DJs around, and throw one unforgettable dance party ALL AT THE SAME TIME!\nWhat started as a way to give back turned into one of Lafayette nightlife's longest-running Christmas party traditions!\n19 EDITIONS LATER, THE BAD SANTA LEGACY LIVES ON! 🎅\n🎧 THREE DJs. ONE MASSIVE CHRISTMAS PARTY!\n🔥 DJ DOC ROC\n🔥 MIKE JAMEZ\n🔥 DJ MPTHREE\nWe're talking old-school throwbacks, hip-hop, EDM, booty breaks, bass-heavy bangers, and the kind of dance-floor energy that made BADDER SANTA a Lafayette holiday tradition!\nForget the silent night. We're turning up the bass, lighting up the dance floor, and making Santa's naughty list look like the VIP guest list! 🔊🎄\n📅 SATURDAY, DECEMBER 19, 2026\n📍 THE RUINS NIGHT CLUB | PARC LAFAYETTE\n🎧 DOC ROC • MIKE JAMEZ • MPTHREE\n🔞 18 TO PARTY | 21 TO DRINK\n🍾 VIP SECTIONS & BOTTLE SERVICE AVAILABLE\n19 EDITIONS. COUNTLESS MEMORIES. ONE BADDER SANTA.\nIf you've been part of the Badder Santa tradition over the years, you already know what kind of night this is going to be. If you haven't, it's time to find out!\n🎅 BE GOOD ALL YEAR. BE BADDER DECEMBER 19TH! 🔥\n#BadderSantaXIX #BadderSanta19 #MikeJamez #DJDocRoc #DJMPTHREE #TheRuinsNightClub #LafayetteNightlife #ChristmasParty #AcadianaNightlife #PopCrushWeekend",
-"url": "https://happeningnext.com/event/badder-santa-19-eid3a0eae2i7q",
-"image": "https://cdn.happeningnext.com/events3/banners/d21c230926464a1145fa57abfc8414414b938f7ddd2ca1729caf67c35dd819f5-rimg-w851-h315-dc080808-gmir?v=1794309600",
-"source": "Happening Next (dance)",
-"id": "403d69378c"
 },
 {
 "title": "Horace Trahan",
